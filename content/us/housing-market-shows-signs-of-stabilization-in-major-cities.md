@@ -8,9 +8,9 @@ author: Marcus Rodriguez
 author_slug: marcus-rodriguez
 published: 2025-09-30T09:32:43.257Z
 updated: 2025-10-01T09:32:43.257Z
-hero_image: https://images.pexels.com/photos/1112048/pexels-photo-1112048.jpeg?auto=compress&cs=tinysrgb&w=1200
+hero_image: https://github.com/cojovi/northstar_news/blob/main/public/housing-market-shows-signs-of.png?raw=true
 hero_credit: Photo via Pexels
-thumbnail: https://images.pexels.com/photos/1112048/pexels-photo-1112048.jpeg?auto=compress&cs=tinysrgb&w=400
+thumbnail: https://github.com/cojovi/northstar_news/blob/main/public/housing-market-shows-signs-of.png?raw=true
 excerpt: Economists point to interest rate adjustments and increased supply
 reading_time: 7
 location: New York, NY
