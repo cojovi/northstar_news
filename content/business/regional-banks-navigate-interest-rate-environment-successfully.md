@@ -8,9 +8,9 @@ author: Lisa Thompson
 author_slug: lisa-thompson
 published: 2025-10-07T09:32:43.266Z
 updated: 2025-10-08T09:32:43.266Z
-hero_image: https://images.pexels.com/photos/936722/pexels-photo-936722.jpeg?auto=compress&cs=tinysrgb&w=1200
+hero_image: https://github.com/cojovi/northstar_news/blob/main/public/regional-banks-navigate-interest-rate.png?raw=true
 hero_credit: Photo via Pexels
-thumbnail: https://images.pexels.com/photos/936722/pexels-photo-936722.jpeg?auto=compress&cs=tinysrgb&w=400
+thumbnail: https://github.com/cojovi/northstar_news/blob/main/public/regional-banks-navigate-interest-rate.png?raw=true
 excerpt: Community-focused institutions demonstrate resilience amid market shifts
 reading_time: 4
 location: Charlotte, NC

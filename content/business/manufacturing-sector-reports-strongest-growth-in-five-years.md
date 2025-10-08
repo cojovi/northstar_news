@@ -8,9 +8,9 @@ author: Sarah Mitchell
 author_slug: sarah-mitchell
 published: 2025-10-02T09:32:43.265Z
 updated: 2025-10-03T09:32:43.265Z
-hero_image: https://images.pexels.com/photos/936722/pexels-photo-936722.jpeg?auto=compress&cs=tinysrgb&w=1200
+hero_image: https://github.com/cojovi/northstar_news/blob/main/public/manufacturing-sector-reports.png?raw=true
 hero_credit: Photo via Pexels
-thumbnail: https://images.pexels.com/photos/936722/pexels-photo-936722.jpeg?auto=compress&cs=tinysrgb&w=400
+thumbnail: https://github.com/cojovi/northstar_news/blob/main/public/manufacturing-sector-reports.png?raw=true
 excerpt: Automation investments and reshoring drive productivity gains
 reading_time: 7
 location: Detroit, MI
