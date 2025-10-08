@@ -8,9 +8,9 @@ author: Lisa Thompson
 author_slug: lisa-thompson
 published: 2025-09-20T09:32:43.262Z
 updated: 2025-09-21T09:32:43.262Z
-hero_image: https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg?auto=compress&cs=tinysrgb&w=1200
+hero_image: https://github.com/cojovi/northstar_news/blob/main/public/arctic-council-members-reach-climate.png?raw=true
 hero_credit: Photo via Pexels
-thumbnail: https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg?auto=compress&cs=tinysrgb&w=400
+thumbnail: https://github.com/cojovi/northstar_news/blob/main/public/arctic-council-members-reach-climate.png?raw=true
 excerpt: Joint monitoring stations to track rapid environmental changes
 reading_time: 7
 location: Reykjavik, Iceland

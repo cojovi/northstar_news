@@ -8,9 +8,9 @@ author: David Washington
 author_slug: david-washington
 published: 2025-10-06T09:32:43.262Z
 updated: 2025-10-07T09:32:43.262Z
-hero_image: https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg?auto=compress&cs=tinysrgb&w=1200
+hero_image: https://github.com/cojovi/northstar_news/blob/main/public/african-union-launches-continental-free.png?raw=true
 hero_credit: Photo via Pexels
-thumbnail: https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg?auto=compress&cs=tinysrgb&w=400
+thumbnail: https://github.com/cojovi/northstar_news/blob/main/public/african-union-launches-continental-free.png?raw=true
 excerpt: Historic economic integration enters active phase across 54 nations
 reading_time: 7
 location: Addis Ababa, Ethiopia
