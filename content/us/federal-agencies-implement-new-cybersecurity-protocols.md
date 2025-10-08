@@ -8,7 +8,7 @@ author: Dr. Elena Petrov
 author_slug: elena-petrov
 published: 2025-09-30T09:32:43.257Z
 updated: 2025-10-01T09:32:43.257Z
-hero_image: https://images.pexels.com/photos/1112048/pexels-photo-1112048.jpeg?auto=compress&cs=tinysrgb&w=1200
+hero_image: https://github.com/cojovi/northstar_news/blob/main/public/ImplementNewCybersecurity.png?raw=true
 hero_credit: Photo via Pexels
 thumbnail: https://github.com/cojovi/northstar_news/blob/main/public/ImplementNewCybersecurity.png?raw=true
 excerpt: Government response follows series of high-profile data breaches

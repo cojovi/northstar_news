@@ -8,9 +8,9 @@ author: David Washington
 author_slug: david-washington
 published: 2025-09-26T09:32:43.259Z
 updated: 2025-09-27T09:32:43.259Z
-hero_image: https://images.pexels.com/photos/1112048/pexels-photo-1112048.jpeg?auto=compress&cs=tinysrgb&w=1200
+hero_image: https://github.com/cojovi/northstar_news/blob/main/public/national-parks-report-record-visitor.png?raw=true
 hero_credit: Photo via Pexels
-thumbnail: https://images.pexels.com/photos/1112048/pexels-photo-1112048.jpeg?auto=compress&cs=tinysrgb&w=400
+thumbnail: https://github.com/cojovi/northstar_news/blob/main/public/national-parks-report-record-visitor.png?raw=true
 excerpt: Interior Department cites pent-up demand and improved facilities
 reading_time: 4
 location: Denver, CO
