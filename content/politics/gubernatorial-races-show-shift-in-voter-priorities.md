@@ -8,9 +8,9 @@ author: Marcus Rodriguez
 author_slug: marcus-rodriguez
 published: 2025-10-04T09:32:43.263Z
 updated: 2025-10-05T09:32:43.263Z
-hero_image: https://images.pexels.com/photos/1550337/pexels-photo-1550337.jpeg?auto=compress&cs=tinysrgb&w=1200
+hero_image: https://github.com/cojovi/northstar_news/blob/main/public/gubernatorial-races-show-shift-in.png?raw=true
 hero_credit: Photo via Pexels
-thumbnail: https://images.pexels.com/photos/1550337/pexels-photo-1550337.jpeg?auto=compress&cs=tinysrgb&w=400
+thumbnail: https://github.com/cojovi/northstar_news/blob/main/public/gubernatorial-races-show-shift-in.png?raw=true
 excerpt: Economic concerns dominate messaging across both parties
 reading_time: 7
 location: Atlanta, GA

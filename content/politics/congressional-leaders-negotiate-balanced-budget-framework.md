@@ -8,9 +8,9 @@ author: James Chen
 author_slug: james-chen
 published: 2025-09-13T09:32:43.263Z
 updated: 2025-09-14T09:32:43.263Z
-hero_image: https://images.pexels.com/photos/1550337/pexels-photo-1550337.jpeg?auto=compress&cs=tinysrgb&w=1200
+hero_image: https://github.com/cojovi/northstar_news/blob/main/public/congressional-leaders-negotiate.png?raw=true
 hero_credit: Photo via Pexels
-thumbnail: https://images.pexels.com/photos/1550337/pexels-photo-1550337.jpeg?auto=compress&cs=tinysrgb&w=400
+thumbnail: https://github.com/cojovi/northstar_news/blob/main/public/congressional-leaders-negotiate.png?raw=true
 excerpt: Rare cooperation emerges on fiscal responsibility measures
 reading_time: 4
 location: Washington, D.C.
