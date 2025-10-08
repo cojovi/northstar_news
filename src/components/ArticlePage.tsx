@@ -71,22 +71,25 @@ export function ArticlePage({ category, slug }: ArticlePageProps) {
 
           metaOg.forEach((meta) => {
             const element = document.createElement('meta');
-            if ('property' in meta) {
+            if ('property' in meta && meta.property) {
               element.setAttribute('property', meta.property);
-            } else {
+            } else if ('name' in meta && meta.name) {
               element.setAttribute('name', meta.name);
             }
             element.setAttribute('content', meta.content);
             document.head.appendChild(element);
           });
 
+        setLoading(false);
+
         return () => {
           if (script.parentNode) {
             script.parentNode.removeChild(script);
           }
         };
+      } else {
+        setLoading(false);
       }
-      setLoading(false);
     } catch (error) {
       console.error('Failed to load article:', error);
       setLoading(false);

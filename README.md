@@ -1,5 +1,8 @@
 # The Northstar Ledger
 
+npm run dev
+https://github.com/cojovi/northstar_news/blob/main/public/ImplementNewCybersecurity.png?raw=true 
+
 A professional, file-based news publication built with React, TypeScript, and Vite.
 
 ## Overview

@@ -12,7 +12,7 @@ function parseMarkdown(content: string): { frontMatter: ArticleFrontMatter; body
   }
 
   const [, frontMatterStr, body] = match;
-  const frontMatter: any = {};
+  const frontMatter: Record<string, string | number | boolean | string[]> = {};
 
   frontMatterStr.split('\n').forEach(line => {
     const [key, ...valueParts] = line.split(':');

@@ -1,4 +1,3 @@
-import type { Article } from '../types/article';
 import { getAllArticles } from './content';
 
 export async function generateRSSFeed(): Promise<string> {

@@ -84,43 +84,10 @@ The findings underscore the urgency of climate action, scientists say, even as s
 ];
 
 export function generateMockArticles() {
-  const categories = {
-    us: 8,
-    world: 7,
-    politics: 8,
-    business: 7,
-    tech: 7,
-    health: 6,
-    entertainment: 6,
-    sports: 7,
-    opinion: 6,
-    lifestyle: 5,
-    travel: 5
-  };
-
-  const authors = [
-    { name: 'Sarah Mitchell', slug: 'sarah-mitchell' },
-    { name: 'Marcus Rodriguez', slug: 'marcus-rodriguez' },
-    { name: 'Dr. Elena Petrov', slug: 'elena-petrov' },
-    { name: 'James Chen', slug: 'james-chen' },
-    { name: 'Amanda Foster', slug: 'amanda-foster' },
-    { name: 'David Washington', slug: 'david-washington' },
-    { name: 'Lisa Thompson', slug: 'lisa-thompson' },
-    { name: 'Michael O\'Brien', slug: 'michael-obrien' },
-    { name: 'Rachel Kim', slug: 'rachel-kim' },
-    { name: 'Thomas Anderson', slug: 'thomas-anderson' },
-  ];
-
-  const images = {
-    politics: 'https://images.pexels.com/photos/1550337/pexels-photo-1550337.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    business: 'https://images.pexels.com/photos/936722/pexels-photo-936722.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    tech: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    health: 'https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    entertainment: 'https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    sports: 'https://images.pexels.com/photos/46798/the-ball-stadion-football-the-pitch-46798.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    lifestyle: 'https://images.pexels.com/photos/1571458/pexels-photo-1571458.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    travel: 'https://images.pexels.com/photos/2166559/pexels-photo-2166559.jpeg?auto=compress&cs=tinysrgb&w=1200',
-  };
+  // These could be used for future article generation
+  // const categories = { us: 8, world: 7, politics: 8, business: 7, tech: 7, health: 6, entertainment: 6, sports: 7, opinion: 6, lifestyle: 5, travel: 5 };
+  // const authors = [{ name: 'Sarah Mitchell', slug: 'sarah-mitchell' }, ...];
+  // const images = { politics: '...', business: '...', ... };
 
   return mockArticles;
 }
