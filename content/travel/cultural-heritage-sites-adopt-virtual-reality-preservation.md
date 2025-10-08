@@ -8,9 +8,9 @@ author: James Chen
 author_slug: james-chen
 published: 2025-10-04T09:32:43.279Z
 updated: 2025-10-05T09:32:43.279Z
-hero_image: https://images.pexels.com/photos/2166559/pexels-photo-2166559.jpeg?auto=compress&cs=tinysrgb&w=1200
+hero_image: https://github.com/cojovi/northstar_news/blob/main/public/cultural-heritage-sites-adopt-virtual.png?raw=true
 hero_credit: Photo via Pexels
-thumbnail: https://images.pexels.com/photos/2166559/pexels-photo-2166559.jpeg?auto=compress&cs=tinysrgb&w=400
+thumbnail: https://github.com/cojovi/northstar_news/blob/main/public/cultural-heritage-sites-adopt-virtual.png?raw=true
 excerpt: Technology creates digital archives while managing physical tourism
 reading_time: 5
 location: Rome, Italy

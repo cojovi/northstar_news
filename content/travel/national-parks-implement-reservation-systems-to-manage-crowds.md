@@ -8,9 +8,9 @@ author: Dr. Elena Petrov
 author_slug: elena-petrov
 published: 2025-10-04T09:32:43.279Z
 updated: 2025-10-05T09:32:43.279Z
-hero_image: https://images.pexels.com/photos/2166559/pexels-photo-2166559.jpeg?auto=compress&cs=tinysrgb&w=1200
+hero_image: https://github.com/cojovi/northstar_news/blob/main/public/national-parks-implement.png?raw=true
 hero_credit: Photo via Pexels
-thumbnail: https://images.pexels.com/photos/2166559/pexels-photo-2166559.jpeg?auto=compress&cs=tinysrgb&w=400
+thumbnail: https://github.com/cojovi/northstar_news/blob/main/public/national-parks-implement.png?raw=true
 excerpt: Timed entry preserves visitor experience and protects natural resources
 reading_time: 6
 location: Yosemite, CA
