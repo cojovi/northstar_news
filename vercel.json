@@ -1,4 +1,18 @@
 {
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "northstar-news.vercel.app"
+        }
+      ],
+      "destination": "https://thenorthstarledger.com/:path*",
+      "permanent": true,
+      "statusCode": 308
+    }
+  ],
   "rewrites": [
     {
       "source": "/sitemap.xml",

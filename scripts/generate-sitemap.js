@@ -13,7 +13,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Configuration
-const SITE_URL = 'https://northstar-news.vercel.app'; // Update with your actual domain
+const SITE_URL = 'https://thenorthstarledger.com'; // Canonical domain
 const CONTENT_DIR = path.join(__dirname, '../content');
 const OUTPUT_FILE = path.join(__dirname, '../public/sitemap.xml');
 

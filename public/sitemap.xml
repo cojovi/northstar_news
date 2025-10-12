@@ -1,523 +1,541 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://northstar-news.vercel.app/</loc>
+    <loc>https://thenorthstarledger.com/</loc>
     <lastmod>2025-10-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/Politics</loc>
+    <loc>https://thenorthstarledger.com/Politics</loc>
     <lastmod>2025-10-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/National News</loc>
+    <loc>https://thenorthstarledger.com/Technology</loc>
     <lastmod>2025-10-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/World News</loc>
+    <loc>https://thenorthstarledger.com/National News</loc>
     <lastmod>2025-10-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/business</loc>
+    <loc>https://thenorthstarledger.com/World News</loc>
     <lastmod>2025-10-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/sports</loc>
+    <loc>https://thenorthstarledger.com/world</loc>
     <lastmod>2025-10-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/entertainment</loc>
+    <loc>https://thenorthstarledger.com/business</loc>
     <lastmod>2025-10-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/health</loc>
+    <loc>https://thenorthstarledger.com/sports</loc>
     <lastmod>2025-10-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/world</loc>
+    <loc>https://thenorthstarledger.com/entertainment</loc>
     <lastmod>2025-10-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/travel</loc>
+    <loc>https://thenorthstarledger.com/health</loc>
     <lastmod>2025-10-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/lifestyle</loc>
+    <loc>https://thenorthstarledger.com/travel</loc>
     <lastmod>2025-10-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/politics</loc>
+    <loc>https://thenorthstarledger.com/lifestyle</loc>
     <lastmod>2025-10-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/us</loc>
+    <loc>https://thenorthstarledger.com/politics</loc>
     <lastmod>2025-10-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/tech</loc>
+    <loc>https://thenorthstarledger.com/us</loc>
     <lastmod>2025-10-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/opinion</loc>
+    <loc>https://thenorthstarledger.com/tech</loc>
     <lastmod>2025-10-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/politics/the-politeness-peril-democrats-handing-democracy-demise</loc>
+    <loc>https://thenorthstarledger.com/opinion</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://thenorthstarledger.com/politics/the-politeness-peril-democrats-handing-democracy-demise</loc>
     <lastmod>2025-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/us/the-great-loan-sell-off-your-student-debt-now-on-wall-streets-menu</loc>
+    <loc>https://thenorthstarledger.com/tech/meta-ai-bias-czar-robby-starbuck-disinformation-fairness</loc>
     <lastmod>2025-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/world/the-great-gaza-shuffle-hostages-out-aid-in-post-war-supervision</loc>
+    <loc>https://thenorthstarledger.com/us/the-great-loan-sell-off-your-student-debt-now-on-wall-streets-menu</loc>
     <lastmod>2025-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/business/regional-banks-navigate-interest-rate-environment-successfully</loc>
+    <loc>https://thenorthstarledger.com/world/the-great-gaza-shuffle-hostages-out-aid-in-post-war-supervision</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://thenorthstarledger.com/world/trade-war-2-0-trump-100-tariffs-ignite-global-economic-follies</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://thenorthstarledger.com/business/regional-banks-navigate-interest-rate-environment-successfully</loc>
     <lastmod>2025-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/sports/olympic-training-centers-incorporate-mental-performance-coaching</loc>
+    <loc>https://thenorthstarledger.com/sports/olympic-training-centers-incorporate-mental-performance-coaching</loc>
     <lastmod>2025-10-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/entertainment/video-game-industry-embraces-cross-platform-play-standards</loc>
+    <loc>https://thenorthstarledger.com/entertainment/video-game-industry-embraces-cross-platform-play-standards</loc>
     <lastmod>2025-10-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/health/mental-health-services-integration-expands-in-primary-care</loc>
+    <loc>https://thenorthstarledger.com/health/mental-health-services-integration-expands-in-primary-care</loc>
     <lastmod>2025-10-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/business/supply-chain-disruptions-ease-as-logistics-networks-modernize</loc>
+    <loc>https://thenorthstarledger.com/business/supply-chain-disruptions-ease-as-logistics-networks-modernize</loc>
     <lastmod>2025-10-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/world/african-union-launches-continental-free-trade-implementation</loc>
+    <loc>https://thenorthstarledger.com/world/african-union-launches-continental-free-trade-implementation</loc>
     <lastmod>2025-10-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/travel/adventure-travel-outfitters-prioritize-safety-and-sustainability</loc>
+    <loc>https://thenorthstarledger.com/travel/adventure-travel-outfitters-prioritize-safety-and-sustainability</loc>
     <lastmod>2025-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/travel/cultural-heritage-sites-adopt-virtual-reality-preservation</loc>
+    <loc>https://thenorthstarledger.com/travel/cultural-heritage-sites-adopt-virtual-reality-preservation</loc>
     <lastmod>2025-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/travel/national-parks-implement-reservation-systems-to-manage-crowds</loc>
+    <loc>https://thenorthstarledger.com/travel/national-parks-implement-reservation-systems-to-manage-crowds</loc>
     <lastmod>2025-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/lifestyle/local-food-movements-transform-regional-cuisines</loc>
+    <loc>https://thenorthstarledger.com/lifestyle/local-food-movements-transform-regional-cuisines</loc>
     <lastmod>2025-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/entertainment/streaming-platforms-shift-focus-to-quality-over-quantity</loc>
+    <loc>https://thenorthstarledger.com/entertainment/streaming-platforms-shift-focus-to-quality-over-quantity</loc>
     <lastmod>2025-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/politics/federal-agencies-face-restructuring-under-new-efficiency-initiative</loc>
+    <loc>https://thenorthstarledger.com/politics/federal-agencies-face-restructuring-under-new-efficiency-initiative</loc>
     <lastmod>2025-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/politics/gubernatorial-races-show-shift-in-voter-priorities</loc>
+    <loc>https://thenorthstarledger.com/politics/gubernatorial-races-show-shift-in-voter-priorities</loc>
     <lastmod>2025-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/politics/local-governments-pioneer-participatory-budgeting-models</loc>
+    <loc>https://thenorthstarledger.com/politics/local-governments-pioneer-participatory-budgeting-models</loc>
     <lastmod>2025-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/business/manufacturing-sector-reports-strongest-growth-in-five-years</loc>
+    <loc>https://thenorthstarledger.com/business/manufacturing-sector-reports-strongest-growth-in-five-years</loc>
     <lastmod>2025-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/health/rural-healthcare-access-improved-through-mobile-clinic-networks</loc>
+    <loc>https://thenorthstarledger.com/health/rural-healthcare-access-improved-through-mobile-clinic-networks</loc>
     <lastmod>2025-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/business/labor-market-tightness-spurs-innovation-in-employee-benefits</loc>
+    <loc>https://thenorthstarledger.com/business/labor-market-tightness-spurs-innovation-in-employee-benefits</loc>
     <lastmod>2025-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/world/international-space-station-welcomes-record-number-of-astronauts</loc>
+    <loc>https://thenorthstarledger.com/world/international-space-station-welcomes-record-number-of-astronauts</loc>
     <lastmod>2025-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/us/federal-agencies-implement-new-cybersecurity-protocols</loc>
+    <loc>https://thenorthstarledger.com/us/federal-agencies-implement-new-cybersecurity-protocols</loc>
     <lastmod>2025-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/us/housing-market-shows-signs-of-stabilization-in-major-cities</loc>
+    <loc>https://thenorthstarledger.com/us/housing-market-shows-signs-of-stabilization-in-major-cities</loc>
     <lastmod>2025-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/lifestyle/wellness-industry-shifts-focus-to-evidence-based-practices</loc>
+    <loc>https://thenorthstarledger.com/lifestyle/wellness-industry-shifts-focus-to-evidence-based-practices</loc>
     <lastmod>2025-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/tech/quantum-computing-breakthrough-achieved-in-error-correction</loc>
+    <loc>https://thenorthstarledger.com/tech/quantum-computing-breakthrough-achieved-in-error-correction</loc>
     <lastmod>2025-09-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/lifestyle/community-gardens-flourish-as-urban-spaces-evolve</loc>
+    <loc>https://thenorthstarledger.com/lifestyle/community-gardens-flourish-as-urban-spaces-evolve</loc>
     <lastmod>2025-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/opinion/rethinking-success-in-an-automated-economy</loc>
+    <loc>https://thenorthstarledger.com/opinion/rethinking-success-in-an-automated-economy</loc>
     <lastmod>2025-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/opinion/why-education-reform-should-start-with-teacher-compensation</loc>
+    <loc>https://thenorthstarledger.com/opinion/why-education-reform-should-start-with-teacher-compensation</loc>
     <lastmod>2025-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/health/hospital-systems-invest-in-workforce-development-programs</loc>
+    <loc>https://thenorthstarledger.com/health/hospital-systems-invest-in-workforce-development-programs</loc>
     <lastmod>2025-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/us/national-parks-report-record-visitor-numbers-despite-entry-fee-increases</loc>
+    <loc>https://thenorthstarledger.com/us/national-parks-report-record-visitor-numbers-despite-entry-fee-increases</loc>
     <lastmod>2025-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/opinion/infrastructure-investment-is-economic-investment</loc>
+    <loc>https://thenorthstarledger.com/opinion/infrastructure-investment-is-economic-investment</loc>
     <lastmod>2025-09-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/world/middle-east-water-shortage-prompts-regional-cooperation</loc>
+    <loc>https://thenorthstarledger.com/world/middle-east-water-shortage-prompts-regional-cooperation</loc>
     <lastmod>2025-09-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/us/midwest-regions-invest-heavily-in-renewable-energy-infrastructure</loc>
+    <loc>https://thenorthstarledger.com/us/midwest-regions-invest-heavily-in-renewable-energy-infrastructure</loc>
     <lastmod>2025-09-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/travel/sustainable-tourism-practices-gain-traction-in-popular-destinations</loc>
+    <loc>https://thenorthstarledger.com/travel/sustainable-tourism-practices-gain-traction-in-popular-destinations</loc>
     <lastmod>2025-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/health/telemedicine-platforms-report-sustained-usage-post-pandemic</loc>
+    <loc>https://thenorthstarledger.com/health/telemedicine-platforms-report-sustained-usage-post-pandemic</loc>
     <lastmod>2025-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/tech/satellite-internet-services-expand-to-remote-regions</loc>
+    <loc>https://thenorthstarledger.com/tech/satellite-internet-services-expand-to-remote-regions</loc>
     <lastmod>2025-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/sports/college-athletics-programs-adapt-to-name-image-and-likeness-rules</loc>
+    <loc>https://thenorthstarledger.com/sports/college-athletics-programs-adapt-to-name-image-and-likeness-rules</loc>
     <lastmod>2025-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/tech/data-privacy-regulations-drive-architecture-changes</loc>
+    <loc>https://thenorthstarledger.com/tech/data-privacy-regulations-drive-architecture-changes</loc>
     <lastmod>2025-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/business/small-business-lending-reaches-pre-pandemic-levels</loc>
+    <loc>https://thenorthstarledger.com/business/small-business-lending-reaches-pre-pandemic-levels</loc>
     <lastmod>2025-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/world/european-union-announces-unified-digital-currency-framework</loc>
+    <loc>https://thenorthstarledger.com/world/european-union-announces-unified-digital-currency-framework</loc>
     <lastmod>2025-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/world/latin-american-countries-strengthen-anti-corruption-measures</loc>
+    <loc>https://thenorthstarledger.com/world/latin-american-countries-strengthen-anti-corruption-measures</loc>
     <lastmod>2025-09-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/us/veterans-affairs-modernizes-healthcare-system-with-digital-tools</loc>
+    <loc>https://thenorthstarledger.com/us/veterans-affairs-modernizes-healthcare-system-with-digital-tools</loc>
     <lastmod>2025-09-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/us/border-states-coordinate-on-immigration-processing-improvements</loc>
+    <loc>https://thenorthstarledger.com/us/border-states-coordinate-on-immigration-processing-improvements</loc>
     <lastmod>2025-09-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/sports/womens-sports-viewership-reaches-record-highs</loc>
+    <loc>https://thenorthstarledger.com/sports/womens-sports-viewership-reaches-record-highs</loc>
     <lastmod>2025-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/us/national-infrastructure-bill-faces-regional-opposition</loc>
+    <loc>https://thenorthstarledger.com/us/national-infrastructure-bill-faces-regional-opposition</loc>
     <lastmod>2025-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/tech/cybersecurity-firms-report-decline-in-ransomware-success-rates</loc>
+    <loc>https://thenorthstarledger.com/tech/cybersecurity-firms-report-decline-in-ransomware-success-rates</loc>
     <lastmod>2025-09-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/world/arctic-council-members-reach-climate-research-agreement</loc>
+    <loc>https://thenorthstarledger.com/world/arctic-council-members-reach-climate-research-agreement</loc>
     <lastmod>2025-09-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/sports/professional-leagues-invest-in-player-health-and-safety-technology</loc>
+    <loc>https://thenorthstarledger.com/sports/professional-leagues-invest-in-player-health-and-safety-technology</loc>
     <lastmod>2025-09-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/travel/train-travel-renaissance-offers-scenic-alternative-to-flying</loc>
+    <loc>https://thenorthstarledger.com/travel/train-travel-renaissance-offers-scenic-alternative-to-flying</loc>
     <lastmod>2025-09-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/sports/minor-league-teams-experience-attendance-surge</loc>
+    <loc>https://thenorthstarledger.com/sports/minor-league-teams-experience-attendance-surge</loc>
     <lastmod>2025-09-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/lifestyle/minimalist-living-trends-reshape-home-design-industry</loc>
+    <loc>https://thenorthstarledger.com/lifestyle/minimalist-living-trends-reshape-home-design-industry</loc>
     <lastmod>2025-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/sports/esports-tournaments-draw-mainstream-sponsorship-deals</loc>
+    <loc>https://thenorthstarledger.com/sports/esports-tournaments-draw-mainstream-sponsorship-deals</loc>
     <lastmod>2025-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/tech/battery-technology-advances-enable-longer-range-electric-vehicles</loc>
+    <loc>https://thenorthstarledger.com/tech/battery-technology-advances-enable-longer-range-electric-vehicles</loc>
     <lastmod>2025-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/politics/campaign-finance-reform-gains-momentum-in-key-states</loc>
+    <loc>https://thenorthstarledger.com/politics/campaign-finance-reform-gains-momentum-in-key-states</loc>
     <lastmod>2025-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/politics/senate-committee-advances-bipartisan-ethics-reform-package</loc>
+    <loc>https://thenorthstarledger.com/politics/senate-committee-advances-bipartisan-ethics-reform-package</loc>
     <lastmod>2025-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/health/vaccine-development-timelines-shortened-by-new-platform-technologies</loc>
+    <loc>https://thenorthstarledger.com/health/vaccine-development-timelines-shortened-by-new-platform-technologies</loc>
     <lastmod>2025-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/politics/supreme-court-clarifies-administrative-law-boundaries</loc>
+    <loc>https://thenorthstarledger.com/politics/supreme-court-clarifies-administrative-law-boundaries</loc>
     <lastmod>2025-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/us/education-department-proposes-changes-to-student-loan-forgiveness</loc>
+    <loc>https://thenorthstarledger.com/us/education-department-proposes-changes-to-student-loan-forgiveness</loc>
     <lastmod>2025-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/business/retail-industry-adapts-to-omnichannel-consumer-behavior</loc>
+    <loc>https://thenorthstarledger.com/business/retail-industry-adapts-to-omnichannel-consumer-behavior</loc>
     <lastmod>2025-09-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/lifestyle/remote-work-sparks-relocation-to-secondary-cities</loc>
+    <loc>https://thenorthstarledger.com/lifestyle/remote-work-sparks-relocation-to-secondary-cities</loc>
     <lastmod>2025-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/opinion/climate-adaptation-is-not-surrender</loc>
+    <loc>https://thenorthstarledger.com/opinion/climate-adaptation-is-not-surrender</loc>
     <lastmod>2025-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/health/new-cancer-screening-guidelines-emphasize-earlier-detection</loc>
+    <loc>https://thenorthstarledger.com/health/new-cancer-screening-guidelines-emphasize-earlier-detection</loc>
     <lastmod>2025-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/world/southeast-asian-nations-form-new-trade-alliance</loc>
+    <loc>https://thenorthstarledger.com/world/southeast-asian-nations-form-new-trade-alliance</loc>
     <lastmod>2025-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/tech/agricultural-technology-improves-crop-yields-and-sustainability</loc>
+    <loc>https://thenorthstarledger.com/tech/agricultural-technology-improves-crop-yields-and-sustainability</loc>
     <lastmod>2025-09-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/tech/open-source-ai-models-gain-enterprise-adoption</loc>
+    <loc>https://thenorthstarledger.com/tech/open-source-ai-models-gain-enterprise-adoption</loc>
     <lastmod>2025-09-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/politics/congressional-leaders-negotiate-balanced-budget-framework</loc>
+    <loc>https://thenorthstarledger.com/politics/congressional-leaders-negotiate-balanced-budget-framework</loc>
     <lastmod>2025-09-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/sports/youth-sports-organizations-emphasize-participation-over-competition</loc>
+    <loc>https://thenorthstarledger.com/sports/youth-sports-organizations-emphasize-participation-over-competition</loc>
     <lastmod>2025-09-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/entertainment/music-industry-adapts-to-creator-economy-dynamics</loc>
+    <loc>https://thenorthstarledger.com/entertainment/music-industry-adapts-to-creator-economy-dynamics</loc>
     <lastmod>2025-09-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/politics/state-legislatures-adopt-model-transparency-legislation</loc>
+    <loc>https://thenorthstarledger.com/politics/state-legislatures-adopt-model-transparency-legislation</loc>
     <lastmod>2025-09-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/opinion/the-forgotten-benefits-of-boring-competence</loc>
+    <loc>https://thenorthstarledger.com/opinion/the-forgotten-benefits-of-boring-competence</loc>
     <lastmod>2025-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/entertainment/podcast-advertising-revenue-reaches-new-milestone</loc>
+    <loc>https://thenorthstarledger.com/entertainment/podcast-advertising-revenue-reaches-new-milestone</loc>
     <lastmod>2025-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://northstar-news.vercel.app/business/corporate-sustainability-initiatives-show-measurable-results</loc>
+    <loc>https://thenorthstarledger.com/business/corporate-sustainability-initiatives-show-measurable-results</loc>
     <lastmod>2025-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>

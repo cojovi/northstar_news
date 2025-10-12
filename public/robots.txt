@@ -5,7 +5,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://northstar-news.vercel.app/sitemap.xml
+Sitemap: https://thenorthstarledger.com/sitemap.xml
 
 # Crawl delay (optional, in seconds)
 Crawl-delay: 1

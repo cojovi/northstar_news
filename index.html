@@ -4,12 +4,23 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Professional News Site Build</title>
+    <link rel="canonical" href="https://thenorthstarledger.com/" />
+    <title>The Northstar Ledger</title>
     <script>
       // Set dark mode by default before page renders to prevent flash
       (function() {
         const theme = localStorage.getItem('theme') || 'dark';
         document.documentElement.classList.add(theme);
+      })();
+    </script>
+    <script>
+      // Set canonical URL dynamically based on current path
+      (function() {
+        const path = window.location.pathname;
+        const canonical = document.querySelector('link[rel="canonical"]');
+        if (canonical && path !== '/') {
+          canonical.href = 'https://thenorthstarledger.com' + path;
+        }
       })();
     </script>
   </head>
