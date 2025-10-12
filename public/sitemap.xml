@@ -13,6 +13,12 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://northstar-news.vercel.app/Technology</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://northstar-news.vercel.app/National News</loc>
     <lastmod>2025-10-12</lastmod>
     <changefreq>daily</changefreq>
@@ -20,6 +26,12 @@
   </url>
   <url>
     <loc>https://northstar-news.vercel.app/World News</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://northstar-news.vercel.app/world</loc>
     <lastmod>2025-10-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
@@ -44,12 +56,6 @@
   </url>
   <url>
     <loc>https://northstar-news.vercel.app/health</loc>
-    <lastmod>2025-10-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://northstar-news.vercel.app/world</loc>
     <lastmod>2025-10-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
@@ -97,6 +103,12 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://northstar-news.vercel.app/tech/meta-ai-bias-czar-robby-starbuck-disinformation-fairness</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
     <loc>https://northstar-news.vercel.app/us/the-great-loan-sell-off-your-student-debt-now-on-wall-streets-menu</loc>
     <lastmod>2025-10-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -104,6 +116,12 @@
   </url>
   <url>
     <loc>https://northstar-news.vercel.app/world/the-great-gaza-shuffle-hostages-out-aid-in-post-war-supervision</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://northstar-news.vercel.app/world/trade-war-2-0-trump-100-tariffs-ignite-global-economic-follies</loc>
     <lastmod>2025-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>

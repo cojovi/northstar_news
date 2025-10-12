@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Search, Menu, X, Sun, Moon } from 'lucide-react';
 import { useTheme } from '../lib/ThemeContext';
+import { Logo } from './Logo';
 
 const CATEGORIES = [
   { name: 'U.S.', path: 'us' },
@@ -40,8 +41,11 @@ export function Header() {
             >
               {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
             </button>
-            <a href="/" className="text-2xl md:text-3xl font-serif font-bold tracking-tight text-gray-900 dark:text-gray-50 hover:text-aurora-600 dark:hover:text-aurora-400 transition-colors">
-              The Northstar Ledger
+            <a href="/" className="flex items-center hover:opacity-90 transition-opacity">
+              <Logo size="lg" showText={false} />
+              <span className="ml-3 text-xl md:text-2xl font-serif font-bold tracking-tight text-gray-900 dark:text-gray-50">
+                The Northstar Ledger
+              </span>
             </a>
           </div>
           <div className="flex items-center gap-2">

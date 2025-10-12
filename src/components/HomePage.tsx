@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import type { Article } from '../types/article';
 import { getAllArticles, getArticlesByCategory, getTrendingArticles } from '../lib/content';
 import { ArticleCard } from './ArticleCard';
+import { LoadingSpinner } from './LoadingSpinner';
 
 export function HomePage() {
   const [latestArticles, setLatestArticles] = useState<Article[]>([]);
@@ -34,11 +35,7 @@ export function HomePage() {
   }, []);
 
   if (loading) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-white dark:bg-dark-950 transition-colors duration-200">
-        <div className="text-xl text-gray-900 dark:text-gray-300">Loading...</div>
-      </div>
-    );
+    return <LoadingSpinner />;
   }
 
   const heroArticle = latestArticles[0];

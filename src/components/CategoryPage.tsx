@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import type { Article } from '../types/article';
 import { getArticlesByCategory } from '../lib/content';
 import { ArticleCard } from './ArticleCard';
+import { LoadingSpinner } from './LoadingSpinner';
 
 interface CategoryPageProps {
   category: string;
@@ -37,11 +38,7 @@ export function CategoryPage({ category }: CategoryPageProps) {
   }, [category]);
 
   if (loading) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-white dark:bg-dark-950 transition-colors duration-200">
-        <div className="text-xl text-gray-900 dark:text-gray-300">Loading...</div>
-      </div>
-    );
+    return <LoadingSpinner />;
   }
 
   const featuredArticle = articles[0];
