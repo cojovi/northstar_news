@@ -1,0 +1,12 @@
+# robots.txt for Northstar News
+# Allow all search engines to crawl the site
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://northstar-news.vercel.app/sitemap.xml
+
+# Crawl delay (optional, in seconds)
+Crawl-delay: 1
+

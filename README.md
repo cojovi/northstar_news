@@ -132,8 +132,25 @@ Feed generation utilities are available in `/src/lib/feeds.ts`. In production, y
 
 - `/rss.xml` - RSS 2.0 feed
 - `/atom.xml` - Atom feed
-- `/sitemap.xml` - Main sitemap
 - `/news-sitemap.xml` - Google News sitemap (last 48 hours)
+
+### Automatic Sitemap Generation
+
+The site automatically generates a sitemap that updates whenever markdown files are added or modified:
+
+- **`/sitemap.xml`** - Automatically generated sitemap with all published articles
+- **Auto-updates** - Regenerates during `npm run dev` and `npm run build`
+- **SEO optimized** - Includes proper priorities and change frequencies
+- **Real-time watching** - Detects new/modified articles during development
+
+See [SITEMAP.md](SITEMAP.md) for detailed documentation.
+
+**Quick commands:**
+```bash
+npm run sitemap    # Generate sitemap manually
+npm run dev        # Auto-generates and watches for changes
+npm run build      # Auto-generates before build
+```
 
 ### SEO & Structured Data
 
