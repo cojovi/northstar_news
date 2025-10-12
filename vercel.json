@@ -9,8 +9,7 @@
         }
       ],
       "destination": "https://thenorthstarledger.com/:path*",
-      "permanent": true,
-      "statusCode": 308
+      "permanent": true
     }
   ],
   "rewrites": [
