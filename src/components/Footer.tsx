@@ -1,3 +1,5 @@
+import { Logo } from './Logo';
+
 export function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -6,7 +8,10 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
-            <h3 className="text-aurora-600 dark:text-aurora-400 font-serif font-bold text-xl mb-4">The Northstar Ledger</h3>
+            <div className="mb-4">
+              <Logo size="md" showText={false} />
+            </div>
+            <h3 className="text-aurora-600 dark:text-aurora-400 font-serif font-bold text-lg mb-3">The Northstar Ledger</h3>
             <p className="text-sm text-gray-600 dark:text-gray-400">
               Independent journalism dedicated to informing the public discourse.
             </p>
