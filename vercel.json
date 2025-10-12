@@ -1,24 +1,14 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "installCommand": "npm install",
   "framework": "vite",
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "dist"
-      }
-    }
-  ],
   "routes": [
     {
       "src": "/sitemap.xml",
       "dest": "/sitemap.xml"
     },
     {
-      "src": "/robots.txt",
+      "src": "/robots.txt", 
       "dest": "/robots.txt"
     },
     {
