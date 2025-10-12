@@ -1,5 +1,5 @@
 ---
-title: "Meta's \"AI Bias Czar\" Caught Red-Handed: Apparently, \"Fairness\" Now Means Fact-Optional"
+title: "Meta's AI Bias Czar Caught Red-Handed: Apparently, Fairness Now Means Fact-Optional"
 dek: "Revelations about Robby Starbuck, Meta's AI bias adviser, show a consistent pattern of disinformation, sparking widespread criticism and raising serious questions about the tech giant's commitment to responsible AI and truth."
 slug: "meta-ai-bias-czar-robby-starbuck-disinformation-fairness"
 category: "Technology"
