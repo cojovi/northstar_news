@@ -41,10 +41,10 @@ export function SearchPage() {
   };
 
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-dark-950 min-h-screen">
       <div className="max-w-7xl mx-auto px-4 py-8">
         <header className="mb-8">
-          <h1 className="text-4xl font-serif font-bold mb-6">Search</h1>
+          <h1 className="text-4xl font-serif font-bold mb-6 text-gray-50">Search</h1>
           <form onSubmit={handleSubmit} className="max-w-2xl">
             <div className="flex gap-2">
               <input
@@ -52,11 +52,11 @@ export function SearchPage() {
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder="Search articles..."
-                className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500"
+                className="flex-1 px-4 py-3 bg-dark-850 border border-dark-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-aurora-500 text-gray-200 placeholder-gray-500"
               />
               <button
                 type="submit"
-                className="px-6 py-3 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors"
+                className="px-6 py-3 bg-aurora-600 text-white font-medium rounded-lg hover:bg-aurora-700 transition-colors"
               >
                 Search
               </button>
@@ -66,13 +66,13 @@ export function SearchPage() {
 
         {loading && (
           <div className="text-center py-12">
-            <div className="text-xl text-gray-600">Searching...</div>
+            <div className="text-xl text-gray-300">Searching...</div>
           </div>
         )}
 
         {!loading && searched && (
           <section>
-            <p className="text-lg text-gray-700 mb-8">
+            <p className="text-lg text-gray-300 mb-8">
               {results.length > 0
                 ? `Found ${results.length} ${results.length === 1 ? 'article' : 'articles'} for "${query}"`
                 : `No articles found for "${query}"`}

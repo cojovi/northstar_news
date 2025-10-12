@@ -6,11 +6,11 @@
 
 @layer base {
   body {
-    @apply font-sans text-gray-900 bg-white antialiased;
+    @apply font-sans text-gray-100 bg-dark-950 antialiased;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-serif font-bold;
+    @apply font-serif font-bold text-gray-50;
   }
 
   h1 {
@@ -36,31 +36,31 @@
 
 @layer components {
   .article-content p {
-    @apply text-gray-800 text-lg leading-relaxed mb-6;
+    @apply text-gray-200 text-lg leading-relaxed mb-6;
   }
 
   .article-content h2 {
-    @apply text-2xl font-serif font-bold mt-10 mb-4;
+    @apply text-2xl font-serif font-bold text-gray-50 mt-10 mb-4;
   }
 
   .article-content h3 {
-    @apply text-xl font-serif font-bold mt-8 mb-3;
+    @apply text-xl font-serif font-bold text-gray-50 mt-8 mb-3;
   }
 
   .article-content blockquote {
-    @apply border-l-4 border-gray-800 pl-6 my-8 italic text-xl;
+    @apply border-l-4 border-aurora-500 pl-6 my-8 italic text-xl text-gray-300;
   }
 
   .article-content a {
-    @apply text-blue-700 hover:text-blue-900 underline;
+    @apply text-aurora-400 hover:text-aurora-300 underline;
   }
 
   .article-content img {
-    @apply w-full my-8;
+    @apply w-full my-8 rounded-lg;
   }
 
   .article-content ul, .article-content ol {
-    @apply my-6 ml-6;
+    @apply my-6 ml-6 text-gray-200;
   }
 
   .article-content li {
