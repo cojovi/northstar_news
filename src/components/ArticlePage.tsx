@@ -98,18 +98,18 @@ export function ArticlePage({ category, slug }: ArticlePageProps) {
 
   if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-dark-950">
-        <div className="text-xl text-gray-300">Loading...</div>
+      <div className="min-h-screen flex items-center justify-center bg-white dark:bg-dark-950 transition-colors duration-200">
+        <div className="text-xl text-gray-900 dark:text-gray-300">Loading...</div>
       </div>
     );
   }
 
   if (!article) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-dark-950">
+      <div className="min-h-screen flex items-center justify-center bg-white dark:bg-dark-950 transition-colors duration-200">
         <div className="text-center">
-          <h1 className="text-4xl font-serif font-bold mb-4 text-gray-50">Article Not Found</h1>
-          <a href="/" className="text-aurora-400 hover:text-aurora-300 underline transition-colors">
+          <h1 className="text-4xl font-serif font-bold mb-4 text-gray-900 dark:text-gray-50">Article Not Found</h1>
+          <a href="/" className="text-aurora-600 dark:text-aurora-400 hover:text-aurora-700 dark:hover:text-aurora-300 underline transition-colors">
             Return to Home
           </a>
         </div>
@@ -125,42 +125,42 @@ export function ArticlePage({ category, slug }: ArticlePageProps) {
   const shareText = article.title;
 
   return (
-    <article className="bg-dark-950">
+    <article className="bg-white dark:bg-dark-950 transition-colors duration-200">
       <div className="max-w-4xl mx-auto px-4 py-8">
         <nav className="mb-6 text-sm">
-          <a href="/" className="text-gray-400 hover:text-aurora-400 transition-colors">
+          <a href="/" className="text-gray-600 dark:text-gray-400 hover:text-aurora-600 dark:hover:text-aurora-400 transition-colors">
             Home
           </a>
-          <span className="mx-2 text-gray-600">/</span>
-          <a href={`/${article.categoryPath}`} className="text-gray-400 hover:text-aurora-400 capitalize transition-colors">
+          <span className="mx-2 text-gray-500">/</span>
+          <a href={`/${article.categoryPath}`} className="text-gray-600 dark:text-gray-400 hover:text-aurora-600 dark:hover:text-aurora-400 capitalize transition-colors">
             {article.category}
           </a>
         </nav>
 
         <header className="mb-8">
-          <span className="text-sm font-semibold text-aurora-400 uppercase tracking-wider">
+          <span className="text-sm font-semibold text-aurora-600 dark:text-aurora-400 uppercase tracking-wider">
             {article.category}
           </span>
-          <h1 className="text-4xl md:text-5xl font-serif font-bold leading-tight mt-2 mb-4 text-gray-50">
+          <h1 className="text-4xl md:text-5xl font-serif font-bold leading-tight mt-2 mb-4 text-gray-900 dark:text-gray-50">
             {article.title}
           </h1>
-          <p className="text-xl md:text-2xl text-gray-300 leading-relaxed mb-6">{article.dek}</p>
+          <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 leading-relaxed mb-6">{article.dek}</p>
 
-          <div className="flex flex-wrap items-center gap-4 pb-6 border-b border-dark-700">
+          <div className="flex flex-wrap items-center gap-4 pb-6 border-b border-gray-200 dark:border-dark-700">
             <div className="flex-1">
               <a
                 href={`/author/${article.author_slug}`}
-                className="font-medium text-gray-200 hover:text-aurora-400 transition-colors"
+                className="font-medium text-gray-800 dark:text-gray-200 hover:text-aurora-600 dark:hover:text-aurora-400 transition-colors"
               >
                 {article.author}
               </a>
               {article.location && (
                 <>
-                  <span className="mx-2 text-gray-600">•</span>
-                  <span className="text-gray-400">{article.location}</span>
+                  <span className="mx-2 text-gray-500">•</span>
+                  <span className="text-gray-600 dark:text-gray-400">{article.location}</span>
                 </>
               )}
-              <div className="flex items-center gap-2 text-sm text-gray-400 mt-2">
+              <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400 mt-2">
                 <time dateTime={article.published}>
                   {publishedDate.toLocaleDateString('en-US', {
                     month: 'long',
@@ -202,7 +202,7 @@ export function ArticlePage({ category, slug }: ArticlePageProps) {
                     'width=600,height=400'
                   );
                 }}
-                className="p-2 hover:bg-dark-800 rounded transition-colors text-gray-300 hover:text-aurora-400"
+                className="p-2 hover:bg-gray-100 dark:hover:bg-dark-800 rounded transition-colors text-gray-700 dark:text-gray-300 hover:text-aurora-600 dark:hover:text-aurora-400"
                 aria-label="Share on Facebook"
               >
                 <Facebook size={20} />
@@ -215,7 +215,7 @@ export function ArticlePage({ category, slug }: ArticlePageProps) {
                     'width=600,height=400'
                   );
                 }}
-                className="p-2 hover:bg-dark-800 rounded transition-colors text-gray-300 hover:text-aurora-400"
+                className="p-2 hover:bg-gray-100 dark:hover:bg-dark-800 rounded transition-colors text-gray-700 dark:text-gray-300 hover:text-aurora-600 dark:hover:text-aurora-400"
                 aria-label="Share on Twitter"
               >
                 <Twitter size={20} />
@@ -224,7 +224,7 @@ export function ArticlePage({ category, slug }: ArticlePageProps) {
                 onClick={() => {
                   navigator.clipboard.writeText(shareUrl);
                 }}
-                className="p-2 hover:bg-dark-800 rounded transition-colors text-gray-300 hover:text-aurora-400"
+                className="p-2 hover:bg-gray-100 dark:hover:bg-dark-800 rounded transition-colors text-gray-700 dark:text-gray-300 hover:text-aurora-600 dark:hover:text-aurora-400"
                 aria-label="Copy link"
               >
                 <LinkIcon size={20} />
@@ -235,10 +235,10 @@ export function ArticlePage({ category, slug }: ArticlePageProps) {
 
         <figure className="mb-8">
           <img src={article.hero_image} alt={article.title} className="w-full rounded-lg" />
-          <figcaption className="mt-2 text-sm text-gray-400">{article.hero_credit}</figcaption>
+          <figcaption className="mt-2 text-sm text-gray-600 dark:text-gray-400">{article.hero_credit}</figcaption>
         </figure>
 
-        <div className="article-content prose prose-lg max-w-none">
+        <div className="article-content prose prose-lg max-w-none text-gray-900 dark:text-gray-300">
           {article.content.split('\n\n').map((paragraph, idx) => (
             <p key={idx} className="mb-6">
               {paragraph}
@@ -246,13 +246,13 @@ export function ArticlePage({ category, slug }: ArticlePageProps) {
           ))}
         </div>
 
-        <footer className="mt-12 pt-6 border-t border-dark-700">
+        <footer className="mt-12 pt-6 border-t border-gray-200 dark:border-dark-700">
           <div className="flex flex-wrap gap-2 mb-6">
             {article.tags.map((tag) => (
               <a
                 key={tag}
                 href={`/tag/${tag}`}
-                className="px-3 py-1 bg-dark-800 text-gray-300 text-sm rounded-full hover:bg-dark-700 hover:text-aurora-400 transition-colors"
+                className="px-3 py-1 bg-gray-100 dark:bg-dark-800 text-gray-700 dark:text-gray-300 text-sm rounded-full hover:bg-gray-200 dark:hover:bg-dark-700 hover:text-aurora-600 dark:hover:text-aurora-400 transition-colors"
               >
                 {tag}
               </a>
@@ -262,9 +262,9 @@ export function ArticlePage({ category, slug }: ArticlePageProps) {
       </div>
 
       {related.length > 0 && (
-        <section className="bg-dark-900 py-12 border-t border-dark-800">
+        <section className="bg-gray-50 dark:bg-dark-900 py-12 border-t border-gray-200 dark:border-dark-800">
           <div className="max-w-7xl mx-auto px-4">
-            <h2 className="text-2xl font-serif font-bold mb-6 text-gray-50">Related Articles</h2>
+            <h2 className="text-2xl font-serif font-bold mb-6 text-gray-900 dark:text-gray-50">Related Articles</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {related.map((relatedArticle) => (
                 <ArticleCard key={relatedArticle.slug} article={relatedArticle} variant="standard" />

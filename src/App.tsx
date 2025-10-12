@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { ThemeProvider } from './lib/ThemeContext';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { HomePage } from './components/HomePage';
@@ -100,26 +101,26 @@ function App() {
       break;
     case 'about':
       content = (
-        <div className="bg-white min-h-screen">
+        <div className="bg-white dark:bg-dark-900 min-h-screen">
           <div className="max-w-4xl mx-auto px-4 py-12">
-            <h1 className="text-4xl font-serif font-bold mb-6">About The Northstar Ledger</h1>
+            <h1 className="text-4xl font-serif font-bold mb-6 text-gray-900 dark:text-gray-50">About The Northstar Ledger</h1>
             <div className="max-w-3xl">
-              <p className="text-xl text-gray-800 leading-relaxed mb-6">
+              <p className="text-xl text-gray-800 dark:text-gray-300 leading-relaxed mb-6">
                 The Northstar Ledger is committed to rigorous commentary, parody, and analysis that
                 illuminates public narratives and challenges conventional thinking.
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              <p className="text-lg text-gray-700 dark:text-gray-400 leading-relaxed mb-6">
                 Founded on principles of independent journalism, we strive to present news and opinion
                 that encourages readers to think critically about the information they consume. Our
                 approach combines traditional reporting values with modern skepticism about received wisdom.
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              <p className="text-lg text-gray-700 dark:text-gray-400 leading-relaxed mb-6">
                 While we maintain high editorial standards and fact-checking protocols, we believe that
                 satire and sharp analysis serve an important role in democratic discourse. Our coverage
                 spans politics, business, technology, culture, and society with a perspective that questions
                 assumptions and highlights absurdities.
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <p className="text-lg text-gray-700 dark:text-gray-400 leading-relaxed">
                 We invite readers to engage thoughtfully with our content and draw their own conclusions
                 about the issues that shape our world.
               </p>
@@ -133,11 +134,13 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      <main>{content}</main>
-      <Footer />
-    </div>
+    <ThemeProvider>
+      <div className="min-h-screen bg-white dark:bg-dark-900 transition-colors duration-200">
+        <Header />
+        <main>{content}</main>
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 }
 

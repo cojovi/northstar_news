@@ -35,8 +35,8 @@ export function HomePage() {
 
   if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-dark-950">
-        <div className="text-xl text-gray-300">Loading...</div>
+      <div className="min-h-screen flex items-center justify-center bg-white dark:bg-dark-950 transition-colors duration-200">
+        <div className="text-xl text-gray-900 dark:text-gray-300">Loading...</div>
       </div>
     );
   }
@@ -46,9 +46,9 @@ export function HomePage() {
   const remainingLatest = latestArticles.slice(3);
 
   return (
-    <div className="bg-dark-950">
+    <div className="bg-white dark:bg-dark-950 transition-colors duration-200">
       {heroArticle && (
-        <section className="border-b border-dark-800 py-8">
+        <section className="border-b border-gray-200 dark:border-dark-800 py-8">
           <div className="max-w-7xl mx-auto px-4">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
               <div className="lg:col-span-2">
@@ -64,11 +64,11 @@ export function HomePage() {
         </section>
       )}
 
-      <section className="py-8 border-b border-dark-800">
+      <section className="py-8 border-b border-gray-200 dark:border-dark-800">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
             <div className="lg:col-span-3">
-              <h2 className="text-2xl font-serif font-bold mb-6 pb-3 border-b-2 border-aurora-500 text-gray-50">
+              <h2 className="text-2xl font-serif font-bold mb-6 pb-3 border-b-2 border-aurora-600 dark:border-aurora-500 text-gray-900 dark:text-gray-50">
                 Latest News
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -80,7 +80,7 @@ export function HomePage() {
 
             <aside>
               <div className="sticky top-24">
-                <h3 className="text-xl font-serif font-bold mb-4 pb-2 border-b-2 border-aurora-500 text-gray-50">
+                <h3 className="text-xl font-serif font-bold mb-4 pb-2 border-b-2 border-aurora-600 dark:border-aurora-500 text-gray-900 dark:text-gray-50">
                   Trending
                 </h3>
                 <div className="space-y-4">
@@ -89,16 +89,16 @@ export function HomePage() {
                   ))}
                 </div>
 
-                <div className="mt-8 p-6 bg-dark-850 border border-dark-700 rounded-lg">
-                  <h4 className="text-lg font-serif font-bold mb-3 text-gray-50">Stay Informed</h4>
-                  <p className="text-sm text-gray-300 mb-4">
+                <div className="mt-8 p-6 bg-gray-50 dark:bg-dark-850 border border-gray-200 dark:border-dark-700 rounded-lg">
+                  <h4 className="text-lg font-serif font-bold mb-3 text-gray-900 dark:text-gray-50">Stay Informed</h4>
+                  <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
                     Get the latest news delivered to your inbox.
                   </p>
                   <form className="space-y-3">
                     <input
                       type="email"
                       placeholder="Your email"
-                      className="w-full px-3 py-2 bg-dark-800 border border-dark-600 rounded text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-aurora-500"
+                      className="w-full px-3 py-2 bg-white dark:bg-dark-800 border border-gray-300 dark:border-dark-600 rounded text-gray-900 dark:text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-aurora-500 transition-colors duration-200"
                     />
                     <button
                       type="submit"
@@ -127,15 +127,15 @@ export function HomePage() {
         };
 
         return (
-          <section key={category} className="py-8 border-b border-dark-800">
+          <section key={category} className="py-8 border-b border-gray-200 dark:border-dark-800">
             <div className="max-w-7xl mx-auto px-4">
               <div className="flex items-center justify-between mb-6">
-                <h2 className="text-2xl font-serif font-bold pb-3 border-b-2 border-aurora-500 text-gray-50">
+                <h2 className="text-2xl font-serif font-bold pb-3 border-b-2 border-aurora-600 dark:border-aurora-500 text-gray-900 dark:text-gray-50">
                   {categoryLabels[category]}
                 </h2>
                 <a
                   href={`/${category}`}
-                  className="text-sm font-medium text-aurora-400 hover:text-aurora-300 uppercase tracking-wide transition-colors"
+                  className="text-sm font-medium text-aurora-600 dark:text-aurora-400 hover:text-aurora-700 dark:hover:text-aurora-300 uppercase tracking-wide transition-colors"
                 >
                   View All →
                 </a>

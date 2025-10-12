@@ -38,8 +38,8 @@ export function CategoryPage({ category }: CategoryPageProps) {
 
   if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-dark-950">
-        <div className="text-xl text-gray-300">Loading...</div>
+      <div className="min-h-screen flex items-center justify-center bg-white dark:bg-dark-950 transition-colors duration-200">
+        <div className="text-xl text-gray-900 dark:text-gray-300">Loading...</div>
       </div>
     );
   }
@@ -48,16 +48,16 @@ export function CategoryPage({ category }: CategoryPageProps) {
   const remainingArticles = articles.slice(1);
 
   return (
-    <div className="bg-dark-950">
+    <div className="bg-white dark:bg-dark-950 transition-colors duration-200">
       <div className="max-w-7xl mx-auto px-4 py-8">
         <header className="mb-8">
-          <h1 className="text-4xl md:text-5xl font-serif font-bold mb-4 pb-4 border-b-4 border-aurora-500 text-gray-50">
+          <h1 className="text-4xl md:text-5xl font-serif font-bold mb-4 pb-4 border-b-4 border-aurora-600 dark:border-aurora-500 text-gray-900 dark:text-gray-50">
             {CATEGORY_LABELS[category] || category}
           </h1>
         </header>
 
         {featuredArticle && (
-          <section className="mb-12 pb-12 border-b border-dark-800">
+          <section className="mb-12 pb-12 border-b border-gray-200 dark:border-dark-800">
             <ArticleCard article={featuredArticle} variant="hero" />
           </section>
         )}
@@ -71,7 +71,7 @@ export function CategoryPage({ category }: CategoryPageProps) {
 
           {articles.length === 0 && (
             <div className="text-center py-12">
-              <p className="text-xl text-gray-400">No articles found in this category.</p>
+              <p className="text-xl text-gray-600 dark:text-gray-400">No articles found in this category.</p>
             </div>
           )}
         </section>
