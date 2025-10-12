@@ -17,25 +17,32 @@ const SITE_URL = 'https://northstar-news.vercel.app'; // Update with your actual
 const CONTENT_DIR = path.join(__dirname, '../content');
 const OUTPUT_FILE = path.join(__dirname, '../public/sitemap.xml');
 
+// Category mapping from display names to URL paths
+const CATEGORY_MAPPING = {
+  'World News': 'world',
+  'National News': 'us', 
+  'Politics': 'politics',
+  'Business': 'business',
+  'Technology': 'tech',
+  'Sports': 'sports',
+  'Entertainment': 'entertainment',
+  'Health': 'health',
+  'Lifestyle': 'lifestyle',
+  'Travel': 'travel',
+  'Opinion': 'opinion'
+};
+
 /**
  * Parse frontmatter from markdown content
  */
 function parseFrontmatter(content) {
-  const match = content.match(/^---\s*\n(.*?)\n---\s*\n/s);
-  if (!match) return null;
-
-  const frontmatter = {};
-  const lines = match[1].split('\n');
-
-  for (const line of lines) {
-    const [key, ...valueParts] = line.split(':');
-    if (key && valueParts.length > 0) {
-      const value = valueParts.join(':').trim();
-      frontmatter[key.trim()] = value;
-    }
+  try {
+    const { data } = matter(content);
+    return data;
+  } catch (error) {
+    console.warn(`⚠️  Error parsing frontmatter: ${error.message}`);
+    return null;
   }
-
-  return frontmatter;
 }
 
 /**
@@ -65,6 +72,7 @@ function extractArticleData(filePath) {
   try {
     const content = fs.readFileSync(filePath, 'utf-8');
     const frontmatter = parseFrontmatter(content);
+
 
     if (!frontmatter) {
       console.warn(`⚠️  No frontmatter found in: ${filePath}`);
@@ -145,8 +153,9 @@ function generateSitemap(articles) {
 
   // Article pages
   articles.forEach(article => {
+    const categoryPath = CATEGORY_MAPPING[article.category] || article.category.toLowerCase();
     xml += '  <url>\n';
-    xml += `    <loc>${SITE_URL}/${article.category}/${article.slug}</loc>\n`;
+    xml += `    <loc>${SITE_URL}/${categoryPath}/${article.slug}</loc>\n`;
     xml += `    <lastmod>${formatDate(article.updated)}</lastmod>\n`;
     xml += '    <changefreq>weekly</changefreq>\n';
     xml += `    <priority>${calculatePriority(article)}</priority>\n`;
@@ -175,6 +184,7 @@ function main() {
     .sort((a, b) => new Date(b.published) - new Date(a.published)); // Sort by date, newest first
 
   console.log(`✅ Processed ${articles.length} published articles`);
+  
 
   if (articles.length === 0) {
     console.warn('⚠️  No published articles found!');
