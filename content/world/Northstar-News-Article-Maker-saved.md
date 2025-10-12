@@ -3,20 +3,17 @@ title: THE GREAT GAZA SHUFFLE: HOSTAGES OUT, AID IN, AND THE QUEST FOR POST-WAR 
 dek: A tentative ceasefire holds in Gaza as Israel withdraws troops, setting the stage for a critical hostage-for-prisoner exchange, a surge in humanitarian aid, and a high-stakes peace summit in Egypt to decide the region's future.
 slug: the-great-gaza-shuffle-hostages-out-aid-in-post-war-supervision
 category: World News
-tags:
-  - Gaza
-  - Ceasefire
-  - Hostage Exchange
+tags: ['Gaza', 'Ceasefire', 'Hostage-Exchange']
 author: AlinaCode
 author_slug: alin_acode
 published: 2025-10-11T22:00:00.000Z
 updated: 2025-10-12T05:58:00.000Z
 hero_image: https://github.com/cojovi/northstar_news/blob/main/public/Northstar-News-Article-Maker-saved.png?raw=true
-hero_credit: Reuters / Egyptian Presidency
+hero_credit: NorthstarLedger
 thumbnail: https://github.com/cojovi/northstar_news/blob/main/public/Northstar-News-Article-Maker-saved.png?raw=true
 excerpt: As the dawn of October 13, 2025, breaks over a fractured Middle East, a tentative and, dare one say, exhaustingly negotiated ceasefire continues to hold in Gaza. This fragile peace, diligently brokered by a consortium of global powers, has entered its most critical phase, demonstrating that even amidst profound cynicism, diplomacy occasionally manages a limping walk forward.
 reading_time: 11
-location: Gaza, Middle East
+location: Texas, USA
 status: published
 is_satire: false
 ---
