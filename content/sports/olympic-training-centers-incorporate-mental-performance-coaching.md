@@ -8,9 +8,9 @@ author: Lisa Thompson
 author_slug: lisa-thompson
 published: 2025-10-06T09:32:43.276Z
 updated: 2025-10-07T09:32:43.276Z
-hero_image: https://images.pexels.com/photos/46798/the-ball-stadion-football-the-pitch-46798.jpeg?auto=compress&cs=tinysrgb&w=1200
+hero_image: https://github.com/cojovi/northstar_news/blob/main/public/olympic-training-centers.png?raw=true
 hero_credit: Photo via Pexels
-thumbnail: https://images.pexels.com/photos/46798/the-ball-stadion-football-the-pitch-46798.jpeg?auto=compress&cs=tinysrgb&w=400
+thumbnail: https://github.com/cojovi/northstar_news/blob/main/public/olympic-training-centers.png?raw=true
 excerpt: Athletes credit psychological preparation for competitive edge
 reading_time: 4
 location: Colorado Springs, CO

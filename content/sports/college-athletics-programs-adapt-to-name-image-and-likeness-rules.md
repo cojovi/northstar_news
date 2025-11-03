@@ -8,9 +8,9 @@ author: Sarah Mitchell
 author_slug: sarah-mitchell
 published: 2025-09-23T09:32:43.274Z
 updated: 2025-09-24T09:32:43.274Z
-hero_image: https://images.pexels.com/photos/46798/the-ball-stadion-football-the-pitch-46798.jpeg?auto=compress&cs=tinysrgb&w=1200
+hero_image: https://github.com/cojovi/northstar_news/blob/main/public/college-athletics-programs-adapt-to.png?raw=true
 hero_credit: Photo via Pexels
-thumbnail: https://images.pexels.com/photos/46798/the-ball-stadion-football-the-pitch-46798.jpeg?auto=compress&cs=tinysrgb&w=400
+thumbnail: https://github.com/cojovi/northstar_news/blob/main/public/college-athletics-programs-adapt-to.png?raw=true
 excerpt: Universities develop frameworks to support student-athlete opportunities
 reading_time: 7
 location: Indianapolis, IN

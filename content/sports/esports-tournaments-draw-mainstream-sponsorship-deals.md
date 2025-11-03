@@ -8,9 +8,9 @@ author: David Washington
 author_slug: david-washington
 published: 2025-09-17T09:32:43.275Z
 updated: 2025-09-18T09:32:43.275Z
-hero_image: https://images.pexels.com/photos/46798/the-ball-stadion-football-the-pitch-46798.jpeg?auto=compress&cs=tinysrgb&w=1200
+hero_image: https://github.com/cojovi/northstar_news/blob/main/public/esports-tournaments-draw.png?raw=true
 hero_credit: Photo via Pexels
-thumbnail: https://images.pexels.com/photos/46798/the-ball-stadion-football-the-pitch-46798.jpeg?auto=compress&cs=tinysrgb&w=400
+thumbnail: https://github.com/cojovi/northstar_news/blob/main/public/esports-tournaments-draw.png?raw=true
 excerpt: Traditional brands recognize valuable demographics in competitive gaming
 reading_time: 4
 location: Los Angeles, CA

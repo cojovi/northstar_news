@@ -8,9 +8,9 @@ author: Dr. Elena Petrov
 author_slug: elena-petrov
 published: 2025-09-18T09:32:43.275Z
 updated: 2025-09-19T09:32:43.275Z
-hero_image: https://images.pexels.com/photos/46798/the-ball-stadion-football-the-pitch-46798.jpeg?auto=compress&cs=tinysrgb&w=1200
+hero_image: https://github.com/cojovi/northstar_news/blob/main/public/minor-league-teams-experience-attendance.png?raw=true
 hero_credit: Photo via Pexels
-thumbnail: https://images.pexels.com/photos/46798/the-ball-stadion-football-the-pitch-46798.jpeg?auto=compress&cs=tinysrgb&w=400
+thumbnail: https://github.com/cojovi/northstar_news/blob/main/public/minor-league-teams-experience-attendance.png?raw=true
 excerpt: Affordable family entertainment drives growth in smaller markets
 reading_time: 7
 location: Durham, NC
