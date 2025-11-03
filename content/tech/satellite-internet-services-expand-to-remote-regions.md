@@ -8,9 +8,9 @@ author: James Chen
 author_slug: james-chen
 published: 2025-09-24T09:32:43.268Z
 updated: 2025-09-25T09:32:43.268Z
-hero_image: https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1200
+hero_image: https://github.com/cojovi/northstar_news/blob/main/public/satellite-internet-services-expand-to.png?raw=true
 hero_credit: Photo via Pexels
-thumbnail: https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=400
+thumbnail: https://github.com/cojovi/northstar_news/blob/main/public/satellite-internet-services-expand-to.png?raw=true
 excerpt: Low Earth orbit constellations bridge digital divide in rural areas
 reading_time: 7
 location: Seattle, WA

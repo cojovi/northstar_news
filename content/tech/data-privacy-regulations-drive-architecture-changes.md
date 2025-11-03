@@ -8,9 +8,9 @@ author: David Washington
 author_slug: david-washington
 published: 2025-09-23T09:32:43.271Z
 updated: 2025-09-24T09:32:43.271Z
-hero_image: https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1200
+hero_image: https://github.com/cojovi/northstar_news/blob/main/public/data-privacy-regulations.png?raw=true
 hero_credit: Photo via Pexels
-thumbnail: https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=400
+thumbnail: https://github.com/cojovi/northstar_news/blob/main/public/data-privacy-regulations.png?raw=true
 excerpt: Tech companies redesign systems to prioritize user control
 reading_time: 5
 location: San Francisco, CA

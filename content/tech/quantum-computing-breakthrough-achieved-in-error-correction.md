@@ -8,9 +8,9 @@ author: Marcus Rodriguez
 author_slug: marcus-rodriguez
 published: 2025-09-28T09:32:43.267Z
 updated: 2025-09-29T09:32:43.267Z
-hero_image: https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1200
+hero_image: https://github.com/cojovi/northstar_news/blob/main/public/quantum-computing-breakthrough.png?raw=true
 hero_credit: Photo via Pexels
-thumbnail: https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=400
+thumbnail: https://github.com/cojovi/northstar_news/blob/main/public/quantum-computing-breakthrough.png?raw=true
 excerpt: Research team demonstrates stable qubit operations at room temperature
 reading_time: 4
 location: Boston, MA
