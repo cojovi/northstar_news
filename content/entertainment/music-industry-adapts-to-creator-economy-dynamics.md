@@ -8,9 +8,9 @@ author: Dr. Elena Petrov
 author_slug: elena-petrov
 published: 2025-09-12T09:32:43.273Z
 updated: 2025-09-13T09:32:43.273Z
-hero_image: https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w=1200
+hero_image: https://github.com/cojovi/northstar_news/blob/main/public/music-industry-adapts-to-creator.png?raw=true
 hero_credit: Photo via Pexels
-thumbnail: https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w=400
+thumbnail: https://github.com/cojovi/northstar_news/blob/main/public/music-industry-adapts-to-creator.png?raw=true
 excerpt: Artists leverage social platforms to build direct fan relationships
 reading_time: 5
 location: Nashville, TN

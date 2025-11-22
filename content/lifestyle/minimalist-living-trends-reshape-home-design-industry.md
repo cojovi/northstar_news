@@ -8,9 +8,9 @@ author: Sarah Mitchell
 author_slug: sarah-mitchell
 published: 2025-09-17T09:32:43.277Z
 updated: 2025-09-18T09:32:43.277Z
-hero_image: https://images.pexels.com/photos/1571458/pexels-photo-1571458.jpeg?auto=compress&cs=tinysrgb&w=1200
+hero_image: https://github.com/cojovi/northstar_news/blob/main/public/minimalist-living-trends-reshape-home.png?raw=true
 hero_credit: Photo via Pexels
-thumbnail: https://images.pexels.com/photos/1571458/pexels-photo-1571458.jpeg?auto=compress&cs=tinysrgb&w=400
+thumbnail: https://github.com/cojovi/northstar_news/blob/main/public/minimalist-living-trends-reshape-home.png?raw=true
 excerpt: Consumers prioritize quality, functionality, and sustainable materials
 reading_time: 6
 location: Portland, OR

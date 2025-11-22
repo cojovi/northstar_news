@@ -8,9 +8,9 @@ author: David Washington
 author_slug: david-washington
 published: 2025-10-01T09:32:43.272Z
 updated: 2025-10-02T09:32:43.272Z
-hero_image: https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=1200
+hero_image: https://github.com/cojovi/northstar_news/blob/main/public/rural-healthcare-access-improved-through.png?raw=true
 hero_credit: Photo via Pexels
-thumbnail: https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=400
+thumbnail: https://github.com/cojovi/northstar_news/blob/main/public/rural-healthcare-access-improved-through.png?raw=true
 excerpt: Regional partnerships bring specialists to underserved communities
 reading_time: 7
 location: Bozeman, MT

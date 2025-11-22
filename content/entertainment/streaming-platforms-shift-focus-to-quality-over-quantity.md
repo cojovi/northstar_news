@@ -8,9 +8,9 @@ author: Sarah Mitchell
 author_slug: sarah-mitchell
 published: 2025-10-04T09:32:43.273Z
 updated: 2025-10-05T09:32:43.273Z
-hero_image: https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w=1200
+hero_image: https://github.com/cojovi/northstar_news/blob/main/public/streaming-platforms-shift-focus-to.png?raw=true
 hero_credit: Photo via Pexels
-thumbnail: https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w=400
+thumbnail: https://github.com/cojovi/northstar_news/blob/main/public/streaming-platforms-shift-focus-to.png?raw=true
 excerpt: Industry consolidation leads to more selective content strategies
 reading_time: 6
 location: Los Angeles, CA

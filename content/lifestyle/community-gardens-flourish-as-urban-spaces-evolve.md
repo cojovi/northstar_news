@@ -8,9 +8,9 @@ author: Marcus Rodriguez
 author_slug: marcus-rodriguez
 published: 2025-09-26T09:32:43.277Z
 updated: 2025-09-27T09:32:43.277Z
-hero_image: https://images.pexels.com/photos/1571458/pexels-photo-1571458.jpeg?auto=compress&cs=tinysrgb&w=1200
+hero_image: https://github.com/cojovi/northstar_news/blob/main/public/community-gardens-flourish-as-urban.png?raw=true
 hero_credit: Photo via Pexels
-thumbnail: https://images.pexels.com/photos/1571458/pexels-photo-1571458.jpeg?auto=compress&cs=tinysrgb&w=400
+thumbnail: https://github.com/cojovi/northstar_news/blob/main/public/community-gardens-flourish-as-urban.png?raw=true
 excerpt: Residents find connection and fresh produce in shared green spaces
 reading_time: 6
 location: Seattle, WA
