@@ -8,9 +8,9 @@ author: Amanda Foster
 author_slug: amanda-foster
 published: 2025-09-16T09:32:43.272Z
 updated: 2025-09-17T09:32:43.272Z
-hero_image: https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=1200
+hero_image: https://github.com/cojovi/northstar_news/blob/main/public/vaccine-development-timelines.png?raw=true
 hero_credit: Photo via Pexels
-thumbnail: https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=400
+thumbnail: https://github.com/cojovi/northstar_news/blob/main/public/vaccine-development-timelines.png?raw=true
 excerpt: mRNA and vector-based methods promise faster response to emerging threats
 reading_time: 7
 location: Boston, MA

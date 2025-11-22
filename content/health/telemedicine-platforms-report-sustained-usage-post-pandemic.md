@@ -8,9 +8,9 @@ author: Sarah Mitchell
 author_slug: sarah-mitchell
 published: 2025-09-24T09:32:43.271Z
 updated: 2025-09-25T09:32:43.271Z
-hero_image: https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=1200
+hero_image: https://github.com/cojovi/northstar_news/blob/main/public/telemedicine-platforms-report.png?raw=true
 hero_credit: Photo via Pexels
-thumbnail: https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=400
+thumbnail: https://github.com/cojovi/northstar_news/blob/main/public/telemedicine-platforms-report.png?raw=true
 excerpt: Patients appreciate convenience as doctors refine virtual care protocols
 reading_time: 5
 location: Houston, TX
