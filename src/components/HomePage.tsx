@@ -3,12 +3,16 @@ import type { Article } from '../types/article';
 import { getAllArticles, getArticlesByCategory, getTrendingArticles } from '../lib/content';
 import { ArticleCard } from './ArticleCard';
 import { LoadingSpinner } from './LoadingSpinner';
+import { supabase } from '../lib/supabase';
 
 export function HomePage() {
   const [latestArticles, setLatestArticles] = useState<Article[]>([]);
   const [trending, setTrending] = useState<Article[]>([]);
   const [categoryArticles, setCategoryArticles] = useState<Record<string, Article[]>>({});
   const [loading, setLoading] = useState(true);
+  const [email, setEmail] = useState('');
+  const [subscribeStatus, setSubscribeStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+  const [subscribeMessage, setSubscribeMessage] = useState('');
 
   useEffect(() => {
     try {
@@ -33,6 +37,55 @@ export function HomePage() {
       setLoading(false);
     }
   }, []);
+
+  const handleSubscribe = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (!email || !email.includes('@')) {
+      setSubscribeStatus('error');
+      setSubscribeMessage('Please enter a valid email address.');
+      return;
+    }
+
+    setSubscribeStatus('loading');
+    setSubscribeMessage('');
+
+    try {
+      const { error } = await supabase
+        .from('newsletter_subscriptions')
+        .insert([
+          {
+            email: email.toLowerCase().trim(),
+            subscribed_at: new Date().toISOString(),
+            source: 'homepage'
+          }
+        ]);
+
+      if (error) {
+        // Check if it's a duplicate email error
+        if (error.code === '23505') {
+          setSubscribeStatus('error');
+          setSubscribeMessage('This email is already subscribed.');
+        } else {
+          throw error;
+        }
+      } else {
+        setSubscribeStatus('success');
+        setSubscribeMessage('Thanks for subscribing!');
+        setEmail('');
+      }
+    } catch (error) {
+      console.error('Subscription error:', error);
+      setSubscribeStatus('error');
+      setSubscribeMessage('Something went wrong. Please try again.');
+    }
+
+    // Clear message after 5 seconds
+    setTimeout(() => {
+      setSubscribeStatus('idle');
+      setSubscribeMessage('');
+    }, 5000);
+  };
 
   if (loading) {
     return <LoadingSpinner />;
@@ -91,18 +144,27 @@ export function HomePage() {
                   <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
                     Get the latest news delivered to your inbox.
                   </p>
-                  <form className="space-y-3">
+                  <form onSubmit={handleSubscribe} className="space-y-3">
                     <input
                       type="email"
                       placeholder="Your email"
-                      className="w-full px-3 py-2 bg-white dark:bg-dark-800 border border-gray-300 dark:border-dark-600 rounded text-gray-900 dark:text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-aurora-500 transition-colors duration-200"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      disabled={subscribeStatus === 'loading'}
+                      className="w-full px-3 py-2 bg-white dark:bg-dark-800 border border-gray-300 dark:border-dark-600 rounded text-gray-900 dark:text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-aurora-500 transition-colors duration-200 disabled:opacity-50"
                     />
                     <button
                       type="submit"
-                      className="w-full px-4 py-2 bg-aurora-600 text-white font-medium rounded hover:bg-aurora-700 transition-colors"
+                      disabled={subscribeStatus === 'loading'}
+                      className="w-full px-4 py-2 bg-aurora-600 text-white font-medium rounded hover:bg-aurora-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                     >
-                      Subscribe
+                      {subscribeStatus === 'loading' ? 'Subscribing...' : 'Subscribe'}
                     </button>
+                    {subscribeMessage && (
+                      <p className={`text-sm ${subscribeStatus === 'success' ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400'}`}>
+                        {subscribeMessage}
+                      </p>
+                    )}
                   </form>
                 </div>
               </div>
