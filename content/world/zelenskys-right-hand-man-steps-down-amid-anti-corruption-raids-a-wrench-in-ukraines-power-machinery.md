@@ -1,19 +1,19 @@
 ---
-title: Zelensky’s Right Hand Man Steps Down Amid Anti-Corruption Raids: A Wrench in Ukraine's Power Machinery?
-dek: Andrii Yermak's resignation amid anti-corruption raids marks a significant fallout in the Zelensky administration.
+title: "Zelensky's Right Hand Man Steps Down Amid Anti-Corruption Raids: A Wrench in Ukraine's Power Machinery?"
+dek: "Andrii Yermak's resignation amid anti-corruption raids marks a significant fallout in the Zelensky administration."
 slug: zelenskys-right-hand-man-steps-down-amid-anti-corruption-raids-a-wrench-in-ukraines-power-machinery
 category: world
-tags: ["Ukraine", "Andrii Yermak", "Volodymyr Zelensky", "graft probe", "political drama"]
-author: Samuel Jackson
+tags: ['Ukraine', 'Andrii Yermak', 'Volodymyr Zelensky', 'graft probe', 'political drama']
+author: "Samuel Jackson"
 author_slug: samuel-jackson
 published: 2025-11-28T18:49:33.896870+00:00
 updated: 2025-11-28T18:49:33.896870+00:00
 hero_image: https://github.com/cojovi/northstar_news/blob/main/public/zelenskys-right-hand-man-steps-down-amid-anti-corr.png?raw=true
 hero_credit: Photo via Pexels
 thumbnail: https://github.com/cojovi/northstar_news/blob/main/public/zelenskys-right-hand-man-steps-down-amid-anti-corr.png?raw=true
-excerpt: In what can only be described as a high-stakes political drama, Andrii Yermak, top aide to Ukrainian President Volodymyr Zelensky, and essentially the president's right hand man, has stepped down from his lofty perch amidst a sweeping graft probe.
+excerpt: "In what can only be described as a high-stakes political drama, Andrii Yermak, top aide to Ukrainian President Volodymyr Zelensky, and essentially the president's right hand man, has stepped down from his lofty perch amidst a sweeping graft probe."
 reading_time: 3
-location: Ukraine
+location: "Ukraine"
 status: published
 is_satire: false
 ---

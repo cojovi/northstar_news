@@ -457,6 +457,21 @@ def generate_image(client, prompt, output_path):
     return output_path
 
 
+def yaml_escape(value):
+    """Properly escape a string for YAML, returning quoted string if needed."""
+    if not value:
+        return '""'
+
+    # Convert to string if not already
+    value = str(value)
+
+    # Replace any internal double quotes with escaped quotes
+    value = value.replace('"', '\\"')
+
+    # Always wrap in double quotes for safety
+    return f'"{value}"'
+
+
 def create_markdown_file(title, dek, slug, category, tags, author, author_slug,
                         location, body, image_filename):
     """Create the markdown file with proper front matter."""
@@ -482,26 +497,32 @@ def create_markdown_file(title, dek, slug, category, tags, author, author_slug,
     # Image URLs
     image_url = f"{GITHUB_REPO_URL}/{image_filename}?raw=true"
 
-    # Format tags
-    tags_str = json.dumps(tags)
+    # Format tags - use array format with proper quoting
+    tags_formatted = "[" + ", ".join(f"'{tag}'" for tag in tags) + "]"
+
+    # Properly escape all string values for YAML
+    title_escaped = yaml_escape(title)
+    dek_escaped = yaml_escape(dek)
+    author_escaped = yaml_escape(author)
+    excerpt_escaped = yaml_escape(excerpt)
 
     # Build front matter
-    location_line = f"location: {location}\n" if location else ""
+    location_line = f"location: {yaml_escape(location)}\n" if location else ""
 
     front_matter = f"""---
-title: {title}
-dek: {dek}
+title: {title_escaped}
+dek: {dek_escaped}
 slug: {slug}
 category: {category}
-tags: {tags_str}
-author: {author}
+tags: {tags_formatted}
+author: {author_escaped}
 author_slug: {author_slug}
 published: {published}
 updated: {updated}
 hero_image: {image_url}
 hero_credit: Photo via Pexels
 thumbnail: {image_url}
-excerpt: {excerpt}
+excerpt: {excerpt_escaped}
 reading_time: {reading_time}
 {location_line}status: published
 is_satire: false
