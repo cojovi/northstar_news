@@ -1,0 +1,254 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## Project Overview
+
+The Northstar Ledger is a file-based news publication built with React, TypeScript, and Vite. It's a static site that uses markdown files for content management, with no database required.
+
+## Development Commands
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server (runs on http://localhost:5173)
+# Automatically generates sitemap before starting
+npm run dev
+
+# Build for production
+# Automatically generates sitemap before building
+npm run build
+
+# Preview production build
+npm run preview
+
+# Type checking (use this before committing)
+npm run typecheck
+
+# Lint code
+npm run lint
+
+# Generate sitemap manually
+npm run sitemap
+```
+
+## Architecture
+
+### Content Management System
+
+The site uses a **file-based content system** where articles are stored as markdown files with YAML front matter:
+
+- **Content location**: `/content/{category}/{slug}.md`
+- **Content loading**: Uses Vite's `import.meta.glob` to eagerly load all markdown files at build time (src/lib/content.ts:37-41)
+- **Parsing**: Custom markdown parser extracts front matter and body (src/lib/content.ts:6-35)
+- **Caching**: Articles are cached in memory after first load (src/lib/content.ts:3-4)
+- **Filtering**: Only articles with `status: published` are included (src/lib/content.ts:55)
+
+### Routing System
+
+Client-side routing is implemented in `src/App.tsx` without external libraries:
+
+- **Route parsing**: Path-based routing with URL patterns like `/{category}/{slug}` (src/App.tsx:17-43)
+- **Navigation**: Intercepts anchor clicks for same-origin links (src/App.tsx:68-85)
+- **History**: Patches `window.history.pushState` to trigger route updates (src/App.tsx:55-60)
+- **Routes**: `home`, `category`, `article`, `search`, `about`
+
+### Content API
+
+The content library (src/lib/content.ts) provides these key functions:
+
+- `getAllArticles()` - Returns all published articles, sorted by date (newest first)
+- `getArticleBySlug(category, slug)` - Retrieves specific article with caching
+- `getArticlesByCategory(category, limit?)` - Filters articles by category
+- `searchArticles(query)` - Full-text search across title, dek, excerpt, tags, and content
+- `getRelatedArticles(article, limit)` - Finds related articles based on category, tags, and author
+- `getTrendingArticles(limit)` - Returns articles published in last 2 days
+
+### Sitemap Generation
+
+Automatic sitemap generation is triggered before development and production builds:
+
+- **Script**: `scripts/generate-sitemap.js`
+- **Output**: `public/sitemap.xml`
+- **Includes**: Homepage, category pages, and all published articles
+- **Priority**: Dynamic priority based on article age (1.0 for <7 days, 0.8 for <30 days, etc.)
+
+### Theme System
+
+Dark mode support via `src/lib/ThemeContext.tsx`:
+
+- Uses React Context for theme state
+- Persists preference to localStorage
+- Applies `dark` class to document root
+- Tailwind configured with `darkMode: 'class'`
+
+### Styling
+
+- **Framework**: Tailwind CSS with dark mode support
+- **Fonts**: Lora (serif) for headlines, Inter (sans-serif) for body text
+- **Custom colors**: `aurora` (teal accent) and `dark` (dark mode grays)
+- **Config**: `tailwind.config.js`
+
+## Article Front Matter Schema
+
+Every article requires these fields:
+
+```yaml
+title: string          # Main headline
+dek: string           # Subheading/summary
+slug: string          # URL-friendly identifier
+category: string      # Category name (us, world, politics, business, tech, health, entertainment, sports, opinion, lifestyle, travel)
+tags: string[]        # Array of tags
+author: string        # Author name
+author_slug: string   # URL-friendly author identifier
+published: string     # ISO 8601 datetime
+updated: string       # ISO 8601 datetime
+hero_image: string    # URL to large image
+hero_credit: string   # Photo credit
+thumbnail: string     # URL to thumbnail
+excerpt: string       # Brief description for listings
+reading_time: number  # Minutes to read
+location?: string     # Optional location
+status: 'draft' | 'published'
+is_satire: boolean
+canonical_url?: string # Optional
+```
+
+## Automated Article Creation
+
+The repository includes an autonomous article creation tool:
+
+### Article Creator Script (`content/create_article.py`)
+
+**Purpose**: Fully automated blog post generation with integrated image creation.
+
+**Features**:
+- Generates 1200-1750 word articles from ideas, URLs, or unstructured text
+- Analyzes existing articles to match publication tone and style
+- Auto-generates all metadata (category, tags, location, author, etc.)
+- Creates photorealistic hero images using DALL-E 3
+- Produces complete markdown files ready for publication
+- No manual intervention required
+
+**Usage**:
+```bash
+cd content
+export OPENAI_API_KEY='your-key'
+python3 create_article.py
+# Then paste: idea, URL, or text, press Ctrl+D
+```
+
+**Input Types**:
+1. **Simple idea**: "Rise of AI in healthcare"
+2. **URL to rewrite**: "https://example.com/article"
+3. **Unstructured text**: Any notes or text blurbs
+
+**What it generates**:
+- Random author name and slug
+- Appropriate category (auto-detected)
+- 3-5 relevant tags
+- Geographic location (if applicable)
+- Compelling headline and subheading (dek)
+- 1200-1750 word article body
+- Photorealistic hero image
+- Complete markdown with proper front matter
+
+**Configuration**:
+- Always sets `status: published`
+- Always sets `is_satire: false`
+- Prompts for optional custom tone (defaults to analyzed tone)
+- Randomizes author from name pools in script
+
+See `content/ARTICLE_CREATOR_README.md` for detailed documentation.
+
+### Image Generation Script (`content/generate_article_image.py`)
+
+**Purpose**: Generate hero images for existing articles (now integrated into `create_article.py`).
+
+**Standalone usage** (if needed):
+```bash
+cd content
+python3 generate_article_image.py path/to/article.md
+```
+
+This reads the article, generates an appropriate photorealistic image, saves it to `public/`, and updates the markdown file's `hero_image` and `thumbnail` fields.
+
+## Key Implementation Details
+
+### Adding New Articles
+
+**Option 1: Automated (Recommended)**
+```bash
+cd content
+python3 create_article.py
+# Provide idea/URL/text, done!
+```
+
+**Option 2: Manual**
+1. Create markdown file in `/content/{category}/{slug}.md`
+2. Add required front matter with `status: published`
+3. Write content in markdown below front matter
+4. Sitemap auto-regenerates on next `npm run dev` or `npm run build`
+
+### Content Loading Flow
+
+1. Vite's `import.meta.glob` loads all markdown files at build time as raw strings
+2. `parseMarkdown()` extracts front matter and body using regex
+3. Articles filtered to only include `status: published`
+4. Sorted by publication date (newest first)
+5. Cached in memory for subsequent requests
+
+### Search Implementation
+
+Full-text search is implemented in-memory:
+- Searches across: title, dek, excerpt, tags, content
+- Case-insensitive matching
+- No external search index required
+
+### Related Articles Algorithm
+
+Scoring system (src/lib/content.ts:136-153):
+- Same category: +3 points
+- Shared tag: +2 points per tag
+- Same author: +1 point
+- Returns top 4 articles by score
+
+## Category Structure
+
+Articles organized in these categories:
+- `us` - U.S. News
+- `world` - World News
+- `politics` - Politics
+- `business` - Business
+- `tech` - Technology
+- `health` - Health
+- `entertainment` - Entertainment
+- `sports` - Sports
+- `opinion` - Opinion
+- `lifestyle` - Lifestyle
+- `travel` - Travel
+
+## SEO Features
+
+- NewsArticle schema.org structured data on article pages
+- Open Graph and Twitter Card meta tags
+- Semantic HTML with proper heading hierarchy
+- Automatic sitemap generation at `/sitemap.xml`
+- RSS/Atom feed utilities (src/lib/feeds.ts) - not currently exposed
+
+## Type Definitions
+
+Core types in `src/types/article.ts`:
+- `ArticleFrontMatter` - Front matter fields
+- `Article` - Front matter + content + categoryPath
+- `AuthorInfo`, `LiveUpdate`, `VideoItem`, `PhotoEssay` - Additional types for future features
+
+## Design Philosophy
+
+The site maintains a professional news aesthetic:
+- Serif headlines for credibility
+- Clean typography and generous spacing
+- Responsive design for all screen sizes
+- Accessible navigation with keyboard support
+- Professional presentation for satire content (not immediately obvious)
