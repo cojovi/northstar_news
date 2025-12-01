@@ -17,7 +17,7 @@ function parseMarkdown(content: string): { frontMatter: ArticleFrontMatter; body
   frontMatterStr.split('\n').forEach(line => {
     const [key, ...valueParts] = line.split(':');
     if (key && valueParts.length) {
-      const value = valueParts.join(':').trim();
+      let value = valueParts.join(':').trim();
 
       if (value.startsWith('[') && value.endsWith(']')) {
         frontMatter[key.trim()] = value.slice(1, -1).split(',').map(v => v.trim().replace(/^['"]|['"]$/g, ''));
@@ -26,12 +26,17 @@ function parseMarkdown(content: string): { frontMatter: ArticleFrontMatter; body
       } else if (!isNaN(Number(value)) && value !== '') {
         frontMatter[key.trim()] = Number(value);
       } else {
-        frontMatter[key.trim()] = value.replace(/^['"]|['"]$/g, '');
+        // Remove surrounding quotes and handle escaped quotes
+        value = value.replace(/^['"]|['"]$/g, '');
+        // Unescape escaped quotes
+        value = value.replace(/\\"/g, '"');
+        value = value.replace(/\\'/g, "'");
+        frontMatter[key.trim()] = value;
       }
     }
   });
 
-  return { frontMatter: frontMatter as ArticleFrontMatter, body };
+  return { frontMatter: frontMatter as unknown as ArticleFrontMatter, body };
 }
 
 const modules = import.meta.glob('../../content/**/*.md', {

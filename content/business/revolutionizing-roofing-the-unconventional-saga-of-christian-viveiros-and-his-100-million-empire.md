@@ -1,5 +1,5 @@
 ---
-title: "\"Revolutionizing Roofing: The Unconventional Saga of Christian Viveiros and His $100 Million Empire\""
+title: "Revolutionizing Roofing: The Unconventional Saga of Christian Viveiros and His $100 Million Empire"
 dek: "Christian Viveiros, the unconventional CEO of CMAC Roofing, builds a $100 million people-first empire."
 slug: revolutionizing-roofing-the-unconventional-saga-of-christian-viveiros-and-his-100-million-empire
 category: business
