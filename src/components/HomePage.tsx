@@ -47,6 +47,17 @@ export function HomePage() {
       return;
     }
 
+    // Check if Supabase is configured
+    if (!supabase) {
+      setSubscribeStatus('error');
+      setSubscribeMessage('Newsletter subscription is not configured.');
+      setTimeout(() => {
+        setSubscribeStatus('idle');
+        setSubscribeMessage('');
+      }, 5000);
+      return;
+    }
+
     setSubscribeStatus('loading');
     setSubscribeMessage('');
 
