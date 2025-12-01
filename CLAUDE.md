@@ -33,7 +33,57 @@ npm run lint
 npm run sitemap
 ```
 
+## Environment Setup
+
+The site uses environment variables for optional features. Create a `.env` file in the root directory:
+
+```bash
+# Supabase (optional - for newsletter subscriptions)
+VITE_SUPABASE_URL=your-supabase-url
+VITE_SUPABASE_ANON_KEY=your-supabase-anon-key
+```
+
+**Note**: The site works without these variables. Newsletter subscription will be disabled if Supabase credentials are not configured (src/lib/supabase.ts:6-8).
+
 ## Architecture
+
+### Project Structure
+
+```
+/content/                    # Markdown articles organized by category
+  /{category}/*.md          # Article files with YAML front matter
+  create_article.py         # Automated article generation script
+  generate_article_image.py # Image generation for articles
+
+/src/
+  /components/              # React components
+    Header.tsx             # Site header with navigation
+    Footer.tsx             # Site footer
+    HomePage.tsx           # Home page layout
+    ArticlePage.tsx        # Individual article view
+    CategoryPage.tsx       # Category listing page
+    SearchPage.tsx         # Search interface
+    ArticleCard.tsx        # Reusable article preview card
+
+  /lib/                     # Core utilities
+    content.ts             # Article loading, caching, search
+    feeds.ts               # RSS/Atom feed generation (not exposed)
+    ThemeContext.tsx       # Dark mode context provider
+    supabase.ts            # Supabase client for newsletter
+
+  /types/                   # TypeScript definitions
+    article.ts             # Article and front matter types
+
+  App.tsx                   # Main app with custom router
+  main.tsx                  # Vite entry point
+
+/public/                    # Static assets
+  /images/                  # Local images (optional)
+  sitemap.xml               # Auto-generated sitemap
+
+/scripts/
+  generate-sitemap.js       # Sitemap generation script
+```
 
 ### Content Management System
 
@@ -47,12 +97,18 @@ The site uses a **file-based content system** where articles are stored as markd
 
 ### Routing System
 
-Client-side routing is implemented in `src/App.tsx` without external libraries:
+Custom client-side routing implemented in `src/App.tsx` without external libraries like React Router:
 
 - **Route parsing**: Path-based routing with URL patterns like `/{category}/{slug}` (src/App.tsx:17-43)
-- **Navigation**: Intercepts anchor clicks for same-origin links (src/App.tsx:68-85)
-- **History**: Patches `window.history.pushState` to trigger route updates (src/App.tsx:55-60)
-- **Routes**: `home`, `category`, `article`, `search`, `about`
+- **Navigation**: Intercepts all anchor clicks for same-origin links to prevent full page reloads (src/App.tsx:68-85)
+- **History management**: Patches `window.history.pushState` to trigger React state updates on navigation (src/App.tsx:55-60)
+- **Routes**:
+  - `/` - Home page
+  - `/{category}` - Category listing page
+  - `/{category}/{slug}` - Individual article page
+  - `/search` - Search page
+  - `/about` - About page
+- **SPA behavior**: All navigation is client-side; no page reloads after initial load
 
 ### Content API
 
@@ -89,6 +145,15 @@ Dark mode support via `src/lib/ThemeContext.tsx`:
 - **Fonts**: Lora (serif) for headlines, Inter (sans-serif) for body text
 - **Custom colors**: `aurora` (teal accent) and `dark` (dark mode grays)
 - **Config**: `tailwind.config.js`
+
+### Newsletter Subscription
+
+Optional newsletter feature using Supabase:
+
+- **Implementation**: src/lib/supabase.ts creates Supabase client
+- **Requirements**: Needs `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` environment variables
+- **Graceful degradation**: App works without Supabase; subscription feature simply won't be available
+- **Database table**: Expects a table to store email subscriptions (table structure not specified in code)
 
 ## Article Front Matter Schema
 
@@ -193,11 +258,19 @@ python3 create_article.py
 
 ### Content Loading Flow
 
-1. Vite's `import.meta.glob` loads all markdown files at build time as raw strings
+**At build time:**
+1. Vite's `import.meta.glob` eagerly loads all markdown files as raw strings (src/lib/content.ts:37-41)
+2. Files are bundled into the final JavaScript build
+
+**At runtime:**
+1. `loadAllArticles()` is called on first content access
 2. `parseMarkdown()` extracts front matter and body using regex
 3. Articles filtered to only include `status: published`
 4. Sorted by publication date (newest first)
-5. Cached in memory for subsequent requests
+5. Result cached in `allArticles` variable for subsequent requests
+6. Individual articles cached in `articleCache` Map by `{category}/{slug}` key
+
+**Important**: Content is static after build. To add/update articles in production, you must rebuild and redeploy.
 
 ### Search Implementation
 
@@ -252,3 +325,37 @@ The site maintains a professional news aesthetic:
 - Responsive design for all screen sizes
 - Accessible navigation with keyboard support
 - Professional presentation for satire content (not immediately obvious)
+
+## Deployment Considerations
+
+### Static Site Hosting
+
+This is a fully static site (SPA) that can be deployed to any static host:
+- Netlify, Vercel, Cloudflare Pages (recommended - zero config)
+- GitHub Pages, AWS S3 + CloudFront
+- Any web server (Apache, Nginx, etc.)
+
+### Server Configuration
+
+For proper client-side routing, configure your host to:
+1. Serve `index.html` for all routes (SPA fallback)
+2. This ensures `/category/slug` URLs work when accessed directly
+
+**Example Netlify `_redirects` file:**
+```
+/*    /index.html   200
+```
+
+**Example Vercel `vercel.json`:**
+```json
+{
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+}
+```
+
+### Build Output
+
+- Output directory: `/dist`
+- All content is bundled at build time
+- No server-side rendering or API required
+- Sitemap generated to `/public/sitemap.xml` before build
