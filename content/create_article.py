@@ -136,10 +136,17 @@ Describe the tone, voice, style, and key characteristics in 2-3 sentences. Be sp
 
 
 def detect_input_type(user_input):
-    """Detect if input is a URL, structured text, or just an idea."""
+    """Detect if input is a URL, file path, structured text, or just an idea."""
+    user_input = user_input.strip()
+    
     # Check if it's a URL
-    if re.match(r'https?://', user_input.strip()):
+    if re.match(r'https?://', user_input):
         return 'url'
+    
+    # Check if it's a file path (exists and is a file)
+    file_path = Path(user_input)
+    if file_path.exists() and file_path.is_file():
+        return 'file'
 
     # Check if it has multiple sentences and structure (likely an article or detailed text)
     sentences = re.split(r'[.!?]+', user_input)
@@ -170,6 +177,50 @@ def fetch_url_content(url):
         return text[:8000]  # Limit to avoid token issues
     except Exception as e:
         print(f"❌ Error fetching URL: {e}")
+        return None
+
+
+def read_file_content(file_path):
+    """Read content from a local file."""
+    print(f"📁 Reading content from file: {file_path}")
+    try:
+        file_path_obj = Path(file_path)
+        
+        # Handle relative paths - try relative to content directory first, then current working directory
+        if not file_path_obj.is_absolute():
+            # Try relative to content directory
+            content_rel_path = CONTENT_DIR / file_path_obj
+            if content_rel_path.exists():
+                file_path_obj = content_rel_path
+            # If not found, try relative to current working directory (file_path_obj already set)
+            elif not file_path_obj.exists():
+                # Try with current working directory
+                cwd_path = Path.cwd() / file_path_obj
+                if cwd_path.exists():
+                    file_path_obj = cwd_path
+        
+        if not file_path_obj.exists():
+            print(f"❌ Error: File not found: {file_path}")
+            print(f"   Tried: {file_path}")
+            if not Path(file_path).is_absolute():
+                print(f"   Also tried: {CONTENT_DIR / Path(file_path)}")
+            return None
+        
+        # Read file content
+        with open(file_path_obj, 'r', encoding='utf-8') as f:
+            content = f.read()
+        
+        # If it's markdown, try to extract just the body (skip front matter)
+        if file_path_obj.suffix == '.md':
+            match = re.search(r'^---\s*\n.*?\n---\s*\n(.+)', content, re.DOTALL)
+            if match:
+                content = match.group(1)
+            # If no front matter, use entire content
+        
+        print(f"✓ Read {len(content)} characters from file")
+        return content[:8000]  # Limit to avoid token issues
+    except Exception as e:
+        print(f"❌ Error reading file: {e}")
         return None
 
 
@@ -379,6 +430,19 @@ TITLE: [your headline]
     return title, body
 
 
+def create_article_from_file(client, file_path, tone, custom_tone=None):
+    """Create article from a local file."""
+    print("📄 Processing file content...")
+    
+    content = read_file_content(file_path)
+    if not content:
+        print("❌ Could not read file content")
+        sys.exit(1)
+    
+    # Use the same logic as create_article_from_text since we've extracted the content
+    return create_article_from_text(client, content, tone, custom_tone)
+
+
 def generate_image_prompt(client, title, dek, category, body_preview):
     """Use OpenAI to generate a PHOTOREALISTIC image generation prompt."""
     print("🎨 Generating image prompt...")
@@ -564,6 +628,7 @@ def main():
     print("Enter your blog content (press Enter, then Ctrl+D or Ctrl+Z when done):")
     print("  • A simple idea: 'Rise of AI in healthcare'")
     print("  • A URL: 'https://example.com/article'")
+    print("  • A local file path: './path/to/file.md' or 'health/article.md'")
     print("  • Unstructured text: Paste any text/notes you have")
     print()
 
@@ -601,6 +666,8 @@ def main():
 
     if input_type == 'url':
         title, body = create_article_from_url(client, user_input, default_tone, custom_tone)
+    elif input_type == 'file':
+        title, body = create_article_from_file(client, user_input, default_tone, custom_tone)
     elif input_type == 'text':
         title, body = create_article_from_text(client, user_input, default_tone, custom_tone)
     else:  # idea
