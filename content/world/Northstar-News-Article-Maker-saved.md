@@ -2,7 +2,7 @@
 title: "THE GREAT GAZA SHUFFLE: HOSTAGES OUT, AID IN, AND THE QUEST FOR POST-WAR ADULTERY SUPERVISION"
 dek: A tentative ceasefire holds in Gaza as Israel withdraws troops, setting the stage for a critical hostage-for-prisoner exchange, a surge in humanitarian aid, and a high-stakes peace summit in Egypt to decide the region's future.
 slug: the-great-gaza-shuffle-hostages-out-aid-in-post-war-supervision
-category: World News
+category: world
 tags: ['Gaza', 'Ceasefire', 'Hostage-Exchange']
 author: AlinaCode
 author_slug: alin_acode

@@ -2,7 +2,7 @@
 title: "The Politeness Peril: Are Democrats Courteously Handing Democracy Its Own Demise?"
 dek: "Democrats' adherence to 'outdated etiquette' is undermining their capacity to defend democratic institutions against aggressive norm-breaking, with California Governor Gavin Newsom's Proposition 50 signaling a strategic shift towards impoliteness in politics."
 slug: "the-politeness-peril-democrats-handing-democracy-demise"
-category: "Politics"
+category: politics
 tags: ['Gavin Newsom', 'Democratic Strategy', 'Political Norms']
 author: "NewsPredator"
 author_slug: "newspredator"
