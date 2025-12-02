@@ -1,5 +1,5 @@
 ---
-title: "\"Feasting on Evidence: The Luigi Mangione Murder Case Takes a Darkly Humorous Twist\""
+title: ""Feasting on Evidence: The Luigi Mangione Murder Case Takes a Darkly Humorous Twist""
 dek: "Luigi Mangione's murder case unfolds in court, as defense seeks to dismiss key evidence"
 slug: feasting-on-evidence-the-luigi-mangione-murder-case-takes-a-darkly-humorous-twist
 category: us
