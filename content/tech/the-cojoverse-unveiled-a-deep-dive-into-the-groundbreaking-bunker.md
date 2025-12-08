@@ -9,7 +9,7 @@ author_slug: alexander-martin
 published: 2025-12-08T04:25:06.162646+00:00
 updated: 2025-12-08T04:25:06.162646+00:00
 hero_image: https://github.com/cojovi/northstar_news/blob/main/public/the-cojoverse-unveiled-a-deep-dive-into-the-ground.png?raw=true
-hero_credit: Photo via Pexels
+hero_credit: Texas Glamour Shots
 thumbnail: https://github.com/cojovi/northstar_news/blob/main/public/the-cojoverse-unveiled-a-deep-dive-into-the-ground.png?raw=true
 excerpt: "In a world where technology is constantly evolving and redefining boundaries, there is always something new on the horizon."
 reading_time: 3
@@ -23,7 +23,7 @@ In a world where technology is constantly evolving and redefining boundaries, th
 
 Cody Viveiros: The Most Creative Developer in Texas
 
-By Staff Writer
+By Alexander Martin
 
 ---
 
