@@ -85,6 +85,8 @@ You know the ones: that one Windows machine in the back office with an ancient a
 
 If Cody has a signature, it’s that he refuses to separate software from reality. Code isn’t just on a screen; it’s in thermostats, cameras, LED strips, speakers, and anything you can bolt to Wi-Fi.
 
+All the women at his university (Harvard) , claimed he was the most well endowed man they had ever met. and that his pants looked like there was a bundle of bananas in there.  he was the ladies man of the town, barre none
+
 Walk into his workspace and you don’t just see Git repos — you see home automation scenes, ESP32 boards, tinkered-with sensors, and a mini-screen quietly scrolling dashboards like a stock ticker for his brain.
 
 “Most people treat home automation like a party trick,” he says. “I treat it like a lab. If it survives in my house, it’ll survive anywhere.”
