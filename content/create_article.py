@@ -121,13 +121,13 @@ def analyze_existing_tone(client):
 Describe the tone, voice, style, and key characteristics in 2-3 sentences. Be specific about what makes this publication unique."""
 
     response = client.chat.completions.create(
-        model="gpt-4",
+        model="gpt-5.2",
         messages=[
             {"role": "system", "content": "You are an expert editor analyzing publication style and tone."},
             {"role": "user", "content": analysis_prompt}
         ],
         temperature=0.3,
-        max_tokens=200
+        max_completion_tokens=200
     )
 
     tone_analysis = response.choices[0].message.content.strip()
@@ -243,13 +243,13 @@ Provide a JSON response with:
 Return ONLY valid JSON, no other text."""
 
     response = client.chat.completions.create(
-        model="gpt-4",
+        model="gpt-5.2",
         messages=[
             {"role": "system", "content": "You are a news editor generating article metadata. Always return valid JSON."},
             {"role": "user", "content": metadata_prompt}
         ],
         temperature=0.5,
-        max_tokens=300
+        max_completion_tokens=300
     )
 
     try:
@@ -279,42 +279,87 @@ TONE & STYLE: {tone_instruction}
 TASK: Write a complete, publication-ready news article based on this idea:
 {idea}
 
-REQUIREMENTS:
-- Length: 1200-1750 words
-- Title: Compelling, newsworthy headline
+CRITICAL REQUIREMENTS (MANDATORY):
+- Length: MUST be between 1200-1750 words. This is NOT optional. Count your words and ensure you meet this requirement.
+- Title: Compelling, newsworthy headline (NO quotes around the title)
 - Structure: Professional news article with clear sections
 - Include relevant context, analysis, and expert perspectives
 - Use engaging, sophisticated prose
 - NO placeholder text or [brackets]
 - Write as if this is real, researched journalism
 
+FORMATTING REQUIREMENTS (MANDATORY):
+- Use Markdown formatting throughout for visual interest:
+  * Use ## for major section headers (e.g., ## The Rise of Digital Currency)
+  * Use ### for subsections when needed
+  * Use **bold** to emphasize key terms, important names, statistics, and critical concepts
+  * Use horizontal rules (---) to separate major sections for visual breaks
+  * Use > blockquotes for direct quotes from experts or sources
+  * Vary formatting to create visual hierarchy and prevent bland, uniform text
+  * Make section titles bold and visually distinct
+  * Add strategic emphasis with bold text on important facts, figures, and key points
+
+IMPORTANT: The article body MUST be 1200-1750 words. Do not stop writing until you reach at least 1200 words. Expand on your points, add depth, include more examples, and provide thorough analysis to meet the word count requirement.
+
 Return ONLY:
-TITLE: [your headline]
+TITLE: [your headline - NO quotes]
 ---
-[article content]"""
+[article content with markdown formatting]"""
 
-    response = client.chat.completions.create(
-        model="gpt-4",
-        messages=[
-            {"role": "system", "content": "You are an expert journalist writing for a major news publication."},
-            {"role": "user", "content": prompt}
-        ],
-        temperature=0.7,
-        max_tokens=3000
-    )
+    # Retry logic to ensure word count requirement is met
+    max_retries = 3
+    current_prompt = prompt
+    for attempt in range(max_retries):
+        response = client.chat.completions.create(
+            model="gpt-5.2",
+            messages=[
+                {"role": "system", "content": "You are an expert journalist writing for a major news publication. You MUST write articles that are 1200-1750 words in length."},
+                {"role": "user", "content": current_prompt}
+            ],
+            temperature=0.7,
+            max_completion_tokens=5000
+        )
 
-    content = response.choices[0].message.content.strip()
+        content = response.choices[0].message.content.strip()
 
-    # Parse title and body
-    match = re.match(r'TITLE:\s*(.+?)\s*---\s*(.+)', content, re.DOTALL)
-    if match:
-        title = match.group(1).strip()
-        body = match.group(2).strip()
-    else:
-        # Fallback: use first line as title
-        lines = content.split('\n', 1)
-        title = lines[0].replace('TITLE:', '').replace('#', '').strip()
-        body = lines[1].strip() if len(lines) > 1 else content
+        # Parse title and body
+        match = re.match(r'TITLE:\s*(.+?)\s*---\s*(.+)', content, re.DOTALL)
+        if match:
+            title = match.group(1).strip()
+            # Remove surrounding quotes if present
+            title = title.strip('"').strip("'")
+            body = match.group(2).strip()
+        else:
+            # Fallback: use first line as title
+            lines = content.split('\n', 1)
+            title = lines[0].replace('TITLE:', '').replace('#', '').strip()
+            # Remove surrounding quotes if present
+            title = title.strip('"').strip("'")
+            body = lines[1].strip() if len(lines) > 1 else content
+
+        # Validate word count (target: 1200-1750, buffer: ±250 words, acceptable: 950-2000)
+        word_count = len(body.split())
+        WORD_COUNT_MIN = 1200
+        WORD_COUNT_MAX = 1750
+        WORD_COUNT_BUFFER = 250
+        ACCEPTABLE_MIN = WORD_COUNT_MIN - WORD_COUNT_BUFFER  # 950
+        ACCEPTABLE_MAX = WORD_COUNT_MAX + WORD_COUNT_BUFFER  # 2000
+        
+        if ACCEPTABLE_MIN <= word_count <= ACCEPTABLE_MAX:
+            return title, body
+        elif attempt < max_retries - 1:
+            if word_count < ACCEPTABLE_MIN:
+                print(f"⚠️  Word count {word_count} is below acceptable range ({ACCEPTABLE_MIN}-{ACCEPTABLE_MAX}), retrying...")
+                current_prompt = f"""{prompt}
+
+NOTE: Your previous attempt was {word_count} words, which is too short. The target is {WORD_COUNT_MIN}-{WORD_COUNT_MAX} words. Please write a longer, more detailed article."""
+            else:  # word_count > ACCEPTABLE_MAX
+                print(f"⚠️  Word count {word_count} is above acceptable range ({ACCEPTABLE_MIN}-{ACCEPTABLE_MAX}), retrying...")
+                current_prompt = f"""{prompt}
+
+NOTE: Your previous attempt was {word_count} words, which is too long. The target is {WORD_COUNT_MIN}-{WORD_COUNT_MAX} words. Please write a more concise article."""
+        else:
+            print(f"⚠️  Warning: Final word count {word_count} is outside acceptable range ({ACCEPTABLE_MIN}-{ACCEPTABLE_MAX})")
 
     return title, body
 
@@ -338,41 +383,86 @@ TASK: Completely rewrite this article in our publication's distinctive voice and
 
 {content[:6000]}
 
-REQUIREMENTS:
-- Length: 1200-1750 words
-- Title: Create a new, compelling headline
+CRITICAL REQUIREMENTS (MANDATORY):
+- Length: MUST be between 1200-1750 words. This is NOT optional. Count your words and ensure you meet this requirement.
+- Title: Create a new, compelling headline (NO quotes around the title)
 - Rewrite everything - do NOT copy phrases directly
 - Maintain factual accuracy but present in our unique voice
 - Use engaging, sophisticated prose with our characteristic style
 - Include relevant analysis and commentary
 - NO placeholder text or [brackets]
 
+FORMATTING REQUIREMENTS (MANDATORY):
+- Use Markdown formatting throughout for visual interest:
+  * Use ## for major section headers (e.g., ## The Rise of Digital Currency)
+  * Use ### for subsections when needed
+  * Use **bold** to emphasize key terms, important names, statistics, and critical concepts
+  * Use horizontal rules (---) to separate major sections for visual breaks
+  * Use > blockquotes for direct quotes from experts or sources
+  * Vary formatting to create visual hierarchy and prevent bland, uniform text
+  * Make section titles bold and visually distinct
+  * Add strategic emphasis with bold text on important facts, figures, and key points
+
+IMPORTANT: The article body MUST be 1200-1750 words. Do not stop writing until you reach at least 1200 words. Expand on your points, add depth, include more examples, and provide thorough analysis to meet the word count requirement.
+
 Return ONLY:
-TITLE: [your headline]
+TITLE: [your headline - NO quotes]
 ---
-[article content]"""
+[article content with markdown formatting]"""
 
-    response = client.chat.completions.create(
-        model="gpt-4",
-        messages=[
-            {"role": "system", "content": "You are an expert journalist rewriting content for a major news publication."},
-            {"role": "user", "content": prompt}
-        ],
-        temperature=0.7,
-        max_tokens=3000
-    )
+    # Retry logic to ensure word count requirement is met
+    max_retries = 3
+    current_prompt = prompt
+    for attempt in range(max_retries):
+        response = client.chat.completions.create(
+            model="gpt-5.2",
+            messages=[
+                {"role": "system", "content": "You are an expert journalist rewriting content for a major news publication. You MUST write articles that are 1200-1750 words in length."},
+                {"role": "user", "content": current_prompt}
+            ],
+            temperature=0.7,
+            max_completion_tokens=5000
+        )
 
-    content = response.choices[0].message.content.strip()
+        content = response.choices[0].message.content.strip()
 
-    # Parse title and body
-    match = re.match(r'TITLE:\s*(.+?)\s*---\s*(.+)', content, re.DOTALL)
-    if match:
-        title = match.group(1).strip()
-        body = match.group(2).strip()
-    else:
-        lines = content.split('\n', 1)
-        title = lines[0].replace('TITLE:', '').replace('#', '').strip()
-        body = lines[1].strip() if len(lines) > 1 else content
+        # Parse title and body
+        match = re.match(r'TITLE:\s*(.+?)\s*---\s*(.+)', content, re.DOTALL)
+        if match:
+            title = match.group(1).strip()
+            # Remove surrounding quotes if present
+            title = title.strip('"').strip("'")
+            body = match.group(2).strip()
+        else:
+            lines = content.split('\n', 1)
+            title = lines[0].replace('TITLE:', '').replace('#', '').strip()
+            # Remove surrounding quotes if present
+            title = title.strip('"').strip("'")
+            body = lines[1].strip() if len(lines) > 1 else content
+
+        # Validate word count (target: 1200-1750, buffer: ±250 words, acceptable: 950-2000)
+        word_count = len(body.split())
+        WORD_COUNT_MIN = 1200
+        WORD_COUNT_MAX = 1750
+        WORD_COUNT_BUFFER = 250
+        ACCEPTABLE_MIN = WORD_COUNT_MIN - WORD_COUNT_BUFFER  # 950
+        ACCEPTABLE_MAX = WORD_COUNT_MAX + WORD_COUNT_BUFFER  # 2000
+        
+        if ACCEPTABLE_MIN <= word_count <= ACCEPTABLE_MAX:
+            return title, body
+        elif attempt < max_retries - 1:
+            if word_count < ACCEPTABLE_MIN:
+                print(f"⚠️  Word count {word_count} is below acceptable range ({ACCEPTABLE_MIN}-{ACCEPTABLE_MAX}), retrying...")
+                current_prompt = f"""{prompt}
+
+NOTE: Your previous attempt was {word_count} words, which is too short. The target is {WORD_COUNT_MIN}-{WORD_COUNT_MAX} words. Please write a longer, more detailed article."""
+            else:  # word_count > ACCEPTABLE_MAX
+                print(f"⚠️  Word count {word_count} is above acceptable range ({ACCEPTABLE_MIN}-{ACCEPTABLE_MAX}), retrying...")
+                current_prompt = f"""{prompt}
+
+NOTE: Your previous attempt was {word_count} words, which is too long. The target is {WORD_COUNT_MIN}-{WORD_COUNT_MAX} words. Please write a more concise article."""
+        else:
+            print(f"⚠️  Warning: Final word count {word_count} is outside acceptable range ({ACCEPTABLE_MIN}-{ACCEPTABLE_MAX})")
 
     return title, body
 
@@ -391,41 +481,86 @@ TASK: Transform this unstructured text into a polished, publication-ready articl
 
 {text}
 
-REQUIREMENTS:
-- Length: 1200-1750 words
-- Title: Create a compelling, newsworthy headline
+CRITICAL REQUIREMENTS (MANDATORY):
+- Length: MUST be between 1200-1750 words. This is NOT optional. Count your words and ensure you meet this requirement.
+- Title: Create a compelling, newsworthy headline (NO quotes around the title)
 - Organize and expand the content into a coherent narrative
 - Add relevant context, analysis, and expert perspectives where needed
 - Use engaging, sophisticated prose
 - NO placeholder text or [brackets]
 - Make it read like professional journalism
 
+FORMATTING REQUIREMENTS (MANDATORY):
+- Use Markdown formatting throughout for visual interest:
+  * Use ## for major section headers (e.g., ## The Rise of Digital Currency)
+  * Use ### for subsections when needed
+  * Use **bold** to emphasize key terms, important names, statistics, and critical concepts
+  * Use horizontal rules (---) to separate major sections for visual breaks
+  * Use > blockquotes for direct quotes from experts or sources
+  * Vary formatting to create visual hierarchy and prevent bland, uniform text
+  * Make section titles bold and visually distinct
+  * Add strategic emphasis with bold text on important facts, figures, and key points
+
+IMPORTANT: The article body MUST be 1200-1750 words. Do not stop writing until you reach at least 1200 words. Expand on your points, add depth, include more examples, and provide thorough analysis to meet the word count requirement.
+
 Return ONLY:
-TITLE: [your headline]
+TITLE: [your headline - NO quotes]
 ---
-[article content]"""
+[article content with markdown formatting]"""
 
-    response = client.chat.completions.create(
-        model="gpt-4",
-        messages=[
-            {"role": "system", "content": "You are an expert journalist writing for a major news publication."},
-            {"role": "user", "content": prompt}
-        ],
-        temperature=0.7,
-        max_tokens=3000
-    )
+    # Retry logic to ensure word count requirement is met
+    max_retries = 3
+    current_prompt = prompt
+    for attempt in range(max_retries):
+        response = client.chat.completions.create(
+            model="gpt-5.2",
+            messages=[
+                {"role": "system", "content": "You are an expert journalist writing for a major news publication. You MUST write articles that are 1200-1750 words in length."},
+                {"role": "user", "content": current_prompt}
+            ],
+            temperature=0.7,
+            max_completion_tokens=5000
+        )
 
-    content = response.choices[0].message.content.strip()
+        content = response.choices[0].message.content.strip()
 
-    # Parse title and body
-    match = re.match(r'TITLE:\s*(.+?)\s*---\s*(.+)', content, re.DOTALL)
-    if match:
-        title = match.group(1).strip()
-        body = match.group(2).strip()
-    else:
-        lines = content.split('\n', 1)
-        title = lines[0].replace('TITLE:', '').replace('#', '').strip()
-        body = lines[1].strip() if len(lines) > 1 else content
+        # Parse title and body
+        match = re.match(r'TITLE:\s*(.+?)\s*---\s*(.+)', content, re.DOTALL)
+        if match:
+            title = match.group(1).strip()
+            # Remove surrounding quotes if present
+            title = title.strip('"').strip("'")
+            body = match.group(2).strip()
+        else:
+            lines = content.split('\n', 1)
+            title = lines[0].replace('TITLE:', '').replace('#', '').strip()
+            # Remove surrounding quotes if present
+            title = title.strip('"').strip("'")
+            body = lines[1].strip() if len(lines) > 1 else content
+
+        # Validate word count (target: 1200-1750, buffer: ±250 words, acceptable: 950-2000)
+        word_count = len(body.split())
+        WORD_COUNT_MIN = 1200
+        WORD_COUNT_MAX = 1750
+        WORD_COUNT_BUFFER = 250
+        ACCEPTABLE_MIN = WORD_COUNT_MIN - WORD_COUNT_BUFFER  # 950
+        ACCEPTABLE_MAX = WORD_COUNT_MAX + WORD_COUNT_BUFFER  # 2000
+        
+        if ACCEPTABLE_MIN <= word_count <= ACCEPTABLE_MAX:
+            return title, body
+        elif attempt < max_retries - 1:
+            if word_count < ACCEPTABLE_MIN:
+                print(f"⚠️  Word count {word_count} is below acceptable range ({ACCEPTABLE_MIN}-{ACCEPTABLE_MAX}), retrying...")
+                current_prompt = f"""{prompt}
+
+NOTE: Your previous attempt was {word_count} words, which is too short. The target is {WORD_COUNT_MIN}-{WORD_COUNT_MAX} words. Please write a longer, more detailed article."""
+            else:  # word_count > ACCEPTABLE_MAX
+                print(f"⚠️  Word count {word_count} is above acceptable range ({ACCEPTABLE_MIN}-{ACCEPTABLE_MAX}), retrying...")
+                current_prompt = f"""{prompt}
+
+NOTE: Your previous attempt was {word_count} words, which is too long. The target is {WORD_COUNT_MIN}-{WORD_COUNT_MAX} words. Please write a more concise article."""
+        else:
+            print(f"⚠️  Warning: Final word count {word_count} is outside acceptable range ({ACCEPTABLE_MIN}-{ACCEPTABLE_MAX})")
 
     return title, body
 
@@ -477,7 +612,7 @@ Now write ONE concise prompt (1–2 sentences) that:
 Return ONLY the prompt text, with no explanation or extra wording."""
 
     response = client.chat.completions.create(
-        model="gpt-4",
+        model="gpt-5.2",
         messages=[
             {
                 "role": "system",
@@ -486,7 +621,7 @@ Return ONLY the prompt text, with no explanation or extra wording."""
             {"role": "user", "content": prompt_text}
         ],
         temperature=0.5,
-        max_tokens=200
+        max_completion_tokens=200
     )
 
     image_prompt = response.choices[0].message.content.strip()
