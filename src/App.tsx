@@ -6,6 +6,7 @@ import { HomePage } from './components/HomePage';
 import { ArticlePage } from './components/ArticlePage';
 import { CategoryPage } from './components/CategoryPage';
 import { SearchPage } from './components/SearchPage';
+import { NotificationToast } from './components/NotificationToast';
 
 type Route =
   | { type: 'home' }
@@ -135,10 +136,17 @@ function App() {
 
   return (
     <ThemeProvider>
-      <div className="min-h-screen bg-white dark:bg-dark-900 transition-colors duration-200">
+      <div className="min-h-screen bg-white dark:bg-dark-900 transition-colors duration-200 relative overflow-hidden">
+        <div className="fixed inset-0 -z-10 pointer-events-none">
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-aurora-400/10 dark:bg-aurora-600/10 rounded-full blur-3xl animate-[float_20s_ease-in-out_infinite]" />
+          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-aurora-600/10 dark:bg-aurora-400/10 rounded-full blur-3xl animate-[float_25s_ease-in-out_infinite_reverse]" />
+          <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-aurora-500/5 dark:bg-aurora-500/5 rounded-full blur-3xl animate-[float_30s_ease-in-out_infinite]" />
+        </div>
+
         <Header />
-        <main>{content}</main>
+        <main className="relative z-10">{content}</main>
         <Footer />
+        <NotificationToast />
       </div>
     </ThemeProvider>
   );

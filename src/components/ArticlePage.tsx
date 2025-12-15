@@ -1,8 +1,16 @@
 import { useEffect, useState } from 'react';
-import { Facebook, Twitter, Link as LinkIcon, Clock } from 'lucide-react';
+import { Clock, Bookmark } from 'lucide-react';
 import type { Article } from '../types/article';
 import { getArticleBySlug, getRelatedArticles } from '../lib/content';
 import { ArticleCard } from './ArticleCard';
+import { ReadingProgressRing } from './ReadingProgressRing';
+import { ReactionButtons } from './ReactionButtons';
+import { ShareButton } from './ShareButton';
+import { ArticleStats } from './ArticleStats';
+import { useArticleStats } from '../hooks/useArticleStats';
+import { useBookmark } from '../hooks/useBookmark';
+import { supabase, getUserId } from '../lib/supabase';
+import { showNotification } from '../lib/notifications';
 
 interface ArticlePageProps {
   category: string;
@@ -13,6 +21,16 @@ export function ArticlePage({ category, slug }: ArticlePageProps) {
   const [article, setArticle] = useState<Article | null>(null);
   const [related, setRelated] = useState<Article[]>([]);
   const [loading, setLoading] = useState(true);
+  const articleSlug = `${category}/${slug}`;
+  const { isBookmarked, toggleBookmark } = useBookmark(articleSlug);
+
+  async function handleBookmark() {
+    const added = await toggleBookmark();
+    showNotification(
+      added ? 'Article bookmarked!' : 'Bookmark removed',
+      added ? 'success' : 'info'
+    );
+  }
 
   useEffect(() => {
     try {
@@ -22,6 +40,35 @@ export function ArticlePage({ category, slug }: ArticlePageProps) {
 
         const relatedArticles = getRelatedArticles(articleData, 4);
         setRelated(relatedArticles);
+
+        async function trackView() {
+          const userId = getUserId();
+          const articleSlug = `${category}/${slug}`;
+
+          await supabase.from('article_views').insert({
+            article_slug: articleSlug,
+            user_id: userId,
+          });
+
+          const { data } = await supabase
+            .from('article_stats')
+            .select('*')
+            .eq('article_slug', articleSlug)
+            .maybeSingle();
+
+          if (data) {
+            await supabase
+              .from('article_stats')
+              .update({ views: data.views + 1 })
+              .eq('article_slug', articleSlug);
+          } else {
+            await supabase
+              .from('article_stats')
+              .insert({ article_slug: articleSlug, views: 1 });
+          }
+        }
+
+        trackView();
 
           const structuredData = {
             '@context': 'https://schema.org',
@@ -195,40 +242,26 @@ export function ArticlePage({ category, slug }: ArticlePageProps) {
 
             <div className="flex items-center gap-2">
               <button
-                onClick={() => {
-                  window.open(
-                    `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`,
-                    '_blank',
-                    'width=600,height=400'
-                  );
-                }}
-                className="p-2 hover:bg-gray-100 dark:hover:bg-dark-800 rounded transition-colors text-gray-700 dark:text-gray-300 hover:text-aurora-600 dark:hover:text-aurora-400"
-                aria-label="Share on Facebook"
+                onClick={handleBookmark}
+                className={`
+                  flex items-center gap-2 px-4 py-2 rounded-full border-2 transition-all duration-300
+                  ${isBookmarked
+                    ? 'bg-aurora-600 text-white border-aurora-600'
+                    : 'bg-white dark:bg-dark-800 text-gray-700 dark:text-gray-300 border-gray-300 dark:border-dark-600 hover:border-aurora-600 dark:hover:border-aurora-400'
+                  }
+                `}
               >
-                <Facebook size={20} />
+                <Bookmark size={18} fill={isBookmarked ? 'currentColor' : 'none'} />
+                <span className="text-sm font-medium">
+                  {isBookmarked ? 'Saved' : 'Save'}
+                </span>
               </button>
-              <button
-                onClick={() => {
-                  window.open(
-                    `https://twitter.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(shareText)}`,
-                    '_blank',
-                    'width=600,height=400'
-                  );
-                }}
-                className="p-2 hover:bg-gray-100 dark:hover:bg-dark-800 rounded transition-colors text-gray-700 dark:text-gray-300 hover:text-aurora-600 dark:hover:text-aurora-400"
-                aria-label="Share on Twitter"
-              >
-                <Twitter size={20} />
-              </button>
-              <button
-                onClick={() => {
-                  navigator.clipboard.writeText(shareUrl);
-                }}
-                className="p-2 hover:bg-gray-100 dark:hover:bg-dark-800 rounded transition-colors text-gray-700 dark:text-gray-300 hover:text-aurora-600 dark:hover:text-aurora-400"
-                aria-label="Copy link"
-              >
-                <LinkIcon size={20} />
-              </button>
+
+              <ShareButton
+                articleSlug={articleSlug}
+                title={article.title}
+                url={shareUrl}
+              />
             </div>
           </div>
         </header>
@@ -247,6 +280,17 @@ export function ArticlePage({ category, slug }: ArticlePageProps) {
         </div>
 
         <footer className="mt-12 pt-6 border-t border-gray-200 dark:border-dark-700">
+          <div className="mb-8">
+            <ArticleStats articleSlug={`${category}/${slug}`} />
+          </div>
+
+          <div className="mb-8">
+            <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-gray-50">
+              How did you find this article?
+            </h3>
+            <ReactionButtons articleSlug={`${category}/${slug}`} />
+          </div>
+
           <div className="flex flex-wrap gap-2 mb-6">
             {article.tags.map((tag) => (
               <a
@@ -260,6 +304,8 @@ export function ArticlePage({ category, slug }: ArticlePageProps) {
           </div>
         </footer>
       </div>
+
+      <ReadingProgressRing wordsInArticle={article.content.split(' ').length} />
 
       {related.length > 0 && (
         <section className="bg-gray-50 dark:bg-dark-900 py-12 border-t border-gray-200 dark:border-dark-800">

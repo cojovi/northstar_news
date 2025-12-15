@@ -107,14 +107,18 @@ export function ArticleCard({ article, variant = 'standard', showImage = true }:
   }
 
   return (
-    <article className="group bg-gray-50 dark:bg-dark-850 rounded-lg overflow-hidden border border-gray-200 dark:border-dark-700 hover:border-aurora-600/50 dark:hover:border-aurora-500/50 transition-all duration-300">
-      <a href={articleUrl} className="block">
+    <article className="group relative bg-gray-50 dark:bg-dark-850 rounded-lg overflow-hidden border border-gray-200 dark:border-dark-700 hover:border-aurora-600/50 dark:hover:border-aurora-500/50 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+      <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
+        <div className="absolute inset-0 bg-gradient-to-br from-aurora-600/10 via-transparent to-aurora-400/10" />
+      </div>
+
+      <a href={articleUrl} className="block relative z-10">
         {showImage && article.thumbnail && (
           <div className="overflow-hidden">
             <img
               src={article.thumbnail}
               alt={article.title}
-              className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+              className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
             />
           </div>
         )}

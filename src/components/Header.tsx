@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Search, Menu, X, Sun, Moon } from 'lucide-react';
 import { useTheme } from '../lib/ThemeContext';
 
@@ -25,8 +25,17 @@ export function Header() {
     e.preventDefault();
     if (searchQuery.trim()) {
       window.location.href = `/search?q=${encodeURIComponent(searchQuery)}`;
+      setSearchOpen(false);
     }
   };
+
+  useEffect(() => {
+    const handleEsc = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setSearchOpen(false);
+    };
+    window.addEventListener('keydown', handleEsc);
+    return () => window.removeEventListener('keydown', handleEsc);
+  }, []);
 
   return (
     <header className="sticky top-0 z-50 bg-white/95 dark:bg-dark-900/95 backdrop-blur-sm border-b border-gray-200 dark:border-dark-700 shadow-xl transition-colors duration-200">
@@ -65,20 +74,40 @@ export function Header() {
       </div>
 
       {searchOpen && (
-        <div className="border-b border-gray-200 dark:border-dark-700 bg-gray-50 dark:bg-dark-850 transition-colors duration-200">
-          <div className="max-w-7xl mx-auto px-4 py-3">
-            <form onSubmit={handleSearch}>
-              <input
-                type="search"
-                placeholder="Search articles..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full px-4 py-2 bg-white dark:bg-dark-800 border border-gray-300 dark:border-dark-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-aurora-500 text-gray-900 dark:text-gray-200 placeholder-gray-500 dark:placeholder-gray-500 transition-colors duration-200"
-                autoFocus
-              />
-            </form>
+        <>
+          <div
+            className="fixed inset-0 bg-black/60 backdrop-blur-md z-50 animate-[fadeIn_0.3s_ease-out]"
+            onClick={() => setSearchOpen(false)}
+          />
+          <div className="fixed inset-0 z-50 flex items-start justify-center pt-32 animate-[slideDown_0.3s_ease-out]">
+            <div className="w-full max-w-3xl mx-4">
+              <div className="bg-white/90 dark:bg-dark-800/90 backdrop-blur-xl rounded-2xl shadow-2xl border border-gray-200 dark:border-dark-600 p-6">
+                <div className="flex items-center gap-4 mb-4">
+                  <Search size={24} className="text-aurora-600 dark:text-aurora-400" />
+                  <form onSubmit={handleSearch} className="flex-1">
+                    <input
+                      type="search"
+                      placeholder="Search articles..."
+                      value={searchQuery}
+                      onChange={(e) => setSearchQuery(e.target.value)}
+                      className="w-full bg-transparent text-2xl font-serif focus:outline-none text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500"
+                      autoFocus
+                    />
+                  </form>
+                  <button
+                    onClick={() => setSearchOpen(false)}
+                    className="p-2 hover:bg-gray-100 dark:hover:bg-dark-700 rounded-lg transition-colors"
+                  >
+                    <X size={24} />
+                  </button>
+                </div>
+                <div className="text-sm text-gray-500 dark:text-gray-400">
+                  Press Enter to search or Esc to close
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
+        </>
       )}
 
       <nav className="hidden lg:block border-b border-gray-200 dark:border-dark-800 bg-gray-50/50 dark:bg-dark-900/50 transition-colors duration-200">
