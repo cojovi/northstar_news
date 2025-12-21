@@ -20,6 +20,13 @@ from io import BytesIO
 import json
 import subprocess
 
+# Try to load .env file if python-dotenv is available (optional)
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass  # python-dotenv not installed, rely on environment variables
+
 
 # ========== CONFIGURATION ==========
 CONTENT_DIR = Path(__file__).parent
@@ -236,6 +243,85 @@ def read_file_content(file_path):
         return None
 
 
+def research_with_tavily(api_key, query, max_results=5):
+    """Research a topic using Tavily Search API to gather current, accurate information."""
+    if not api_key:
+        return None
+    
+    print(f"🔍 Researching '{query}' using Tavily...")
+    
+    try:
+        # Tavily Search API endpoint
+        url = "https://api.tavily.com/search"
+        
+        payload = {
+            "api_key": api_key,
+            "query": query,
+            "search_depth": "advanced",  # Use advanced search for better results
+            "max_results": max_results,
+            "include_answer": True,  # Get AI-generated summary
+            "include_raw_content": False,  # Don't include full page content to save tokens
+            "include_domains": [],  # No domain restrictions
+            "exclude_domains": []  # No exclusions
+        }
+        
+        response = requests.post(url, json=payload, timeout=30)
+        response.raise_for_status()
+        
+        data = response.json()
+        
+        # Extract research results
+        research_info = {
+            "answer": data.get("answer", ""),  # AI-generated summary
+            "results": []
+        }
+        
+        # Extract key information from search results
+        for result in data.get("results", [])[:max_results]:
+            research_info["results"].append({
+                "title": result.get("title", ""),
+                "url": result.get("url", ""),
+                "content": result.get("content", ""),  # Snippet of the page
+                "score": result.get("score", 0)  # Relevance score
+            })
+        
+        print(f"✓ Found {len(research_info['results'])} relevant sources")
+        if research_info["answer"]:
+            print(f"✓ Research summary: {research_info['answer'][:100]}...")
+        
+        return research_info
+        
+    except requests.exceptions.RequestException as e:
+        print(f"⚠️  Error researching with Tavily: {e}")
+        return None
+    except Exception as e:
+        print(f"⚠️  Unexpected error during research: {e}")
+        return None
+
+
+def format_research_for_prompt(research_info):
+    """Format research results into a prompt-friendly format."""
+    if not research_info or not research_info.get("results"):
+        return ""
+    
+    formatted = "\n\nCURRENT RESEARCH AND SOURCES (use this for accurate, up-to-date information):\n"
+    
+    # Include the AI-generated answer if available
+    if research_info.get("answer"):
+        formatted += f"Research Summary: {research_info['answer']}\n\n"
+    
+    formatted += "Sources:\n"
+    for i, result in enumerate(research_info["results"][:5], 1):
+        formatted += f"{i}. {result['title']}\n"
+        formatted += f"   URL: {result['url']}\n"
+        formatted += f"   Content: {result['content'][:300]}...\n\n"
+    
+    formatted += "IMPORTANT: Use the information from these sources to ensure accuracy and relevance. "
+    formatted += "Cite facts and statistics from these sources. Ensure all information is current and accurate.\n"
+    
+    return formatted
+
+
 def generate_article_metadata(client, article_content, title):
     """Generate category, tags, location, and other metadata."""
     print("🏷️  Generating metadata...")
@@ -278,11 +364,14 @@ Return ONLY valid JSON, no other text."""
         }
 
 
-def create_article_from_idea(client, idea, tone, custom_tone=None):
+def create_article_from_idea(client, idea, tone, custom_tone=None, research_info=None):
     """Generate a full article from a simple idea."""
     print("💡 Expanding idea into full article...")
 
     tone_instruction = custom_tone if custom_tone else tone
+    
+    # Add research information to prompt if available
+    research_section = format_research_for_prompt(research_info) if research_info else ""
 
     prompt = f"""You are a writer for The Northstar Ledger, a professional news publication.
 
@@ -290,6 +379,7 @@ TONE & STYLE: {tone_instruction}
 
 TASK: Write a complete, publication-ready news article based on this idea:
 {idea}
+{research_section}
 
 CRITICAL REQUIREMENTS (MANDATORY):
 - Length: MUST be between 1200-1750 words. This is NOT optional. Count your words and ensure you meet this requirement.
@@ -376,7 +466,7 @@ NOTE: Your previous attempt was {word_count} words, which is too long. The targe
     return title, body
 
 
-def create_article_from_url(client, url, tone, custom_tone=None):
+def create_article_from_url(client, url, tone, custom_tone=None, research_info=None):
     """Rewrite an article from a URL in our publication's tone."""
     print("🔄 Rewriting article from URL...")
 
@@ -386,6 +476,9 @@ def create_article_from_url(client, url, tone, custom_tone=None):
         sys.exit(1)
 
     tone_instruction = custom_tone if custom_tone else tone
+    
+    # Add research information to prompt if available
+    research_section = format_research_for_prompt(research_info) if research_info else ""
 
     prompt = f"""You are a writer for The Northstar Ledger, a professional news publication.
 
@@ -394,6 +487,7 @@ TONE & STYLE: {tone_instruction}
 TASK: Completely rewrite this article in our publication's distinctive voice and style:
 
 {content[:6000]}
+{research_section}
 
 CRITICAL REQUIREMENTS (MANDATORY):
 - Length: MUST be between 1200-1750 words. This is NOT optional. Count your words and ensure you meet this requirement.
@@ -479,11 +573,14 @@ NOTE: Your previous attempt was {word_count} words, which is too long. The targe
     return title, body
 
 
-def create_article_from_text(client, text, tone, custom_tone=None):
+def create_article_from_text(client, text, tone, custom_tone=None, research_info=None):
     """Transform unstructured text into a polished article."""
     print("📝 Transforming text into article...")
 
     tone_instruction = custom_tone if custom_tone else tone
+    
+    # Add research information to prompt if available
+    research_section = format_research_for_prompt(research_info) if research_info else ""
 
     prompt = f"""You are a writer for The Northstar Ledger, a professional news publication.
 
@@ -492,6 +589,7 @@ TONE & STYLE: {tone_instruction}
 TASK: Transform this unstructured text into a polished, publication-ready article:
 
 {text}
+{research_section}
 
 CRITICAL REQUIREMENTS (MANDATORY):
 - Length: MUST be between 1200-1750 words. This is NOT optional. Count your words and ensure you meet this requirement.
@@ -577,7 +675,7 @@ NOTE: Your previous attempt was {word_count} words, which is too long. The targe
     return title, body
 
 
-def create_article_from_file(client, file_path, tone, custom_tone=None):
+def create_article_from_file(client, file_path, tone, custom_tone=None, research_info=None):
     """Create article from a local file."""
     print("📄 Processing file content...")
     
@@ -587,7 +685,7 @@ def create_article_from_file(client, file_path, tone, custom_tone=None):
         sys.exit(1)
     
     # Use the same logic as create_article_from_text since we've extracted the content
-    return create_article_from_text(client, content, tone, custom_tone)
+    return create_article_from_text(client, content, tone, custom_tone, research_info)
 
 
 def generate_image_prompt(client, title, dek, category, body_preview):
@@ -863,6 +961,13 @@ def main():
 
     client = OpenAI(api_key=openai_api_key)
     gemini_client = genai.Client(api_key=gemini_api_key)
+    
+    # Check Tavily API key (optional - for web research)
+    tavily_api_key = os.getenv('TAVILY_API_KEY')
+    if not tavily_api_key:
+        print("⚠️  TAVILY_API_KEY not set - web research will be disabled")
+        print("   Set it with: export TAVILY_API_KEY='your-api-key' (optional)")
+        print()
 
     # Step 1: Get user input
     print("Enter your blog content (press Enter, then Ctrl+D or Ctrl+Z when done):")
@@ -904,14 +1009,43 @@ def main():
     print(f"📋 Input type detected: {input_type.upper()}")
     print()
 
+    # Step 4a: Perform web research if Tavily API key is available
+    research_info = None
+    if tavily_api_key:
+        # Create a research query based on input type
+        if input_type == 'idea':
+            research_query = user_input
+        elif input_type == 'url':
+            # Extract key terms from URL or use the URL content
+            research_query = user_input
+        elif input_type == 'text':
+            # Extract key terms from text (first 200 chars or first sentence)
+            sentences = re.split(r'[.!?]+', user_input)
+            research_query = sentences[0] if sentences else user_input[:200]
+        else:  # file
+            # For files, we'll research after reading content
+            research_query = None
+        
+        if research_query:
+            research_info = research_with_tavily(tavily_api_key, research_query, max_results=5)
+            if research_info:
+                print()
+    
+    # Step 4b: Generate article with research context
     if input_type == 'url':
-        title, body = create_article_from_url(client, user_input, default_tone, custom_tone)
+        title, body = create_article_from_url(client, user_input, default_tone, custom_tone, research_info)
     elif input_type == 'file':
-        title, body = create_article_from_file(client, user_input, default_tone, custom_tone)
+        # For files, research using filename or first line of content
+        if tavily_api_key and not research_info:
+            # Create research query from filename (remove path and extension)
+            file_stem = Path(user_input).stem
+            research_query = file_stem.replace('-', ' ').replace('_', ' ')
+            research_info = research_with_tavily(tavily_api_key, research_query, max_results=5)
+        title, body = create_article_from_file(client, user_input, default_tone, custom_tone, research_info)
     elif input_type == 'text':
-        title, body = create_article_from_text(client, user_input, default_tone, custom_tone)
+        title, body = create_article_from_text(client, user_input, default_tone, custom_tone, research_info)
     else:  # idea
-        title, body = create_article_from_idea(client, user_input, default_tone, custom_tone)
+        title, body = create_article_from_idea(client, user_input, default_tone, custom_tone, research_info)
 
     print(f"✓ Article generated: {title}")
     print(f"✓ Word count: {len(body.split())} words")
