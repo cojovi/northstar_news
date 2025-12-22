@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <url>
+        <loc>https://www.protocolsentinel.com/</loc>
+        <changefreq>daily</changefreq>
+        <priority>1</priority>
+    </url>
+
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/the-future-is-now-ai-agents.html</loc>
+        <lastmod>2025-12-21T20:05:46.376Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/the-good-bad-techie.html</loc>
+        <lastmod>2025-12-21T20:05:46.376Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/the-libre-computer-le-potato-mini-the-perfect-single-board-computer-for-beginners.html</loc>
+        <lastmod>2025-12-21T20:05:46.376Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/theo_occult.html</loc>
+        <lastmod>2025-12-21T20:05:46.376Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/tinker-time-motorized-tv-mount-built-from-scraps.html</loc>
+        <lastmod>2025-12-21T20:05:46.376Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/tinker-time-raspberry-pi-photo-booth.html</loc>
+        <lastmod>2025-12-21T20:05:46.376Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/tinkering-cheap-electric-lantern.html</loc>
+        <lastmod>2025-12-21T20:05:46.376Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/why-learning-rust-is-the-power-move.html</loc>
+        <lastmod>2025-12-21T20:05:46.376Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/zuck-hawaii-bunker.html</loc>
+        <lastmod>2025-12-21T20:05:46.376Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/googleairelease.html</loc>
+        <lastmod>2025-12-21T20:05:46.366Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/gatheringstorm.html</loc>
+        <lastmod>2025-12-21T20:05:46.366Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/googles-upcoming-generative-ai-tool-could-be-20-times-more-powerful-than-chatgpt.html</loc>
+        <lastmod>2025-12-21T20:05:46.366Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/gunfire_at_abc.html</loc>
+        <lastmod>2025-12-21T20:05:46.366Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/lead_wrangler.html</loc>
+        <lastmod>2025-12-21T20:05:46.366Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/hacking-penetrating-wi-fi-networks-kali-linux-aircrack-ng.html</loc>
+        <lastmod>2025-12-21T20:05:46.366Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/legend-of-vox-machina-percy-pepperbox-list-weapon.html</loc>
+        <lastmod>2025-12-21T20:05:46.366Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/more_conspiracys.html</loc>
+        <lastmod>2025-12-21T20:05:46.366Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/open-ai-unhappy.html</loc>
+        <lastmod>2025-12-21T20:05:46.366Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/openai-unveils-new.html</loc>
+        <lastmod>2025-12-21T20:05:46.366Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/open-ai-qstar.html</loc>
+        <lastmod>2025-12-21T20:05:46.366Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/processfood.html</loc>
+        <lastmod>2025-12-21T20:05:46.366Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/product-review-tech-pouch-by-peakdesigns.html</loc>
+        <lastmod>2025-12-21T20:05:46.366Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/sam-altman-kicked-outta-openaii.html</loc>
+        <lastmod>2025-12-21T20:05:46.366Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/setting-up-your-oobabooga-chatbot-a-rollercoaster-of-text-generation-and-hilarity-%F0%9F%8E%A2.html</loc>
+        <lastmod>2025-12-21T20:05:46.366Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/super-mario-kart-nostalgia-rush.html</loc>
+        <lastmod>2025-12-21T20:05:46.366Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/tesla-fire-what.html</loc>
+        <lastmod>2025-12-21T20:05:46.366Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/the-art-of-bbq-why-texan-smoke-is-the-best-smoke-406fc6.html</loc>
+        <lastmod>2025-12-21T20:05:46.366Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/coverup_bombshell.html</loc>
+        <lastmod>2025-12-21T20:05:46.356Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/dane-white-hate-peloton.html</loc>
+        <lastmod>2025-12-21T20:05:46.356Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/deathstrokemask.html</loc>
+        <lastmod>2025-12-21T20:05:46.356Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/dont-be-fooled-by-fake-accounts-how-to-find-out-if-who-your-messaging-is-real-or-not.html</loc>
+        <lastmod>2025-12-21T20:05:46.356Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/enhanced_sports.html</loc>
+        <lastmod>2025-12-21T20:05:46.356Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/esp8266-nodemcu-the-tiny-cost-efficient-and-fun-tool-your-missing.html</loc>
+        <lastmod>2025-12-21T20:05:46.356Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/10-must-have-home-automation-devices-for-2023.html</loc>
+        <lastmod>2025-12-21T20:05:46.346Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/2018-2-21-experimenting-with-power-strip.html</loc>
+        <lastmod>2025-12-21T20:05:46.346Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/2020-1-3-thorshammer.html</loc>
+        <lastmod>2025-12-21T20:05:46.346Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/2025-06-29-ai-unplugged-from-count-based-exploration-to-a-jam-session-with-vox.html</loc>
+        <lastmod>2025-12-21T20:05:46.346Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/2025-12-18-blackrock-from-wallflower-to-wallstreet-powerhouse-in-the-energy-sector%202.html</loc>
+        <lastmod>2025-12-21T20:05:46.346Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/2025-12-19-two-reindeer-escape-onto-the-i5-the-wild-la-freeway-holiday-moment-that-stopped-traffic-and-what-it-.html</loc>
+        <lastmod>2025-12-21T20:05:46.346Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/2025-12-21-epstein-on-the-sidelines-when-congress-turns-into-a-live-texted-reality-show-and-nobody-wins.html</loc>
+        <lastmod>2025-12-21T20:05:46.346Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/2025-12-21-panya-the-pygmy-hippo-calf-is-the-internets-new-favorite-tiny-chaos-goblin-and-thats-exactly-the-pro.html</loc>
+        <lastmod>2025-12-21T20:05:46.346Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/2025-12-21-snls-christmas-joke-swap-blindsides-colin-jost-again-the-annual-ritual-where-hr-would-die-instantly.html</loc>
+        <lastmod>2025-12-21T20:05:46.346Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/3d-print-stormbreaker.html</loc>
+        <lastmod>2025-12-21T20:05:46.346Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/2025-12-21-when-doj-documents-evaporate-conspiracy-grows-legs-the-curious-case-of-the-disappearing-epstein-file.html</loc>
+        <lastmod>2025-12-21T20:05:46.346Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/5-innovative-uses-for-raspberry-pi-in-the-home.html</loc>
+        <lastmod>2025-12-21T20:05:46.346Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/Apple-AI-mobilemodel.html</loc>
+        <lastmod>2025-12-21T20:05:46.346Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/CapitalGainsBlog.html</loc>
+        <lastmod>2025-12-21T20:05:46.346Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/DronesandDisbelief.html</loc>
+        <lastmod>2025-12-21T20:05:46.346Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/Fanttik-E1-Pro.html</loc>
+        <lastmod>2025-12-21T20:05:46.346Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/OK-so-ChatGPT-just-debugged-my-code-For-real.html</loc>
+        <lastmod>2025-12-21T20:05:46.346Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/Python-Packages-Malware.html</loc>
+        <lastmod>2025-12-21T20:05:46.346Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/ai_olympics.html</loc>
+        <lastmod>2025-12-21T20:05:46.346Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/altering-our-language.html</loc>
+        <lastmod>2025-12-21T20:05:46.346Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/anbernic-rg353ps-the-retro-gaming-handheld-thats-cooler-than-your-uncles-mixtape-%F0%9F%8E%AE%F0%9F%95%B9%EF%B8%8F-2.html</loc>
+        <lastmod>2025-12-21T20:05:46.346Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/area_51.html</loc>
+        <lastmod>2025-12-21T20:05:46.346Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/benheimersHidden.html</loc>
+        <lastmod>2025-12-21T20:05:46.346Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/budget-finds-wyze-watch.html</loc>
+        <lastmod>2025-12-21T20:05:46.346Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/charlie-kirk-israel-stance.html</loc>
+        <lastmod>2025-12-21T20:05:46.346Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/charlie_kirk.html</loc>
+        <lastmod>2025-12-21T20:05:46.346Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/conspiracy_snowpiercer.html</loc>
+        <lastmod>2025-12-21T20:05:46.346Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/nick_vs_tucker.html</loc>
+        <lastmod>2025-10-03T14:20:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/hyundai_ice_raid.html</loc>
+        <lastmod>2025-09-30T16:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/emotional-apathy.html</loc>
+        <lastmod>2025-09-27T16:05:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/Generals_Gone_Wild.html</loc>
+        <lastmod>2025-09-27T14:25:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/doctor_death.html</loc>
+        <lastmod>2025-09-27T10:15:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.protocolsentinel.com/post/2025-09-19-jimmy-kimmel-talk-shit-get-hit-demise.html</loc>
+        <lastmod>2025-09-19T00:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+</urlset>
+<!-- XML Sitemap generated by Hexo SEO Friendly Sitemap Generator -->

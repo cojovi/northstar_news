@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 /**
  * Sitemap Generator
- * Automatically generates sitemap.xml from markdown files in the content directory
+ * Automatically generates multi-file sitemap structure from markdown files
+ * Creates 4 files: sitemap index, post sitemap, section sitemap, page sitemap
  */
 
 import fs from 'fs';
@@ -15,12 +16,16 @@ const __dirname = path.dirname(__filename);
 // Configuration
 const SITE_URL = 'https://thenorthstarledger.com'; // Canonical domain
 const CONTENT_DIR = path.join(__dirname, '../content');
-const OUTPUT_FILE = path.join(__dirname, '../public/sitemap.xml');
+const PUBLIC_DIR = path.join(__dirname, '../public');
+const SITEMAP_INDEX_FILE = path.join(PUBLIC_DIR, 'sitemap.xml');
+const POST_SITEMAP_FILE = path.join(PUBLIC_DIR, 'post-sitemap.xml');
+const SECTION_SITEMAP_FILE = path.join(PUBLIC_DIR, 'section-sitemap.xml');
+const PAGE_SITEMAP_FILE = path.join(PUBLIC_DIR, 'page-sitemap.xml');
 
 // Category mapping from display names to URL paths
 const CATEGORY_MAPPING = {
   'World News': 'world',
-  'National News': 'us', 
+  'National News': 'us',
   'Politics': 'politics',
   'Business': 'business',
   'Technology': 'tech',
@@ -109,7 +114,7 @@ function formatDate(dateString) {
 }
 
 /**
- * Calculate priority based on category and date
+ * Calculate priority based on article date
  */
 function calculatePriority(article) {
   // Higher priority for recent articles
@@ -124,36 +129,51 @@ function calculatePriority(article) {
 }
 
 /**
- * Generate sitemap XML
+ * Normalize category to URL path
  */
-function generateSitemap(articles) {
-  const now = new Date().toISOString().split('T')[0];
+function normalizeCategoryPath(category) {
+  return CATEGORY_MAPPING[category] || category.toLowerCase();
+}
 
-  let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
+/**
+ * Generate sitemap index (main sitemap.xml)
+ */
+function generateSitemapIndex(lastmod) {
+  let xml = '<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>\n';
+  xml += '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
+
+  // Post sitemap
+  xml += '  <sitemap>\n';
+  xml += `    <loc>${SITE_URL}/post-sitemap.xml</loc>\n`;
+  xml += `    <lastmod>${lastmod}</lastmod>\n`;
+  xml += '  </sitemap>\n';
+
+  // Section sitemap
+  xml += '  <sitemap>\n';
+  xml += `    <loc>${SITE_URL}/section-sitemap.xml</loc>\n`;
+  xml += `    <lastmod>${lastmod}</lastmod>\n`;
+  xml += '  </sitemap>\n';
+
+  // Page sitemap
+  xml += '  <sitemap>\n';
+  xml += `    <loc>${SITE_URL}/page-sitemap.xml</loc>\n`;
+  xml += `    <lastmod>${lastmod}</lastmod>\n`;
+  xml += '  </sitemap>\n';
+
+  xml += '</sitemapindex>';
+
+  return xml;
+}
+
+/**
+ * Generate post sitemap (articles only)
+ */
+function generatePostSitemap(articles) {
+  let xml = '<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>\n';
   xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
 
-  // Homepage
-  xml += '  <url>\n';
-  xml += `    <loc>${SITE_URL}/</loc>\n`;
-  xml += `    <lastmod>${now}</lastmod>\n`;
-  xml += '    <changefreq>daily</changefreq>\n';
-  xml += '    <priority>1.0</priority>\n';
-  xml += '  </url>\n';
-
-  // Category pages
-  const categories = [...new Set(articles.map(a => a.category))];
-  categories.forEach(category => {
-    xml += '  <url>\n';
-    xml += `    <loc>${SITE_URL}/${category}</loc>\n`;
-    xml += `    <lastmod>${now}</lastmod>\n`;
-    xml += '    <changefreq>daily</changefreq>\n';
-    xml += '    <priority>0.9</priority>\n';
-    xml += '  </url>\n';
-  });
-
-  // Article pages
   articles.forEach(article => {
-    const categoryPath = CATEGORY_MAPPING[article.category] || article.category.toLowerCase();
+    const categoryPath = normalizeCategoryPath(article.category);
     xml += '  <url>\n';
     xml += `    <loc>${SITE_URL}/${categoryPath}/${article.slug}</loc>\n`;
     xml += `    <lastmod>${formatDate(article.updated)}</lastmod>\n`;
@@ -168,10 +188,75 @@ function generateSitemap(articles) {
 }
 
 /**
+ * Generate section sitemap (category landing pages)
+ */
+function generateSectionSitemap(articles) {
+  let xml = '<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>\n';
+  xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
+
+  // Group articles by category and find most recent article in each
+  const categoryMap = new Map();
+
+  articles.forEach(article => {
+    const categoryPath = normalizeCategoryPath(article.category);
+
+    if (!categoryMap.has(categoryPath)) {
+      categoryMap.set(categoryPath, article);
+    } else {
+      const existing = categoryMap.get(categoryPath);
+      const existingDate = new Date(existing.updated);
+      const currentDate = new Date(article.updated);
+
+      if (currentDate > existingDate) {
+        categoryMap.set(categoryPath, article);
+      }
+    }
+  });
+
+  // Generate URL entries for each category
+  const sortedCategories = Array.from(categoryMap.entries()).sort((a, b) => a[0].localeCompare(b[0]));
+
+  sortedCategories.forEach(([categoryPath, mostRecentArticle]) => {
+    xml += '  <url>\n';
+    xml += `    <loc>${SITE_URL}/${categoryPath}</loc>\n`;
+    xml += `    <lastmod>${formatDate(mostRecentArticle.updated)}</lastmod>\n`;
+    xml += '    <changefreq>daily</changefreq>\n';
+    xml += '    <priority>0.9</priority>\n';
+    xml += '  </url>\n';
+  });
+
+  xml += '</urlset>';
+
+  return xml;
+}
+
+/**
+ * Generate page sitemap (static pages)
+ */
+function generatePageSitemap() {
+  const now = new Date().toISOString().split('T')[0];
+
+  let xml = '<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>\n';
+  xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
+
+  // Homepage
+  xml += '  <url>\n';
+  xml += `    <loc>${SITE_URL}/</loc>\n`;
+  xml += `    <lastmod>${now}</lastmod>\n`;
+  xml += '    <changefreq>daily</changefreq>\n';
+  xml += '    <priority>1.0</priority>\n';
+  xml += '  </url>\n';
+
+  xml += '</urlset>';
+
+  return xml;
+}
+
+/**
  * Main function
  */
 function main() {
-  console.log('🗺️  Generating sitemap...\n');
+  console.log('🗺️  Generating sitemaps...\n');
 
   // Get all markdown files
   const markdownFiles = getMarkdownFiles(CONTENT_DIR);
@@ -183,31 +268,46 @@ function main() {
     .filter(Boolean) // Remove null entries
     .sort((a, b) => new Date(b.published) - new Date(a.published)); // Sort by date, newest first
 
-  console.log(`✅ Processed ${articles.length} published articles`);
-  
+  console.log(`✅ Processed ${articles.length} published articles\n`);
+
 
   if (articles.length === 0) {
     console.warn('⚠️  No published articles found!');
     return;
   }
 
-  // Generate sitemap
-  const sitemap = generateSitemap(articles);
+  // Get most recent article date for sitemap index
+  const mostRecentDate = formatDate(articles[0].updated);
 
-  // Write to file
-  fs.writeFileSync(OUTPUT_FILE, sitemap, 'utf-8');
+  // Generate all sitemaps
+  const sitemapIndex = generateSitemapIndex(mostRecentDate);
+  const postSitemap = generatePostSitemap(articles);
+  const sectionSitemap = generateSectionSitemap(articles);
+  const pageSitemap = generatePageSitemap();
 
-  console.log(`\n✅ Sitemap generated successfully!`);
-  console.log(`📍 Location: ${OUTPUT_FILE}`);
-  console.log(`📊 Total URLs: ${articles.length + 1 + [...new Set(articles.map(a => a.category))].length}`);
-  console.log(`   - 1 homepage`);
-  console.log(`   - ${[...new Set(articles.map(a => a.category))].length} category pages`);
-  console.log(`   - ${articles.length} article pages`);
+  // Write files
+  fs.writeFileSync(SITEMAP_INDEX_FILE, sitemapIndex, 'utf-8');
+  fs.writeFileSync(POST_SITEMAP_FILE, postSitemap, 'utf-8');
+  fs.writeFileSync(SECTION_SITEMAP_FILE, sectionSitemap, 'utf-8');
+  fs.writeFileSync(PAGE_SITEMAP_FILE, pageSitemap, 'utf-8');
+
+  // Calculate stats
+  const categoryCount = new Set(articles.map(a => normalizeCategoryPath(a.category))).size;
+  const pageCount = 1; // Currently only homepage
+  const totalUrls = articles.length + categoryCount + pageCount;
+
+  // Output results
+  console.log('✅ Generated sitemap index: public/sitemap.xml');
+  console.log(`✅ Generated post sitemap: public/post-sitemap.xml (${articles.length} articles)`);
+  console.log(`✅ Generated section sitemap: public/section-sitemap.xml (${categoryCount} categories)`);
+  console.log(`✅ Generated page sitemap: public/page-sitemap.xml (${pageCount} page)`);
+  console.log(`\n📊 Total URLs: ${totalUrls}`);
 
   // Show recent articles
   console.log('\n📰 Most recent articles:');
   articles.slice(0, 5).forEach((article, index) => {
-    console.log(`   ${index + 1}. ${article.category}/${article.slug}`);
+    const categoryPath = normalizeCategoryPath(article.category);
+    console.log(`   ${index + 1}. ${categoryPath}/${article.slug}`);
   });
 
   console.log('\n🎉 Done!\n');
@@ -215,4 +315,3 @@ function main() {
 
 // Run the script
 main();
-
