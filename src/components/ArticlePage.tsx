@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Facebook, Twitter, Link as LinkIcon, Clock } from 'lucide-react';
+import ReactMarkdown from 'react-markdown';
 import type { Article } from '../types/article';
 import { getArticleBySlug, getRelatedArticles } from '../lib/content';
 import { ArticleCard } from './ArticleCard';
@@ -235,12 +236,8 @@ export function ArticlePage({ category, slug }: ArticlePageProps) {
           <figcaption className="mt-2 text-sm text-gray-600 dark:text-gray-400">{article.hero_credit}</figcaption>
         </figure>
 
-        <div className="article-content prose prose-lg max-w-none text-gray-900 dark:text-gray-300">
-          {article.content.split('\n\n').map((paragraph, idx) => (
-            <p key={idx} className="mb-6">
-              {paragraph}
-            </p>
-          ))}
+        <div className="article-content prose prose-lg max-w-none prose-headings:font-serif prose-headings:font-bold prose-headings:text-gray-900 dark:prose-headings:text-gray-50 prose-p:text-gray-900 dark:prose-p:text-gray-300 prose-p:leading-relaxed prose-strong:text-gray-900 dark:prose-strong:text-gray-300 prose-strong:font-semibold prose-em:text-gray-800 dark:prose-em:text-gray-300 prose-blockquote:border-l-4 prose-blockquote:border-aurora-500 prose-blockquote:pl-4 prose-blockquote:italic prose-blockquote:text-gray-700 dark:prose-blockquote:text-gray-300 prose-blockquote:my-6 prose-hr:border-gray-300 dark:prose-hr:border-dark-700 prose-hr:my-8 prose-ul:text-gray-900 dark:prose-ul:text-gray-300 prose-ol:text-gray-900 dark:prose-ol:text-gray-300 prose-li:text-gray-900 dark:prose-li:text-gray-300 prose-a:text-aurora-600 dark:prose-a:text-aurora-400 prose-a:hover:text-aurora-700 dark:prose-a:hover:text-aurora-300 prose-code:text-gray-900 dark:prose-code:text-gray-300 prose-pre:bg-gray-100 dark:prose-pre:bg-dark-800 prose-pre:text-gray-900 dark:prose-pre:text-gray-300">
+          <ReactMarkdown>{article.content}</ReactMarkdown>
         </div>
 
         <footer className="mt-12 pt-6 border-t border-gray-200 dark:border-dark-700">
