@@ -22,6 +22,10 @@
       "destination": "/robots.txt"
     },
     {
+      "source": "/:category/:slug",
+      "destination": "/:category/:slug/index.html"
+    },
+    {
       "source": "/((?!assets/).*)",
       "destination": "/index.html"
     }
