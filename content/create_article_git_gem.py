@@ -382,7 +382,7 @@ TASK: Write a complete, publication-ready news article based on this idea:
 {research_section}
 
 CRITICAL REQUIREMENTS (MANDATORY):
-- Length: MUST be between 1200-1750 words. This is NOT optional. Count your words and ensure you meet this requirement.
+- Length: MUST be at least 1200 words. This is NOT optional. Count your words and ensure you meet this minimum requirement.
 - Title: Compelling, newsworthy headline (NO quotes around the title)
 - Structure: Professional news article with clear sections
 - Include relevant context, analysis, and expert perspectives
@@ -401,7 +401,7 @@ FORMATTING REQUIREMENTS (MANDATORY):
   * Make section titles bold and visually distinct
   * Add strategic emphasis with bold text on important facts, figures, and key points
 
-IMPORTANT: The article body MUST be 1200-1750 words. Do not stop writing until you reach at least 1200 words. Expand on your points, add depth, include more examples, and provide thorough analysis to meet the word count requirement.
+IMPORTANT: The article body MUST be at least 1200 words. Do not stop writing until you reach at least 1200 words. Expand on your points, add depth, include more examples, and provide thorough analysis to meet the minimum word count requirement.
 
 Return ONLY:
 TITLE: [your headline - NO quotes]
@@ -439,29 +439,21 @@ TITLE: [your headline - NO quotes]
             title = title.strip('"').strip("'")
             body = lines[1].strip() if len(lines) > 1 else content
 
-        # Validate word count (target: 1200-1750, buffer: ±250 words, acceptable: 950-2000)
+        # Validate word count (minimum: 1200 words, buffer: 250 words, acceptable minimum: 950)
         word_count = len(body.split())
         WORD_COUNT_MIN = 1200
-        WORD_COUNT_MAX = 1750
         WORD_COUNT_BUFFER = 250
         ACCEPTABLE_MIN = WORD_COUNT_MIN - WORD_COUNT_BUFFER  # 950
-        ACCEPTABLE_MAX = WORD_COUNT_MAX + WORD_COUNT_BUFFER  # 2000
         
-        if ACCEPTABLE_MIN <= word_count <= ACCEPTABLE_MAX:
+        if word_count >= ACCEPTABLE_MIN:
             return title, body
         elif attempt < max_retries - 1:
-            if word_count < ACCEPTABLE_MIN:
-                print(f"⚠️  Word count {word_count} is below acceptable range ({ACCEPTABLE_MIN}-{ACCEPTABLE_MAX}), retrying...")
-                current_prompt = f"""{prompt}
+            print(f"⚠️  Word count {word_count} is below minimum ({ACCEPTABLE_MIN}+), retrying...")
+            current_prompt = f"""{prompt}
 
-NOTE: Your previous attempt was {word_count} words, which is too short. The target is {WORD_COUNT_MIN}-{WORD_COUNT_MAX} words. Please write a longer, more detailed article."""
-            else:  # word_count > ACCEPTABLE_MAX
-                print(f"⚠️  Word count {word_count} is above acceptable range ({ACCEPTABLE_MIN}-{ACCEPTABLE_MAX}), retrying...")
-                current_prompt = f"""{prompt}
-
-NOTE: Your previous attempt was {word_count} words, which is too long. The target is {WORD_COUNT_MIN}-{WORD_COUNT_MAX} words. Please write a more concise article."""
+NOTE: Your previous attempt was {word_count} words, which is too short. The minimum is {WORD_COUNT_MIN} words. Please write a longer, more detailed article."""
         else:
-            print(f"⚠️  Warning: Final word count {word_count} is outside acceptable range ({ACCEPTABLE_MIN}-{ACCEPTABLE_MAX})")
+            print(f"⚠️  Warning: Final word count {word_count} is below minimum ({ACCEPTABLE_MIN}+)")
 
     return title, body
 
@@ -490,7 +482,7 @@ TASK: Completely rewrite this article in our publication's distinctive voice and
 {research_section}
 
 CRITICAL REQUIREMENTS (MANDATORY):
-- Length: MUST be between 1200-1750 words. This is NOT optional. Count your words and ensure you meet this requirement.
+- Length: MUST be at least 1200 words. This is NOT optional. Count your words and ensure you meet this minimum requirement.
 - Title: Create a new, compelling headline (NO quotes around the title)
 - Rewrite everything - do NOT copy phrases directly
 - Maintain factual accuracy but present in our unique voice
@@ -509,7 +501,7 @@ FORMATTING REQUIREMENTS (MANDATORY):
   * Make section titles bold and visually distinct
   * Add strategic emphasis with bold text on important facts, figures, and key points
 
-IMPORTANT: The article body MUST be 1200-1750 words. Do not stop writing until you reach at least 1200 words. Expand on your points, add depth, include more examples, and provide thorough analysis to meet the word count requirement.
+IMPORTANT: The article body MUST be at least 1200 words. Do not stop writing until you reach at least 1200 words. Expand on your points, add depth, include more examples, and provide thorough analysis to meet the minimum word count requirement.
 
 Return ONLY:
 TITLE: [your headline - NO quotes]
@@ -546,29 +538,21 @@ TITLE: [your headline - NO quotes]
             title = title.strip('"').strip("'")
             body = lines[1].strip() if len(lines) > 1 else content
 
-        # Validate word count (target: 1200-1750, buffer: ±250 words, acceptable: 950-2000)
+        # Validate word count (minimum: 1200 words, buffer: 250 words, acceptable minimum: 950)
         word_count = len(body.split())
         WORD_COUNT_MIN = 1200
-        WORD_COUNT_MAX = 1750
         WORD_COUNT_BUFFER = 250
         ACCEPTABLE_MIN = WORD_COUNT_MIN - WORD_COUNT_BUFFER  # 950
-        ACCEPTABLE_MAX = WORD_COUNT_MAX + WORD_COUNT_BUFFER  # 2000
         
-        if ACCEPTABLE_MIN <= word_count <= ACCEPTABLE_MAX:
+        if word_count >= ACCEPTABLE_MIN:
             return title, body
         elif attempt < max_retries - 1:
-            if word_count < ACCEPTABLE_MIN:
-                print(f"⚠️  Word count {word_count} is below acceptable range ({ACCEPTABLE_MIN}-{ACCEPTABLE_MAX}), retrying...")
-                current_prompt = f"""{prompt}
+            print(f"⚠️  Word count {word_count} is below minimum ({ACCEPTABLE_MIN}+), retrying...")
+            current_prompt = f"""{prompt}
 
-NOTE: Your previous attempt was {word_count} words, which is too short. The target is {WORD_COUNT_MIN}-{WORD_COUNT_MAX} words. Please write a longer, more detailed article."""
-            else:  # word_count > ACCEPTABLE_MAX
-                print(f"⚠️  Word count {word_count} is above acceptable range ({ACCEPTABLE_MIN}-{ACCEPTABLE_MAX}), retrying...")
-                current_prompt = f"""{prompt}
-
-NOTE: Your previous attempt was {word_count} words, which is too long. The target is {WORD_COUNT_MIN}-{WORD_COUNT_MAX} words. Please write a more concise article."""
+NOTE: Your previous attempt was {word_count} words, which is too short. The minimum is {WORD_COUNT_MIN} words. Please write a longer, more detailed article."""
         else:
-            print(f"⚠️  Warning: Final word count {word_count} is outside acceptable range ({ACCEPTABLE_MIN}-{ACCEPTABLE_MAX})")
+            print(f"⚠️  Warning: Final word count {word_count} is below minimum ({ACCEPTABLE_MIN}+)")
 
     return title, body
 
@@ -592,7 +576,7 @@ TASK: Transform this unstructured text into a polished, publication-ready articl
 {research_section}
 
 CRITICAL REQUIREMENTS (MANDATORY):
-- Length: MUST be between 1200-1750 words. This is NOT optional. Count your words and ensure you meet this requirement.
+- Length: MUST be at least 1200 words. This is NOT optional. Count your words and ensure you meet this minimum requirement.
 - Title: Create a compelling, newsworthy headline (NO quotes around the title)
 - Organize and expand the content into a coherent narrative
 - Add relevant context, analysis, and expert perspectives where needed
@@ -611,7 +595,7 @@ FORMATTING REQUIREMENTS (MANDATORY):
   * Make section titles bold and visually distinct
   * Add strategic emphasis with bold text on important facts, figures, and key points
 
-IMPORTANT: The article body MUST be 1200-1750 words. Do not stop writing until you reach at least 1200 words. Expand on your points, add depth, include more examples, and provide thorough analysis to meet the word count requirement.
+IMPORTANT: The article body MUST be at least 1200 words. Do not stop writing until you reach at least 1200 words. Expand on your points, add depth, include more examples, and provide thorough analysis to meet the minimum word count requirement.
 
 Return ONLY:
 TITLE: [your headline - NO quotes]
@@ -648,29 +632,21 @@ TITLE: [your headline - NO quotes]
             title = title.strip('"').strip("'")
             body = lines[1].strip() if len(lines) > 1 else content
 
-        # Validate word count (target: 1200-1750, buffer: ±250 words, acceptable: 950-2000)
+        # Validate word count (minimum: 1200 words, buffer: 250 words, acceptable minimum: 950)
         word_count = len(body.split())
         WORD_COUNT_MIN = 1200
-        WORD_COUNT_MAX = 1750
         WORD_COUNT_BUFFER = 250
         ACCEPTABLE_MIN = WORD_COUNT_MIN - WORD_COUNT_BUFFER  # 950
-        ACCEPTABLE_MAX = WORD_COUNT_MAX + WORD_COUNT_BUFFER  # 2000
         
-        if ACCEPTABLE_MIN <= word_count <= ACCEPTABLE_MAX:
+        if word_count >= ACCEPTABLE_MIN:
             return title, body
         elif attempt < max_retries - 1:
-            if word_count < ACCEPTABLE_MIN:
-                print(f"⚠️  Word count {word_count} is below acceptable range ({ACCEPTABLE_MIN}-{ACCEPTABLE_MAX}), retrying...")
-                current_prompt = f"""{prompt}
+            print(f"⚠️  Word count {word_count} is below minimum ({ACCEPTABLE_MIN}+), retrying...")
+            current_prompt = f"""{prompt}
 
-NOTE: Your previous attempt was {word_count} words, which is too short. The target is {WORD_COUNT_MIN}-{WORD_COUNT_MAX} words. Please write a longer, more detailed article."""
-            else:  # word_count > ACCEPTABLE_MAX
-                print(f"⚠️  Word count {word_count} is above acceptable range ({ACCEPTABLE_MIN}-{ACCEPTABLE_MAX}), retrying...")
-                current_prompt = f"""{prompt}
-
-NOTE: Your previous attempt was {word_count} words, which is too long. The target is {WORD_COUNT_MIN}-{WORD_COUNT_MAX} words. Please write a more concise article."""
+NOTE: Your previous attempt was {word_count} words, which is too short. The minimum is {WORD_COUNT_MIN} words. Please write a longer, more detailed article."""
         else:
-            print(f"⚠️  Warning: Final word count {word_count} is outside acceptable range ({ACCEPTABLE_MIN}-{ACCEPTABLE_MAX})")
+            print(f"⚠️  Warning: Final word count {word_count} is below minimum ({ACCEPTABLE_MIN}+)")
 
     return title, body
 

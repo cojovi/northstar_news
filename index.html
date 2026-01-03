@@ -57,15 +57,84 @@
       })();
     </script>
     <script>
-      // Set canonical URL dynamically based on current path
+      // Set canonical URL and update OG meta tags dynamically based on current path
       (function() {
         const path = window.location.pathname;
         const canonical = document.querySelector('link[rel="canonical"]');
         if (canonical && path !== '/') {
           canonical.href = 'https://thenorthstarledger.com' + path;
         }
+
+        // Update OG meta tags for article pages
+        // Try to read from inline manifest first (synchronous), then fallback to fetch
+        function updateOGTags(manifest) {
+          if (!manifest) return;
+          
+          // Extract route (remove leading slash, e.g., "/politics/article-slug" -> "politics/article-slug")
+          const route = path.slice(1);
+          const articleData = manifest[route];
+          
+          if (articleData && articleData.hero_image) {
+            // Update or create OG meta tags
+            const updateMetaTag = (property, content) => {
+              let meta = document.querySelector(`meta[property="${property}"]`) || 
+                        document.querySelector(`meta[name="${property}"]`);
+              if (!meta) {
+                meta = document.createElement('meta');
+                if (property.startsWith('og:')) {
+                  meta.setAttribute('property', property);
+                } else {
+                  meta.setAttribute('name', property);
+                }
+                document.head.appendChild(meta);
+              }
+              meta.setAttribute('content', content);
+            };
+
+            // Update OG tags
+            updateMetaTag('og:title', articleData.title);
+            updateMetaTag('og:description', articleData.dek);
+            updateMetaTag('og:image', articleData.hero_image);
+            updateMetaTag('og:image:secure_url', articleData.hero_image);
+            updateMetaTag('og:url', articleData.url || `https://thenorthstarledger.com${path}`);
+            updateMetaTag('og:type', 'article');
+            
+            // Update Twitter tags
+            updateMetaTag('twitter:title', articleData.title);
+            updateMetaTag('twitter:description', articleData.dek);
+            updateMetaTag('twitter:image', articleData.hero_image);
+            updateMetaTag('twitter:url', articleData.url || `https://thenorthstarledger.com${path}`);
+            
+            // Update page title
+            document.title = `${articleData.title} - The Northstar Ledger`;
+          }
+        }
+
+        // Only update for article pages (not home, search, about)
+        if (path !== '/' && path !== '/search' && path !== '/about') {
+          // Try inline manifest first (synchronous)
+          const manifestScript = document.getElementById('og-manifest');
+          if (manifestScript && manifestScript.textContent) {
+            try {
+              const manifest = JSON.parse(manifestScript.textContent);
+              updateOGTags(manifest);
+            } catch (e) {
+              console.debug('Error parsing inline manifest:', e);
+            }
+          }
+          
+          // Fallback to fetch (async)
+          fetch('/og-manifest.json')
+            .then(response => response.json())
+            .then(manifest => updateOGTags(manifest))
+            .catch(error => {
+              // Silently fail if manifest doesn't exist
+              console.debug('OG manifest not available:', error);
+            });
+        }
       })();
     </script>
+    <script id="og-manifest" type="application/json">{}</script>
   </head>
   <body>
     <div id="root"></div>

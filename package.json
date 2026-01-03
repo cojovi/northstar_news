@@ -4,9 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "npm run sitemap && vite",
-    "build": "npm run sitemap && vite build",
+    "dev": "npm run sitemap && npm run og-manifest && vite",
+    "build": "npm run sitemap && npm run og-manifest && vite build",
     "sitemap": "node scripts/generate-sitemap.js",
+    "og-manifest": "node scripts/generate-og-manifest.js",
     "lint": "eslint .",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit -p tsconfig.app.json"
