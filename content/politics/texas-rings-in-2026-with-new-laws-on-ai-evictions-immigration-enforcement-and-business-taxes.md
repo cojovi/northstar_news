@@ -7,7 +7,7 @@ tags: ['Texas laws', 'AI regulation', 'Evictions', 'Immigration enforcement', 'B
 author: "Amelia Petrov"
 author_slug: amelia-petrov
 published: 2026-01-03T02:42:47.909870+00:00
-updated: 2026-01-03T02:42:47.909870+00:00
+updated: 2026-01-03T03:42:47.909870+00:00
 hero_image: https://github.com/cojovi/northstar_news/blob/main/public/texas-rings-in-2026-with-new-laws-on-ai-evictions-.png?raw=true
 hero_credit: Photo via Pexels
 thumbnail: https://github.com/cojovi/northstar_news/blob/main/public/texas-rings-in-2026-with-new-laws-on-ai-evictions-.png?raw=true
