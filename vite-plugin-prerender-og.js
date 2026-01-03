@@ -105,11 +105,34 @@ function getAllArticles(contentDir) {
 }
 
 /**
+ * Convert GitHub raw URL to domain URL
+ */
+function convertImageUrl(githubUrl) {
+  if (!githubUrl) return 'https://thenorthstarledger.com/og/default.jpg';
+  
+  // If it's already a domain URL, return as-is
+  if (githubUrl.startsWith('https://thenorthstarledger.com')) {
+    return githubUrl;
+  }
+  
+  // Extract filename from GitHub raw URL
+  // Pattern: https://github.com/cojovi/northstar_news/blob/main/public/FILENAME.png?raw=true
+  const match = githubUrl.match(/\/public\/([^?]+)/);
+  if (match) {
+    const filename = match[1];
+    return `https://thenorthstarledger.com/${filename}`;
+  }
+  
+  // Fallback to default if we can't parse it
+  return 'https://thenorthstarledger.com/og/default.jpg';
+}
+
+/**
  * Generate HTML with article-specific OG meta tags
  */
 function generateArticleHTML(baseHtml, article, route) {
   const url = `https://thenorthstarledger.com/${route}`;
-  const image = article.hero_image || 'https://thenorthstarledger.com/og/default.jpg';
+  const image = convertImageUrl(article.hero_image);
   
   // Remove existing OG meta tags
   let html = baseHtml.replace(/<meta\s+property="og:[^"]*"[^>]*>/gi, '');
