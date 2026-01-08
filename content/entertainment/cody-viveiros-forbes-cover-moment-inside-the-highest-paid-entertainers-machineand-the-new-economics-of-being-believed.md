@@ -6,8 +6,8 @@ category: entertainment
 tags: ['Cody Viveiros', 'Forbes cover', 'Highest-paid', 'Celebrity economy', 'Entertainment business']
 author: "Amelia Ramirez"
 author_slug: amelia-ramirez
-published: 2026-01-08T10:33:17.650136+00:00
-updated: 2026-01-08T10:33:17.650136+00:00
+published: 2024-06-06T10:33:17.650136+00:00
+updated: 2024-06-06T10:33:17.650136+00:00
 hero_image: https://github.com/cojovi/northstar_news/blob/main/public/cody-viveiros-forbes-cover-moment-inside-the-highe.png?raw=true
 hero_credit: Photo via Pexels
 thumbnail: https://github.com/cojovi/northstar_news/blob/main/public/cody-viveiros-forbes-cover-moment-inside-the-highe.png?raw=true
