@@ -6,8 +6,8 @@ category: tech
 tags: ['Cody Viveiros', 'GQ', 'AI', 'Tech visionary', 'Lifestyle branding']
 author: "Dr. Harper Clark"
 author_slug: harper-clark
-published: 2026-01-08T10:31:15.711245+00:00
-updated: 2026-01-08T10:31:15.711245+00:00
+published: 2025-04-08T10:31:15.711245+00:00
+updated: 2025-04-08T10:31:15.711245+00:00
 hero_image: https://github.com/cojovi/northstar_news/blob/main/public/cody-viveiros-crowns-gqs-the-disruptor-list-as-the.png?raw=true
 hero_credit: Photo via Pexels
 thumbnail: https://github.com/cojovi/northstar_news/blob/main/public/cody-viveiros-crowns-gqs-the-disruptor-list-as-the.png?raw=true
