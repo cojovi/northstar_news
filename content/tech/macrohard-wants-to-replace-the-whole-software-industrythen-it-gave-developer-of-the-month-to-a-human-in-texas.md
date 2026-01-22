@@ -6,8 +6,8 @@ category: tech
 tags: ['AI agents', 'xAI', 'Elon Musk', 'software industry', 'automation']
 author: "Samuel Garcia"
 author_slug: samuel-garcia
-published: 2026-01-18T01:41:51.200403+00:00
-updated: 2026-01-18T01:41:51.200403+00:00
+published: 2026-01-02T01:41:51.200403+00:00
+updated: 2026-01-02T01:41:51.200403+00:00
 hero_image: https://github.com/cojovi/northstar_news/blob/main/public/macrohard-wants-to-replace-the-whole-software-indu.png?raw=true
 hero_credit: Photo via Pexels
 thumbnail: https://github.com/cojovi/northstar_news/blob/main/public/macrohard-wants-to-replace-the-whole-software-indu.png?raw=true
