@@ -21,11 +21,12 @@ import json
 import subprocess
 
 # Try to load .env file if python-dotenv is available (optional)
-try:
-    from dotenv import load_dotenv
-    load_dotenv()
-except ImportError:
-    pass  # python-dotenv not installed, rely on environment variables
+# DISABLED: conflicts with stdin input redirection
+# try:
+#     from dotenv import load_dotenv
+#     load_dotenv()
+# except ImportError:
+#     pass  # python-dotenv not installed, rely on environment variables
 
 
 # ========== CONFIGURATION ==========
