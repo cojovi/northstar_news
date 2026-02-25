@@ -21,6 +21,8 @@ const SITEMAP_INDEX_FILE = path.join(PUBLIC_DIR, 'sitemap.xml');
 const POST_SITEMAP_FILE = path.join(PUBLIC_DIR, 'post-sitemap.xml');
 const SECTION_SITEMAP_FILE = path.join(PUBLIC_DIR, 'section-sitemap.xml');
 const PAGE_SITEMAP_FILE = path.join(PUBLIC_DIR, 'page-sitemap.xml');
+const RSS_FILE = path.join(PUBLIC_DIR, 'rss.xml');
+const ATOM_FILE = path.join(PUBLIC_DIR, 'atom.xml');
 
 // Category mapping from display names to URL paths
 const CATEGORY_MAPPING = {
@@ -36,6 +38,19 @@ const CATEGORY_MAPPING = {
   'Travel': 'travel',
   'Opinion': 'opinion'
 };
+
+/**
+ * Escape text for safe use in XML (RSS/Atom)
+ */
+function escapeXml(str) {
+  if (str == null || str === '') return '';
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&apos;');
+}
 
 /**
  * Parse frontmatter from markdown content
@@ -94,6 +109,9 @@ function extractArticleData(filePath) {
       category: frontmatter.category,
       updated: frontmatter.updated || frontmatter.published,
       published: frontmatter.published,
+      title: frontmatter.title,
+      dek: frontmatter.dek,
+      author: frontmatter.author,
     };
   } catch (error) {
     console.error(`Error processing ${filePath}:`, error.message);
@@ -253,6 +271,90 @@ function generatePageSitemap() {
 }
 
 /**
+ * Generate RSS 2.0 feed (latest 50 articles)
+ */
+function generateRSSFeed(articles) {
+  const latest = articles.slice(0, 50);
+  const items = latest
+    .map((article) => {
+      const categoryPath = normalizeCategoryPath(article.category);
+      const url = `${SITE_URL}/${categoryPath}/${article.slug}`;
+      const pubDate = new Date(article.published).toUTCString();
+      const title = escapeXml(article.title || '');
+      const dek = escapeXml(article.dek || '');
+      const category = escapeXml(article.category || '');
+      const author = escapeXml(article.author || '');
+      return `
+    <item>
+      <title><![CDATA[${article.title || ''}]]></title>
+      <link>${url}</link>
+      <guid>${url}</guid>
+      <pubDate>${pubDate}</pubDate>
+      <description><![CDATA[${article.dek || ''}]]></description>
+      <category>${category}</category>
+      <author>${author}</author>
+    </item>`;
+    })
+    .join('\n');
+
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The Northstar Ledger</title>
+    <link>${SITE_URL}</link>
+    <description>Independent journalism dedicated to informing public discourse</description>
+    <language>en-us</language>
+    <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
+    <atom:link href="${SITE_URL}/rss.xml" rel="self" type="application/rss+xml" />
+    ${items}
+  </channel>
+</rss>`;
+}
+
+/**
+ * Generate Atom feed (latest 50 articles)
+ */
+function generateAtomFeed(articles) {
+  const latest = articles.slice(0, 50);
+  const entries = latest
+    .map((article) => {
+      const categoryPath = normalizeCategoryPath(article.category);
+      const url = `${SITE_URL}/${categoryPath}/${article.slug}`;
+      const published = new Date(article.published).toISOString();
+      const updated = new Date(article.updated).toISOString();
+      const title = escapeXml(article.title || '');
+      const dek = escapeXml(article.dek || '');
+      const author = escapeXml(article.author || '');
+      const category = escapeXml(article.category || '');
+      return `
+  <entry>
+    <title>${title}</title>
+    <link href="${url}" />
+    <id>${url}</id>
+    <published>${published}</published>
+    <updated>${updated}</updated>
+    <summary>${dek}</summary>
+    <author>
+      <name>${author}</name>
+    </author>
+    <category term="${category}" />
+  </entry>`;
+    })
+    .join('\n');
+
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>The Northstar Ledger</title>
+  <link href="${SITE_URL}/atom.xml" rel="self" />
+  <link href="${SITE_URL}" />
+  <id>${SITE_URL}</id>
+  <updated>${new Date().toISOString()}</updated>
+  <subtitle>Independent journalism dedicated to informing public discourse</subtitle>
+  ${entries}
+</feed>`;
+}
+
+/**
  * Main function
  */
 function main() {
@@ -291,6 +393,12 @@ function main() {
   fs.writeFileSync(SECTION_SITEMAP_FILE, sectionSitemap, 'utf-8');
   fs.writeFileSync(PAGE_SITEMAP_FILE, pageSitemap, 'utf-8');
 
+  // Generate and write RSS and Atom feeds
+  const rssXml = generateRSSFeed(articles);
+  const atomXml = generateAtomFeed(articles);
+  fs.writeFileSync(RSS_FILE, rssXml, 'utf-8');
+  fs.writeFileSync(ATOM_FILE, atomXml, 'utf-8');
+
   // Calculate stats
   const categoryCount = new Set(articles.map(a => normalizeCategoryPath(a.category))).size;
   const pageCount = 1; // Currently only homepage
@@ -301,6 +409,8 @@ function main() {
   console.log(`✅ Generated post sitemap: public/post-sitemap.xml (${articles.length} articles)`);
   console.log(`✅ Generated section sitemap: public/section-sitemap.xml (${categoryCount} categories)`);
   console.log(`✅ Generated page sitemap: public/page-sitemap.xml (${pageCount} page)`);
+  console.log('✅ Generated rss.xml');
+  console.log('✅ Generated atom.xml');
   console.log(`\n📊 Total URLs: ${totalUrls}`);
 
   // Show recent articles

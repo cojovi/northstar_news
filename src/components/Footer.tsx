@@ -42,6 +42,7 @@ export function Footer() {
             <h4 className="text-gray-900 dark:text-gray-200 font-semibold mb-4">About</h4>
             <ul className="space-y-2 text-sm">
               <li><a href="/about" className="hover:text-aurora-600 dark:hover:text-aurora-400 transition-colors">About Us</a></li>
+              <li><a href="/rss.xml" className="hover:text-aurora-600 dark:hover:text-aurora-400 transition-colors">RSS Feed</a></li>
               <li><a href="/contact" className="hover:text-aurora-600 dark:hover:text-aurora-400 transition-colors">Contact</a></li>
               <li><a href="/standards" className="hover:text-aurora-600 dark:hover:text-aurora-400 transition-colors">Editorial Standards</a></li>
               <li><a href="/privacy" className="hover:text-aurora-600 dark:hover:text-aurora-400 transition-colors">Privacy Policy</a></li>
