@@ -3,10 +3,7 @@ title: "Meta's AI Bias Czar Caught Red-Handed: Apparently, Fairness Now Means Fa
 dek: "Revelations about Robby Starbuck, Meta's AI bias adviser, show a consistent pattern of disinformation, sparking widespread criticism and raising serious questions about the tech giant's commitment to responsible AI and truth."
 slug: "meta-ai-bias-czar-robby-starbuck-disinformation-fairness"
 category: tech
-tags:
-  - "AI Bias"
-  - "Meta"
-  - "Disinformation"
+tags: ['AI Bias', 'Meta', 'Disinformation']
 author: "AlinaCode"
 author_slug: "alinacode"
 published: "2025-10-11T22:00:00.000Z"

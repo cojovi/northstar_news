@@ -9,6 +9,7 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import matter from 'gray-matter';
+import { resolveSocialImage } from '../src/lib/socialImage.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -59,7 +60,7 @@ function generateManifest() {
       const relativePath = path.relative(CONTENT_DIR, filePath);
       const pathParts = relativePath.split(path.sep);
       const category = pathParts[0];
-      const slug = path.basename(filePath, '.md');
+      const slug = data.slug || path.basename(filePath, '.md');
 
       // Create route key (e.g., "politics/article-slug")
       const route = `${category}/${slug}`;
@@ -68,7 +69,7 @@ function generateManifest() {
       manifest[route] = {
         title: data.title || '',
         dek: data.dek || data.excerpt || '',
-        hero_image: data.hero_image || '',
+        hero_image: resolveSocialImage(data.hero_image),
         thumbnail: data.thumbnail || data.hero_image || '',
         url: `https://thenorthstarledger.com/${route}`
       };
@@ -90,7 +91,7 @@ function injectManifestIntoHTML(manifest) {
   }
 
   let html = fs.readFileSync(INDEX_HTML, 'utf-8');
-  const manifestJson = JSON.stringify(manifest);
+  const manifestJson = JSON.stringify(manifest).replace(/</g, '\\u003c');
   const scriptTag = `<script id="og-manifest" type="application/json">${manifestJson}</script>`;
 
   // Remove existing manifest script if present
@@ -129,4 +130,3 @@ function main() {
 }
 
 main();
-

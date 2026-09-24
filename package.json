@@ -9,6 +9,8 @@
     "sitemap": "node scripts/generate-sitemap.js",
     "og-manifest": "node scripts/generate-og-manifest.js",
     "lint": "eslint .",
+    "test": "node --test tests/*.test.js",
+    "test:build": "npm run build && node scripts/verify-social-metadata.js",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit -p tsconfig.app.json"
   },

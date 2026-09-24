@@ -73,7 +73,7 @@
           if (!manifest) return;
           
           // Extract route (remove leading slash, e.g., "/politics/article-slug" -> "politics/article-slug")
-          const route = path.slice(1);
+          const route = window.location.pathname.replace(/^\/+|\/+$/g, '');
           const articleData = manifest[route];
           
           if (articleData && articleData.hero_image) {
@@ -97,7 +97,16 @@
             updateMetaTag('og:title', articleData.title);
             updateMetaTag('og:description', articleData.dek);
             updateMetaTag('og:image', articleData.hero_image);
-            updateMetaTag('og:image:secure_url', articleData.hero_image);
+            if (articleData.hero_image.startsWith('https:')) {
+              updateMetaTag('og:image:secure_url', articleData.hero_image);
+            } else {
+              document.querySelector('meta[property="og:image:secure_url"]')?.remove();
+            }
+            // Article images have different formats and sizes than the site logo.
+            ['og:image:type', 'og:image:width', 'og:image:height'].forEach(property => {
+              document.querySelector(`meta[property="${property}"]`)?.remove();
+            });
+            updateMetaTag('og:image:alt', articleData.title);
             updateMetaTag('og:url', articleData.url || `https://thenorthstarledger.com${path}`);
             updateMetaTag('og:type', 'article');
             
@@ -105,6 +114,7 @@
             updateMetaTag('twitter:title', articleData.title);
             updateMetaTag('twitter:description', articleData.dek);
             updateMetaTag('twitter:image', articleData.hero_image);
+            updateMetaTag('twitter:image:alt', articleData.title);
             updateMetaTag('twitter:url', articleData.url || `https://thenorthstarledger.com${path}`);
             
             // Update page title

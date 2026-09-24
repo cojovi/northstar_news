@@ -5,6 +5,7 @@ import type { Article } from '../types/article';
 import { getArticleBySlug, getRelatedArticles } from '../lib/content';
 import { ArticleCard } from './ArticleCard';
 import { LoadingSpinner } from './LoadingSpinner';
+import { SITE_URL, resolveSocialImage } from '../lib/socialImage.js';
 
 interface ArticlePageProps {
   category: string;
@@ -58,20 +59,35 @@ export function ArticlePage({ category, slug }: ArticlePageProps) {
           document.head.appendChild(script);
 
           document.title = `${articleData.title} - The Northstar Ledger`;
+          const image = resolveSocialImage(articleData.hero_image);
+          const articleUrl = `${SITE_URL}/${category}/${slug}`;
+
+          // Replace the prerendered values during client-side navigation and
+          // restore them on exit, rather than accumulating conflicting tags.
+          const previousMetadata = Array.from(document.head.querySelectorAll(
+            'meta[property^="og:"], meta[name^="twitter:"], link[rel="canonical"]'
+          ));
+          previousMetadata.forEach(element => element.remove());
 
           const metaOg = [
             { property: 'og:title', content: articleData.title },
             { property: 'og:description', content: articleData.dek },
-            { property: 'og:image', content: articleData.hero_image },
-            { property: 'og:url', content: window.location.href },
+            { property: 'og:image', content: image },
+            ...(image.startsWith('https:') ? [{ property: 'og:image:secure_url', content: image }] : []),
+            { property: 'og:image:alt', content: articleData.title },
+            { property: 'og:site_name', content: 'The Northstar Ledger' },
+            { property: 'og:locale', content: 'en_US' },
+            { property: 'og:url', content: articleUrl },
             { property: 'og:type', content: 'article' },
             { name: 'twitter:card', content: 'summary_large_image' },
             { name: 'twitter:title', content: articleData.title },
             { name: 'twitter:description', content: articleData.dek },
-            { name: 'twitter:image', content: articleData.hero_image },
+            { name: 'twitter:image', content: image },
+            { name: 'twitter:image:alt', content: articleData.title },
+            { name: 'twitter:url', content: articleUrl },
           ];
 
-          metaOg.forEach((meta) => {
+          const articleMetadata: HTMLElement[] = metaOg.map((meta) => {
             const element = document.createElement('meta');
             if ('property' in meta && meta.property) {
               element.setAttribute('property', meta.property);
@@ -80,11 +96,19 @@ export function ArticlePage({ category, slug }: ArticlePageProps) {
             }
             element.setAttribute('content', meta.content);
             document.head.appendChild(element);
+            return element;
           });
+          const canonical = document.createElement('link');
+          canonical.rel = 'canonical';
+          canonical.href = articleUrl;
+          document.head.appendChild(canonical);
+          articleMetadata.push(canonical);
 
         setLoading(false);
 
         return () => {
+          articleMetadata.forEach(element => element.remove());
+          previousMetadata.forEach(element => document.head.appendChild(element));
           if (script.parentNode) {
             script.parentNode.removeChild(script);
           }

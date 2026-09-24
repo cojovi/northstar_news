@@ -3,10 +3,7 @@ title: The Great Loan Sell-Off – Your Student Debt, Now on Wall Street's Menu
 dek: The Trump administration is reportedly considering offloading the $1.6 trillion federal student loan portfolio to private investors, a bold move that could profoundly reshape higher education financing and impact 45 million American borrowers.
 slug: the-great-loan-sell-off-your-student-debt-now-on-wall-streets-menu
 category: us
-tags:
-  - student loans
-  - privatization
-  - education policy
+tags: ['student loans', 'privatization', 'education policy']
 author: NewsPredator
 author_slug: newspredator
 published: 2025-10-11T22:00:00.000Z

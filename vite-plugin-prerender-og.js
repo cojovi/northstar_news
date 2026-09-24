@@ -6,29 +6,25 @@
 
 import fs from 'fs';
 import path from 'path';
-import { fileURLToPath } from 'url';
 import matter from 'gray-matter';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+import { SITE_URL, resolveSocialImage } from './src/lib/socialImage.js';
 
 export default function prerenderOGPlugin() {
   return {
     name: 'vite-plugin-prerender-og',
     apply: 'build',
     
-    async writeBundle(options, bundle) {
+    async writeBundle(options) {
       const outDir = options.dir || 'dist';
       const contentDir = path.resolve(process.cwd(), 'content');
       const indexHtmlPath = path.join(outDir, 'index.html');
       
       if (!fs.existsSync(indexHtmlPath)) {
-        console.warn('⚠️  index.html not found in dist, skipping OG prerender');
-        return;
+        throw new Error('index.html not found in build output; cannot prerender article metadata');
       }
 
       // Read the base index.html
-      let baseHtml = fs.readFileSync(indexHtmlPath, 'utf-8');
+      const baseHtml = fs.readFileSync(indexHtmlPath, 'utf-8');
       
       console.log('\n📄 Prerendering OG meta tags for articles...');
       
@@ -82,7 +78,7 @@ function getAllArticles(contentDir) {
             const relativePath = path.relative(contentDir, fullPath);
             const pathParts = relativePath.split(path.sep);
             const category = pathParts[0];
-            const slug = path.basename(fullPath, '.md');
+            const slug = data.slug || path.basename(fullPath, '.md');
             
             articles.push({
               category,
@@ -94,7 +90,7 @@ function getAllArticles(contentDir) {
             });
           }
         } catch (error) {
-          console.warn(`⚠️  Error processing ${fullPath}: ${error.message}`);
+          throw new Error(`Error processing ${fullPath}: ${error.message}`);
         }
       }
     }
@@ -105,45 +101,22 @@ function getAllArticles(contentDir) {
 }
 
 /**
- * Convert GitHub raw URL to domain URL
- */
-function convertImageUrl(githubUrl) {
-  if (!githubUrl) return 'https://thenorthstarledger.com/og/default.jpg';
-  
-  // If it's already a domain URL, return as-is
-  if (githubUrl.startsWith('https://thenorthstarledger.com')) {
-    return githubUrl;
-  }
-  
-  // Extract filename from GitHub raw URL
-  // Pattern: https://github.com/cojovi/northstar_news/blob/main/public/FILENAME.png?raw=true
-  const match = githubUrl.match(/\/public\/([^?]+)/);
-  if (match) {
-    const filename = match[1];
-    return `https://thenorthstarledger.com/${filename}`;
-  }
-  
-  // Fallback to default if we can't parse it
-  return 'https://thenorthstarledger.com/og/default.jpg';
-}
-
-/**
  * Generate HTML with article-specific OG meta tags
  */
-function generateArticleHTML(baseHtml, article, route) {
-  const url = `https://thenorthstarledger.com/${route}`;
-  const image = convertImageUrl(article.hero_image);
+export function generateArticleHTML(baseHtml, article, route) {
+  const url = escapeHtml(`${SITE_URL}/${route}`);
+  const image = escapeHtml(resolveSocialImage(article.hero_image));
   
   // Remove existing OG meta tags
   let html = baseHtml.replace(/<meta\s+property="og:[^"]*"[^>]*>/gi, '');
   html = html.replace(/<meta\s+name="twitter:[^"]*"[^>]*>/gi, '');
   html = html.replace(/<title>[^<]*<\/title>/i, '');
+  html = html.replace(/<link\s+rel="canonical"[^>]*>/gi, '');
   
   // Find the closing </head> tag
   const headEndIndex = html.indexOf('</head>');
   if (headEndIndex === -1) {
-    console.warn('⚠️  Could not find </head> tag');
-    return baseHtml;
+    throw new Error('Could not find </head> for article metadata');
   }
   
   // Build new meta tags
@@ -155,10 +128,7 @@ function generateArticleHTML(baseHtml, article, route) {
     <meta property="og:description" content="${escapeHtml(article.dek)}" />
     <meta property="og:site_name" content="The Northstar Ledger" />
     <meta property="og:image" content="${image}" />
-    <meta property="og:image:secure_url" content="${image}" />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
+    ${image.startsWith('https:') ? `<meta property="og:image:secure_url" content="${image}" />` : ''}
     <meta property="og:image:alt" content="${escapeHtml(article.title)}" />
     <meta property="og:locale" content="en_US" />
     
@@ -170,6 +140,7 @@ function generateArticleHTML(baseHtml, article, route) {
     <meta name="twitter:image" content="${image}" />
     <meta name="twitter:image:alt" content="${escapeHtml(article.title)}" />
     
+    <link rel="canonical" href="${url}" />
     <title>${escapeHtml(article.title)} - The Northstar Ledger</title>
 `;
   
@@ -191,4 +162,3 @@ function escapeHtml(text) {
     .replace(/"/g, '&quot;')
     .replace(/'/g, '&#039;');
 }
-
