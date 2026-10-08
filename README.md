@@ -1,244 +1,229 @@
-# The Northstar Ledger
+<!-- COJOVI / SIGNAL — The Northstar Ledger project edition. Keep readme-assets/ with this file. -->
+<a name="top"></a>
 
-npm run dev
-https://github.com/cojovi/northstar_news/blob/main/public/ImplementNewCybersecurity.png?raw=true 
+<p align="center">
+  <img src="readme-assets/banner.svg" alt="The Northstar Ledger — Markdown stories, searchable sections, and static publication tools." width="100%">
+</p>
 
-A professional, file-based news publication built with React, TypeScript, and Vite.
+<h1 align="center">The Northstar Ledger</h1>
 
-## Overview
+<p align="center">
+  <strong>Write in Markdown. Organize the edition. Give every story a destination.</strong><br>
+  A file-based news and commentary website with category pages, local search, feeds, and social metadata.
+</p>
 
-The Northstar Ledger is a complete news website featuring:
+<p align="center">
+  <img src="readme-assets/stack.svg" alt="React 18 · TypeScript · Vite 5 · Tailwind CSS" width="640">
+</p>
 
-- Professional, authoritative design inspired by major news outlets
-- File-based content management (no database required)
-- Full-text search functionality
-- RSS/Atom feeds and sitemaps for SEO
-- Structured data (NewsArticle schema) for Google News
-- Responsive design optimized for all devices
-- 60+ sample articles across 11 categories
+<p align="center">
+  <a href="#overview">Overview</a> ·
+  <a href="#architecture">Architecture</a> ·
+  <a href="#quickstart">Quickstart</a> ·
+  <a href="#configuration">Content</a> ·
+  <a href="#validation">Validation</a> ·
+  <a href="#security">Boundaries</a>
+</p>
 
-## Content Model
+---
 
-### Article Front Matter
+<a name="overview"></a>
+## `> meet_the_ledger`
 
-Every article is a Markdown file with YAML front matter containing these required fields:
+**The Northstar Ledger is the publication implemented in `cojovi/northstar_news`.** Articles live in category folders as Markdown with front matter; React turns that content into a homepage, section listings, article pages, and a search experience.
+
+Its core reading experience uses **React 18, TypeScript, Vite 5, Tailwind CSS, and react-markdown**. A database is not required to browse articles. Supabase is an optional, separate newsletter-subscription integration.
+
+| Read | Discover | Distribute |
+| :--- | :--- | :--- |
+| Browse category pages, article bodies, and related stories. | Search titles, summaries, tags, and body text in the browser. | Generate sitemaps, RSS/Atom feeds, and article-specific social metadata. |
+
+> [!IMPORTANT]
+> **This is a static publication frontend, not a live newsroom backend.** Content changes require a rebuild for production. The repository includes sample material and AI-assisted authoring tools; publishing status, professional presentation, and metadata do not establish factual accuracy or editorial review.
+
+<a name="architecture"></a>
+## `> trace_the_edition`
+
+<p align="center">
+  <img src="readme-assets/flow.svg" alt="Markdown and front matter → Vite content bundle plus feed and metadata generation → browser reading pages and static discovery files." width="100%">
+</p>
+
+```text
+content/{category}/*.md + public assets
+                  ↓
+Vite + publication tooling
+├─ raw Markdown → browser content loader → React pages
+├─ sitemap script → sitemap index + feeds
+├─ OG manifest → public JSON + index.html injection
+└─ build plugin → article-specific HTML metadata
+                  ↓
+Static hosting: reading UI + crawler metadata + discovery files
+```
+
+[src/lib/content.ts](src/lib/content.ts) eagerly imports Markdown through Vite and parses it in the client bundle. Published articles are cached in memory; search is case-insensitive substring matching, not an external search service.
+
+[scripts/generate-sitemap.js](scripts/generate-sitemap.js) writes the sitemap index, post/section/page sitemaps, and RSS/Atom feeds. [vite-plugin-prerender-og.js](vite-plugin-prerender-og.js) writes article HTML shells with social tags during builds—**not server-rendered article bodies**.
+
+<a name="quickstart"></a>
+## `> open_the_workbench`
+
+**Prerequisites:** Git, Node.js, and npm compatible with Vite 5. [package.json](package.json) does not declare a Node engine; its package identifier remains `vite-react-typescript-starter`.
+
+### 1. Get the source
+
+```bash
+git clone --branch main https://github.com/cojovi/northstar_news.git
+cd northstar_news
+```
+
+### 2. Review external settings
+
+Inspect `index.html` for analytics, the source files listed under [configuration](#configuration) for canonical-site values, and article assets for external image requests. Remove or replace settings that are not yours before opening a copy. Leave Supabase variables unset for a reading-only preview.
+
+### 3. Install and start locally
+
+```bash
+npm install
+npm run dev -- --host 127.0.0.1
+```
+
+Use **http://127.0.0.1:5173**, or the address Vite prints. No Python authoring tool or AI-provider key is needed for this frontend preview.
+
+**Development has file-write side effects:** `dev` and `build` first generate sitemaps/feeds and an OG manifest. The manifest script also rewrites the root `index.html`. Review those changes rather than treating every generated diff as a hand-authored edit.
+
+The current Vite configuration does **not** register the tracked sitemap-watcher plugin. Regenerate discovery files after editing articles; do not assume they continuously refresh during a dev session.
+
+<a name="configuration"></a>
+## `> prepare_the_copy`
+
+| Area | Where to edit |
+| :--- | :--- |
+| Article text and front matter | [content/](content/) and [article types](src/types/article.ts) |
+| Article parsing, filtering, and search | [content.ts](src/lib/content.ts) |
+| Site URL and social-image fallback | [socialImage.js](src/lib/socialImage.js) |
+| Sitemap/feed site URL | [generate-sitemap.js](scripts/generate-sitemap.js) |
+| Manifest URL construction | [generate-og-manifest.js](scripts/generate-og-manifest.js) |
+| Analytics, default metadata, feed discovery | [index.html](index.html) |
+| Hosting redirects and rewrites | [vercel.json](vercel.json) |
+| Theme state and styling | [ThemeContext.tsx](src/lib/ThemeContext.tsx) and [tailwind.config.js](tailwind.config.js) |
+
+Canonical-site values are spread across source files, not controlled by one environment variable. Adapt them together for a new deployment. Article image paths resolve from `public/`; check image rights and attribution separately from code ownership.
+
+### Optional newsletter
+
+[src/lib/supabase.ts](src/lib/supabase.ts) reads `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY`. Both must be present to create the client. These `VITE_` values are browser-visible; never substitute a service-role key.
+
+[HomePage.tsx](src/components/HomePage.tsx) inserts `email`, `subscribed_at`, and `source` into `newsletter_subscriptions`. Without configuration, subscribing returns an unavailable message. This is address collection—not an implemented newsletter delivery service.
+
+[NEWSLETTER_SETUP.md](NEWSLETTER_SETUP.md) describes separate database and notification setup. Review its policies rather than copying them blindly: its authenticated-read example is not restricted to administrators. Add consent, least-privilege access, and abuse controls before enabling collection.
+
+<a name="usage"></a>
+## `> write_and_review`
+
+Create an article in `content/{category}/{slug}.md`. Available section paths include `us`, `world`, `politics`, `business`, `tech`, `health`, `entertainment`, `sports`, `opinion`, `lifestyle`, and `travel`.
+
+The following is an **illustrative draft**, not a real report. Supply your own reviewed content and licensed image; the example image path is a placeholder.
 
 ```yaml
 ---
-title: Article Title
-dek: Short subheading or summary
-slug: url-friendly-slug
-category: us
-tags: ['tag1', 'tag2', 'tag3']
-author: Author Name
-author_slug: author-name
-published: 2025-10-01T10:00:00Z
-updated: 2025-10-01T10:00:00Z
-hero_image: https://example.com/image.jpg
-hero_credit: Photo credit
-thumbnail: https://example.com/thumbnail.jpg
-excerpt: Brief excerpt for listings
-reading_time: 5
-location: City, State (optional)
-status: published
+title: "Example editorial draft"
+dek: "A short description for readers."
+slug: example-editorial-draft
+category: tech
+tags: ['example', 'editorial']
+author: "Example Editor"
+author_slug: example-editor
+published: "2026-01-01T12:00:00Z"
+updated: "2026-01-01T12:00:00Z"
+hero_image: /images/example-hero.jpg
+hero_credit: "Replace with the image credit"
+thumbnail: /images/example-hero.jpg
+excerpt: "A short listing summary."
+reading_time: 3
+status: draft
 is_satire: false
-canonical_url: https://example.com/original (optional)
+---
+```
+
+Add the Markdown body below the closing delimiter. Keep front matter flat, use single-line values and inline tag arrays, and save with LF line endings: the browser parser is intentionally much simpler than a full YAML parser. Build-time scripts use `gray-matter`, so complex YAML may behave differently between them.
+
+Keep the folder, `category`, and `slug` aligned. Set `status: published` only after editorial review; the loader does not use the publication date as a scheduling gate.
+
+> [!WARNING]
+> **Draft status is not confidentiality.** The eager raw import includes Markdown before the browser filters publication status. Keep private drafts and confidential source material outside the deployed content tree.
+
+Visit `/` for the homepage, `/{category}` for a section, `/{category}/{slug}` for an article, `/search` for search, and `/about` for the publication introduction. Unknown one-segment paths are interpreted as categories, not dedicated information pages.
+
+### Optional authoring tools
+
+The Python helpers under [content/](content/) are separate from the website. They can call paid text/image/search providers, fetch external URLs, and write articles and artwork. Git-enabled variants can also commit and push; some enable this by default through `AUTO_COMMIT`.
+
+Review a chosen script's dependencies, environment loading, defaults, and publication behavior before using it. Do not assume [requirements.txt](content/requirements.txt) covers every newer variant. Generated articles can default to `published` and `is_satire: false`; neither setting is a substitute for human review or visible satire labeling.
+
+<a name="validation"></a>
+## `> check_the_edition`
+
+The repository defines these maintainer checks:
+
+```bash
+npm run typecheck
+npm run lint
+npm test
+npm run test:build
+npm run preview -- --host 127.0.0.1
+```
+
+`test:build` builds the site and checks generated social metadata. `preview` serves the built `dist/` output. The tracked tests focus on social-image resolution and crawler HTML, not every application interaction.
+
+**Application builds and tests were not run for this documentation work.**
+
+- [ ] Check article fields, dates, citations, authorship, image rights, and satire disclosures.
+- [ ] Keep confidential drafts out of the build input, regardless of status.
+- [ ] Confirm search, category listings, direct article URLs, and browser history.
+- [ ] Inspect generated feeds, sitemaps, image URLs, and canonical metadata.
+- [ ] Review feed links: the custom router currently intercepts ordinary same-origin anchors, including the footer RSS link.
+- [ ] Replace or implement footer links for contact, standards, privacy, and terms; dedicated pages are not currently defined.
+- [ ] Check keyboard navigation, theme contrast, and mobile reading layouts.
+- [ ] Validate hosting rewrites for feeds/assets as well as article HTML and SPA fallback.
+- [ ] Use an isolated test database and separate authorization before any subscription test.
+
+<a name="source-map"></a>
+## `> explore_the_source`
+
+| Path | Responsibility |
+| :--- | :--- |
+| [src/App.tsx](src/App.tsx) | Custom path router, history handling, and shared layout. |
+| [src/components/](src/components/) | Homepage, categories, articles, search, header, and footer. |
+| [src/lib/](src/lib/) | Content, theme, Supabase, social images, and supporting utilities. |
+| [scripts/](scripts/) | Sitemap/feed generation, manifests, and metadata verification. |
+| [tests/social-metadata.test.js](tests/social-metadata.test.js) | Social metadata regression tests. |
+| [vite.config.ts](vite.config.ts) | React and build-time OG prerender plugin registration. |
+| [CLAUDE.md](CLAUDE.md) | Maintenance guidance; reconcile older claims with current code. |
+
+<a name="security"></a>
+## `> publish_deliberately`
+
+- Loading the page can contact analytics and external asset hosts. Review these independently of optional newsletter submission.
+- No authentication layer protects bundled article data. Supabase policies govern subscription records, not access to the static site.
+- `is_satire` is part of the data model but is not rendered as a visible article label by the current article component. Make disclosures explicit in reader-facing content.
+- No GitHub Actions workflow is tracked. Hosting configuration and Git-pushing authoring tools exist, but actual hosting-account deployment triggers were not verified.
+
+### Identity and license
+
+The project is **The Northstar Ledger**, maintained in [cojovi/northstar_news](https://github.com/cojovi/northstar_news); GitHub metadata does not mark it as a fork. Its original README's “as-is for demonstration purposes” wording is not a standard license grant.
+
+**No root license file was found in the reviewed revision.** Clarify reuse rights with the owner and retain applicable dependency and media notices. Repository availability does not establish rights to republish every article or image.
+
 ---
 
-Article content goes here in Markdown format.
-```
+<p align="center">
+  <img src="readme-assets/signal-divider.svg" alt="" width="100%">
+</p>
 
-### Categories
+<p align="center">
+  <strong>Readable stories. Reviewable sources. Deliberate publication.</strong><br>
+  <sub>A <a href="https://github.com/cojovi">Cody / cojovi</a> project · <a href="https://cojovi.com">cojovi.com</a><br>
+  The Northstar Ledger · Presented in COJOVI / SIGNAL.</sub>
+</p>
 
-Articles are organized in these directories under `/content`:
-
-- `us` - U.S. News
-- `world` - World News
-- `politics` - Politics
-- `business` - Business
-- `tech` - Technology
-- `health` - Health
-- `entertainment` - Entertainment
-- `sports` - Sports
-- `opinion` - Opinion
-- `lifestyle` - Lifestyle
-- `travel` - Travel
-
-## Adding a New Article
-
-1. Navigate to the appropriate category folder in `/content`
-2. Create a new `.md` file with a URL-friendly name (e.g., `my-article-title.md`)
-3. Add the required front matter (see Content Model above)
-4. Write your article content in Markdown below the front matter
-5. Set `status: published` when ready to publish
-6. Commit and push to deploy
-
-### Example
-
-```bash
-# Create new article file
-touch content/tech/ai-breakthrough-2025.md
-
-# Edit the file with your editor
-nano content/tech/ai-breakthrough-2025.md
-```
-
-## Images
-
-You can use images in two ways:
-
-1. **Remote URLs**: Link directly to images hosted elsewhere (Pexels, Unsplash, etc.)
-2. **Local images**: Place images in `/public/images/` and reference as `/images/filename.jpg`
-
-For remote images, ensure you have rights to use them. The mock content uses Pexels images which are free for commercial use.
-
-## Running Locally
-
-```bash
-# Install dependencies
-npm install
-
-# Start development server (runs on http://localhost:5173)
-npm run dev
-
-# Run type checking
-npm run typecheck
-
-# Lint code
-npm run lint
-```
-
-## Building for Production
-
-```bash
-# Build the site
-npm run build
-
-# Preview production build
-npm run preview
-```
-
-The build outputs to the `/dist` directory.
-
-## Features
-
-### Search
-
-Full-text search across titles, descriptions, tags, and content. The search index is built at compile time for fast performance.
-
-### RSS/Atom Feeds
-
-Feed generation utilities are available in `/src/lib/feeds.ts`. In production, you would expose these as endpoints:
-
-- `/rss.xml` - RSS 2.0 feed
-- `/atom.xml` - Atom feed
-- `/news-sitemap.xml` - Google News sitemap (last 48 hours)
-
-### Automatic Sitemap Generation
-
-The site automatically generates a sitemap that updates whenever markdown files are added or modified:
-
-- **`/sitemap.xml`** - Automatically generated sitemap with all published articles
-- **Auto-updates** - Regenerates during `npm run dev` and `npm run build`
-- **SEO optimized** - Includes proper priorities and change frequencies
-- **Real-time watching** - Detects new/modified articles during development
-
-See [SITEMAP.md](SITEMAP.md) for detailed documentation.
-
-**Quick commands:**
-```bash
-npm run sitemap    # Generate sitemap manually
-npm run dev        # Auto-generates and watches for changes
-npm run build      # Auto-generates before build
-```
-
-### SEO & Structured Data
-
-Every article page includes:
-
-- NewsArticle schema.org structured data
-- Open Graph meta tags for social sharing
-- Twitter Card meta tags
-- Semantic HTML with proper heading hierarchy
-- Sitemap generation for search engines
-
-### Accessibility
-
-- Semantic HTML5 elements
-- Proper heading hierarchy
-- Keyboard navigation support
-- ARIA labels on interactive elements
-- WCAG AA color contrast ratios
-
-## Architecture
-
-### File Structure
-
-```
-/content                 # Markdown content files
-  /us, /world, etc.     # Category folders
-/src
-  /components           # React components
-  /lib                  # Utilities and content loading
-  /types                # TypeScript type definitions
-  /data                 # Mock data and generators
-/public                 # Static assets
-/scripts                # Build scripts
-```
-
-### Key Files
-
-- `src/lib/content.ts` - Content indexing and retrieval
-- `src/lib/feeds.ts` - RSS/Atom/sitemap generation
-- `src/App.tsx` - Client-side routing
-- `scripts/generate-mock-content.js` - Mock article generator
-
-## Deployment
-
-This is a static site that can be deployed to any static hosting service:
-
-- Netlify
-- Vercel
-- GitHub Pages
-- AWS S3 + CloudFront
-- Cloudflare Pages
-
-### Build Configuration
-
-The site uses Vite's static site generation. Content files are bundled at build time using Vite's `import.meta.glob` feature.
-
-## Design Philosophy
-
-The design prioritizes:
-
-1. **Credibility**: Serif headlines, clean typography, professional layout
-2. **Readability**: Generous spacing, optimal line lengths, clear hierarchy
-3. **Performance**: Lazy loading, optimized images, minimal JavaScript
-4. **Accessibility**: Semantic HTML, keyboard navigation, screen reader support
-
-## Content Guidelines
-
-### Writing Style
-
-- Headlines: Clear, direct, newsworthy
-- Dek: Expands on headline, provides context
-- Body: Inverted pyramid structure, most important info first
-- Length: 400-800 words for most articles
-- Tone: Professional but engaging
-
-### Satire Approach
-
-The site is designed as satire but maintains a professional appearance. Satire should be:
-
-- Subtle rather than obvious
-- Detectable through close reading
-- Not immediately apparent from design or presentation
-- Marked with `is_satire: true` in front matter for internal tracking
-
-## License
-
-This project is provided as-is for demonstration purposes.
-
-## Support
-
-For questions or issues, please refer to the documentation in this README or examine the source code.
+<p align="center"><a href="#top">↑ Back to the signal</a></p>
