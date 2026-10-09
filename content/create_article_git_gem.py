@@ -845,8 +845,8 @@ is_satire: false
     return markdown_path
 
 
-def commit_and_push_to_github(markdown_path, image_path, title):
-    """Commit and push the new article and image to GitHub."""
+def commit_and_push_to_github(markdown_path, image_path, title, category=None, slug=None):
+    """Commit and push the new article, image, and updated sitemaps to GitHub, then notify search engines."""
     print("\n" + "=" * 60)
     print("📤 Committing and pushing to GitHub...")
     print("=" * 60)
@@ -869,6 +869,24 @@ def commit_and_push_to_github(markdown_path, image_path, title):
         return False
     
     try:
+        # Regenerate sitemaps & feeds
+        print("🗺️  Regenerating sitemaps & RSS feeds...")
+        try:
+            subprocess.run(['node', 'scripts/generate-sitemap.js'], check=False, cwd=repo_root)
+            sitemap_files = [
+                'public/sitemap.xml',
+                'public/post-sitemap.xml',
+                'public/section-sitemap.xml',
+                'public/page-sitemap.xml',
+                'public/rss.xml',
+                'public/atom.xml'
+            ]
+            for sf in sitemap_files:
+                if (repo_root / sf).exists():
+                    subprocess.run(['git', 'add', sf], check=False, cwd=repo_root)
+        except Exception as se:
+            print(f"⚠️  Sitemap generation note: {se}")
+
         # Get relative paths from repo root
         markdown_rel = markdown_path.relative_to(repo_root)
         image_rel = image_path.relative_to(repo_root)
@@ -903,6 +921,20 @@ def commit_and_push_to_github(markdown_path, image_path, title):
         )
         print(f"✓ Successfully pushed to GitHub!")
         print("=" * 60)
+
+        # Notify search engines (Google Indexing API & IndexNow)
+        if category and slug:
+            article_url = f"https://thenorthstarledger.com/{category}/{slug}"
+            print(f"\n📡 Notifying search engines for auto-indexing: {article_url}...")
+            try:
+                subprocess.run(['python3', 'scripts/notify-google.py', article_url], cwd=repo_root, check=False)
+            except Exception as ge:
+                print(f"⚠️  Google notification note: {ge}")
+            try:
+                subprocess.run(['node', 'scripts/notify-indexnow.js', article_url], cwd=repo_root, check=False)
+            except Exception as ie:
+                print(f"⚠️  IndexNow notification note: {ie}")
+
         return True
         
     except subprocess.CalledProcessError as e:
@@ -1072,7 +1104,7 @@ def main():
     # Step 9: Commit and push to GitHub (optional, controlled by env var)
     auto_commit = os.getenv('AUTO_COMMIT', 'true').lower() == 'true'
     if auto_commit:
-        commit_and_push_to_github(markdown_path, image_path, title)
+        commit_and_push_to_github(markdown_path, image_path, title, category, slug)
     else:
         print("\n💡 Tip: Set AUTO_COMMIT=true to automatically commit and push to GitHub")
 

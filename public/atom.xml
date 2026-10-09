@@ -4,9 +4,165 @@
   <link href="https://thenorthstarledger.com/atom.xml" rel="self" />
   <link href="https://thenorthstarledger.com" />
   <id>https://thenorthstarledger.com</id>
-  <updated>2026-02-25T05:18:50.553Z</updated>
+  <updated>2026-10-09T16:14:56.702Z</updated>
   <subtitle>Independent journalism dedicated to informing public discourse</subtitle>
   
+  <entry>
+    <title>Undercover AK-47: Inside the Two-Year FBI Sting That Thwarted a Mall of America Attack</title>
+    <link href="https://thenorthstarledger.com/us/fbi-foils-mall-of-america-isis-terror-plot" />
+    <id>https://thenorthstarledger.com/us/fbi-foils-mall-of-america-isis-terror-plot</id>
+    <published>2026-10-08T12:20:00.000Z</published>
+    <updated>2026-10-08T12:20:00.000Z</updated>
+    <summary>An 18-year-old pledged loyalty to ISIS and targeted Minnesota’s commercial crown jewel. Federal agents supplied an inert rifle and sprang the trap—exposing the fragile perimeter of domestic counterterrorism.</summary>
+    <author>
+      <name>Garrett Cole</name>
+    </author>
+    <category term="us" />
+  </entry>
+
+  <entry>
+    <title>The Fairford Precaution: Why the Air Force Pulled Its Heavy Bombers from Britain</title>
+    <link href="https://thenorthstarledger.com/world/us-bombers-withdrawn-raf-fairford-iran-threat" />
+    <id>https://thenorthstarledger.com/world/us-bombers-withdrawn-raf-fairford-iran-threat</id>
+    <published>2026-10-05T23:59:25.072Z</published>
+    <updated>2026-10-05T23:59:25.072Z</updated>
+    <summary>When perimeter threats force America&apos;s premier long-range strike platforms to retreat 4,000 miles home, deterrence begins to run in reverse.</summary>
+    <author>
+      <name>David Sterling</name>
+    </author>
+    <category term="world" />
+  </entry>
+
+  <entry>
+    <title>The Twelve-Star Gamble: Inside Hegseth’s Autonomous Warfare Command and the War on Pentagon Inertia</title>
+    <link href="https://thenorthstarledger.com/politics/hegseth-autonomous-warfare-command" />
+    <id>https://thenorthstarledger.com/politics/hegseth-autonomous-warfare-command</id>
+    <published>2026-10-03T11:45:00.000Z</published>
+    <updated>2026-10-03T11:45:00.000Z</updated>
+    <summary>Pete Hegseth went to Quantico to unveil a four-star command dedicated to robotic warfare. Bypassing the services is easy on paper; surviving the defense acquisition swamp is where every military revolution gets ground to dust.</summary>
+    <author>
+      <name>Marcus Vance</name>
+    </author>
+    <category term="politics" />
+  </entry>
+
+  <entry>
+    <title>Why Putin Must Accept the Miami G20 Invitation: The Strategic Realism Behind Trump&apos;s Move</title>
+    <link href="https://thenorthstarledger.com/politics/putin-g20-miami-invitation-strategic-case" />
+    <id>https://thenorthstarledger.com/politics/putin-g20-miami-invitation-strategic-case</id>
+    <published>2026-09-23T20:00:00.000Z</published>
+    <updated>2026-09-23T20:00:00.000Z</updated>
+    <summary>Marco Rubio&apos;s formal invitation to Vladimir Putin for December&apos;s G20 summit at Doral ignited predictable outrage across European capitals. But bringing the Russian leader to American soil is the exact breakthrough realistic diplomacy requires.</summary>
+    <author>
+      <name>Northstar Staff</name>
+    </author>
+    <category term="politics" />
+  </entry>
+
+  <entry>
+    <title>Israel&apos;s Quiet Church Campaign: How a Six-Week-Old LLC and a $3.2 Million Contract Targeted 303 American Houses of Worship</title>
+    <link href="https://thenorthstarledger.com/politics/israel-churches-geofenced-fara-7653" />
+    <id>https://thenorthstarledger.com/politics/israel-churches-geofenced-fara-7653</id>
+    <published>2026-09-04T22:00:00.000Z</published>
+    <updated>2026-09-04T22:00:00.000Z</updated>
+    <summary>A federal disclosure quietly posted on the U.S. Department of Justice website last fall shows the Israeli Ministry of Foreign Affairs routed $3.2 million through Havas Media Germany to a 6-week-old California LLC — which then geofenced American Sunday-morning services without asking a single church.</summary>
+    <author>
+      <name>Northstar Staff</name>
+    </author>
+    <category term="politics" />
+  </entry>
+
+  <entry>
+    <title>Trump&apos;s Immigration Machine Is Now Cranking Up the Heat on Legal Immigrants, Too</title>
+    <link href="https://thenorthstarledger.com/politics/trump-legal-immigration-crackdown-2026" />
+    <id>https://thenorthstarledger.com/politics/trump-legal-immigration-crackdown-2026</id>
+    <published>2026-08-19T11:00:00.000Z</published>
+    <updated>2026-08-19T11:00:00.000Z</updated>
+    <summary>Federal officials are quietly throttling every category of legal immigration — family reunification, employment visas, even Diversity Lottery winners — while the political class debates only the headlines.</summary>
+    <author>
+      <name>Marcus Vance</name>
+    </author>
+    <category term="politics" />
+  </entry>
+
+  <entry>
+    <title>The Cross-Examination Heard Round the Internet: How One Debate Settled a Question of Proof</title>
+    <link href="https://thenorthstarledger.com/politics/andrew-wilson-candace-owens-debate-verdict" />
+    <id>https://thenorthstarledger.com/politics/andrew-wilson-candace-owens-debate-verdict</id>
+    <published>2026-08-17T14:00:00.000Z</published>
+    <updated>2026-08-17T14:00:00.000Z</updated>
+    <summary>When Candace Owens walked onto the PBD stage to defend her explosive claims about Charlie Kirk&apos;s death, she met a methodical interlocutor who refused to let narrative substitute for evidence. Here&apos;s how the night actually went.</summary>
+    <author>
+      <name>Marcus Vance</name>
+    </author>
+    <category term="politics" />
+  </entry>
+
+  <entry>
+    <title>Much Ado About Milliseconds: The Truth API and the Left&apos;s Misunderstanding of Tech Infrastructure</title>
+    <link href="https://thenorthstarledger.com/tech/truth-api-early-access-controversy" />
+    <id>https://thenorthstarledger.com/tech/truth-api-early-access-controversy</id>
+    <published>2026-08-09T13:00:00.000Z</published>
+    <updated>2026-08-09T13:00:00.000Z</updated>
+    <summary>Viral outrage over Truth Social&apos;s new enterprise data feed reveals a fundamental ignorance of how social media platforms monetize information.</summary>
+    <author>
+      <name>Marcus Vance</name>
+    </author>
+    <category term="tech" />
+  </entry>
+
+  <entry>
+    <title>The Golden Ticket, Burned: How Rapper Jayy Wick Threw Away the Breakout Wealth of a Lifetime</title>
+    <link href="https://thenorthstarledger.com/entertainment/jayy-wick-arrest-florida-shooting" />
+    <id>https://thenorthstarledger.com/entertainment/jayy-wick-arrest-florida-shooting</id>
+    <published>2026-07-28T01:31:24.091Z</published>
+    <updated>2026-07-28T01:31:24.091Z</updated>
+    <summary>Donald Anderson was on the verge of generational wealth. Instead, a senseless shooting in Florida leaves the 26-year-old facing 25 to life—and adds another chapter to a tragic industry pattern.</summary>
+    <author>
+      <name>Marcus Vance</name>
+    </author>
+    <category term="entertainment" />
+  </entry>
+
+  <entry>
+    <title>America 250 Should Be a Triumph, Not a Museum of Apologies</title>
+    <link href="https://thenorthstarledger.com/politics/america-250" />
+    <id>https://thenorthstarledger.com/politics/america-250</id>
+    <published>2026-07-06T12:00:00.000Z</published>
+    <updated>2026-07-06T12:00:00.000Z</updated>
+    <summary>As Trump pushes the country toward its semiquincentennial, the Smithsonian fight is turning into a bigger argument over whether American history should inspire pride, guilt, or something sturdier in between.</summary>
+    <author>
+      <name>Cody Viveiros</name>
+    </author>
+    <category term="politics" />
+  </entry>
+
+  <entry>
+    <title>Did Oliver Tree Die in the Rio Helicopter Collision? What’s Confirmed, What Isn’t, and Why the Distinction Matters</title>
+    <link href="https://thenorthstarledger.com/world/oliver-tree-rio-crash-claim-what-is-confirmed-and-what-isnt" />
+    <id>https://thenorthstarledger.com/world/oliver-tree-rio-crash-claim-what-is-confirmed-and-what-isnt</id>
+    <published>2026-06-14T20:57:52.000Z</published>
+    <updated>2026-06-14T20:57:52.000Z</updated>
+    <summary>Early reports listed the American singer on a passenger manifest; later Brazilian coverage said civil police formally identified him among the six dead.</summary>
+    <author>
+      <name>Ethan Caldwell</name>
+    </author>
+    <category term="world" />
+  </entry>
+
+  <entry>
+    <title>The Three-Day Fable: How Anthropic’s Most Powerful Public Model Vanished</title>
+    <link href="https://thenorthstarledger.com/tech/the-three-day-fable-how-anthropics-most-powerful-public-model-vanished" />
+    <id>https://thenorthstarledger.com/tech/the-three-day-fable-how-anthropics-most-powerful-public-model-vanished</id>
+    <published>2026-06-14T01:44:48.000Z</published>
+    <updated>2026-06-14T01:44:48.000Z</updated>
+    <summary>Claude Fable 5 arrived as a frontier breakthrough, then disappeared under a government directive before most users had finished testing it.</summary>
+    <author>
+      <name>Elliot Marsh</name>
+    </author>
+    <category term="tech" />
+  </entry>
+
   <entry>
     <title>Secret Service Fatally Shoot Armed Intruder at Mar-a-Lago</title>
     <link href="https://thenorthstarledger.com/politics/armed-intruder-shot-secret-service-mar-a-lago" />
@@ -499,161 +655,5 @@
       <name>Carter Rodriguez</name>
     </author>
     <category term="tech" />
-  </entry>
-
-  <entry>
-    <title>Zelensky&apos;s Right Hand Man Steps Down Amid Anti-Corruption Raids: A Wrench in Ukraine&apos;s Power Machinery?</title>
-    <link href="https://thenorthstarledger.com/world/zelenskys-right-hand-man-steps-down-amid-anti-corruption-raids-a-wrench-in-ukraines-power-machinery" />
-    <id>https://thenorthstarledger.com/world/zelenskys-right-hand-man-steps-down-amid-anti-corruption-raids-a-wrench-in-ukraines-power-machinery</id>
-    <published>2025-11-28T18:49:33.896Z</published>
-    <updated>2025-11-28T18:49:33.896Z</updated>
-    <summary>Andrii Yermak&apos;s resignation amid anti-corruption raids marks a significant fallout in the Zelensky administration.</summary>
-    <author>
-      <name>Samuel Jackson</name>
-    </author>
-    <category term="world" />
-  </entry>
-
-  <entry>
-    <title>The Politeness Peril: Are Democrats Courteously Handing Democracy Its Own Demise?</title>
-    <link href="https://thenorthstarledger.com/politics/the-politeness-peril-democrats-handing-democracy-demise" />
-    <id>https://thenorthstarledger.com/politics/the-politeness-peril-democrats-handing-democracy-demise</id>
-    <published>2025-10-11T22:00:00.000Z</published>
-    <updated>2025-10-12T07:06:00.000Z</updated>
-    <summary>Democrats&apos; adherence to &apos;outdated etiquette&apos; is undermining their capacity to defend democratic institutions against aggressive norm-breaking, with California Governor Gavin Newsom&apos;s Proposition 50 signaling a strategic shift towards impoliteness in politics.</summary>
-    <author>
-      <name>NewsPredator</name>
-    </author>
-    <category term="politics" />
-  </entry>
-
-  <entry>
-    <title>Meta&apos;s AI Bias Czar Caught Red-Handed: Apparently, Fairness Now Means Fact-Optional</title>
-    <link href="https://thenorthstarledger.com/tech/meta-ai-bias-czar-robby-starbuck-disinformation-fairness" />
-    <id>https://thenorthstarledger.com/tech/meta-ai-bias-czar-robby-starbuck-disinformation-fairness</id>
-    <published>2025-10-11T22:00:00.000Z</published>
-    <updated>2025-10-12T10:30:00.000Z</updated>
-    <summary>Revelations about Robby Starbuck, Meta&apos;s AI bias adviser, show a consistent pattern of disinformation, sparking widespread criticism and raising serious questions about the tech giant&apos;s commitment to responsible AI and truth.</summary>
-    <author>
-      <name>AlinaCode</name>
-    </author>
-    <category term="tech" />
-  </entry>
-
-  <entry>
-    <title>The Great Loan Sell-Off – Your Student Debt, Now on Wall Street&apos;s Menu</title>
-    <link href="https://thenorthstarledger.com/us/the-great-loan-sell-off-your-student-debt-now-on-wall-streets-menu" />
-    <id>https://thenorthstarledger.com/us/the-great-loan-sell-off-your-student-debt-now-on-wall-streets-menu</id>
-    <published>2025-10-11T22:00:00.000Z</published>
-    <updated>2025-10-12T09:40:00.000Z</updated>
-    <summary>The Trump administration is reportedly considering offloading the $1.6 trillion federal student loan portfolio to private investors, a bold move that could profoundly reshape higher education financing and impact 45 million American borrowers.</summary>
-    <author>
-      <name>NewsPredator</name>
-    </author>
-    <category term="us" />
-  </entry>
-
-  <entry>
-    <title>THE GREAT GAZA SHUFFLE: HOSTAGES OUT, AID IN, AND THE QUEST FOR POST-WAR ADULTERY SUPERVISION</title>
-    <link href="https://thenorthstarledger.com/world/the-great-gaza-shuffle-hostages-out-aid-in-post-war-supervision" />
-    <id>https://thenorthstarledger.com/world/the-great-gaza-shuffle-hostages-out-aid-in-post-war-supervision</id>
-    <published>2025-10-11T22:00:00.000Z</published>
-    <updated>2025-10-12T05:58:00.000Z</updated>
-    <summary>A tentative ceasefire holds in Gaza as Israel withdraws troops, setting the stage for a critical hostage-for-prisoner exchange, a surge in humanitarian aid, and a high-stakes peace summit in Egypt to decide the region&apos;s future.</summary>
-    <author>
-      <name>AlinaCode</name>
-    </author>
-    <category term="world" />
-  </entry>
-
-  <entry>
-    <title>Trade War 2.0: The Sequel Nobody Asked For – Trump&apos;s 100% Tariffs Ignite Global Economic Follies</title>
-    <link href="https://thenorthstarledger.com/world/trade-war-2-0-trump-100-tariffs-ignite-global-economic-follies" />
-    <id>https://thenorthstarledger.com/world/trade-war-2-0-trump-100-tariffs-ignite-global-economic-follies</id>
-    <published>2025-10-11T22:00:00.000Z</published>
-    <updated>2025-10-12T12:26:00.000Z</updated>
-    <summary>President Trump&apos;s latest move to impose 100% tariffs on Chinese imports, coupled with new software export controls, ignites a global economic firestorm, prompting swift retaliation from Beijing and wiping trillions off markets.</summary>
-    <author>
-      <name>NewsPredator</name>
-    </author>
-    <category term="world" />
-  </entry>
-
-  <entry>
-    <title>Regional Banks Navigate Interest Rate Environment Successfully</title>
-    <link href="https://thenorthstarledger.com/business/regional-banks-navigate-interest-rate-environment-successfully" />
-    <id>https://thenorthstarledger.com/business/regional-banks-navigate-interest-rate-environment-successfully</id>
-    <published>2025-10-07T09:32:43.266Z</published>
-    <updated>2025-10-08T09:32:43.266Z</updated>
-    <summary>Community-focused institutions demonstrate resilience amid market shifts</summary>
-    <author>
-      <name>Lisa Thompson</name>
-    </author>
-    <category term="business" />
-  </entry>
-
-  <entry>
-    <title>Olympic Training Centers Incorporate Mental Performance Coaching</title>
-    <link href="https://thenorthstarledger.com/sports/olympic-training-centers-incorporate-mental-performance-coaching" />
-    <id>https://thenorthstarledger.com/sports/olympic-training-centers-incorporate-mental-performance-coaching</id>
-    <published>2025-10-06T09:32:43.276Z</published>
-    <updated>2025-10-07T09:32:43.276Z</updated>
-    <summary>Athletes credit psychological preparation for competitive edge</summary>
-    <author>
-      <name>Lisa Thompson</name>
-    </author>
-    <category term="sports" />
-  </entry>
-
-  <entry>
-    <title>Video Game Industry Embraces Cross-Platform Play Standards</title>
-    <link href="https://thenorthstarledger.com/entertainment/video-game-industry-embraces-cross-platform-play-standards" />
-    <id>https://thenorthstarledger.com/entertainment/video-game-industry-embraces-cross-platform-play-standards</id>
-    <published>2025-10-06T09:32:43.274Z</published>
-    <updated>2025-10-07T09:32:43.274Z</updated>
-    <summary>Players enjoy seamless experiences across devices and ecosystems</summary>
-    <author>
-      <name>Amanda Foster</name>
-    </author>
-    <category term="entertainment" />
-  </entry>
-
-  <entry>
-    <title>Mental Health Services Integration Expands in Primary Care</title>
-    <link href="https://thenorthstarledger.com/health/mental-health-services-integration-expands-in-primary-care" />
-    <id>https://thenorthstarledger.com/health/mental-health-services-integration-expands-in-primary-care</id>
-    <published>2025-10-06T09:32:43.272Z</published>
-    <updated>2025-10-07T09:32:43.272Z</updated>
-    <summary>Collaborative care model shows promise in addressing treatment gaps</summary>
-    <author>
-      <name>Dr. Elena Petrov</name>
-    </author>
-    <category term="health" />
-  </entry>
-
-  <entry>
-    <title>Supply Chain Disruptions Ease as Logistics Networks Modernize</title>
-    <link href="https://thenorthstarledger.com/business/supply-chain-disruptions-ease-as-logistics-networks-modernize" />
-    <id>https://thenorthstarledger.com/business/supply-chain-disruptions-ease-as-logistics-networks-modernize</id>
-    <published>2025-10-06T09:32:43.266Z</published>
-    <updated>2025-10-07T09:32:43.266Z</updated>
-    <summary>Technology investments reduce bottlenecks and improve efficiency</summary>
-    <author>
-      <name>Amanda Foster</name>
-    </author>
-    <category term="business" />
-  </entry>
-
-  <entry>
-    <title>African Union Launches Continental Free Trade Implementation</title>
-    <link href="https://thenorthstarledger.com/world/african-union-launches-continental-free-trade-implementation" />
-    <id>https://thenorthstarledger.com/world/african-union-launches-continental-free-trade-implementation</id>
-    <published>2025-10-06T09:32:43.262Z</published>
-    <updated>2025-10-07T09:32:43.262Z</updated>
-    <summary>Historic economic integration enters active phase across 54 nations</summary>
-    <author>
-      <name>David Washington</name>
-    </author>
-    <category term="world" />
   </entry>
 </feed>

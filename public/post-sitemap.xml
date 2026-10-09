@@ -1,238 +1,310 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://thenorthstarledger.com/us/fbi-foils-mall-of-america-isis-terror-plot</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://thenorthstarledger.com/world/us-bombers-withdrawn-raf-fairford-iran-threat</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://thenorthstarledger.com/politics/hegseth-autonomous-warfare-command</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://thenorthstarledger.com/politics/putin-g20-miami-invitation-strategic-case</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thenorthstarledger.com/politics/israel-churches-geofenced-fara-7653</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thenorthstarledger.com/politics/trump-legal-immigration-crackdown-2026</loc>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thenorthstarledger.com/politics/andrew-wilson-candace-owens-debate-verdict</loc>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thenorthstarledger.com/tech/truth-api-early-access-controversy</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thenorthstarledger.com/entertainment/jayy-wick-arrest-florida-shooting</loc>
+    <lastmod>2026-07-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thenorthstarledger.com/politics/america-250</loc>
+    <lastmod>2026-07-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thenorthstarledger.com/world/oliver-tree-rio-crash-claim-what-is-confirmed-and-what-isnt</loc>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://thenorthstarledger.com/tech/the-three-day-fable-how-anthropics-most-powerful-public-model-vanished</loc>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://thenorthstarledger.com/politics/armed-intruder-shot-secret-service-mar-a-lago</loc>
     <lastmod>2026-02-22</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thenorthstarledger.com/business/japans-food-tax-gambit-spooks-bond-marketsand-sends-shockwaves-from-wall-street-to-bitcoin</loc>
     <lastmod>2026-01-22</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thenorthstarledger.com/opinion/greenland-isnt-for-salebut-the-arctic-is-and-america-cant-afford-to-sit-out</loc>
     <lastmod>2026-01-22</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thenorthstarledger.com/politics/minneapolis-ice-shooting-sparks-a-new-legal-debate-could-the-drivers-spouse-be-next-in-the-crosshairs</loc>
     <lastmod>2026-01-17</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thenorthstarledger.com/tech/secret-service-busts-massive-sim-farm-near-new-yorka-digital-threat-with-geopolitical-teeth</loc>
     <lastmod>2026-01-16</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thenorthstarledger.com/politics/americas-immigration-u-turn-net-loss-in-2025-safer-streets-and-a-labor-market-plot-twist</loc>
     <lastmod>2026-01-16</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thenorthstarledger.com/politics/minnesotas-ice-showdown-when-peaceful-resistance-meets-real-world-consequences</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thenorthstarledger.com/politics/fairtax-vs-trumps-one-big-beautiful-bill-the-january-2025-tax-rumor-that-wouldnt-dieand-the-law-that-actually-did</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thenorthstarledger.com/politics/sharia-in-texas-the-rhetoric-the-reality-and-why-the-debate-keeps-catching-fire</loc>
     <lastmod>2026-01-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thenorthstarledger.com/politics/trump-team-weighs-greenland-options-as-white-house-keeps-military-on-the-table</loc>
     <lastmod>2026-01-06</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thenorthstarledger.com/entertainment/when-the-room-goes-quiet-how-a-viral-50-centjoy-behar-blowup-turned-into-a-masterclass-in-silence</loc>
     <lastmod>2026-01-03</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thenorthstarledger.com/politics/texas-rings-in-2026-with-new-laws-on-ai-evictions-immigration-enforcement-and-business-taxes</loc>
     <lastmod>2026-01-03</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thenorthstarledger.com/tech/macrohard-wants-to-replace-the-whole-software-industrythen-it-gave-developer-of-the-month-to-a-human-in-texas</loc>
     <lastmod>2026-01-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thenorthstarledger.com/politics/minnesotas-fraud-iceberg-how-nick-shirleys-viral-investigation-lit-a-fire-under-the-system</loc>
     <lastmod>2026-01-01</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thenorthstarledger.com/tech/gmail-users-can-finally-change-their-addresswithout-nuking-their-whole-google-life</loc>
     <lastmod>2025-12-27</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thenorthstarledger.com/business/us-pushes-new-china-chip-tariffs-to-2027-sending-a-very-loud-signal-to-the-semiconductor-supply-chain</loc>
     <lastmod>2025-12-27</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thenorthstarledger.com/politics/epstein-files-redactedand-now-the-lawyers-are-circling-washington</loc>
     <lastmod>2025-12-27</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thenorthstarledger.com/politics/visa-applicants-watch-your-feeds-washingtons-anti-american-screenings-ignite-a-new-free-speech-fight</loc>
     <lastmod>2025-12-27</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thenorthstarledger.com/politics/trump-orders-christmas-day-airstrikes-on-isis-in-nigeria-igniting-a-familiar-debate-over-us-power-abroad</loc>
     <lastmod>2025-12-27</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thenorthstarledger.com/politics/alex-jones-to-candace-owens-put-down-the-megaphoneyour-new-military-coverup-saga-is-eating-the-plot</loc>
     <lastmod>2025-12-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thenorthstarledger.com/opinion/panya-the-pygmy-hippo-calf-is-the-internets-newest-obsessionand-the-oldest-ethical-problem-in-a-new-filter</loc>
     <lastmod>2025-12-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thenorthstarledger.com/travel/viral-squished-into-the-window-photo-reignites-the-real-airline-seat-war-space-profit-and-passenger-etiquette</loc>
     <lastmod>2025-12-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thenorthstarledger.com/politics/doj-epstein-webpage-posted-filesthen-at-least-16-vanished-within-a-day-igniting-a-new-transparency-firestorm</loc>
     <lastmod>2025-12-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thenorthstarledger.com/politics/epsteins-ghost-in-the-hearing-room-the-text-messages-that-turned-congress-into-a-live-action-puppet-show</loc>
     <lastmod>2025-12-21</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thenorthstarledger.com/business/cmac-roofing-earns-top-texas-honor-and-charts-a-bigger-future-in-housing-and-construction-tech</loc>
     <lastmod>2025-12-19</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thenorthstarledger.com/world/skydiver-left-hanging-from-plane-tail-at-15000-feet-puts-australias-jump-safety-under-a-harsh-spotlight</loc>
     <lastmod>2025-12-19</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thenorthstarledger.com/sports/92-year-old-tekken-8-champion-forces-esports-to-reconsider-who-competitive-gaming-is-for</loc>
     <lastmod>2025-12-19</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thenorthstarledger.com/health/harvard-morgue-manager-gets-eight-years-raising-new-questions-about-oversight-in-academic-anatomy-programs</loc>
     <lastmod>2025-12-19</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thenorthstarledger.com/tech/your-browser-just-got-rejected-by-x-a-tragic-love-story-in-which-javascript-is-the-third-wheel</loc>
     <lastmod>2025-12-12</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thenorthstarledger.com/tech/disney-wants-ais-futurebut-also-wants-to-sue-it-how-the-house-of-mouse-got-here</loc>
     <lastmod>2025-12-12</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thenorthstarledger.com/sports/in-n-out-vs-the-number-67-how-a-viral-6-7-trend-turned-burger-tickets-into-a-march-madness-side-quest</loc>
     <lastmod>2025-12-11</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thenorthstarledger.com/tech/python-keeps-its-crown-why-the-internets-favorite-language-still-runs-the-show</loc>
     <lastmod>2025-12-11</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thenorthstarledger.com/tech/cryptocurrency-a-mirage-of-riches-or-the-new-age-gold-rush</loc>
     <lastmod>2025-12-11</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thenorthstarledger.com/business/cody-viveiros-dfw-business-powerhouse</loc>
     <lastmod>2025-12-10</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thenorthstarledger.com/tech/the-cojoverse-unveiled-a-deep-dive-into-the-groundbreaking-bunker</loc>
     <lastmod>2025-12-08</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thenorthstarledger.com/us/feasting-on-evidence-the-luigi-mangione-murder-case-takes-a-darkly-humorous-twist</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thenorthstarledger.com/business/100m-roofing-empire-toyota-camry-servant-leadership</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thenorthstarledger.com/tech/unveiling-the-enigma-of-googles-proprietary-news-algorithm</loc>
     <lastmod>2025-11-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thenorthstarledger.com/world/zelenskys-right-hand-man-steps-down-amid-anti-corruption-raids-a-wrench-in-ukraines-power-machinery</loc>
     <lastmod>2025-11-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thenorthstarledger.com/politics/the-politeness-peril-democrats-handing-democracy-demise</loc>
