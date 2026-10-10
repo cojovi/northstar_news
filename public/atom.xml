@@ -4,9 +4,22 @@
   <link href="https://thenorthstarledger.com/atom.xml" rel="self" />
   <link href="https://thenorthstarledger.com" />
   <id>https://thenorthstarledger.com</id>
-  <updated>2026-10-09T16:14:56.702Z</updated>
+  <updated>2026-10-10T05:03:17.106Z</updated>
   <subtitle>Independent journalism dedicated to informing public discourse</subtitle>
   
+  <entry>
+    <title>The Hollywood Comedy That Became a Ghost Story</title>
+    <link href="https://thenorthstarledger.com/entertainment/atuk-unmade-comedy-hollywood-curse" />
+    <id>https://thenorthstarledger.com/entertainment/atuk-unmade-comedy-hollywood-curse</id>
+    <published>2026-10-10T05:03:15.183Z</published>
+    <updated>2026-10-10T05:03:15.183Z</updated>
+    <summary>An unfinished adaptation linked to Belushi, Kinison, Candy and Farley acquired a sinister reputation. The history of Atuk is stranger—and less tidy—than the legend suggests.</summary>
+    <author>
+      <name>David Sterling</name>
+    </author>
+    <category term="entertainment" />
+  </entry>
+
   <entry>
     <title>Undercover AK-47: Inside the Two-Year FBI Sting That Thwarted a Mall of America Attack</title>
     <link href="https://thenorthstarledger.com/us/fbi-foils-mall-of-america-isis-terror-plot" />
@@ -642,18 +655,5 @@
       <name>Marcus Rodriguez</name>
     </author>
     <category term="business" />
-  </entry>
-
-  <entry>
-    <title>Unveiling the Enigma of Google&apos;s Proprietary News Algorithm</title>
-    <link href="https://thenorthstarledger.com/tech/unveiling-the-enigma-of-googles-proprietary-news-algorithm" />
-    <id>https://thenorthstarledger.com/tech/unveiling-the-enigma-of-googles-proprietary-news-algorithm</id>
-    <published>2025-11-28T19:09:21.296Z</published>
-    <updated>2025-11-28T19:09:21.296Z</updated>
-    <summary>Exploring the complexities of the algorithm powering Google&apos;s news aggregator</summary>
-    <author>
-      <name>Carter Rodriguez</name>
-    </author>
-    <category term="tech" />
   </entry>
 </feed>

@@ -5,9 +5,19 @@
     <link>https://thenorthstarledger.com</link>
     <description>Independent journalism dedicated to informing public discourse</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 09 Oct 2026 16:14:56 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 10 Oct 2026 05:03:17 GMT</lastBuildDate>
     <atom:link href="https://thenorthstarledger.com/rss.xml" rel="self" type="application/rss+xml" />
     
+    <item>
+      <title><![CDATA[The Hollywood Comedy That Became a Ghost Story]]></title>
+      <link>https://thenorthstarledger.com/entertainment/atuk-unmade-comedy-hollywood-curse</link>
+      <guid>https://thenorthstarledger.com/entertainment/atuk-unmade-comedy-hollywood-curse</guid>
+      <pubDate>Sat, 10 Oct 2026 05:03:15 GMT</pubDate>
+      <description><![CDATA[An unfinished adaptation linked to Belushi, Kinison, Candy and Farley acquired a sinister reputation. The history of Atuk is stranger—and less tidy—than the legend suggests.]]></description>
+      <category>entertainment</category>
+      <author>David Sterling</author>
+    </item>
+
     <item>
       <title><![CDATA[Undercover AK-47: Inside the Two-Year FBI Sting That Thwarted a Mall of America Attack]]></title>
       <link>https://thenorthstarledger.com/us/fbi-foils-mall-of-america-isis-terror-plot</link>
@@ -496,16 +506,6 @@
       <description><![CDATA[Texas CEO Christian Viveiros proves you don't need a Lamborghini to dominate an industry, building CMAC Roofing into a $100 million juggernaut through operational discipline and genuine care for employees]]></description>
       <category>business</category>
       <author>Marcus Rodriguez</author>
-    </item>
-
-    <item>
-      <title><![CDATA[Unveiling the Enigma of Google's Proprietary News Algorithm]]></title>
-      <link>https://thenorthstarledger.com/tech/unveiling-the-enigma-of-googles-proprietary-news-algorithm</link>
-      <guid>https://thenorthstarledger.com/tech/unveiling-the-enigma-of-googles-proprietary-news-algorithm</guid>
-      <pubDate>Fri, 28 Nov 2025 19:09:21 GMT</pubDate>
-      <description><![CDATA[Exploring the complexities of the algorithm powering Google's news aggregator]]></description>
-      <category>tech</category>
-      <author>Carter Rodriguez</author>
     </item>
   </channel>
 </rss>
