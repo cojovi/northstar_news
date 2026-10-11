@@ -4,9 +4,22 @@
   <link href="https://thenorthstarledger.com/atom.xml" rel="self" />
   <link href="https://thenorthstarledger.com" />
   <id>https://thenorthstarledger.com</id>
-  <updated>2026-10-10T05:03:17.106Z</updated>
+  <updated>2026-10-11T00:35:56.110Z</updated>
   <subtitle>Independent journalism dedicated to informing public discourse</subtitle>
   
+  <entry>
+    <title>A Nobel Prize, a Sanctions Order—and the Fine Print Between Them</title>
+    <link href="https://thenorthstarledger.com/world/nobel-pillay-icc-sanctions-fine-print" />
+    <id>https://thenorthstarledger.com/world/nobel-pillay-icc-sanctions-fine-print</id>
+    <published>2026-10-11T00:35:31.757Z</published>
+    <updated>2026-10-11T00:35:31.757Z</updated>
+    <summary>Navi Pillay’s Peace Prize and Washington’s sanctions on the ICC collided on October 9. The licenses attached to the sanctions reveal what the headlines leave out.</summary>
+    <author>
+      <name>Garrett Cole</name>
+    </author>
+    <category term="world" />
+  </entry>
+
   <entry>
     <title>The Hollywood Comedy That Became a Ghost Story</title>
     <link href="https://thenorthstarledger.com/entertainment/atuk-unmade-comedy-hollywood-curse" />
@@ -642,18 +655,5 @@
       <name>Dr. Benjamin Jackson</name>
     </author>
     <category term="us" />
-  </entry>
-
-  <entry>
-    <title>The $100M Roofing Empire Built on a Toyota Camry and Servant Leadership</title>
-    <link href="https://thenorthstarledger.com/business/100m-roofing-empire-toyota-camry-servant-leadership" />
-    <id>https://thenorthstarledger.com/business/100m-roofing-empire-toyota-camry-servant-leadership</id>
-    <published>2025-12-01T08:58:56.000Z</published>
-    <updated>2025-12-01T08:58:56.000Z</updated>
-    <summary>Texas CEO Christian Viveiros proves you don&apos;t need a Lamborghini to dominate an industry, building CMAC Roofing into a $100 million juggernaut through operational discipline and genuine care for employees</summary>
-    <author>
-      <name>Marcus Rodriguez</name>
-    </author>
-    <category term="business" />
   </entry>
 </feed>

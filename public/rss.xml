@@ -5,9 +5,19 @@
     <link>https://thenorthstarledger.com</link>
     <description>Independent journalism dedicated to informing public discourse</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Oct 2026 05:03:17 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 11 Oct 2026 00:35:56 GMT</lastBuildDate>
     <atom:link href="https://thenorthstarledger.com/rss.xml" rel="self" type="application/rss+xml" />
     
+    <item>
+      <title><![CDATA[A Nobel Prize, a Sanctions Order—and the Fine Print Between Them]]></title>
+      <link>https://thenorthstarledger.com/world/nobel-pillay-icc-sanctions-fine-print</link>
+      <guid>https://thenorthstarledger.com/world/nobel-pillay-icc-sanctions-fine-print</guid>
+      <pubDate>Sun, 11 Oct 2026 00:35:31 GMT</pubDate>
+      <description><![CDATA[Navi Pillay’s Peace Prize and Washington’s sanctions on the ICC collided on October 9. The licenses attached to the sanctions reveal what the headlines leave out.]]></description>
+      <category>world</category>
+      <author>Garrett Cole</author>
+    </item>
+
     <item>
       <title><![CDATA[The Hollywood Comedy That Became a Ghost Story]]></title>
       <link>https://thenorthstarledger.com/entertainment/atuk-unmade-comedy-hollywood-curse</link>
@@ -496,16 +506,6 @@
       <description><![CDATA[Luigi Mangione's murder case unfolds in court, as defense seeks to dismiss key evidence]]></description>
       <category>us</category>
       <author>Dr. Benjamin Jackson</author>
-    </item>
-
-    <item>
-      <title><![CDATA[The $100M Roofing Empire Built on a Toyota Camry and Servant Leadership]]></title>
-      <link>https://thenorthstarledger.com/business/100m-roofing-empire-toyota-camry-servant-leadership</link>
-      <guid>https://thenorthstarledger.com/business/100m-roofing-empire-toyota-camry-servant-leadership</guid>
-      <pubDate>Mon, 01 Dec 2025 08:58:56 GMT</pubDate>
-      <description><![CDATA[Texas CEO Christian Viveiros proves you don't need a Lamborghini to dominate an industry, building CMAC Roofing into a $100 million juggernaut through operational discipline and genuine care for employees]]></description>
-      <category>business</category>
-      <author>Marcus Rodriguez</author>
     </item>
   </channel>
 </rss>
