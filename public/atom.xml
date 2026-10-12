@@ -4,9 +4,22 @@
   <link href="https://thenorthstarledger.com/atom.xml" rel="self" />
   <link href="https://thenorthstarledger.com" />
   <id>https://thenorthstarledger.com</id>
-  <updated>2026-10-12T02:06:27.514Z</updated>
+  <updated>2026-10-12T14:11:24.909Z</updated>
   <subtitle>Independent journalism dedicated to informing public discourse</subtitle>
   
+  <entry>
+    <title>A Pre-Dawn Search at Ilhan Omar’s Home—and the Questions Still Unanswered</title>
+    <link href="https://thenorthstarledger.com/politics/ilhan-omar-home-search-immigration-investigation" />
+    <id>https://thenorthstarledger.com/politics/ilhan-omar-home-search-immigration-investigation</id>
+    <published>2026-10-12T14:11:24.619Z</published>
+    <updated>2026-10-12T14:11:24.619Z</updated>
+    <summary>Federal agents searched the Minnesota congresswoman’s Washington residence, according to multiple news organizations. The reported immigration-paperwork inquiry is serious. A search warrant, however, is not a finding of fraud.</summary>
+    <author>
+      <name>David Sterling</name>
+    </author>
+    <category term="politics" />
+  </entry>
+
   <entry>
     <title>When Your AI Vendor Starts Writing Rules About Cruelty</title>
     <link href="https://thenorthstarledger.com/tech/anthropic-claude-abuse-policy-customer-access" />
@@ -642,18 +655,5 @@
       <name>Staff Writer</name>
     </author>
     <category term="business" />
-  </entry>
-
-  <entry>
-    <title>The Cojoverse Unveiled: A Deep Dive into the Groundbreaking Bunker</title>
-    <link href="https://thenorthstarledger.com/tech/the-cojoverse-unveiled-a-deep-dive-into-the-groundbreaking-bunker" />
-    <id>https://thenorthstarledger.com/tech/the-cojoverse-unveiled-a-deep-dive-into-the-groundbreaking-bunker</id>
-    <published>2025-12-08T04:25:06.162Z</published>
-    <updated>2025-12-08T04:25:06.162Z</updated>
-    <summary>Exploring Cojoverse&apos;s Bunker: A hub of innovation redefining the boundaries of the digital world.</summary>
-    <author>
-      <name>Alexander Martin</name>
-    </author>
-    <category term="tech" />
   </entry>
 </feed>

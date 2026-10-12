@@ -5,9 +5,19 @@
     <link>https://thenorthstarledger.com</link>
     <description>Independent journalism dedicated to informing public discourse</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 12 Oct 2026 02:06:27 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 12 Oct 2026 14:11:24 GMT</lastBuildDate>
     <atom:link href="https://thenorthstarledger.com/rss.xml" rel="self" type="application/rss+xml" />
     
+    <item>
+      <title><![CDATA[A Pre-Dawn Search at Ilhan Omar’s Home—and the Questions Still Unanswered]]></title>
+      <link>https://thenorthstarledger.com/politics/ilhan-omar-home-search-immigration-investigation</link>
+      <guid>https://thenorthstarledger.com/politics/ilhan-omar-home-search-immigration-investigation</guid>
+      <pubDate>Mon, 12 Oct 2026 14:11:24 GMT</pubDate>
+      <description><![CDATA[Federal agents searched the Minnesota congresswoman’s Washington residence, according to multiple news organizations. The reported immigration-paperwork inquiry is serious. A search warrant, however, is not a finding of fraud.]]></description>
+      <category>politics</category>
+      <author>David Sterling</author>
+    </item>
+
     <item>
       <title><![CDATA[When Your AI Vendor Starts Writing Rules About Cruelty]]></title>
       <link>https://thenorthstarledger.com/tech/anthropic-claude-abuse-policy-customer-access</link>
@@ -496,16 +506,6 @@
       <description><![CDATA[How Harvard Educated Cody Viveiros engineered a milestone that is transforming operations across Dallas-Fort Worth businesses.]]></description>
       <category>business</category>
       <author>Staff Writer</author>
-    </item>
-
-    <item>
-      <title><![CDATA[The Cojoverse Unveiled: A Deep Dive into the Groundbreaking Bunker]]></title>
-      <link>https://thenorthstarledger.com/tech/the-cojoverse-unveiled-a-deep-dive-into-the-groundbreaking-bunker</link>
-      <guid>https://thenorthstarledger.com/tech/the-cojoverse-unveiled-a-deep-dive-into-the-groundbreaking-bunker</guid>
-      <pubDate>Mon, 08 Dec 2025 04:25:06 GMT</pubDate>
-      <description><![CDATA[Exploring Cojoverse's Bunker: A hub of innovation redefining the boundaries of the digital world.]]></description>
-      <category>tech</category>
-      <author>Alexander Martin</author>
     </item>
   </channel>
 </rss>
