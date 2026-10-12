@@ -5,9 +5,19 @@
     <link>https://thenorthstarledger.com</link>
     <description>Independent journalism dedicated to informing public discourse</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 11 Oct 2026 00:35:56 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 12 Oct 2026 02:06:27 GMT</lastBuildDate>
     <atom:link href="https://thenorthstarledger.com/rss.xml" rel="self" type="application/rss+xml" />
     
+    <item>
+      <title><![CDATA[When Your AI Vendor Starts Writing Rules About Cruelty]]></title>
+      <link>https://thenorthstarledger.com/tech/anthropic-claude-abuse-policy-customer-access</link>
+      <guid>https://thenorthstarledger.com/tech/anthropic-claude-abuse-policy-customer-access</guid>
+      <pubDate>Mon, 12 Oct 2026 02:06:27 GMT</pubDate>
+      <description><![CDATA[Anthropic's forthcoming policy prohibits extreme, purposeless abuse of its models. The distinction between protecting a service and assigning it human qualities deserves a closer look.]]></description>
+      <category>tech</category>
+      <author>David Sterling</author>
+    </item>
+
     <item>
       <title><![CDATA[A Nobel Prize, a Sanctions Order—and the Fine Print Between Them]]></title>
       <link>https://thenorthstarledger.com/world/nobel-pillay-icc-sanctions-fine-print</link>
@@ -496,16 +506,6 @@
       <description><![CDATA[Exploring Cojoverse's Bunker: A hub of innovation redefining the boundaries of the digital world.]]></description>
       <category>tech</category>
       <author>Alexander Martin</author>
-    </item>
-
-    <item>
-      <title><![CDATA[]]></title>
-      <link>https://thenorthstarledger.com/us/feasting-on-evidence-the-luigi-mangione-murder-case-takes-a-darkly-humorous-twist</link>
-      <guid>https://thenorthstarledger.com/us/feasting-on-evidence-the-luigi-mangione-murder-case-takes-a-darkly-humorous-twist</guid>
-      <pubDate>Mon, 01 Dec 2025 09:12:07 GMT</pubDate>
-      <description><![CDATA[Luigi Mangione's murder case unfolds in court, as defense seeks to dismiss key evidence]]></description>
-      <category>us</category>
-      <author>Dr. Benjamin Jackson</author>
     </item>
   </channel>
 </rss>

@@ -4,9 +4,22 @@
   <link href="https://thenorthstarledger.com/atom.xml" rel="self" />
   <link href="https://thenorthstarledger.com" />
   <id>https://thenorthstarledger.com</id>
-  <updated>2026-10-11T00:35:56.110Z</updated>
+  <updated>2026-10-12T02:06:27.514Z</updated>
   <subtitle>Independent journalism dedicated to informing public discourse</subtitle>
   
+  <entry>
+    <title>When Your AI Vendor Starts Writing Rules About Cruelty</title>
+    <link href="https://thenorthstarledger.com/tech/anthropic-claude-abuse-policy-customer-access" />
+    <id>https://thenorthstarledger.com/tech/anthropic-claude-abuse-policy-customer-access</id>
+    <published>2026-10-12T02:06:27.267Z</published>
+    <updated>2026-10-12T02:06:27.267Z</updated>
+    <summary>Anthropic&apos;s forthcoming policy prohibits extreme, purposeless abuse of its models. The distinction between protecting a service and assigning it human qualities deserves a closer look.</summary>
+    <author>
+      <name>David Sterling</name>
+    </author>
+    <category term="tech" />
+  </entry>
+
   <entry>
     <title>A Nobel Prize, a Sanctions Order—and the Fine Print Between Them</title>
     <link href="https://thenorthstarledger.com/world/nobel-pillay-icc-sanctions-fine-print" />
@@ -642,18 +655,5 @@
       <name>Alexander Martin</name>
     </author>
     <category term="tech" />
-  </entry>
-
-  <entry>
-    <title></title>
-    <link href="https://thenorthstarledger.com/us/feasting-on-evidence-the-luigi-mangione-murder-case-takes-a-darkly-humorous-twist" />
-    <id>https://thenorthstarledger.com/us/feasting-on-evidence-the-luigi-mangione-murder-case-takes-a-darkly-humorous-twist</id>
-    <published>2025-12-01T09:12:07.931Z</published>
-    <updated>2025-12-01T09:12:07.931Z</updated>
-    <summary>Luigi Mangione&apos;s murder case unfolds in court, as defense seeks to dismiss key evidence</summary>
-    <author>
-      <name>Dr. Benjamin Jackson</name>
-    </author>
-    <category term="us" />
   </entry>
 </feed>
