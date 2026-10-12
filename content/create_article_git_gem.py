@@ -795,8 +795,8 @@ def create_markdown_file(title, dek, slug, category, tags, author, author_slug,
         if len(body) > 150:
             excerpt += "..."
 
-    # Image URLs
-    image_url = f"{GITHUB_REPO_URL}/{image_filename}?raw=true"
+    # Image URLs - use canonical site URL so browsers do not hit GitHub 503 rate limits
+    image_url = f"https://thenorthstarledger.com/{image_filename}"
 
     # Format tags - use array format with proper quoting
     tags_formatted = "[" + ", ".join(f"'{tag}'" for tag in tags) + "]"

@@ -1,4 +1,5 @@
 import type { Article, ArticleFrontMatter } from '../types/article';
+import { resolveSocialImage } from './socialImage.js';
 
 const articleCache: Map<string, Article> = new Map();
 let allArticles: Article[] | null = null;
@@ -53,8 +54,14 @@ function loadAllArticles(): Article[] {
       const { frontMatter, body } = parseMarkdown(content as string);
 
       if (frontMatter.status === 'published') {
+        const rawHero = typeof frontMatter.hero_image === 'string' ? frontMatter.hero_image : '';
+        const rawThumb = typeof frontMatter.thumbnail === 'string' ? frontMatter.thumbnail : rawHero;
+        const hero_image = resolveSocialImage(rawHero);
+        const thumbnail = resolveSocialImage(rawThumb);
         articles.push({
           ...frontMatter,
+          hero_image,
+          thumbnail,
           content: body,
           categoryPath: category
         });

@@ -70,7 +70,7 @@ function generateManifest() {
         title: data.title || '',
         dek: data.dek || data.excerpt || '',
         hero_image: resolveSocialImage(data.hero_image),
-        thumbnail: data.thumbnail || data.hero_image || '',
+        thumbnail: resolveSocialImage(data.thumbnail || data.hero_image),
         url: `https://thenorthstarledger.com/${route}`
       };
     } catch (error) {
