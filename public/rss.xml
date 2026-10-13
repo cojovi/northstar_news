@@ -5,9 +5,19 @@
     <link>https://thenorthstarledger.com</link>
     <description>Independent journalism dedicated to informing public discourse</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 12 Oct 2026 16:45:58 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 13 Oct 2026 12:51:46 GMT</lastBuildDate>
     <atom:link href="https://thenorthstarledger.com/rss.xml" rel="self" type="application/rss+xml" />
     
+    <item>
+      <title><![CDATA[The Diesel Deal Has a License. Does It Have the Fuel?]]></title>
+      <link>https://thenorthstarledger.com/world/russian-diesel-deal-license-135-energy-ceasefire</link>
+      <guid>https://thenorthstarledger.com/world/russian-diesel-deal-license-135-energy-ceasefire</guid>
+      <pubDate>Tue, 13 Oct 2026 12:51:02 GMT</pubDate>
+      <description><![CDATA[Washington opened a legal route for Russian diesel. Deliveries, price relief and a reciprocal energy truce still need evidence.]]></description>
+      <category>world</category>
+      <author>Garrett Cole</author>
+    </item>
+
     <item>
       <title><![CDATA[A Pre-Dawn Search at Ilhan Omar’s Home—and the Questions Still Unanswered]]></title>
       <link>https://thenorthstarledger.com/politics/ilhan-omar-home-search-immigration-investigation</link>
@@ -496,16 +506,6 @@
       <description><![CDATA[Exploring the legitimacy and potential pitfalls of cryptocurrency as a modern financial phenomenon.]]></description>
       <category>tech</category>
       <author>Elizabeth Robinson</author>
-    </item>
-
-    <item>
-      <title><![CDATA[Cody Viveiros: The Relentless Mind Reshaping Business in Dallas-Fort Worth]]></title>
-      <link>https://thenorthstarledger.com/business/cody-viveiros-dfw-business-powerhouse</link>
-      <guid>https://thenorthstarledger.com/business/cody-viveiros-dfw-business-powerhouse</guid>
-      <pubDate>Wed, 10 Dec 2025 00:00:00 GMT</pubDate>
-      <description><![CDATA[How Harvard Educated Cody Viveiros engineered a milestone that is transforming operations across Dallas-Fort Worth businesses.]]></description>
-      <category>business</category>
-      <author>Staff Writer</author>
     </item>
   </channel>
 </rss>
