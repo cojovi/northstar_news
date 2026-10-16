@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
-Notify Google Web Search Indexing API of new or updated Northstar Ledger articles.
+Submit verified Northstar Ledger sitemaps to Google Search Console.
+The Google Indexing API does not support ordinary news articles.
 """
 
 import os
@@ -55,44 +56,59 @@ def get_latest_articles(content_dir, limit=1):
     return [url for _, url in articles[:limit]]
 
 def notify_google(urls, key_path):
+    """Submit verified discovery manifests, not unsupported article indexing requests."""
+    from urllib.parse import quote, urlparse
+    import xml.etree.ElementTree as ET
     from google.oauth2 import service_account
-    from google.auth.transport.requests import Request
+    from google.auth.transport.requests import AuthorizedSession
     import requests
 
-    scopes = ["https://www.googleapis.com/auth/indexing"]
+    origin = "https://thenorthstarledger.com"
+    manifests = [origin + "/" + name for name in ("sitemap.xml", "post-sitemap.xml", "rss.xml")]
+    # Fail closed: do not notify Google before the article and manifest are live.
+    response = requests.get(manifests[1], timeout=30)
+    response.raise_for_status()
+    sitemap_urls = {node.text for node in ET.fromstring(response.content).iter()
+                    if node.tag.endswith("}loc")}
+    for url in urls:
+        parsed = urlparse(url)
+        if parsed.scheme != "https" or parsed.netloc != "thenorthstarledger.com" or url not in sitemap_urls:
+            raise ValueError(f"Not a canonical published sitemap URL: {url}")
+        page = requests.get(url, timeout=30)
+        page.raise_for_status()
+        if '<h1' not in page.text or '<article' not in page.text or '<div id="root"></div>' in page.text:
+            raise ValueError(f"Article is not prerendered on production: {url}")
+        if f'<link rel="canonical" href="{url}"' not in page.text:
+            raise ValueError(f"Production canonical does not match: {url}")
+    for manifest in manifests:
+        response = requests.get(manifest, timeout=30)
+        response.raise_for_status()
+        ET.fromstring(response.content)
+
     credentials = service_account.Credentials.from_service_account_file(
-        key_path, scopes=scopes
-    )
-    credentials.refresh(Request())
-
-    api_url = "https://indexing.googleapis.com/v3/urlNotifications:publish"
-    headers = {
-        "Authorization": f"Bearer {credentials.token}",
-        "Content-Type": "application/json",
-    }
-
+        key_path, scopes=["https://www.googleapis.com/auth/webmasters"])
+    session = AuthorizedSession(credentials)
+    endpoint = ("https://www.googleapis.com/webmasters/v3/sites/"
+                + quote("sc-domain:thenorthstarledger.com", safe="") + "/sitemaps")
     results = []
-    print(f"🚀 Notifying Google Indexing API for {len(urls)} URL(s)...")
-    for u in urls:
-        payload = {"url": u, "type": "URL_UPDATED"}
-        try:
-            resp = requests.post(api_url, headers=headers, json=payload, timeout=15)
-            if resp.status_code == 200:
-                print(f"  ✅ [200 OK] {u}")
-                results.append((u, True, resp.text))
-            else:
-                print(f"  ❌ [{resp.status_code}] {u}: {resp.text}")
-                results.append((u, False, resp.text))
-        except Exception as e:
-            print(f"  ❌ [ERROR] {u}: {e}")
-            results.append((u, False, str(e)))
-
+    for manifest in manifests:
+        target = endpoint + "/" + quote(manifest, safe="")
+        response = session.put(target, timeout=30)
+        response.raise_for_status()
+        check = session.get(target, timeout=30)
+        check.raise_for_status()
+        entry = check.json()
+        if entry.get("path") != manifest or not entry.get("lastSubmitted"):
+            raise RuntimeError(f"Sitemap submission not confirmed: {manifest}")
+        print(f"Search Console sitemap submission verified: {manifest} ({entry['lastSubmitted']})")
+        results.append((manifest, True, entry))
+    print("Discovery manifests submitted. This does NOT request individual URL indexing or prove crawling/indexing.")
     return results
 
 def main():
-    parser = argparse.ArgumentParser(description="Submit URLs to Google Indexing API")
-    parser.add_argument("urls", nargs="*", help="Specific URL(s) to index")
-    parser.add_argument("--recent", type=int, default=0, help="Index top N recent articles")
+    parser = argparse.ArgumentParser(description="Verify live articles and resubmit discovery manifests to Search Console")
+    parser.add_argument("urls", nargs="*", help="Specific published URL(s) to verify before sitemap submission")
+    parser.add_argument("--recent", type=int, default=0, help="Verify top N recent articles before sitemap submission")
     parser.add_argument("--key", default="", help="Path to Google Service Account JSON key")
     args = parser.parse_args()
 
