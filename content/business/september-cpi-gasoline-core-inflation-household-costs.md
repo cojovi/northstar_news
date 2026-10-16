@@ -1,6 +1,6 @@
 ---
 title: "The Pump Is Driving Inflation. What Else Is Under the Hood?"
-dek: "September’s CPI report puts gasoline at the center of the cost-of-living squeeze. Shelter, services and borrowing costs make the rest of the story harder to wave away."
+dek: "September's CPI report puts gasoline at the center of the cost-of-living squeeze. Shelter, services and borrowing costs make the rest of the story harder to wave away."
 slug: september-cpi-gasoline-core-inflation-household-costs
 category: business
 tags: ['Inflation', 'CPI', 'Gasoline', 'Federal Reserve', 'Household Budgets']
@@ -11,7 +11,7 @@ updated: 2026-10-16T01:05:38.979171+00:00
 hero_image: https://thenorthstarledger.com/september-cpi-gasoline-core-inflation-household-costs.png
 hero_credit: AI-generated editorial image via OpenAI; symbolic gasoline station
 thumbnail: https://thenorthstarledger.com/september-cpi-gasoline-core-inflation-household-costs.png
-excerpt: "Gasoline drove more than half of September’s monthly inflation increase, but underlying prices and household costs demand a closer look."
+excerpt: "Gasoline drove more than half of September's monthly inflation increase, but underlying prices and household costs demand a closer look."
 reading_time: 7
 location: "Washington, D.C."
 status: published
