@@ -2,6 +2,9 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import matter from 'gray-matter';
+import React from 'react';
+import { renderToStaticMarkup } from 'react-dom/server';
+import ReactMarkdown from 'react-markdown';
 import { SITE_URL, resolveSocialImage } from '../src/lib/socialImage.js';
 
 const decode = value => value.replace(/&quot;/g, '"').replace(/&#039;/g, "'")
@@ -15,7 +18,7 @@ const localImages = new Set();
 for (const file of fs.readdirSync('content', { recursive: true })) {
   if (!file.endsWith('.md')) continue;
   const source = fs.readFileSync(path.join('content', file), 'utf8');
-  const { data } = matter(source);
+  const { data, content } = matter(source);
   if (data.status !== 'published') continue;
   // The browser's frontmatter reader expects inline arrays. A block-style tag
   // list breaks related-article loading before client-side metadata is updated.
@@ -32,7 +35,14 @@ for (const file of fs.readdirSync('content', { recursive: true })) {
   assert.deepEqual(getMeta(html, 'og:url'), [`${SITE_URL}/${route}`], `${route}: URL`);
   const canonical = [...html.matchAll(/<link rel="canonical" href="([^"]*)"/g)].map(m => decode(m[1]));
   assert.deepEqual(canonical, [`${SITE_URL}/${route}`], `${route}: canonical`);
-  assert.match(html, /<div id="root"><\/div>/, `${route}: app root`);
+  assert.doesNotMatch(html, /<div id="root"><\/div>/, `${route}: no empty shell`);
+  assert.match(html, /<h1\b/, `${route}: static heading`);
+  const renderedBody = renderToStaticMarkup(React.createElement(ReactMarkdown, null, content));
+  assert.ok(renderedBody.length > 0 && html.includes(renderedBody), `${route}: complete rendered body`);
+  const homeLinks = fs.readFileSync('dist/index.html', 'utf8');
+  assert.ok(homeLinks.includes(`href="/${route}"`), `${route}: discoverable from homepage`);
+  const categoryLinks = fs.readFileSync(path.join('dist', file.split(path.sep)[0], 'index.html'), 'utf8');
+  assert.ok(categoryLinks.includes(`href="/${route}"`), `${route}: discoverable from category`);
   assert.match(html, /<script[^>]*type="module"[^>]*src="\/assets\//, `${route}: app bundle`);
   assert.doesNotMatch(html, /<meta[^>]+property="og:image:(?:width|height|type)"/, `${route}: no invented dimensions or MIME type`);
 

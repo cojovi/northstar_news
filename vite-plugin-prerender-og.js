@@ -7,6 +7,9 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
+import React from 'react';
+import { renderToStaticMarkup } from 'react-dom/server';
+import ReactMarkdown from 'react-markdown';
 import { SITE_URL, resolveSocialImage } from './src/lib/socialImage.js';
 
 export default function prerenderOGPlugin() {
@@ -50,7 +53,13 @@ export default function prerenderOGPlugin() {
         count++;
       }
       
-      console.log(`✓ Generated ${count} article HTML files with OG meta tags\n`);
+      fs.writeFileSync(indexHtmlPath, generateListingHTML(baseHtml, articles));
+      for (const category of new Set(articles.map(article => article.category))) {
+        const categoryDir = path.join(outDir, category);
+        fs.mkdirSync(categoryDir, { recursive: true });
+        fs.writeFileSync(path.join(categoryDir, 'index.html'), generateListingHTML(baseHtml, articles.filter(article => article.category === category), category));
+      }
+      console.log(`✓ Prerendered ${count} full articles, homepage and category indexes\n`);
     }
   };
 }
@@ -72,7 +81,7 @@ function getAllArticles(contentDir) {
       } else if (entry.isFile() && entry.name.endsWith('.md')) {
         try {
           const content = fs.readFileSync(fullPath, 'utf-8');
-          const { data } = matter(content);
+          const { data, content: body } = matter(content);
           
           if (data.status === 'published') {
             const relativePath = path.relative(contentDir, fullPath);
@@ -81,6 +90,8 @@ function getAllArticles(contentDir) {
             const slug = data.slug || path.basename(fullPath, '.md');
             
             articles.push({
+              ...data,
+              content: body,
               category,
               slug,
               title: data.title || '',
@@ -97,7 +108,7 @@ function getAllArticles(contentDir) {
   }
   
   scanDirectory(contentDir);
-  return articles;
+  return articles.sort((a, b) => new Date(b.published) - new Date(a.published));
 }
 
 /**
@@ -112,6 +123,7 @@ export function generateArticleHTML(baseHtml, article, route) {
   html = html.replace(/<meta\s+name="twitter:[^"]*"[^>]*>/gi, '');
   html = html.replace(/<title>[^<]*<\/title>/i, '');
   html = html.replace(/<link\s+rel="canonical"[^>]*>/gi, '');
+  html = html.replace(/<meta\s+name="description"[^>]*>/gi, '');
   
   // Find the closing </head> tag
   const headEndIndex = html.indexOf('</head>');
@@ -141,13 +153,47 @@ export function generateArticleHTML(baseHtml, article, route) {
     <meta name="twitter:image:alt" content="${escapeHtml(article.title)}" />
     
     <link rel="canonical" href="${url}" />
+    <meta name="description" content="${escapeHtml(article.dek)}" />
     <title>${escapeHtml(article.title)} - The Northstar Ledger</title>
 `;
   
   // Insert before </head>
   html = html.slice(0, headEndIndex) + ogTags + '    ' + html.slice(headEndIndex);
   
-  return html;
+  const schema = {
+    '@context': 'https://schema.org', '@type': 'NewsArticle',
+    headline: article.title, description: article.dek,
+    image: resolveSocialImage(article.hero_image),
+    datePublished: article.published, dateModified: article.updated || article.published,
+    author: { '@type': 'Person', name: article.author || 'The Northstar Ledger' },
+    publisher: { '@type': 'Organization', name: 'The Northstar Ledger' },
+    mainEntityOfPage: `${SITE_URL}/${route}`,
+  };
+  html = html.replace('</head>', `<script id="prerender-article-schema" type="application/ld+json">${JSON.stringify(schema).replace(/</g, '\\u003c')}</script></head>`);
+  const body = renderToStaticMarkup(React.createElement(ReactMarkdown, null, article.content || ''));
+  return replaceRoot(html, `<main class="max-w-4xl mx-auto px-4 py-8"><article>
+    <nav><a href="/">Home</a> / <a href="/${escapeHtml(article.category)}">${escapeHtml(article.category)}</a></nav>
+    <header><h1 class="text-4xl font-serif font-bold mb-4">${escapeHtml(article.title)}</h1>
+    <p class="text-xl mb-6">${escapeHtml(article.dek)}</p>
+    <p>By ${escapeHtml(article.author)} <time datetime="${escapeHtml(article.published)}">${escapeHtml(article.published)}</time></p></header>
+    <figure><img src="${image}" alt="${escapeHtml(article.title)}"/><figcaption>${escapeHtml(article.hero_credit)}</figcaption></figure>
+    <div class="prose prose-lg max-w-none">${body}</div>
+    </article></main>`);
+}
+
+function replaceRoot(html, body) {
+  const root = /<div\s+id="root"\s*>\s*<\/div>/;
+  if (!root.test(html)) throw new Error('Expected empty React root in build template');
+  return html.replace(root, () => `<div id="root">${body}</div>`);
+}
+
+export function generateListingHTML(baseHtml, articles, category = '') {
+  const title = category ? `${category} - The Northstar Ledger` : 'The Northstar Ledger';
+  const url = `${SITE_URL}${category ? `/${category}` : '/'}`;
+  let html = baseHtml.replace(/<title>[^<]*<\/title>/i, `<title>${escapeHtml(title)}</title>`)
+    .replace(/<link\s+rel="canonical"[^>]*>/gi, '');
+  html = html.replace('</head>', `<link rel="canonical" href="${escapeHtml(url)}" /></head>`);
+  return replaceRoot(html, `<main class="max-w-7xl mx-auto px-4 py-8"><nav><a href="/">Home</a></nav><h1 class="text-4xl font-serif font-bold">${escapeHtml(title)}</h1><section>${articles.map(article => `<article><h2><a href="/${escapeHtml(article.category)}/${escapeHtml(article.slug)}">${escapeHtml(article.title)}</a></h2><p>${escapeHtml(article.dek)}</p></article>`).join('\n')}</section></main>`);
 }
 
 /**

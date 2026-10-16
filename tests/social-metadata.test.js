@@ -48,7 +48,8 @@ test('crawler HTML contains the hero image and article canonical without JavaScr
   assert.match(html, /An &quot;article&quot; &amp; &lt;image&gt; that&#039;s different/);
   assert.doesNotMatch(html, /<meta[^>]+content="[^"\n]*\/og\/default.jpg"/);
   assert.doesNotMatch(html, /<meta[^>]+property="og:image:(?:width|height|type)"/);
-  assert.match(html, /<div id="root"><\/div>/);
+  assert.doesNotMatch(html, /<div id="root"><\/div>/);
+  assert.match(html, /<h1\b/);
   assert.match(html, /<script type="module"/);
 });
 

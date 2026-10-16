@@ -53,6 +53,7 @@ export function ArticlePage({ category, slug }: ArticlePageProps) {
             },
           };
 
+          document.getElementById('prerender-article-schema')?.remove();
           const script = document.createElement('script');
           script.type = 'application/ld+json';
           script.text = JSON.stringify(structuredData);

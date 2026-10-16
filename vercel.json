@@ -26,6 +26,10 @@
       "destination": "/:category/:slug/index.html"
     },
     {
+      "source": "/:category(us|world|politics|business|tech|health|entertainment|sports|opinion|lifestyle|travel)",
+      "destination": "/:category/index.html"
+    },
+    {
       "source": "/((?!assets/).*)",
       "destination": "/index.html"
     }
