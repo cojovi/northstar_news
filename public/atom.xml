@@ -4,9 +4,22 @@
   <link href="https://thenorthstarledger.com/atom.xml" rel="self" />
   <link href="https://thenorthstarledger.com" />
   <id>https://thenorthstarledger.com</id>
-  <updated>2026-10-13T12:51:46.719Z</updated>
+  <updated>2026-10-16T01:05:40.597Z</updated>
   <subtitle>Independent journalism dedicated to informing public discourse</subtitle>
   
+  <entry>
+    <title>The Pump Is Driving Inflation. What Else Is Under the Hood?</title>
+    <link href="https://thenorthstarledger.com/business/september-cpi-gasoline-core-inflation-household-costs" />
+    <id>https://thenorthstarledger.com/business/september-cpi-gasoline-core-inflation-household-costs</id>
+    <published>2026-10-16T01:05:38.979Z</published>
+    <updated>2026-10-16T01:05:38.979Z</updated>
+    <summary>September’s CPI report puts gasoline at the center of the cost-of-living squeeze. Shelter, services and borrowing costs make the rest of the story harder to wave away.</summary>
+    <author>
+      <name>Garrett Cole</name>
+    </author>
+    <category term="business" />
+  </entry>
+
   <entry>
     <title>The Diesel Deal Has a License. Does It Have the Fuel?</title>
     <link href="https://thenorthstarledger.com/world/russian-diesel-deal-license-135-energy-ceasefire" />
@@ -640,19 +653,6 @@
     <summary>From AI to automation, Python stays essential for beginners and seasoned engineers alike.</summary>
     <author>
       <name>Dr. Isabella Walker</name>
-    </author>
-    <category term="tech" />
-  </entry>
-
-  <entry>
-    <title>&quot;Cryptocurrency: A Mirage of Riches or the New Age Gold Rush?&quot;</title>
-    <link href="https://thenorthstarledger.com/tech/cryptocurrency-a-mirage-of-riches-or-the-new-age-gold-rush" />
-    <id>https://thenorthstarledger.com/tech/cryptocurrency-a-mirage-of-riches-or-the-new-age-gold-rush</id>
-    <published>2025-12-11T22:20:05.792Z</published>
-    <updated>2025-12-11T22:20:05.792Z</updated>
-    <summary>Exploring the legitimacy and potential pitfalls of cryptocurrency as a modern financial phenomenon.</summary>
-    <author>
-      <name>Elizabeth Robinson</name>
     </author>
     <category term="tech" />
   </entry>

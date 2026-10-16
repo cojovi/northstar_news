@@ -5,9 +5,19 @@
     <link>https://thenorthstarledger.com</link>
     <description>Independent journalism dedicated to informing public discourse</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 13 Oct 2026 12:51:46 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 01:05:40 GMT</lastBuildDate>
     <atom:link href="https://thenorthstarledger.com/rss.xml" rel="self" type="application/rss+xml" />
     
+    <item>
+      <title><![CDATA[The Pump Is Driving Inflation. What Else Is Under the Hood?]]></title>
+      <link>https://thenorthstarledger.com/business/september-cpi-gasoline-core-inflation-household-costs</link>
+      <guid>https://thenorthstarledger.com/business/september-cpi-gasoline-core-inflation-household-costs</guid>
+      <pubDate>Fri, 16 Oct 2026 01:05:38 GMT</pubDate>
+      <description><![CDATA[September’s CPI report puts gasoline at the center of the cost-of-living squeeze. Shelter, services and borrowing costs make the rest of the story harder to wave away.]]></description>
+      <category>business</category>
+      <author>Garrett Cole</author>
+    </item>
+
     <item>
       <title><![CDATA[The Diesel Deal Has a License. Does It Have the Fuel?]]></title>
       <link>https://thenorthstarledger.com/world/russian-diesel-deal-license-135-energy-ceasefire</link>
@@ -496,16 +506,6 @@
       <description><![CDATA[From AI to automation, Python stays essential for beginners and seasoned engineers alike.]]></description>
       <category>tech</category>
       <author>Dr. Isabella Walker</author>
-    </item>
-
-    <item>
-      <title><![CDATA["Cryptocurrency: A Mirage of Riches or the New Age Gold Rush?"]]></title>
-      <link>https://thenorthstarledger.com/tech/cryptocurrency-a-mirage-of-riches-or-the-new-age-gold-rush</link>
-      <guid>https://thenorthstarledger.com/tech/cryptocurrency-a-mirage-of-riches-or-the-new-age-gold-rush</guid>
-      <pubDate>Thu, 11 Dec 2025 22:20:05 GMT</pubDate>
-      <description><![CDATA[Exploring the legitimacy and potential pitfalls of cryptocurrency as a modern financial phenomenon.]]></description>
-      <category>tech</category>
-      <author>Elizabeth Robinson</author>
     </item>
   </channel>
 </rss>
