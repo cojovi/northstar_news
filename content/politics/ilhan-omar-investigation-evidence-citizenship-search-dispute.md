@@ -7,10 +7,10 @@ tags: ['Ilhan Omar', 'Citizenship', 'Justice Department', 'Congress', 'Due Proce
 author: "David Sterling"
 author_slug: david-sterling
 published: "2026-10-19T04:05:06.461116+00:00"
-updated: "2026-10-19T04:14:29.106000+00:00"
-hero_image: "https://thenorthstarledger.com/ilhan-omar-investigation-courthouse.png"
-hero_credit: "E. Barrett Prettyman Federal Courthouse, Washington, D.C., 2016. Photograph by Carol M. Highsmith, Highsmith Archive, Library of Congress, Prints and Photographs Division (LC-DIG-highsm-42416); no known restrictions on publication. Cropped archival photograph, not the Omar search."
-thumbnail: "https://thenorthstarledger.com/ilhan-omar-investigation-courthouse.png"
+updated: "2026-10-19T04:30:42.903370+00:00"
+hero_image: "https://thenorthstarledger.com/ilhan-omar-investigation-user-illustration.png"
+hero_credit: "User-supplied illustrative image of an arrest scenario; not documentary evidence from the Omar investigation. No arrest is reported in this article. Image proportions preserved; editorial disclaimer added."
+thumbnail: "https://thenorthstarledger.com/ilhan-omar-investigation-user-illustration.png"
 excerpt: "The Omar investigation has two tracks and a dispute over search safeguards. What the reporting establishes, what remains alleged, and what the next legal steps would actually mean."
 reading_time: 13
 location: "Washington, D.C. / Minnesota"
