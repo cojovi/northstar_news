@@ -5,9 +5,19 @@
     <link>https://thenorthstarledger.com</link>
     <description>Independent journalism dedicated to informing public discourse</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 16 Oct 2026 03:24:26 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 04:05:09 GMT</lastBuildDate>
     <atom:link href="https://thenorthstarledger.com/rss.xml" rel="self" type="application/rss+xml" />
     
+    <item>
+      <title><![CDATA[Two Investigations, One Congresswoman - and a Fight Over the Evidence]]></title>
+      <link>https://thenorthstarledger.com/politics/ilhan-omar-investigation-evidence-citizenship-search-dispute</link>
+      <guid>https://thenorthstarledger.com/politics/ilhan-omar-investigation-evidence-citizenship-search-dispute</guid>
+      <pubDate>Mon, 19 Oct 2026 04:05:06 GMT</pubDate>
+      <description><![CDATA[The Ilhan Omar case now involves immigration records, a separate financial-disclosure inquiry, reported DNA collection and a dispute over the execution of a search warrant. Understanding what each development actually establishes is more useful than another premature verdict.]]></description>
+      <category>politics</category>
+      <author>David Sterling</author>
+    </item>
+
     <item>
       <title><![CDATA[The Pump Is Driving Inflation. What Else Is Under the Hood?]]></title>
       <link>https://thenorthstarledger.com/business/september-cpi-gasoline-core-inflation-household-costs</link>
@@ -496,16 +506,6 @@
       <description><![CDATA[A viral 67-point obsession collides with March Madness and In-N-Out order chaos.]]></description>
       <category>sports</category>
       <author>Joseph Williams</author>
-    </item>
-
-    <item>
-      <title><![CDATA[Python Keeps Its Crown: Why the Internet’s Favorite Language Still Runs the Show]]></title>
-      <link>https://thenorthstarledger.com/tech/python-keeps-its-crown-why-the-internets-favorite-language-still-runs-the-show</link>
-      <guid>https://thenorthstarledger.com/tech/python-keeps-its-crown-why-the-internets-favorite-language-still-runs-the-show</guid>
-      <pubDate>Thu, 11 Dec 2025 22:50:57 GMT</pubDate>
-      <description><![CDATA[From AI to automation, Python stays essential for beginners and seasoned engineers alike.]]></description>
-      <category>tech</category>
-      <author>Dr. Isabella Walker</author>
     </item>
   </channel>
 </rss>

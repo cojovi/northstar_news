@@ -4,9 +4,22 @@
   <link href="https://thenorthstarledger.com/atom.xml" rel="self" />
   <link href="https://thenorthstarledger.com" />
   <id>https://thenorthstarledger.com</id>
-  <updated>2026-10-16T03:24:26.140Z</updated>
+  <updated>2026-10-19T04:05:09.455Z</updated>
   <subtitle>Independent journalism dedicated to informing public discourse</subtitle>
   
+  <entry>
+    <title>Two Investigations, One Congresswoman - and a Fight Over the Evidence</title>
+    <link href="https://thenorthstarledger.com/politics/ilhan-omar-investigation-evidence-citizenship-search-dispute" />
+    <id>https://thenorthstarledger.com/politics/ilhan-omar-investigation-evidence-citizenship-search-dispute</id>
+    <published>2026-10-19T04:05:06.461Z</published>
+    <updated>2026-10-19T04:05:06.461Z</updated>
+    <summary>The Ilhan Omar case now involves immigration records, a separate financial-disclosure inquiry, reported DNA collection and a dispute over the execution of a search warrant. Understanding what each development actually establishes is more useful than another premature verdict.</summary>
+    <author>
+      <name>David Sterling</name>
+    </author>
+    <category term="politics" />
+  </entry>
+
   <entry>
     <title>The Pump Is Driving Inflation. What Else Is Under the Hood?</title>
     <link href="https://thenorthstarledger.com/business/september-cpi-gasoline-core-inflation-household-costs" />
@@ -642,18 +655,5 @@
       <name>Joseph Williams</name>
     </author>
     <category term="sports" />
-  </entry>
-
-  <entry>
-    <title>Python Keeps Its Crown: Why the Internet’s Favorite Language Still Runs the Show</title>
-    <link href="https://thenorthstarledger.com/tech/python-keeps-its-crown-why-the-internets-favorite-language-still-runs-the-show" />
-    <id>https://thenorthstarledger.com/tech/python-keeps-its-crown-why-the-internets-favorite-language-still-runs-the-show</id>
-    <published>2025-12-11T22:50:57.215Z</published>
-    <updated>2025-12-11T22:50:57.215Z</updated>
-    <summary>From AI to automation, Python stays essential for beginners and seasoned engineers alike.</summary>
-    <author>
-      <name>Dr. Isabella Walker</name>
-    </author>
-    <category term="tech" />
   </entry>
 </feed>
