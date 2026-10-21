@@ -4,9 +4,22 @@
   <link href="https://thenorthstarledger.com/atom.xml" rel="self" />
   <link href="https://thenorthstarledger.com" />
   <id>https://thenorthstarledger.com</id>
-  <updated>2026-10-19T04:30:43.739Z</updated>
+  <updated>2026-10-21T00:50:06.505Z</updated>
   <subtitle>Independent journalism dedicated to informing public discourse</subtitle>
   
+  <entry>
+    <title>What a Social Security Cleanup Reveals - and What the Reel Leaves Unanswered</title>
+    <link href="https://thenorthstarledger.com/us/social-security-record-cleanup-benefits-evidence" />
+    <id>https://thenorthstarledger.com/us/social-security-record-cleanup-benefits-evidence</id>
+    <published>2026-10-21T00:50:06.174Z</published>
+    <updated>2026-10-21T00:50:06.174Z</updated>
+    <summary>A Morse Report video casts millions of database corrections as proof of stolen retirement benefits. The agency&apos;s own announcement tells a more specific story, with important questions still open.</summary>
+    <author>
+      <name>The Northstar Ledger</name>
+    </author>
+    <category term="us" />
+  </entry>
+
   <entry>
     <title>Two Investigations, One Congresswoman - and a Fight Over the Evidence</title>
     <link href="https://thenorthstarledger.com/politics/ilhan-omar-investigation-evidence-citizenship-search-dispute" />
@@ -642,18 +655,5 @@
       <name>Harper Clark</name>
     </author>
     <category term="tech" />
-  </entry>
-
-  <entry>
-    <title>In-N-Out vs. the Number 67: How a Viral “6-7” Trend Turned Burger Tickets Into a March Madness Side Quest</title>
-    <link href="https://thenorthstarledger.com/sports/in-n-out-vs-the-number-67-how-a-viral-6-7-trend-turned-burger-tickets-into-a-march-madness-side-quest" />
-    <id>https://thenorthstarledger.com/sports/in-n-out-vs-the-number-67-how-a-viral-6-7-trend-turned-burger-tickets-into-a-march-madness-side-quest</id>
-    <published>2025-12-11T23:22:59.672Z</published>
-    <updated>2025-12-11T23:22:59.672Z</updated>
-    <summary>A viral 67-point obsession collides with March Madness and In-N-Out order chaos.</summary>
-    <author>
-      <name>Joseph Williams</name>
-    </author>
-    <category term="sports" />
   </entry>
 </feed>

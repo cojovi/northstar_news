@@ -5,9 +5,19 @@
     <link>https://thenorthstarledger.com</link>
     <description>Independent journalism dedicated to informing public discourse</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Oct 2026 04:30:43 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2026 00:50:06 GMT</lastBuildDate>
     <atom:link href="https://thenorthstarledger.com/rss.xml" rel="self" type="application/rss+xml" />
     
+    <item>
+      <title><![CDATA[What a Social Security Cleanup Reveals - and What the Reel Leaves Unanswered]]></title>
+      <link>https://thenorthstarledger.com/us/social-security-record-cleanup-benefits-evidence</link>
+      <guid>https://thenorthstarledger.com/us/social-security-record-cleanup-benefits-evidence</guid>
+      <pubDate>Wed, 21 Oct 2026 00:50:06 GMT</pubDate>
+      <description><![CDATA[A Morse Report video casts millions of database corrections as proof of stolen retirement benefits. The agency's own announcement tells a more specific story, with important questions still open.]]></description>
+      <category>us</category>
+      <author>The Northstar Ledger</author>
+    </item>
+
     <item>
       <title><![CDATA[Two Investigations, One Congresswoman - and a Fight Over the Evidence]]></title>
       <link>https://thenorthstarledger.com/politics/ilhan-omar-investigation-evidence-citizenship-search-dispute</link>
@@ -496,16 +506,6 @@
       <description><![CDATA[Disney embraces AI innovation while preparing copyright battles over training data and creative control.]]></description>
       <category>tech</category>
       <author>Harper Clark</author>
-    </item>
-
-    <item>
-      <title><![CDATA[In-N-Out vs. the Number 67: How a Viral “6-7” Trend Turned Burger Tickets Into a March Madness Side Quest]]></title>
-      <link>https://thenorthstarledger.com/sports/in-n-out-vs-the-number-67-how-a-viral-6-7-trend-turned-burger-tickets-into-a-march-madness-side-quest</link>
-      <guid>https://thenorthstarledger.com/sports/in-n-out-vs-the-number-67-how-a-viral-6-7-trend-turned-burger-tickets-into-a-march-madness-side-quest</guid>
-      <pubDate>Thu, 11 Dec 2025 23:22:59 GMT</pubDate>
-      <description><![CDATA[A viral 67-point obsession collides with March Madness and In-N-Out order chaos.]]></description>
-      <category>sports</category>
-      <author>Joseph Williams</author>
     </item>
   </channel>
 </rss>
