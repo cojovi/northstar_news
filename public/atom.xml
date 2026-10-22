@@ -4,9 +4,22 @@
   <link href="https://thenorthstarledger.com/atom.xml" rel="self" />
   <link href="https://thenorthstarledger.com" />
   <id>https://thenorthstarledger.com</id>
-  <updated>2026-10-21T00:50:06.505Z</updated>
+  <updated>2026-10-22T05:41:03.247Z</updated>
   <subtitle>Independent journalism dedicated to informing public discourse</subtitle>
   
+  <entry>
+    <title>What happens after you swipe right on Tinder?</title>
+    <link href="https://thenorthstarledger.com/tech/what-happens-after-you-swipe-right-on-tinder" />
+    <id>https://thenorthstarledger.com/tech/what-happens-after-you-swipe-right-on-tinder</id>
+    <published>2026-10-22T05:40:47.848Z</published>
+    <updated>2026-10-22T05:40:47.848Z</updated>
+    <summary>A reverse-engineering reel raises questions about photo scores, privacy and paid attention. Understanding it starts with separating what a model predicts from what happens to your matches.</summary>
+    <author>
+      <name>The Northstar Ledger</name>
+    </author>
+    <category term="tech" />
+  </entry>
+
   <entry>
     <title>What a Social Security Cleanup Reveals - and What the Reel Leaves Unanswered</title>
     <link href="https://thenorthstarledger.com/us/social-security-record-cleanup-benefits-evidence" />
@@ -640,19 +653,6 @@
     <summary>X blocks access without JavaScript, forcing users to change settings or browsers.</summary>
     <author>
       <name>David Robinson</name>
-    </author>
-    <category term="tech" />
-  </entry>
-
-  <entry>
-    <title>Disney Wants AI’s Future—But Also Wants to Sue It: How the House of Mouse Got Here</title>
-    <link href="https://thenorthstarledger.com/tech/disney-wants-ais-futurebut-also-wants-to-sue-it-how-the-house-of-mouse-got-here" />
-    <id>https://thenorthstarledger.com/tech/disney-wants-ais-futurebut-also-wants-to-sue-it-how-the-house-of-mouse-got-here</id>
-    <published>2025-12-12T01:57:11.362Z</published>
-    <updated>2025-12-12T01:57:11.362Z</updated>
-    <summary>Disney embraces AI innovation while preparing copyright battles over training data and creative control.</summary>
-    <author>
-      <name>Harper Clark</name>
     </author>
     <category term="tech" />
   </entry>
