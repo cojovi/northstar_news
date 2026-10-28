@@ -36,22 +36,8 @@ CATEGORIES = {
     'travel': 'Travel'
 }
 
-# Author name pools for randomization
-FIRST_NAMES = [
-    'Elena', 'Marcus', 'Sophia', 'James', 'Olivia', 'Lucas', 'Emma', 'Noah',
-    'Isabella', 'Ethan', 'Ava', 'Mason', 'Charlotte', 'Logan', 'Amelia',
-    'Alexander', 'Harper', 'Benjamin', 'Evelyn', 'Samuel', 'Abigail', 'Daniel',
-    'Emily', 'Matthew', 'Elizabeth', 'David', 'Sofia', 'Joseph', 'Avery', 'Carter'
-]
-
-LAST_NAMES = [
-    'Chen', 'Rodriguez', 'Kim', 'Petrov', 'Johnson', 'Williams', 'Brown', 'Jones',
-    'Garcia', 'Martinez', 'Davis', 'Lopez', 'Wilson', 'Anderson', 'Thomas',
-    'Taylor', 'Moore', 'Jackson', 'Martin', 'Lee', 'Thompson', 'White', 'Harris',
-    'Sanchez', 'Clark', 'Ramirez', 'Lewis', 'Robinson', 'Walker', 'Young'
-]
-
-PREFIXES = ['Dr.', '', '', '', '']  # 20% chance of Dr. prefix
+# New content uses the disclosed organizational desk, never an invented person.
+from author_registry import disclosed_desk_author
 
 
 # ========== HELPER FUNCTIONS ==========
@@ -65,19 +51,8 @@ def slugify(text):
 
 
 def generate_random_author():
-    """Generate a random author name and slug."""
-    prefix = random.choice(PREFIXES)
-    first = random.choice(FIRST_NAMES)
-    last = random.choice(LAST_NAMES)
-
-    if prefix:
-        full_name = f"{prefix} {first} {last}"
-    else:
-        full_name = f"{first} {last}"
-
-    author_slug = slugify(f"{first}-{last}")
-
-    return full_name, author_slug
+    """Compatibility wrapper: deterministic disclosed publication desk credit."""
+    return disclosed_desk_author()
 
 
 def calculate_reading_time(word_count):
@@ -682,6 +657,9 @@ def create_markdown_file(title, dek, slug, category, tags, author, author_slug,
                         location, body, image_filename):
     """Create the markdown file with proper front matter."""
 
+    # Preserve caller signature while enforcing disclosed automated credit.
+    author, author_slug = disclosed_desk_author()
+
     # Calculate reading time
     word_count = len(body.split())
     reading_time = calculate_reading_time(word_count)
@@ -726,12 +704,16 @@ author_slug: {author_slug}
 published: {published}
 updated: {updated}
 hero_image: {image_url}
-hero_credit: Photo via Pexels
+hero_credit: Generated illustration; not documentary photography
 thumbnail: {image_url}
 excerpt: {excerpt_escaped}
 reading_time: {reading_time}
 {location_line}status: published
 is_satire: false
+content_type: news
+evidence:
+  status: pending
+  limits: Automated draft/publishing assistance; material claims require source review.
 ---
 
 {body}

@@ -1,22 +1,18 @@
 import { useEffect, useState } from 'react';
 import type { Article } from '../types/article';
-import { getAllArticles, getArticlesByCategory, getTrendingArticles } from '../lib/content';
+import { getDiscoverableArticles, getArticlesByCategory, getTrendingArticles } from '../lib/content';
 import { ArticleCard } from './ArticleCard';
 import { LoadingSpinner } from './LoadingSpinner';
-import { supabase } from '../lib/supabase';
+import { PublicLinks } from './RoutePage.js';
 
 export function HomePage() {
   const [latestArticles, setLatestArticles] = useState<Article[]>([]);
   const [trending, setTrending] = useState<Article[]>([]);
   const [categoryArticles, setCategoryArticles] = useState<Record<string, Article[]>>({});
   const [loading, setLoading] = useState(true);
-  const [email, setEmail] = useState('');
-  const [subscribeStatus, setSubscribeStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
-  const [subscribeMessage, setSubscribeMessage] = useState('');
-
   useEffect(() => {
     try {
-      const all = getAllArticles();
+      const all = getDiscoverableArticles();
       setLatestArticles(all.slice(0, 10));
 
       const trendingList = getTrendingArticles(6);
@@ -38,66 +34,6 @@ export function HomePage() {
     }
   }, []);
 
-  const handleSubscribe = async (e: React.FormEvent) => {
-    e.preventDefault();
-
-    if (!email || !email.includes('@')) {
-      setSubscribeStatus('error');
-      setSubscribeMessage('Please enter a valid email address.');
-      return;
-    }
-
-    // Check if Supabase is configured
-    if (!supabase) {
-      setSubscribeStatus('error');
-      setSubscribeMessage('Newsletter subscription is not configured.');
-      setTimeout(() => {
-        setSubscribeStatus('idle');
-        setSubscribeMessage('');
-      }, 5000);
-      return;
-    }
-
-    setSubscribeStatus('loading');
-    setSubscribeMessage('');
-
-    try {
-      const { error } = await supabase
-        .from('newsletter_subscriptions')
-        .insert([
-          {
-            email: email.toLowerCase().trim(),
-            subscribed_at: new Date().toISOString(),
-            source: 'homepage'
-          }
-        ]);
-
-      if (error) {
-        // Check if it's a duplicate email error
-        if (error.code === '23505') {
-          setSubscribeStatus('error');
-          setSubscribeMessage('This email is already subscribed.');
-        } else {
-          throw error;
-        }
-      } else {
-        setSubscribeStatus('success');
-        setSubscribeMessage('Thanks for subscribing!');
-        setEmail('');
-      }
-    } catch (error) {
-      console.error('Subscription error:', error);
-      setSubscribeStatus('error');
-      setSubscribeMessage('Something went wrong. Please try again.');
-    }
-
-    // Clear message after 5 seconds
-    setTimeout(() => {
-      setSubscribeStatus('idle');
-      setSubscribeMessage('');
-    }, 5000);
-  };
-
   if (loading) {
     return <LoadingSpinner />;
   }
@@ -108,6 +44,11 @@ export function HomePage() {
 
   return (
     <div className="bg-white dark:bg-dark-950 transition-colors duration-200">
+      <div className="max-w-7xl mx-auto px-4 py-5 text-gray-800 dark:text-gray-200">
+        <p className="mb-3">News summaries, analysis and commentary. Read the evidence limits on each article.</p>
+        <PublicLinks />
+        <p className="mt-3"><a href="/topics/public-spending">Public spending and accountability</a> · <a href="/topics/policy-costs">Household and small-business policy costs</a> · <a href="/topics/institutional-decisions">Institutional and platform decisions</a></p>
+      </div>
       {heroArticle && (
         <section className="border-b border-gray-200 dark:border-dark-800 py-8">
           <div className="max-w-7xl mx-auto px-4">
@@ -142,7 +83,7 @@ export function HomePage() {
             <aside>
               <div className="sticky top-24">
                 <h3 className="text-xl font-serif font-bold mb-4 pb-2 border-b-2 border-aurora-600 dark:border-aurora-500 text-gray-900 dark:text-gray-50">
-                  Trending
+                  Recent archive entries
                 </h3>
                 <div className="space-y-4">
                   {trending.map((article) => (
@@ -151,32 +92,10 @@ export function HomePage() {
                 </div>
 
                 <div className="mt-8 p-6 bg-gray-50 dark:bg-dark-850 border border-gray-200 dark:border-dark-700 rounded-lg">
-                  <h4 className="text-lg font-serif font-bold mb-3 text-gray-900 dark:text-gray-50">Stay Informed</h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
-                    Get the latest news delivered to your inbox.
-                  </p>
-                  <form onSubmit={handleSubscribe} className="space-y-3">
-                    <input
-                      type="email"
-                      placeholder="Your email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      disabled={subscribeStatus === 'loading'}
-                      className="w-full px-3 py-2 bg-white dark:bg-dark-800 border border-gray-300 dark:border-dark-600 rounded text-gray-900 dark:text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-aurora-500 transition-colors duration-200 disabled:opacity-50"
-                    />
-                    <button
-                      type="submit"
-                      disabled={subscribeStatus === 'loading'}
-                      className="w-full px-4 py-2 bg-aurora-600 text-white font-medium rounded hover:bg-aurora-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-                    >
-                      {subscribeStatus === 'loading' ? 'Subscribing...' : 'Subscribe'}
-                    </button>
-                    {subscribeMessage && (
-                      <p className={`text-sm ${subscribeStatus === 'success' ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400'}`}>
-                        {subscribeMessage}
-                      </p>
-                    )}
-                  </form>
+                  <h4 className="text-lg font-serif font-bold mb-3 text-gray-900 dark:text-gray-50">Follow the archive</h4>
+                  <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">Read new published entries through RSS or Atom. No email signup is required. Email delivery has not been verified.</p>
+                  <p><a href="/rss.xml" className="text-aurora-600 dark:text-aurora-400 underline">RSS feed</a> · <a href="/atom.xml" className="text-aurora-600 dark:text-aurora-400 underline">Atom feed</a></p>
+                  <p className="text-sm mt-4">Our retention commitment is to keep article URLs and correction history where practicable. <a href="/corrections" className="underline">Retention and corrections</a></p>
                 </div>
               </div>
             </aside>

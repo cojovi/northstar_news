@@ -1,0 +1,22 @@
+{
+  "affiliated": false,
+  "notice": "",
+  "evidence": {
+    "status": "partial",
+    "completed_full_factcheck": false,
+    "sources": [
+      "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation-topics/uspstf-a-and-b-recommendations"
+    ],
+    "summary": "Generic body does not name a screening guideline or issuing body and claims unidentified interviews with no interview record or citations. The live body has been corrected or replaced as described in the dated editorial note.",
+    "limits": "No specific guideline or interview documentation supports the former story. The USPSTF directory is a further resource only. This review establishes no medical recommendation and is not a full fact-check.",
+    "record_url": "https://thenorthstarledger.com/source-reviews#new-cancer-screening-guidelines-emphasize-earlier-detection",
+    "reviewed_at": "2026-10-28"
+  },
+  "corrections": [
+    {
+      "date": "2026-10-28",
+      "note": "Withdrew the mock medical-news body because it identified no guideline and supplied no interview documentation. Preserved the URL with a notice; the USPSTF directory is a further resource, not evidence for the former account.",
+      "url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation-topics/uspstf-a-and-b-recommendations"
+    }
+  ]
+}

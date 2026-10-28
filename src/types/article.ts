@@ -14,12 +14,39 @@ export interface ArticleFrontMatter {
   excerpt: string;
   reading_time: number;
   location?: string;
-  status: 'draft' | 'published';
+  status: "draft" | "published" | "withdrawn" | "review-hold";
+  indexable: boolean;
   is_satire: boolean;
   canonical_url?: string;
 }
 
+export interface AuthorProfile {
+  name: string;
+  slug: string;
+  kind: "person" | "organization" | "legacy";
+  bio: string;
+  url?: string;
+}
 export interface Article extends ArticleFrontMatter {
+  authorProfile: AuthorProfile;
+  content_type: "news" | "analysis" | "opinion" | "satire" | "sponsored";
+  evidence: {
+    status: "pending" | "reviewed" | "partial";
+    completed_full_factcheck: boolean;
+    sources: string[];
+    summary: string;
+    limits: string;
+    record_url: string | null;
+    reviewed_at: string | null;
+  };
+  affiliated: boolean;
+  review_kind: string;
+  review_notice: string;
+  corrections: { date: string; note: string; url: string | null }[];
+  hero_alt: string;
+  hero_width?: number;
+  hero_height?: number;
+  image_credit_status: string;
   content: string;
   categoryPath: string;
 }

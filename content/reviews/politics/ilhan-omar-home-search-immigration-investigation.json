@@ -1,0 +1,23 @@
+{
+  "affiliated": false,
+  "notice": "",
+  "evidence": {
+    "status": "partial",
+    "completed_full_factcheck": false,
+    "sources": [
+      "https://www.cbsnews.com/news/ilhan-omar-immigration-raid-washington-dc",
+      "https://apnews.com/article/ilhan-omar-home-searched-8e18c2aea948bd90f4d7a4eb32b9ec3a"
+    ],
+    "summary": "CBS and AP report the October 12 search; the reviewed CBS story includes her denial. A reported search is not guilt, charges or a citizenship revocation. Only the identified source scope was checked; other historical claims remain outside this review.",
+    "limits": "Historical attributed reporting only. Sealed primary evidence, DNA results and refreshed court records were not independently reviewed. This is not a full fact-check or an account of present-day procedural status.",
+    "record_url": "https://thenorthstarledger.com/source-reviews#ilhan-omar-home-search-immigration-investigation",
+    "reviewed_at": "2026-10-28"
+  },
+  "corrections": [
+    {
+      "date": "2026-10-28",
+      "note": "Added linked historical reporting context including Omar’s denial, an explicit October 12 cutoff and the limits of a reported search. No sealed evidence or refreshed court docket was reviewed; no present-day guilt or citizenship finding is asserted.",
+      "url": "https://www.cbsnews.com/news/ilhan-omar-immigration-raid-washington-dc"
+    }
+  ]
+}

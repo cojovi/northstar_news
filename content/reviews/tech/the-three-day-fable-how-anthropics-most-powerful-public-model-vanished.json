@@ -1,0 +1,24 @@
+{
+  "affiliated": false,
+  "notice": "",
+  "evidence": {
+    "status": "partial",
+    "completed_full_factcheck": false,
+    "sources": [
+      "https://www.anthropic.com/news/fable-mythos-access",
+      "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+      "https://www.anthropic.com/news/redeploying-fable-5"
+    ],
+    "summary": "Anthropic confirms the June suspension and its June 30 announcement says Fable 5 would return July 1. Original June 13 event reporting must not imply a permanent disappearance. Only the identified source scope was checked; other historical claims remain outside this review.",
+    "limits": "Company announcements do not establish independent technical verification. This limited check does not replicate experiments, verify every historical specification or establish present-day availability; it is not a full fact-check.",
+    "record_url": "https://thenorthstarledger.com/source-reviews#the-three-day-fable-how-anthropics-most-powerful-public-model-vanished",
+    "reviewed_at": "2026-10-28"
+  },
+  "corrections": [
+    {
+      "date": "2026-10-28",
+      "note": "Added the June 30 Anthropic announcement describing a July 1 return. The June suspension account remains historical; the follow-up does not declare that reporting false or independently establish current access or government findings.",
+      "url": "https://www.anthropic.com/news/fable-mythos-access"
+    }
+  ]
+}

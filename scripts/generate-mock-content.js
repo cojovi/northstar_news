@@ -5,18 +5,9 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const authors = [
-  { name: 'Sarah Mitchell', slug: 'sarah-mitchell' },
-  { name: 'Marcus Rodriguez', slug: 'marcus-rodriguez' },
-  { name: 'Dr. Elena Petrov', slug: 'elena-petrov' },
-  { name: 'James Chen', slug: 'james-chen' },
-  { name: 'Amanda Foster', slug: 'amanda-foster' },
-  { name: 'David Washington', slug: 'david-washington' },
-  { name: 'Lisa Thompson', slug: 'lisa-thompson' },
-  { name: 'Michael O\'Brien', slug: 'michael-obrien' },
-  { name: 'Rachel Kim', slug: 'rachel-kim' },
-  { name: 'Thomas Anderson', slug: 'thomas-anderson' },
-];
+// Mock output must not impersonate named reporters.
+import registry from '../src/data/authors.json' with { type: 'json' };
+const authors = [registry['northstar-desk']];
 
 const images = {
   us: 'https://images.pexels.com/photos/1112048/pexels-photo-1112048.jpeg?auto=compress&cs=tinysrgb&w=1200',
@@ -502,7 +493,7 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function generateArticleContent(template, category) {
+export function generateArticleContent(template, category, paragraphCount) {
   const paragraphs = [
     `Recent developments in ${category} have drawn significant attention from policymakers, industry leaders, and community stakeholders across the nation. The implications of these changes extend beyond immediate impacts, suggesting broader shifts in how institutions and individuals approach long-standing challenges.`,
 
@@ -517,7 +508,7 @@ function generateArticleContent(template, category) {
     `Looking ahead, observers anticipate continued evolution as stakeholders refine their approaches based on real-world feedback. The coming months will likely prove critical in determining whether current trajectories represent sustainable progress or require further adjustment.`,
   ];
 
-  const numParagraphs = getRandomInt(4, 6);
+  const numParagraphs = paragraphCount ?? getRandomInt(4, 6);
   const selectedParagraphs = paragraphs.slice(0, numParagraphs);
 
   return selectedParagraphs.join('\n\n');
@@ -536,8 +527,8 @@ function generateArticle(template, category, index) {
   const content = generateArticleContent(template, category);
 
   return `---
-title: ${template.title}
-dek: ${template.dek}
+title: "MOCK FIXTURE: ${template.title}"
+dek: "MOCK FIXTURE ONLY — development template, not reporting."
 slug: ${slug}
 category: ${category}
 tags: [${template.tags.map(t => `'${t}'`).join(', ')}]
@@ -548,38 +539,68 @@ updated: ${updated}
 hero_image: ${heroImage}
 hero_credit: Photo via Pexels
 thumbnail: ${thumbnail}
-excerpt: ${template.dek}
+excerpt: "MOCK FIXTURE ONLY — never publish."
 reading_time: ${getRandomInt(4, 7)}
 location: ${template.location}
-status: published
+status: draft
 is_satire: false
 ---
+
+MOCK FIXTURE ONLY. This draft is a development template, not reporting, interviews or data. Never publish it.
 
 ${content}`;
 }
 
-function generateAllArticles() {
-  const contentDir = path.join(__dirname, '..', 'content');
-
-  Object.entries(articleTemplates).forEach(([category, templates]) => {
-    const categoryDir = path.join(contentDir, category);
-
-    if (!fs.existsSync(categoryDir)) {
-      fs.mkdirSync(categoryDir, { recursive: true });
-    }
-
-    templates.forEach((template, index) => {
-      const article = generateArticle(template, category, index);
-      const slug = slugify(template.title);
-      const filename = `${slug}.md`;
-      const filepath = path.join(categoryDir, filename);
-
-      fs.writeFileSync(filepath, article);
-      console.log(`Generated: ${category}/${filename}`);
-    });
-  });
-
-  console.log('\nArticle generation complete!');
+export function generateAllArticles(outputDir) {
+  if (!outputDir || outputDir.split(/[\\/]/).includes('..'))
+    throw new Error('An explicit nonproduction --fixtures-dir without traversal is required.');
+  const root = path.resolve(__dirname, '..');
+  const destination = path.resolve(outputDir);
+  const inside = (parent, child) => child === parent || child.startsWith(parent + path.sep);
+  const fixtures = path.join(root, 'tests', 'fixtures');
+  if (inside(destination, path.join(root, 'content')) ||
+      (inside(root, destination) && !inside(fixtures, destination)))
+    throw new Error('Refusing production path; use tests/fixtures or an explicit external fixture directory.');
+  // Reject existing symlinks in every path component before creating anything.
+  let component = path.parse(destination).root;
+  for (const part of destination.slice(component.length).split(path.sep).filter(Boolean)) {
+    component = path.join(component, part);
+    let stat;
+    try { stat = fs.lstatSync(component); }
+    catch (error) { if (error.code !== 'ENOENT') throw error; }
+    if (stat && (stat.isSymbolicLink() || !stat.isDirectory()))
+      throw new Error('Refusing symlink or nondirectory fixture path.');
+  }
+  const outputs = Object.entries(articleTemplates).flatMap(([category, templates]) =>
+    templates.map((template, index) => ({
+      filepath: path.join(destination, category, `${slugify(template.title)}.md`),
+      article: generateArticle(template, category, index),
+    })));
+  // Preflight every output: never overwrite even another mock fixture.
+  for (const {filepath} of outputs) {
+    const parent = path.dirname(filepath);
+    let parentStat;
+    try { parentStat = fs.lstatSync(parent); }
+    catch (error) { if (error.code !== 'ENOENT') throw error; }
+    if (parentStat && (parentStat.isSymbolicLink() || !parentStat.isDirectory()))
+      throw new Error('Refusing symlink or nondirectory category.');
+    try { fs.lstatSync(filepath); throw new Error('Refusing fixture overwrite.'); }
+    catch (error) { if (error.code !== 'ENOENT') throw error; }
+  }
+  for (const {filepath, article} of outputs) {
+    fs.mkdirSync(path.dirname(filepath), {recursive: true});
+    fs.writeFileSync(filepath, article, {flag: 'wx'});
+  }
+  return outputs.length;
 }
 
-generateAllArticles();
+if (process.argv[1] && path.resolve(process.argv[1]) === __filename) {
+  try {
+    if (process.argv.length !== 4 || process.argv[2] !== '--fixtures-dir')
+      throw new Error('Usage: node scripts/generate-mock-content.js --fixtures-dir tests/fixtures/explicit-output');
+    console.log(`Generated ${generateAllArticles(process.argv[3])} visibly mock draft fixtures.`);
+  } catch (error) {
+    console.error(error.message);
+    process.exitCode = 1;
+  }
+}

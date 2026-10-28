@@ -1,0 +1,14 @@
+{
+  "affiliated": false,
+  "notice": "Pending evidence notice: identify the unresolved material claims without asserting that review is complete.",
+  "evidence": {
+    "status": "pending",
+    "sources": [],
+    "summary": "",
+    "limits": "Identify what the source record cannot establish.",
+    "record_url": null,
+    "reviewed_at": null,
+    "completed_full_factcheck": false
+  },
+  "corrections": []
+}

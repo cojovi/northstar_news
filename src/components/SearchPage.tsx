@@ -38,6 +38,7 @@ export function SearchPage() {
     e.preventDefault();
     performSearch(query);
     window.history.pushState({}, '', `/search?q=${encodeURIComponent(query)}`);
+    window.dispatchEvent(new PopStateEvent('popstate'));
   };
 
   return (

@@ -1,0 +1,697 @@
+{
+  "revision": "02c10cb932fcd1149987eec4c8d13b7c21eb36df",
+  "generator_sha256": "13b40e94a91983ce02a1ddedd693bb9fbc4400a554c33afbefc12fedc9cc55d8",
+  "method": "Exact title/path match to literal articleTemplates plus normalized entire body equality against one of 4/5/6-paragraph outputs from generateArticleContent. Source object/paragraph literals parsed alone, generator never invoked.",
+  "records": [
+    {
+      "kind": "template-provenance",
+      "path": "/us/national-infrastructure-bill-faces-regional-opposition",
+      "title": "National Infrastructure Bill Faces Regional Opposition",
+      "published": "2025-09-21T09:32:43.248Z",
+      "original_body_sha256": "fb89e64b9be37a5cef11d80d711a92f16e92990dbfd14bd42c60d5a0cf9faa0e",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/us/national-infrastructure-bill-faces-regional-opposition.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/us/housing-market-shows-signs-of-stabilization-in-major-cities",
+      "title": "Housing Market Shows Signs of Stabilization in Major Cities",
+      "published": "2025-09-30T09:32:43.257Z",
+      "original_body_sha256": "fb89e64b9be37a5cef11d80d711a92f16e92990dbfd14bd42c60d5a0cf9faa0e",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/us/housing-market-shows-signs-of-stabilization-in-major-cities.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/us/federal-agencies-implement-new-cybersecurity-protocols",
+      "title": "Federal Agencies Implement New Cybersecurity Protocols",
+      "published": "2025-09-30T09:32:43.257Z",
+      "original_body_sha256": "216b353383ca3ed6c9cabc25d2a2f655e2c3da02782dce42226ada0973936e10",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/us/federal-agencies-implement-new-cybersecurity-protocols.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/us/education-department-proposes-changes-to-student-loan-forgiveness",
+      "title": "Education Department Proposes Changes to Student Loan Forgiveness",
+      "published": "2025-09-16T09:32:43.258Z",
+      "original_body_sha256": "216b353383ca3ed6c9cabc25d2a2f655e2c3da02782dce42226ada0973936e10",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/us/education-department-proposes-changes-to-student-loan-forgiveness.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/us/border-states-coordinate-on-immigration-processing-improvements",
+      "title": "Border States Coordinate on Immigration Processing Improvements",
+      "published": "2025-09-22T09:32:43.258Z",
+      "original_body_sha256": "216b353383ca3ed6c9cabc25d2a2f655e2c3da02782dce42226ada0973936e10",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/us/border-states-coordinate-on-immigration-processing-improvements.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/us/national-parks-report-record-visitor-numbers-despite-entry-fee-increases",
+      "title": "National Parks Report Record Visitor Numbers Despite Entry Fee Increases",
+      "published": "2025-09-26T09:32:43.259Z",
+      "original_body_sha256": "77b4e02f583c68558faed5cfb701b5973dcee318db0f6894fd4132df06e4a232",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/us/national-parks-report-record-visitor-numbers-despite-entry-fee-increases.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/us/veterans-affairs-modernizes-healthcare-system-with-digital-tools",
+      "title": "Veterans Affairs Modernizes Healthcare System with Digital Tools",
+      "published": "2025-09-22T09:32:43.259Z",
+      "original_body_sha256": "216b353383ca3ed6c9cabc25d2a2f655e2c3da02782dce42226ada0973936e10",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/us/veterans-affairs-modernizes-healthcare-system-with-digital-tools.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/us/midwest-regions-invest-heavily-in-renewable-energy-infrastructure",
+      "title": "Midwest Regions Invest Heavily in Renewable Energy Infrastructure",
+      "published": "2025-09-25T09:32:43.260Z",
+      "original_body_sha256": "77b4e02f583c68558faed5cfb701b5973dcee318db0f6894fd4132df06e4a232",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/us/midwest-regions-invest-heavily-in-renewable-energy-infrastructure.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/world/european-union-announces-unified-digital-currency-framework",
+      "title": "European Union Announces Unified Digital Currency Framework",
+      "published": "2025-09-23T09:32:43.260Z",
+      "original_body_sha256": "f990645b8e14b3ee7d654cf22fb248e8252e2d50c5274d96b32601dd5e1245dc",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/world/european-union-announces-unified-digital-currency-framework.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/world/southeast-asian-nations-form-new-trade-alliance",
+      "title": "Southeast Asian Nations Form New Trade Alliance",
+      "published": "2025-09-14T09:32:43.261Z",
+      "original_body_sha256": "f990645b8e14b3ee7d654cf22fb248e8252e2d50c5274d96b32601dd5e1245dc",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/world/southeast-asian-nations-form-new-trade-alliance.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/world/international-space-station-welcomes-record-number-of-astronauts",
+      "title": "International Space Station Welcomes Record Number of Astronauts",
+      "published": "2025-09-30T09:32:43.261Z",
+      "original_body_sha256": "f990645b8e14b3ee7d654cf22fb248e8252e2d50c5274d96b32601dd5e1245dc",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/world/international-space-station-welcomes-record-number-of-astronauts.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/world/middle-east-water-shortage-prompts-regional-cooperation",
+      "title": "Middle East Water Shortage Prompts Regional Cooperation",
+      "published": "2025-09-25T09:32:43.261Z",
+      "original_body_sha256": "00328b31ea48a9b28f34fc61e93f8a412a6b53a8aa8d788e766cb12969bae2f5",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/world/middle-east-water-shortage-prompts-regional-cooperation.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/world/latin-american-countries-strengthen-anti-corruption-measures",
+      "title": "Latin American Countries Strengthen Anti-Corruption Measures",
+      "published": "2025-09-22T09:32:43.261Z",
+      "original_body_sha256": "f990645b8e14b3ee7d654cf22fb248e8252e2d50c5274d96b32601dd5e1245dc",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/world/latin-american-countries-strengthen-anti-corruption-measures.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/world/african-union-launches-continental-free-trade-implementation",
+      "title": "African Union Launches Continental Free Trade Implementation",
+      "published": "2025-10-06T09:32:43.262Z",
+      "original_body_sha256": "f990645b8e14b3ee7d654cf22fb248e8252e2d50c5274d96b32601dd5e1245dc",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/world/african-union-launches-continental-free-trade-implementation.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/world/arctic-council-members-reach-climate-research-agreement",
+      "title": "Arctic Council Members Reach Climate Research Agreement",
+      "published": "2025-09-20T09:32:43.262Z",
+      "original_body_sha256": "c1de6d2b3c89b52eab9d31e355e0a143202f3fdb11a376f9158de75a131d18c8",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/world/arctic-council-members-reach-climate-research-agreement.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/politics/senate-committee-advances-bipartisan-ethics-reform-package",
+      "title": "Senate Committee Advances Bipartisan Ethics Reform Package",
+      "published": "2025-09-17T09:32:43.262Z",
+      "original_body_sha256": "1758a0b64c017552acee1d36614d561ba82994fda08563e9bb5950951076d92b",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/politics/senate-committee-advances-bipartisan-ethics-reform-package.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/politics/gubernatorial-races-show-shift-in-voter-priorities",
+      "title": "Gubernatorial Races Show Shift in Voter Priorities",
+      "published": "2025-10-04T09:32:43.263Z",
+      "original_body_sha256": "afd53e8e8d60f4aeb353193fcd29ea358b99664a8ffc471cfed7c784039058bf",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/politics/gubernatorial-races-show-shift-in-voter-priorities.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/politics/federal-agencies-face-restructuring-under-new-efficiency-initiative",
+      "title": "Federal Agencies Face Restructuring Under New Efficiency Initiative",
+      "published": "2025-10-04T09:32:43.263Z",
+      "original_body_sha256": "afd53e8e8d60f4aeb353193fcd29ea358b99664a8ffc471cfed7c784039058bf",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/politics/federal-agencies-face-restructuring-under-new-efficiency-initiative.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/politics/congressional-leaders-negotiate-balanced-budget-framework",
+      "title": "Congressional Leaders Negotiate Balanced Budget Framework",
+      "published": "2025-09-13T09:32:43.263Z",
+      "original_body_sha256": "b6907265a1862f2ec51b8a71f08c0ef8b00824619429383ab844baf921f8f480",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/politics/congressional-leaders-negotiate-balanced-budget-framework.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/politics/state-legislatures-adopt-model-transparency-legislation",
+      "title": "State Legislatures Adopt Model Transparency Legislation",
+      "published": "2025-09-12T09:32:43.263Z",
+      "original_body_sha256": "afd53e8e8d60f4aeb353193fcd29ea358b99664a8ffc471cfed7c784039058bf",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/politics/state-legislatures-adopt-model-transparency-legislation.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/politics/supreme-court-clarifies-administrative-law-boundaries",
+      "title": "Supreme Court Clarifies Administrative Law Boundaries",
+      "published": "2025-09-16T09:32:43.264Z",
+      "original_body_sha256": "b6907265a1862f2ec51b8a71f08c0ef8b00824619429383ab844baf921f8f480",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/politics/supreme-court-clarifies-administrative-law-boundaries.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/politics/local-governments-pioneer-participatory-budgeting-models",
+      "title": "Local Governments Pioneer Participatory Budgeting Models",
+      "published": "2025-10-03T09:32:43.264Z",
+      "original_body_sha256": "b6907265a1862f2ec51b8a71f08c0ef8b00824619429383ab844baf921f8f480",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/politics/local-governments-pioneer-participatory-budgeting-models.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/politics/campaign-finance-reform-gains-momentum-in-key-states",
+      "title": "Campaign Finance Reform Gains Momentum in Key States",
+      "published": "2025-09-17T09:32:43.265Z",
+      "original_body_sha256": "b6907265a1862f2ec51b8a71f08c0ef8b00824619429383ab844baf921f8f480",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/politics/campaign-finance-reform-gains-momentum-in-key-states.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/business/manufacturing-sector-reports-strongest-growth-in-five-years",
+      "title": "Manufacturing Sector Reports Strongest Growth in Five Years",
+      "published": "2025-10-02T09:32:43.265Z",
+      "original_body_sha256": "5928a15b708a008c19d0b667061660e1c200bb96ad69f8f96ff0c0a7820f1f3d",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/business/manufacturing-sector-reports-strongest-growth-in-five-years.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/business/small-business-lending-reaches-pre-pandemic-levels",
+      "title": "Small Business Lending Reaches Pre-Pandemic Levels",
+      "published": "2025-09-23T09:32:43.265Z",
+      "original_body_sha256": "5928a15b708a008c19d0b667061660e1c200bb96ad69f8f96ff0c0a7820f1f3d",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/business/small-business-lending-reaches-pre-pandemic-levels.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/business/corporate-sustainability-initiatives-show-measurable-results",
+      "title": "Corporate Sustainability Initiatives Show Measurable Results",
+      "published": "2025-09-10T09:32:43.265Z",
+      "original_body_sha256": "d50274564bc9478183ff9d02a1cf582cec8cac0322ccbc0cad03f18d25805dcd",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/business/corporate-sustainability-initiatives-show-measurable-results.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/business/retail-industry-adapts-to-omnichannel-consumer-behavior",
+      "title": "Retail Industry Adapts to Omnichannel Consumer Behavior",
+      "published": "2025-09-15T09:32:43.265Z",
+      "original_body_sha256": "42ea18fb83a659dcb5c2dcd7fbde3428be672a1676b0d1fc4d4e97f73c813a49",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/business/retail-industry-adapts-to-omnichannel-consumer-behavior.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/business/supply-chain-disruptions-ease-as-logistics-networks-modernize",
+      "title": "Supply Chain Disruptions Ease as Logistics Networks Modernize",
+      "published": "2025-10-06T09:32:43.266Z",
+      "original_body_sha256": "d50274564bc9478183ff9d02a1cf582cec8cac0322ccbc0cad03f18d25805dcd",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/business/supply-chain-disruptions-ease-as-logistics-networks-modernize.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/business/labor-market-tightness-spurs-innovation-in-employee-benefits",
+      "title": "Labor Market Tightness Spurs Innovation in Employee Benefits",
+      "published": "2025-10-01T09:32:43.266Z",
+      "original_body_sha256": "42ea18fb83a659dcb5c2dcd7fbde3428be672a1676b0d1fc4d4e97f73c813a49",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/business/labor-market-tightness-spurs-innovation-in-employee-benefits.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/business/regional-banks-navigate-interest-rate-environment-successfully",
+      "title": "Regional Banks Navigate Interest Rate Environment Successfully",
+      "published": "2025-10-07T09:32:43.266Z",
+      "original_body_sha256": "d50274564bc9478183ff9d02a1cf582cec8cac0322ccbc0cad03f18d25805dcd",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/business/regional-banks-navigate-interest-rate-environment-successfully.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/tech/open-source-ai-models-gain-enterprise-adoption",
+      "title": "Open Source AI Models Gain Enterprise Adoption",
+      "published": "2025-09-13T09:32:43.267Z",
+      "original_body_sha256": "4791a32234922e66fee769eb218dfd07dfc39d4d5fa0d51d9e39721b07f051aa",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/tech/open-source-ai-models-gain-enterprise-adoption.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/tech/quantum-computing-breakthrough-achieved-in-error-correction",
+      "title": "Quantum Computing Breakthrough Achieved in Error Correction",
+      "published": "2025-09-28T09:32:43.267Z",
+      "original_body_sha256": "4791a32234922e66fee769eb218dfd07dfc39d4d5fa0d51d9e39721b07f051aa",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/tech/quantum-computing-breakthrough-achieved-in-error-correction.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/tech/cybersecurity-firms-report-decline-in-ransomware-success-rates",
+      "title": "Cybersecurity Firms Report Decline in Ransomware Success Rates",
+      "published": "2025-09-20T09:32:43.268Z",
+      "original_body_sha256": "cdc32a46e2030ae8a2b59496bd16ac8e7c43d134353e56de47c06c9278b04eba",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/tech/cybersecurity-firms-report-decline-in-ransomware-success-rates.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/tech/satellite-internet-services-expand-to-remote-regions",
+      "title": "Satellite Internet Services Expand to Remote Regions",
+      "published": "2025-09-24T09:32:43.268Z",
+      "original_body_sha256": "92d83704e1ec6a666691cb87c67260dbcfff681c7184dfe15ee875b57607d4b7",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/tech/satellite-internet-services-expand-to-remote-regions.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/tech/battery-technology-advances-enable-longer-range-electric-vehicles",
+      "title": "Battery Technology Advances Enable Longer-Range Electric Vehicles",
+      "published": "2025-09-17T09:32:43.269Z",
+      "original_body_sha256": "92d83704e1ec6a666691cb87c67260dbcfff681c7184dfe15ee875b57607d4b7",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/tech/battery-technology-advances-enable-longer-range-electric-vehicles.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/tech/data-privacy-regulations-drive-architecture-changes",
+      "title": "Data Privacy Regulations Drive Architecture Changes",
+      "published": "2025-09-23T09:32:43.271Z",
+      "original_body_sha256": "92d83704e1ec6a666691cb87c67260dbcfff681c7184dfe15ee875b57607d4b7",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/tech/data-privacy-regulations-drive-architecture-changes.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/tech/agricultural-technology-improves-crop-yields-and-sustainability",
+      "title": "Agricultural Technology Improves Crop Yields and Sustainability",
+      "published": "2025-09-13T09:32:43.271Z",
+      "original_body_sha256": "92d83704e1ec6a666691cb87c67260dbcfff681c7184dfe15ee875b57607d4b7",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/tech/agricultural-technology-improves-crop-yields-and-sustainability.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/health/telemedicine-platforms-report-sustained-usage-post-pandemic",
+      "title": "Telemedicine Platforms Report Sustained Usage Post-Pandemic",
+      "published": "2025-09-24T09:32:43.271Z",
+      "original_body_sha256": "8006ce258e383f867d9523b20d77df90f9ef9ad4290f9993d3dae48ec2545c39",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/health/telemedicine-platforms-report-sustained-usage-post-pandemic.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/health/mental-health-services-integration-expands-in-primary-care",
+      "title": "Mental Health Services Integration Expands in Primary Care",
+      "published": "2025-10-06T09:32:43.272Z",
+      "original_body_sha256": "65373c6f1bc16d1c162050b28db4144af9ca5a34bc6684e1566698e838ef0583",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/health/mental-health-services-integration-expands-in-primary-care.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/health/hospital-systems-invest-in-workforce-development-programs",
+      "title": "Hospital Systems Invest in Workforce Development Programs",
+      "published": "2025-09-26T09:32:43.272Z",
+      "original_body_sha256": "8006ce258e383f867d9523b20d77df90f9ef9ad4290f9993d3dae48ec2545c39",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/health/hospital-systems-invest-in-workforce-development-programs.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/health/vaccine-development-timelines-shortened-by-new-platform-technologies",
+      "title": "Vaccine Development Timelines Shortened by New Platform Technologies",
+      "published": "2025-09-16T09:32:43.272Z",
+      "original_body_sha256": "bdcd9098b5654d7cfde8c1cc4725c0ab2fa8d62203530b111b34d4d526addaf8",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/health/vaccine-development-timelines-shortened-by-new-platform-technologies.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/health/rural-healthcare-access-improved-through-mobile-clinic-networks",
+      "title": "Rural Healthcare Access Improved Through Mobile Clinic Networks",
+      "published": "2025-10-01T09:32:43.272Z",
+      "original_body_sha256": "65373c6f1bc16d1c162050b28db4144af9ca5a34bc6684e1566698e838ef0583",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/health/rural-healthcare-access-improved-through-mobile-clinic-networks.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/entertainment/streaming-platforms-shift-focus-to-quality-over-quantity",
+      "title": "Streaming Platforms Shift Focus to Quality Over Quantity",
+      "published": "2025-10-04T09:32:43.273Z",
+      "original_body_sha256": "9ae3a45fe6264feed8613403b8d44284a25db6e99dd9967bd9c161230cfc954b",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/entertainment/streaming-platforms-shift-focus-to-quality-over-quantity.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/entertainment/music-industry-adapts-to-creator-economy-dynamics",
+      "title": "Music Industry Adapts to Creator Economy Dynamics",
+      "published": "2025-09-12T09:32:43.273Z",
+      "original_body_sha256": "519f488eeb7e1a93cb632cde77acd8dc6d1ea61baa5293f6ce34678618e93a6b",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/entertainment/music-industry-adapts-to-creator-economy-dynamics.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/entertainment/video-game-industry-embraces-cross-platform-play-standards",
+      "title": "Video Game Industry Embraces Cross-Platform Play Standards",
+      "published": "2025-10-06T09:32:43.274Z",
+      "original_body_sha256": "a5e1efde55948da2fe8406a15bab57a702502e9b321ad3638d206203afa18f54",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/entertainment/video-game-industry-embraces-cross-platform-play-standards.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/entertainment/podcast-advertising-revenue-reaches-new-milestone",
+      "title": "Podcast Advertising Revenue Reaches New Milestone",
+      "published": "2025-09-10T09:32:43.274Z",
+      "original_body_sha256": "a5e1efde55948da2fe8406a15bab57a702502e9b321ad3638d206203afa18f54",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/entertainment/podcast-advertising-revenue-reaches-new-milestone.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/sports/college-athletics-programs-adapt-to-name-image-and-likeness-rules",
+      "title": "College Athletics Programs Adapt to Name, Image, and Likeness Rules",
+      "published": "2025-09-23T09:32:43.274Z",
+      "original_body_sha256": "d895f41247c926c85b35378e27a64fb23634dbb9f190ee1a99f083f34837ccba",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/sports/college-athletics-programs-adapt-to-name-image-and-likeness-rules.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/sports/professional-leagues-invest-in-player-health-and-safety-technology",
+      "title": "Professional Leagues Invest in Player Health and Safety Technology",
+      "published": "2025-09-19T09:32:43.274Z",
+      "original_body_sha256": "d0906d820313e12b3119ccdfef410cf430f27750b67ae022d0efbd413c905ca0",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/sports/professional-leagues-invest-in-player-health-and-safety-technology.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/sports/minor-league-teams-experience-attendance-surge",
+      "title": "Minor League Teams Experience Attendance Surge",
+      "published": "2025-09-18T09:32:43.275Z",
+      "original_body_sha256": "d0906d820313e12b3119ccdfef410cf430f27750b67ae022d0efbd413c905ca0",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/sports/minor-league-teams-experience-attendance-surge.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/sports/womens-sports-viewership-reaches-record-highs",
+      "title": "Women's Sports Viewership Reaches Record Highs",
+      "published": "2025-09-21T09:32:43.275Z",
+      "original_body_sha256": "d895f41247c926c85b35378e27a64fb23634dbb9f190ee1a99f083f34837ccba",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/sports/womens-sports-viewership-reaches-record-highs.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/sports/youth-sports-organizations-emphasize-participation-over-competition",
+      "title": "Youth Sports Organizations Emphasize Participation Over Competition",
+      "published": "2025-09-12T09:32:43.275Z",
+      "original_body_sha256": "fe82519f1065c928606df504033718db5d160bf741b2da68591e6f04e56f80a7",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/sports/youth-sports-organizations-emphasize-participation-over-competition.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/sports/esports-tournaments-draw-mainstream-sponsorship-deals",
+      "title": "Esports Tournaments Draw Mainstream Sponsorship Deals",
+      "published": "2025-09-17T09:32:43.275Z",
+      "original_body_sha256": "d895f41247c926c85b35378e27a64fb23634dbb9f190ee1a99f083f34837ccba",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/sports/esports-tournaments-draw-mainstream-sponsorship-deals.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/sports/olympic-training-centers-incorporate-mental-performance-coaching",
+      "title": "Olympic Training Centers Incorporate Mental Performance Coaching",
+      "published": "2025-10-06T09:32:43.276Z",
+      "original_body_sha256": "d0906d820313e12b3119ccdfef410cf430f27750b67ae022d0efbd413c905ca0",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/sports/olympic-training-centers-incorporate-mental-performance-coaching.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/opinion/why-education-reform-should-start-with-teacher-compensation",
+      "title": "Why Education Reform Should Start with Teacher Compensation",
+      "published": "2025-09-26T09:32:43.276Z",
+      "original_body_sha256": "790904674c6c278ae62f49e50d441d35e85687a93374637e15e53b73e1e1edf4",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/opinion/why-education-reform-should-start-with-teacher-compensation.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/opinion/infrastructure-investment-is-economic-investment",
+      "title": "Infrastructure Investment Is Economic Investment",
+      "published": "2025-09-25T09:32:43.276Z",
+      "original_body_sha256": "a4a91226e5fd532b76f0cbe6677ddccde6fc3fbf2b54dd4762209de6322b0866",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/opinion/infrastructure-investment-is-economic-investment.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/opinion/the-forgotten-benefits-of-boring-competence",
+      "title": "The Forgotten Benefits of Boring Competence",
+      "published": "2025-09-10T09:32:43.277Z",
+      "original_body_sha256": "790904674c6c278ae62f49e50d441d35e85687a93374637e15e53b73e1e1edf4",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/opinion/the-forgotten-benefits-of-boring-competence.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/opinion/climate-adaptation-is-not-surrender",
+      "title": "Climate Adaptation Is Not Surrender",
+      "published": "2025-09-14T09:32:43.277Z",
+      "original_body_sha256": "25c20cc73adeead52c3bedafefa1aae8c05d5cc357eb50e98e1a285ba0a1c03a",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/opinion/climate-adaptation-is-not-surrender.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/opinion/rethinking-success-in-an-automated-economy",
+      "title": "Rethinking Success in an Automated Economy",
+      "published": "2025-09-26T09:32:43.277Z",
+      "original_body_sha256": "a4a91226e5fd532b76f0cbe6677ddccde6fc3fbf2b54dd4762209de6322b0866",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/opinion/rethinking-success-in-an-automated-economy.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/lifestyle/minimalist-living-trends-reshape-home-design-industry",
+      "title": "Minimalist Living Trends Reshape Home Design Industry",
+      "published": "2025-09-17T09:32:43.277Z",
+      "original_body_sha256": "537ca1e1ae7c9d184b53396b7996249a2712968fadbc6e0160fcf15d9f216b7c",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/lifestyle/minimalist-living-trends-reshape-home-design-industry.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/lifestyle/community-gardens-flourish-as-urban-spaces-evolve",
+      "title": "Community Gardens Flourish as Urban Spaces Evolve",
+      "published": "2025-09-26T09:32:43.277Z",
+      "original_body_sha256": "b39606d7478471875c14ab6b903f4da1cc79bdeef0288a85cc3cb661867b2db6",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/lifestyle/community-gardens-flourish-as-urban-spaces-evolve.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/lifestyle/remote-work-sparks-relocation-to-secondary-cities",
+      "title": "Remote Work Sparks Relocation to Secondary Cities",
+      "published": "2025-09-14T09:32:43.278Z",
+      "original_body_sha256": "537ca1e1ae7c9d184b53396b7996249a2712968fadbc6e0160fcf15d9f216b7c",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/lifestyle/remote-work-sparks-relocation-to-secondary-cities.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/lifestyle/wellness-industry-shifts-focus-to-evidence-based-practices",
+      "title": "Wellness Industry Shifts Focus to Evidence-Based Practices",
+      "published": "2025-09-29T09:32:43.278Z",
+      "original_body_sha256": "73e25084aaf239b2a614c90922b9e1a50830a0679c3dc42fe47ada7824bd54ce",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/lifestyle/wellness-industry-shifts-focus-to-evidence-based-practices.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/lifestyle/local-food-movements-transform-regional-cuisines",
+      "title": "Local Food Movements Transform Regional Cuisines",
+      "published": "2025-10-04T09:32:43.278Z",
+      "original_body_sha256": "b39606d7478471875c14ab6b903f4da1cc79bdeef0288a85cc3cb661867b2db6",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/lifestyle/local-food-movements-transform-regional-cuisines.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/travel/sustainable-tourism-practices-gain-traction-in-popular-destinations",
+      "title": "Sustainable Tourism Practices Gain Traction in Popular Destinations",
+      "published": "2025-09-24T09:32:43.278Z",
+      "original_body_sha256": "a5241aeeefb6560cad53a93a10351d04e84ae49469834b4792ae3da57541fb2a",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/travel/sustainable-tourism-practices-gain-traction-in-popular-destinations.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/travel/train-travel-renaissance-offers-scenic-alternative-to-flying",
+      "title": "Train Travel Renaissance Offers Scenic Alternative to Flying",
+      "published": "2025-09-18T09:32:43.278Z",
+      "original_body_sha256": "6ef8d29e686593db3fa71c9d0ff97e1bac9dd77ff00d37377705468d7e40c9ef",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/travel/train-travel-renaissance-offers-scenic-alternative-to-flying.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/travel/national-parks-implement-reservation-systems-to-manage-crowds",
+      "title": "National Parks Implement Reservation Systems to Manage Crowds",
+      "published": "2025-10-04T09:32:43.279Z",
+      "original_body_sha256": "b8bebf03843a64976e70c882c77d0dfb21dbf777e9dcc1f4f2a87546dbdc9504",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/travel/national-parks-implement-reservation-systems-to-manage-crowds.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/travel/cultural-heritage-sites-adopt-virtual-reality-preservation",
+      "title": "Cultural Heritage Sites Adopt Virtual Reality Preservation",
+      "published": "2025-10-04T09:32:43.279Z",
+      "original_body_sha256": "6ef8d29e686593db3fa71c9d0ff97e1bac9dd77ff00d37377705468d7e40c9ef",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/travel/cultural-heritage-sites-adopt-virtual-reality-preservation.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/travel/adventure-travel-outfitters-prioritize-safety-and-sustainability",
+      "title": "Adventure Travel Outfitters Prioritize Safety and Sustainability",
+      "published": "2025-10-05T09:32:43.279Z",
+      "original_body_sha256": "b8bebf03843a64976e70c882c77d0dfb21dbf777e9dcc1f4f2a87546dbdc9504",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/travel/adventure-travel-outfitters-prioritize-safety-and-sustainability.md"
+    },
+    {
+      "kind": "template-provenance",
+      "path": "/health/new-cancer-screening-guidelines-emphasize-earlier-detection",
+      "title": "New Cancer Screening Guidelines Emphasize Earlier Detection",
+      "published": "2025-09-14T09:32:43.272Z",
+      "original_body_sha256": "65373c6f1bc16d1c162050b28db4144af9ca5a34bc6684e1566698e838ef0583",
+      "action_date": "2026-10-28",
+      "action": "Withdrawal of development/mock-template presentation; no subject-matter fact-check.",
+      "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/health/new-cancer-screening-guidelines-emphasize-earlier-detection.md"
+    }
+  ]
+}

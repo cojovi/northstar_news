@@ -25,3 +25,10 @@ dist-ssr
 # Bolt AI config (local, should not be tracked)
 .bolt/
 .vercel
+
+# Local Python and tool artifacts
+__pycache__/
+*.py[cod]
+.cache/npm-integrity/
+# Local verification transcripts are preserved in the private audit workspace.
+docs/verification/

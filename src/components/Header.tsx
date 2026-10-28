@@ -2,8 +2,11 @@ import { useState } from 'react';
 import { Search, Menu, X, Sun, Moon } from 'lucide-react';
 import { useTheme } from '../lib/ThemeContext';
 import { Logo } from './Logo';
+import { getDiscoverableArticles } from '../lib/content';
 
+const activeCategories = new Set(getDiscoverableArticles().map(a => a.categoryPath));
 const CATEGORIES = [
+  { name: 'Topics', path: 'topics' },
   { name: 'U.S.', path: 'us' },
   { name: 'World', path: 'world' },
   { name: 'Politics', path: 'politics' },
@@ -14,7 +17,8 @@ const CATEGORIES = [
   { name: 'Sports', path: 'sports' },
   { name: 'Opinion', path: 'opinion' },
   { name: 'Lifestyle', path: 'lifestyle' },
-];
+  { name: 'Travel', path: 'travel' },
+].filter(category => category.path === 'topics' || activeCategories.has(category.path));
 
 export function Header() {
   const { theme, toggleTheme } = useTheme();
@@ -32,23 +36,23 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 bg-white/95 dark:bg-dark-900/95 backdrop-blur-sm border-b border-gray-200 dark:border-dark-700 shadow-xl transition-colors duration-200">
       <div className="border-b border-gray-200 dark:border-dark-800">
-        <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-          <div className="flex items-center gap-6">
+        <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-1 sm:gap-4">
+          <div className="flex flex-1 min-w-0 items-center gap-1 sm:gap-3 lg:gap-6">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="lg:hidden p-2 hover:bg-gray-100 dark:hover:bg-dark-800 rounded text-gray-700 dark:text-gray-300 hover:text-aurora-600 dark:hover:text-aurora-400 transition-colors"
+              className="lg:hidden shrink-0 p-2 hover:bg-gray-100 dark:hover:bg-dark-800 rounded text-gray-700 dark:text-gray-300 hover:text-aurora-600 dark:hover:text-aurora-400 transition-colors"
               aria-label="Toggle menu"
             >
               {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
             </button>
-            <a href="/" className="flex items-center hover:opacity-90 transition-opacity">
-              <Logo size="lg" showText={false} />
-              <span className="ml-3 text-xl md:text-2xl font-serif font-bold tracking-tight text-gray-900 dark:text-gray-50">
+            <a href="/" className="flex min-w-0 items-center hover:opacity-90 transition-opacity">
+              <Logo size="sm" className="shrink-0 md:h-12" showText={false} />
+              <span className="min-w-0 ml-1 sm:ml-3 text-base sm:text-lg md:text-2xl leading-tight font-serif font-bold tracking-tight text-gray-900 dark:text-gray-50">
                 The Northstar Ledger
               </span>
             </a>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex shrink-0 items-center gap-0 sm:gap-2">
             <button
               onClick={toggleTheme}
               className="p-2 hover:bg-dark-800 dark:hover:bg-dark-800 hover:bg-gray-100 rounded text-gray-700 dark:text-gray-300 hover:text-aurora-600 dark:hover:text-aurora-400 transition-colors"
@@ -87,7 +91,7 @@ export function Header() {
 
       <nav className="hidden lg:block border-b border-gray-200 dark:border-dark-800 bg-gray-50/50 dark:bg-dark-900/50 transition-colors duration-200">
         <div className="max-w-7xl mx-auto px-4">
-          <ul className="flex items-center gap-6 py-2">
+          <ul className="flex flex-wrap items-center gap-x-5 gap-y-2 py-2">
             {CATEGORIES.map((category) => (
               <li key={category.path}>
                 <a

@@ -1,0 +1,23 @@
+{
+  "affiliated": false,
+  "notice": "",
+  "evidence": {
+    "status": "partial",
+    "completed_full_factcheck": false,
+    "sources": [
+      "https://www.justice.gov/opa/pr/man-arrested-and-charged-role-plotting-conduct-mass-shooting-event-support-isis-mall-america",
+      "https://www.justice.gov/usao-mn/media/1464826/dl?inline="
+    ],
+    "summary": "DOJ identifies Sheikhdoon Abdullahi Mohamud and one initial count of knowingly receiving a firearm and ammunition to commit a federal terrorism crime. The release describes an inert rifle and unproven allegations. The live account now follows those records.",
+    "limits": "The initial DOJ release and complaint support the corrected name and firearm-receipt count. Allegations remain unproven. No refreshed docket or later court outcome was checked. This is not a full fact-check.",
+    "record_url": "https://thenorthstarledger.com/source-reviews#fbi-foils-mall-of-america-isis-terror-plot",
+    "reviewed_at": "2026-10-28"
+  },
+  "corrections": [
+    {
+      "date": "2026-10-28",
+      "note": "Corrected the defendant’s name to Sheikhdoon Abdullahi Mohamud and the initial charge to knowingly receiving a firearm and ammunition to commit a federal terrorism crime. Removed unsupported arrest/courtroom scenes and certainty about intent; attributed the complaint allegations and added presumption of innocence.",
+      "url": "https://www.justice.gov/opa/pr/man-arrested-and-charged-role-plotting-conduct-mass-shooting-event-support-isis-mall-america"
+    }
+  ]
+}

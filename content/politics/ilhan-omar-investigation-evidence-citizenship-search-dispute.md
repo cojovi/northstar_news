@@ -7,7 +7,7 @@ tags: ['Ilhan Omar', 'Citizenship', 'Justice Department', 'Congress', 'Due Proce
 author: "David Sterling"
 author_slug: david-sterling
 published: "2026-10-19T04:05:06.461116+00:00"
-updated: "2026-10-19T04:30:42.903370+00:00"
+updated: "2026-10-28"
 hero_image: "https://thenorthstarledger.com/ilhan-omar-investigation-user-illustration.png"
 hero_credit: "User-supplied illustrative image of an arrest scenario; not documentary evidence from the Omar investigation. No arrest is reported in this article. Image proportions preserved; editorial disclaimer added."
 thumbnail: "https://thenorthstarledger.com/ilhan-omar-investigation-user-illustration.png"
@@ -17,6 +17,11 @@ location: "Washington, D.C. / Minnesota"
 status: published
 is_satire: false
 ---
+
+## Historical reporting and review boundary — October 28, 2026
+
+This account retains its October 18, 2026 reporting cutoff. [CBS reported lawyers’ allegations about search protocols](https://www.cbsnews.com/news/attorneys-ilhan-omar-doj-violating-judge-orders); [NewsNation attributed DNA collection claims to sources](https://www.newsnationnow.com/politics/feds-dumpster-dive-ilhan-omar-dna). [CNN’s October 17 explainer](https://www.cnn.com/2026/10/17/politics/explainer-wouldnt-be-easy-to-strip-rep-ilhan-omar-citizenship) distinguished an investigative objective from an announced citizenship action. These reports provide neither a DNA result nor adjudicated guilt. We have not independently reviewed sealed primary evidence or refreshed court records to establish current procedural status. This targeted review does not verify every claim or source in the historical account below.
+
 
 The federal investigation of Rep. Ilhan Omar has become a collision of criminal procedure, citizenship law and presidential politics.[2][6][9] Agents have searched a sitting congresswoman's Washington home.[2][6][9] Relatives have received subpoenas.[2][6][9] A cabinet secretary has called the case strong.[2][6][9] Her lawyers say investigators ignored restrictions imposed by a judge, an accusation the Justice Department rejects.[2][6][9]
 

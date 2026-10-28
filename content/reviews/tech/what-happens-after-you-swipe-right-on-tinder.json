@@ -1,0 +1,23 @@
+{
+  "affiliated": false,
+  "notice": "",
+  "evidence": {
+    "status": "partial",
+    "completed_full_factcheck": false,
+    "sources": [
+      "https://www.tinderpressroom.com/powering-tinder-r-the-method-behind-our-matching",
+      "https://www.tinderpressroom.com/Tinder-R-Unveils-Photo-Selector-AI-Feature-to-Make-Choosing-Profile-Pictures-Easier"
+    ],
+    "summary": "Tinder documents similar-photo recommendation cues and July 2024 Photo Selector. Those announcements do not authenticate the reel code, replicate its synthetic-image tests or convert scores to measured matches. Only the identified source scope was checked; other historical claims remain outside this review.",
+    "limits": "The vendor documents support the announced features, not authentication of the reel’s extracted code or deployment. No experiments were independently replicated, no company response was obtained and present-day app access was not tested. This is not a full fact-check.",
+    "record_url": "https://thenorthstarledger.com/source-reviews#what-happens-after-you-swipe-right-on-tinder",
+    "reviewed_at": "2026-10-28"
+  },
+  "corrections": [
+    {
+      "date": "2026-10-28",
+      "note": "Reframed the body as consumer-consequences analysis using the existing reel record and dated Tinder documents. Added shared research/ownership disclosure and distinct questions about photos, permissions and purchases. No new field reporting, independent replication or company response was obtained.",
+      "url": "https://www.tinderpressroom.com/powering-tinder-r-the-method-behind-our-matching"
+    }
+  ]
+}

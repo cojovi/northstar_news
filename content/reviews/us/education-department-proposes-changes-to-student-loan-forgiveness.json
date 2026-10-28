@@ -1,0 +1,17 @@
+{
+  "kind": "template-provenance",
+  "notice": "Withdrawal dated 2026-10-28 follows an exact code/template provenance match, not a subject-matter source review.",
+  "evidence": {
+    "status": "pending",
+    "summary": "Provenance-only check: complete development/mock-template body and literal title/path matched. Subject-matter source review remains pending.",
+    "limits": "The template supplies no named-topic reporting, interview or data records. No determination that subject claims are false and no completed external fact-check.",
+    "sources": []
+  },
+  "corrections": [
+    {
+      "date": "2026-10-28",
+      "note": "Withdrew the unsupported development/mock-template presentation after exact whole-body and literal title/path comparison. Retained original publication date and URL; original text remains in Git history. This provenance-only action is not a subject-matter fact-check.",
+      "url": "https://thenorthstarledger.com/archive-integrity"
+    }
+  ]
+}

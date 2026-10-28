@@ -1,0 +1,22 @@
+{
+  "affiliated": true,
+  "notice": "",
+  "evidence": {
+    "status": "partial",
+    "completed_full_factcheck": false,
+    "sources": [
+      "https://cojovi.com/"
+    ],
+    "summary": "The stored article provides no source URLs, award issuer, award criteria or interview record. Publisher-related business coverage requires a relationship disclosure. The live body has been corrected or replaced as described in the dated editorial note.",
+    "limits": "Ownership disclosure is not independent substantiation. No education, revenue, award, endorsement, credential or interview records were authenticated. This limited editorial review is not a full fact-check.",
+    "record_url": "https://thenorthstarledger.com/source-reviews#cmac-roofing-earns-top-texas-honor-and-charts-a-bigger-future-in-housing-and-construction-tech",
+    "reviewed_at": "2026-10-28"
+  },
+  "corrections": [
+    {
+      "date": "2026-10-28",
+      "note": "Withdrew the award, quoted-endorsement and credential presentation pending awarding-body and source records. Retained the URL with an affiliated-coverage notice, without declaring the claims false.",
+      "url": "https://cojovi.com/"
+    }
+  ]
+}

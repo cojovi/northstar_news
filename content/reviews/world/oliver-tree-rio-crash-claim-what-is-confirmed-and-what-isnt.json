@@ -1,0 +1,24 @@
+{
+  "affiliated": false,
+  "notice": "",
+  "evidence": {
+    "status": "partial",
+    "completed_full_factcheck": false,
+    "sources": [
+      "https://apnews.com/article/brazil-rio-helicopter-collision-dc3e059c8dcc4fbd84f714dd3c5ab2c8",
+      "https://exame.com/brasil/quem-sao-as-seis-vitimas-de-acidente-entre-helicopteros-no-rj/",
+      "https://ultimosegundo.ig.com.br/2026-06-14/policia-identifica-as-6-vitimas-de-queda-de-helicopteros-no-rio.html"
+    ],
+    "summary": "Retrieved AP title initially says passenger list; Exame and iG report subsequent police identification including Oliver Tree. Independent primary police identification document not inspected. The live body has been corrected or replaced as described in the dated editorial note.",
+    "limits": "The AP passenger-list report and Exame/iG reports of police identification were checked as reports. No primary police identification document or independent forensic identification was inspected. This is not a full fact-check.",
+    "record_url": "https://thenorthstarledger.com/source-reviews#oliver-tree-rio-crash-claim-what-is-confirmed-and-what-isnt",
+    "reviewed_at": "2026-10-28"
+  },
+  "corrections": [
+    {
+      "date": "2026-10-28",
+      "note": "Replaced confidence ratings with chronological attribution to AP, Exame and iG. The June 14 cutoff is retained; the publication did not inspect a primary police identification document or independently identify remains.",
+      "url": "https://apnews.com/article/brazil-rio-helicopter-collision-dc3e059c8dcc4fbd84f714dd3c5ab2c8"
+    }
+  ]
+}

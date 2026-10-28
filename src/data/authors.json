@@ -1,0 +1,358 @@
+{
+  "cody-viveiros": {
+    "name": "Cody Viveiros",
+    "slug": "cody-viveiros",
+    "kind": "person",
+    "bio": "Owner and publisher of The Northstar Ledger and PROTOCOL SENTINEL (https://protocolsentinel.com). No educational or professional credentials are asserted here.",
+    "url": "https://cojovi.com"
+  },
+  "northstar-desk": {
+    "name": "The Northstar Ledger Desk",
+    "slug": "northstar-desk",
+    "kind": "organization",
+    "bio": "Publication desk attribution for content produced with automated research, drafting and publishing assistance. This is an organizational credit, not a named human reviewer.",
+    "url": "https://thenorthstarledger.com/author/northstar-desk"
+  },
+  "marcus-rodriguez": {
+    "name": "Marcus Rodriguez",
+    "slug": "marcus-rodriguez",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "harper-martin": {
+    "name": "Harper Martin",
+    "slug": "harper-martin",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "staff-writer": {
+    "name": "Staff Writer",
+    "slug": "staff-writer",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "elena-petrov": {
+    "name": "Dr. Elena Petrov",
+    "slug": "elena-petrov",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "harper-wilson": {
+    "name": "Harper Wilson",
+    "slug": "harper-wilson",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "david-washington": {
+    "name": "David Washington",
+    "slug": "david-washington",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "sarah-mitchell": {
+    "name": "Sarah Mitchell",
+    "slug": "sarah-mitchell",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "lisa-thompson": {
+    "name": "Lisa Thompson",
+    "slug": "lisa-thompson",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "james-chen": {
+    "name": "James Chen",
+    "slug": "james-chen",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "garrett-cole": {
+    "name": "Garrett Cole",
+    "slug": "garrett-cole",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "amanda-foster": {
+    "name": "Amanda Foster",
+    "slug": "amanda-foster",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "harper-robinson": {
+    "name": "Harper Robinson",
+    "slug": "harper-robinson",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "david-sterling": {
+    "name": "David Sterling",
+    "slug": "david-sterling",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "amelia-ramirez": {
+    "name": "Amelia Ramirez",
+    "slug": "amelia-ramirez",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "marcus-vance": {
+    "name": "Marcus Vance",
+    "slug": "marcus-vance",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "olivia-petrov": {
+    "name": "Olivia Petrov",
+    "slug": "olivia-petrov",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "sofia-lewis": {
+    "name": "Sofia Lewis",
+    "slug": "sofia-lewis",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "emma-anderson": {
+    "name": "Emma Anderson",
+    "slug": "emma-anderson",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "olivia-davis": {
+    "name": "Olivia Davis",
+    "slug": "olivia-davis",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "newspredator": {
+    "name": "NewsPredator",
+    "slug": "newspredator",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "daniel-walker": {
+    "name": "Daniel Walker",
+    "slug": "daniel-walker",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "ava-petrov": {
+    "name": "Ava Petrov",
+    "slug": "ava-petrov",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "elena-rodriguez": {
+    "name": "Elena Rodriguez",
+    "slug": "elena-rodriguez",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "michael-obrien": {
+    "name": "Michael O'Brien",
+    "slug": "michael-obrien",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "emma-young": {
+    "name": "Emma Young",
+    "slug": "emma-young",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "elena-jones": {
+    "name": "Elena Jones",
+    "slug": "elena-jones",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "amelia-brown": {
+    "name": "Dr. Amelia Brown",
+    "slug": "amelia-brown",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "ethan-garcia": {
+    "name": "Ethan Garcia",
+    "slug": "ethan-garcia",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "northstar-staff": {
+    "name": "Northstar Staff",
+    "slug": "northstar-staff",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "elena-sanchez": {
+    "name": "Elena Sanchez",
+    "slug": "elena-sanchez",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "mason-robinson": {
+    "name": "Dr. Mason Robinson",
+    "slug": "mason-robinson",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "benjamin-kim": {
+    "name": "Benjamin Kim",
+    "slug": "benjamin-kim",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "amelia-anderson": {
+    "name": "Amelia Anderson",
+    "slug": "amelia-anderson",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "amelia-petrov": {
+    "name": "Amelia Petrov",
+    "slug": "amelia-petrov",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "sofia-moore": {
+    "name": "Dr. Sofia Moore",
+    "slug": "sofia-moore",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "sofia-young": {
+    "name": "Dr. Sofia Young",
+    "slug": "sofia-young",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "emma-jones": {
+    "name": "Emma Jones",
+    "slug": "emma-jones",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "olivia-martin": {
+    "name": "Olivia Martin",
+    "slug": "olivia-martin",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "joseph-williams": {
+    "name": "Joseph Williams",
+    "slug": "joseph-williams",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "harper-clark": {
+    "name": "Dr. Harper Clark",
+    "slug": "harper-clark",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "elizabeth-robinson": {
+    "name": "Elizabeth Robinson",
+    "slug": "elizabeth-robinson",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "david-thomas": {
+    "name": "David Thomas",
+    "slug": "david-thomas",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "samuel-garcia": {
+    "name": "Samuel Garcia",
+    "slug": "samuel-garcia",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "alinacode": {
+    "name": "AlinaCode",
+    "slug": "alinacode",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "isabella-walker": {
+    "name": "Dr. Isabella Walker",
+    "slug": "isabella-walker",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "alexander-lopez": {
+    "name": "Alexander Lopez",
+    "slug": "alexander-lopez",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "alexander-martin": {
+    "name": "Alexander Martin",
+    "slug": "alexander-martin",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "elliot-marsh": {
+    "name": "Elliot Marsh",
+    "slug": "elliot-marsh",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "carter-rodriguez": {
+    "name": "Carter Rodriguez",
+    "slug": "carter-rodriguez",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "northstar-ledger": {
+    "name": "The Northstar Ledger",
+    "slug": "northstar-ledger",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "david-robinson": {
+    "name": "David Robinson",
+    "slug": "david-robinson",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "benjamin-young": {
+    "name": "Benjamin Young",
+    "slug": "benjamin-young",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "benjamin-jackson": {
+    "name": "Dr. Benjamin Jackson",
+    "slug": "benjamin-jackson",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "alin_acode": {
+    "name": "AlinaCode",
+    "slug": "alin_acode",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "ethan-caldwell": {
+    "name": "Ethan Caldwell",
+    "slug": "ethan-caldwell",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "david-thompson": {
+    "name": "David Thompson",
+    "slug": "david-thompson",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  },
+  "samuel-jackson": {
+    "name": "Samuel Jackson",
+    "slug": "samuel-jackson",
+    "kind": "legacy",
+    "bio": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications."
+  }
+}

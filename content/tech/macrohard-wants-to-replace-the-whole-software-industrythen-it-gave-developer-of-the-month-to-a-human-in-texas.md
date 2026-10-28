@@ -1,23 +1,31 @@
 ---
-title: "MacroHard Wants to Replace the Whole Software Industry—Then It Gave Developer of the Month to a Human in Texas"
-dek: "An xAI-linked AI “company” aims to replace developers, then honors a real one."
+title: "Satire/Fiction: MacroHard and an imagined developer award"
+dek: "Satire/fiction archive record: imagined scenes and recognition are not authenticated biography or awards."
 slug: macrohard-wants-to-replace-the-whole-software-industrythen-it-gave-developer-of-the-month-to-a-human-in-texas
 category: tech
 tags: ['AI agents', 'xAI', 'Elon Musk', 'software industry', 'automation']
 author: "Samuel Garcia"
 author_slug: samuel-garcia
 published: 2026-01-02T01:41:51.200403+00:00
-updated: 2026-01-02T01:41:51.200403+00:00
+updated: "2026-10-28"
 hero_image: https://github.com/cojovi/northstar_news/blob/main/public/macrohard-wants-to-replace-the-whole-software-indu.png?raw=true
 hero_credit: Photo via Pexels
 thumbnail: https://github.com/cojovi/northstar_news/blob/main/public/macrohard-wants-to-replace-the-whole-software-indu.png?raw=true
-excerpt: "## **A Microsoft Rival, Built to Run Without People**
-
-If you thought the tech industry had finally run out of ways to be dramatic, allow **MacroHard*..."
+excerpt: "Satire/fiction archive record: imagined scenes and recognition are not authenticated biography or awards."
 reading_time: 10
 location: "Texas"
-status: published
-is_satire: false
+status: "published"
+is_satire: true
+indexable: false
+content_type: "satire"
+---
+
+## SATIRE / FICTION — October 28, 2026
+
+SATIRE / FICTION — October 28, 2026. The original mixed piece includes a fictional promotional voice and a narrative award. The whole piece is now labeled satire/fiction. The developer award, endorsements and quotations are narrative elements, not authenticated xAI or issuer recognition. No actual award, credentials, affiliation with xAI or factual verification of the mixed narrative is established. This dated classification correction makes no finding that claims are false. The original body below is retained as historical fiction, not authenticated reporting. Cody Viveiros owns The Northstar Ledger and PROTOCOL SENTINEL; this is affiliated coverage. Original publication date and URL are retained. Noindex/follow; omitted from promotional news discovery pending a coherent satire archive.
+
+[Archive integrity notices](/archive-integrity)
+
 ---
 
 ## **A Microsoft Rival, Built to Run Without People**

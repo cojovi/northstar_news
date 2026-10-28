@@ -1,210 +1,250 @@
-/**
- * Vite Plugin: Prerender OG Meta Tags
- * Generates static HTML files for each article with correct OG meta tags
- * so Facebook crawler can see them without executing JavaScript
- */
-
-import fs from 'fs';
-import path from 'path';
-import matter from 'gray-matter';
-import React from 'react';
-import { renderToStaticMarkup } from 'react-dom/server';
-import ReactMarkdown from 'react-markdown';
-import { SITE_URL, resolveSocialImage } from './src/lib/socialImage.js';
-
+/** Static route output with the same article and policy renderers as the client. */
+import fs from "node:fs";
+import path from "node:path";
+import React from "react";
+import { renderToStaticMarkup } from "react-dom/server";
+import { loadArticles } from "./scripts/lib/load-articles.js";
+import {
+  SITE_URL,
+  DEFAULT_IMAGE,
+  resolveSocialImage,
+} from "./src/lib/socialImage.js";
+import { articleSchema, canonicalUrl, isDiscoverable } from "./src/lib/authority.js";
+import { routeInventory, routeRobots, routeArticles } from "./src/lib/routes.js";
+import { ArticleDocument } from "./src/components/ArticleDocument.js";
+import { RoutePage, PublicLinks } from "./src/components/RoutePage.js";
+const h = React.createElement;
 export default function prerenderOGPlugin() {
   return {
-    name: 'vite-plugin-prerender-og',
-    apply: 'build',
-    
+    name: "vite-plugin-prerender-og",
+    apply: "build",
     async writeBundle(options) {
-      const outDir = options.dir || 'dist';
-      const contentDir = path.resolve(process.cwd(), 'content');
-      const indexHtmlPath = path.join(outDir, 'index.html');
-      
-      if (!fs.existsSync(indexHtmlPath)) {
-        throw new Error('index.html not found in build output; cannot prerender article metadata');
+      const outDir = options.dir || "dist";
+      const base = fs.readFileSync(path.join(outDir, "index.html"), "utf8");
+      const articles = loadArticles();
+      const inventory = routeInventory(articles);
+      const pages = [];
+      for (const [route, page] of Object.entries(inventory)) {
+        const article =
+          page.type === "article"
+            ? articles.find(
+                (a) => a.categoryPath === page.category && a.slug === page.slug,
+              )
+            : null;
+        const html = article
+          ? generateArticleHTML(base, article, route.slice(1), articles)
+          : generatePageHTML(base, page, route, articles);
+        pages.push([route, html]);
       }
-
-      // Read the base index.html
-      const baseHtml = fs.readFileSync(indexHtmlPath, 'utf-8');
-      
-      console.log('\n📄 Prerendering OG meta tags for articles...');
-      
-      // Get all markdown files
-      const articles = getAllArticles(contentDir);
-      let count = 0;
-      
-      for (const article of articles) {
-        const route = `${article.category}/${article.slug}`;
-        const htmlPath = path.join(outDir, route, 'index.html');
-        
-        // Create directory if it doesn't exist
-        const htmlDir = path.dirname(htmlPath);
-        if (!fs.existsSync(htmlDir)) {
-          fs.mkdirSync(htmlDir, { recursive: true });
-        }
-        
-        // Generate HTML with correct OG meta tags
-        const articleHtml = generateArticleHTML(baseHtml, article, route);
-        
-        // Write the HTML file
-        fs.writeFileSync(htmlPath, articleHtml, 'utf-8');
-        count++;
-      }
-      
-      fs.writeFileSync(indexHtmlPath, generateListingHTML(baseHtml, articles));
-      for (const category of new Set(articles.map(article => article.category))) {
-        const categoryDir = path.join(outDir, category);
-        fs.mkdirSync(categoryDir, { recursive: true });
-        fs.writeFileSync(path.join(categoryDir, 'index.html'), generateListingHTML(baseHtml, articles.filter(article => article.category === category), category));
-      }
-      console.log(`✓ Prerendered ${count} full articles, homepage and category indexes\n`);
-    }
+      writePrerenderedRoutes(
+        outDir,
+        pages,
+        generatePageHTML(
+          base,
+          {
+            type: "notFound",
+            title: "Page not found",
+            description: "This URL is not in the published archive.",
+          },
+          "/404",
+          articles,
+        ),
+      );
+      console.log(
+        `Prerendered ${articles.length} complete articles and ${Object.keys(inventory).length - articles.length} other routes; native 404 included.`,
+      );
+    },
   };
 }
-
-/**
- * Get all published articles
- */
-function getAllArticles(contentDir) {
-  const articles = [];
-  
-  function scanDirectory(dir) {
-    const entries = fs.readdirSync(dir, { withFileTypes: true });
-    
-    for (const entry of entries) {
-      const fullPath = path.join(dir, entry.name);
-      
-      if (entry.isDirectory()) {
-        scanDirectory(fullPath);
-      } else if (entry.isFile() && entry.name.endsWith('.md')) {
-        try {
-          const content = fs.readFileSync(fullPath, 'utf-8');
-          const { data, content: body } = matter(content);
-          
-          if (data.status === 'published') {
-            const relativePath = path.relative(contentDir, fullPath);
-            const pathParts = relativePath.split(path.sep);
-            const category = pathParts[0];
-            const slug = data.slug || path.basename(fullPath, '.md');
-            
-            articles.push({
-              ...data,
-              content: body,
-              category,
-              slug,
-              title: data.title || '',
-              dek: data.dek || data.excerpt || '',
-              hero_image: data.hero_image || '',
-              thumbnail: data.thumbnail || data.hero_image || '',
-            });
-          }
-        } catch (error) {
-          throw new Error(`Error processing ${fullPath}: ${error.message}`);
-        }
-      }
+// Comparison only: canonical decomposition, lowercase, uppercase, decomposition.
+// Lowering first also merges capital sharp S with ß/SS; uppercasing merges long s,
+// final sigma and multi-character case expansions. This conservative caseless key
+// also merges dotless i/I. It is not an OS filesystem table or an output-path rewrite.
+function normalizedCaselessKey(value) {
+  return value.normalize("NFD").toLowerCase().toUpperCase().normalize("NFD");
+}
+// Plan every destination, including home and the native 404, before any write.
+// The HTTP server decodes URLs once; literal percent sequences must stay literal.
+export function writePrerenderedRoutes(outDir, pages, notFoundHTML) {
+  const root = path.resolve(outDir);
+  const destinations = new Map();
+  function plan(route, relativePath, html) {
+    const target = path.resolve(root, relativePath);
+    if (!target.startsWith(root + path.sep))
+      throw new Error(`Prerender route ${JSON.stringify(route)} resolves outside output directory: ${target}`);
+    const key = normalizedCaselessKey(target);
+    if (destinations.has(key))
+      throw new Error(`Duplicate prerender destination: ${JSON.stringify(route)} and ${JSON.stringify(destinations.get(key).route)} -> ${target}`);
+    destinations.set(key, { route, target, html });
+  }
+  for (const [route, html] of pages) {
+    let decoded;
+    try {
+      if (typeof route !== "string" || !route.startsWith("/")) throw new Error();
+      decoded = decodeURIComponent(route.slice(1));
+      if (/[\\\u0000-\u001f\u007f-\u009f]/u.test(decoded)) throw new Error();
+    } catch {
+      throw new Error(`Invalid prerender route: ${JSON.stringify(route)}`);
+    }
+    plan(route, route === "/" ? "index.html" : `${decoded}/index.html`, html);
+  }
+  plan("native 404", "404.html", notFoundHTML);
+  for (const { target, route } of destinations.values()) {
+    // Lexical containment alone cannot protect an existing symlink in dist.
+    for (let entry = target; ; entry = path.dirname(entry)) {
+      if (fs.lstatSync(entry, { throwIfNoEntry: false })?.isSymbolicLink())
+        throw new Error(`Prerender route ${JSON.stringify(route)} has a symlink destination: ${entry}`);
+      if (entry === root) break;
+    }
+    // A destination file cannot also be another destination's directory.
+    for (let parent = path.dirname(target); parent !== root; parent = path.dirname(parent)) {
+      if (destinations.has(normalizedCaselessKey(parent)))
+        throw new Error(`Conflicting prerender destinations for ${JSON.stringify(route)}: ${parent}`);
     }
   }
-  
-  scanDirectory(contentDir);
-  return articles.sort((a, b) => new Date(b.published) - new Date(a.published));
-}
-
-/**
- * Generate HTML with article-specific OG meta tags
- */
-export function generateArticleHTML(baseHtml, article, route) {
-  const url = escapeHtml(`${SITE_URL}/${route}`);
-  const image = escapeHtml(resolveSocialImage(article.hero_image));
-  
-  // Remove existing OG meta tags
-  let html = baseHtml.replace(/<meta\s+property="og:[^"]*"[^>]*>/gi, '');
-  html = html.replace(/<meta\s+name="twitter:[^"]*"[^>]*>/gi, '');
-  html = html.replace(/<title>[^<]*<\/title>/i, '');
-  html = html.replace(/<link\s+rel="canonical"[^>]*>/gi, '');
-  html = html.replace(/<meta\s+name="description"[^>]*>/gi, '');
-  
-  // Find the closing </head> tag
-  const headEndIndex = html.indexOf('</head>');
-  if (headEndIndex === -1) {
-    throw new Error('Could not find </head> for article metadata');
+  for (const { target, html } of destinations.values()) {
+    fs.mkdirSync(path.dirname(target), { recursive: true });
+    fs.writeFileSync(target, html);
   }
-  
-  // Build new meta tags
-  const ogTags = `
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="${url}" />
-    <meta property="og:title" content="${escapeHtml(article.title)}" />
-    <meta property="og:description" content="${escapeHtml(article.dek)}" />
-    <meta property="og:site_name" content="The Northstar Ledger" />
-    <meta property="og:image" content="${image}" />
-    ${image.startsWith('https:') ? `<meta property="og:image:secure_url" content="${image}" />` : ''}
-    <meta property="og:image:alt" content="${escapeHtml(article.title)}" />
-    <meta property="og:locale" content="en_US" />
-    
-    <!-- Twitter / X -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="${url}" />
-    <meta name="twitter:title" content="${escapeHtml(article.title)}" />
-    <meta name="twitter:description" content="${escapeHtml(article.dek)}" />
-    <meta name="twitter:image" content="${image}" />
-    <meta name="twitter:image:alt" content="${escapeHtml(article.title)}" />
-    
-    <link rel="canonical" href="${url}" />
-    <meta name="description" content="${escapeHtml(article.dek)}" />
-    <title>${escapeHtml(article.title)} - The Northstar Ledger</title>
-`;
-  
-  // Insert before </head>
-  html = html.slice(0, headEndIndex) + ogTags + '    ' + html.slice(headEndIndex);
-  
-  const schema = {
-    '@context': 'https://schema.org', '@type': 'NewsArticle',
-    headline: article.title, description: article.dek,
-    image: resolveSocialImage(article.hero_image),
-    datePublished: article.published, dateModified: article.updated || article.published,
-    author: { '@type': 'Person', name: article.author || 'The Northstar Ledger' },
-    publisher: { '@type': 'Organization', name: 'The Northstar Ledger' },
-    mainEntityOfPage: `${SITE_URL}/${route}`,
-  };
-  html = html.replace('</head>', `<script id="prerender-article-schema" type="application/ld+json">${JSON.stringify(schema).replace(/</g, '\\u003c')}</script></head>`);
-  const body = renderToStaticMarkup(React.createElement(ReactMarkdown, null, article.content || ''));
-  return replaceRoot(html, `<main class="max-w-4xl mx-auto px-4 py-8"><article>
-    <nav><a href="/">Home</a> / <a href="/${escapeHtml(article.category)}">${escapeHtml(article.category)}</a></nav>
-    <header><h1 class="text-4xl font-serif font-bold mb-4">${escapeHtml(article.title)}</h1>
-    <p class="text-xl mb-6">${escapeHtml(article.dek)}</p>
-    <p>By ${escapeHtml(article.author)} <time datetime="${escapeHtml(article.published)}">${escapeHtml(article.published)}</time></p></header>
-    <figure><img src="${image}" alt="${escapeHtml(article.title)}"/><figcaption>${escapeHtml(article.hero_credit)}</figcaption></figure>
-    <div class="prose prose-lg max-w-none">${body}</div>
-    </article></main>`);
 }
-
+export function escapeHtml(value) {
+  return String(value ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+function metadataHTML(
+  base,
+  {
+    title,
+    description,
+    url,
+    image = DEFAULT_IMAGE,
+    article = false,
+    robots,
+    schema,
+  },
+) {
+  let html = base
+    .replace(/<meta\s+property="og:[^"]*"[^>]*>/gi, "")
+    .replace(/<meta\s+name="twitter:[^"]*"[^>]*>/gi, "")
+    .replace(/<title>[^<]*<\/title>/i, "")
+    .replace(/<link\s+rel="canonical"[^>]*>/gi, "")
+    .replace(/<meta\s+name="(?:description|robots)"[^>]*>/gi, "")
+    .replace(
+      /<script[^>]*type="application\/ld\+json"[^>]*>[\s\S]*?<\/script>/gi,
+      "",
+    );
+  if (!html.includes("</head>"))
+    throw new Error("Could not find </head> for metadata");
+  const values = [
+    ["property", "og:type", article ? "article" : "website"],
+    ["property", "og:url", url],
+    ["property", "og:title", title],
+    ["property", "og:description", description],
+    ["property", "og:site_name", "The Northstar Ledger"],
+    ["property", "og:image", image],
+    ["property", "og:image:alt", title],
+    ["property", "og:locale", "en_US"],
+    ["name", "twitter:card", "summary_large_image"],
+    ["name", "twitter:title", title],
+    ["name", "twitter:description", description],
+    ["name", "twitter:url", url],
+    ["name", "twitter:image", image],
+    ["name", "twitter:image:alt", title],
+    ["name", "description", description],
+    ["name", "robots", robots],
+  ];
+  if (image.startsWith("https:"))
+    values.push(["property", "og:image:secure_url", image]);
+  const tags = values
+    .map(
+      ([attribute, key, value]) =>
+        `<meta ${attribute}="${key}" content="${escapeHtml(value)}" />`,
+    )
+    .join("\n");
+  return html.replace(
+    "</head>",
+    `${tags}\n<link rel="canonical" href="${escapeHtml(url)}" /><title>${escapeHtml(title)}${title === "The Northstar Ledger" ? "" : " - The Northstar Ledger"}</title>${schema ? `<script id="prerender-article-schema" data-route-schema="true" type="application/ld+json">${JSON.stringify(schema).replace(/</g, "\\u003c")}</script>` : ""}</head>`,
+  );
+}
 function replaceRoot(html, body) {
   const root = /<div\s+id="root"\s*>\s*<\/div>/;
-  if (!root.test(html)) throw new Error('Expected empty React root in build template');
-  return html.replace(root, () => `<div id="root">${body}</div>`);
+  if (!root.test(html))
+    throw new Error("Expected empty React root in build template");
+  const header =
+    '<header class="border-b border-gray-200 dark:border-dark-700 max-w-7xl mx-auto px-4 py-5"><a class="text-2xl font-serif font-bold" href="/">The Northstar Ledger</a><nav class="flex flex-wrap gap-4 mt-4"><a href="/us">U.S.</a><a href="/world">World</a><a href="/politics">Politics</a><a href="/business">Business</a><a href="/tech">Tech</a><a href="/topics">Topic guides</a></nav></header>';
+  const footer = renderToStaticMarkup(
+    h(
+      "footer",
+      { className: "max-w-7xl mx-auto px-4 py-10 border-t" },
+      h(PublicLinks),
+    ),
+  );
+  return html.replace(
+    root,
+    () => `<div id="root">${header}<main>${body}</main>${footer}</div>`,
+  );
 }
-
-export function generateListingHTML(baseHtml, articles, category = '') {
-  const title = category ? `${category} - The Northstar Ledger` : 'The Northstar Ledger';
-  const url = `${SITE_URL}${category ? `/${category}` : '/'}`;
-  let html = baseHtml.replace(/<title>[^<]*<\/title>/i, `<title>${escapeHtml(title)}</title>`)
-    .replace(/<link\s+rel="canonical"[^>]*>/gi, '');
-  html = html.replace('</head>', `<link rel="canonical" href="${escapeHtml(url)}" /></head>`);
-  return replaceRoot(html, `<main class="max-w-7xl mx-auto px-4 py-8"><nav><a href="/">Home</a></nav><h1 class="text-4xl font-serif font-bold">${escapeHtml(title)}</h1><section>${articles.map(article => `<article><h2><a href="/${escapeHtml(article.category)}/${escapeHtml(article.slug)}">${escapeHtml(article.title)}</a></h2><p>${escapeHtml(article.dek)}</p></article>`).join('\n')}</section></main>`);
+export function generateArticleHTML(base, article, route, articles = []) {
+  const a = {
+    ...article,
+    categoryPath: article.categoryPath || route.split("/")[0],
+    slug: article.slug || route.split("/")[1],
+  };
+  const related = articles
+    .filter(
+      (other) =>
+        isDiscoverable(other) && other.slug !== a.slug &&
+        (other.categoryPath === a.categoryPath ||
+          other.tags?.some((t) => a.tags?.includes(t))),
+    )
+    .slice(0, 4);
+  return replaceRoot(
+    metadataHTML(base, {
+      title: a.title,
+      description: a.dek,
+      url: canonicalUrl(a),
+      image: resolveSocialImage(a.hero_image),
+      article: true,
+      robots: routeRobots({ type: "article", indexable: isDiscoverable(a) }),
+      schema: articleSchema(a),
+    }),
+    renderToStaticMarkup(h(ArticleDocument, { article: a, related })),
+  );
 }
-
-/**
- * Escape HTML special characters
- */
-function escapeHtml(text) {
-  if (!text) return '';
-  return String(text)
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&#039;');
+export function generatePageHTML(base, page, route, articles) {
+  return replaceRoot(
+    metadataHTML(base, {
+      title: page.title,
+      description: page.description,
+      url: `${SITE_URL}${route}`,
+      robots: routeRobots(page),
+    }),
+    renderToStaticMarkup(h(RoutePage, { route: page, articles })),
+  );
+}
+export function generateListingHTML(base, articles, category = "") {
+  return generatePageHTML(
+    base,
+    {
+      type: category ? "category" : "home",
+      category,
+      articleCount: routeArticles({type: "category", category}, articles.map(a => ({...a, categoryPath: a.categoryPath || a.category}))).length,
+      title: category
+        ? `${category} - The Northstar Ledger`
+        : "The Northstar Ledger",
+      description: category
+        ? `Browse the ${category} archive.`
+        : "News summaries, analysis and commentary with visible evidence limits.",
+    },
+    category ? `/${category}` : "/",
+    articles.map((a) => ({
+      ...a,
+      categoryPath: a.categoryPath || a.category,
+      evidence: a.evidence || { status: "pending" },
+    })),
+  );
 }

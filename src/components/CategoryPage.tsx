@@ -68,7 +68,8 @@ export function CategoryPage({ category }: CategoryPageProps) {
 
           {articles.length === 0 && (
             <div className="text-center py-12">
-              <p className="text-xl text-gray-600 dark:text-gray-400">No articles found in this category.</p>
+              <p className="text-xl text-gray-600 dark:text-gray-400">No articles are currently available for promotion in this section. Historic article URLs remain accessible.</p>
+              <p className="mt-4"><a href="/archive-integrity" className="underline">Read the dated archive integrity notices</a></p>
             </div>
           )}
         </section>

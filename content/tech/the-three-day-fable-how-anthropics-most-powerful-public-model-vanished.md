@@ -7,7 +7,7 @@ tags: ['Anthropic', 'Claude Fable 5', 'AI regulation', 'export controls', 'front
 author: "Elliot Marsh"
 author_slug: elliot-marsh
 published: 2026-06-14T01:44:48+00:00
-updated: 2026-06-14T01:44:48+00:00
+updated: "2026-10-28"
 hero_image: https://github.com/cojovi/northstar_news/blob/main/public/the-three-day-fable-how-anthropics-most-powerful.png?raw=true
 hero_credit: AI-generated editorial image via OpenAI
 thumbnail: https://github.com/cojovi/northstar_news/blob/main/public/the-three-day-fable-how-anthropics-most-powerful.png?raw=true
@@ -16,7 +16,17 @@ reading_time: 12
 location: "San Francisco, California"
 status: published
 is_satire: false
+content_type: "analysis"
 ---
+
+## Follow-up added October 28, 2026
+
+In its [June 30 redeployment announcement](https://www.anthropic.com/news/redeploying-fable-5), Anthropic said the export controls had been lifted and that Fable 5 would return globally on July 1 through its own services. The page also carries a restored-access update. These are company statements, not an independent test of access or a separately reviewed government directive.
+
+The historical account below concerns the June 12 suspension as reported at the time. The later return does not make that suspension reporting false, and the earlier language about disappearance should not be read as permanent or as a statement of current availability. The original publication timestamp is retained. Technical specifications, third-party accounts and benchmarks elsewhere in the historical article have not all been checked in this targeted review.
+
+## Historical account — June 13, 2026 (June 14 UTC timestamp)
+
 
 Anthropic’s **Claude Fable 5** was supposed to be the model that moved the frontier into ordinary hands. Not ordinary in price, perhaps, and certainly not ordinary in capability, but ordinary in the sense that developers, enterprises, and paying Claude users could actually touch it without joining a government-backed access program or whispering the correct password into a secure lab.
 

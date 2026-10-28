@@ -1,9 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://thenorthstarledger.com/</loc>
-    <lastmod>2026-10-22</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
+<url><loc>https://thenorthstarledger.com/</loc></url>
+<url><loc>https://thenorthstarledger.com/topics</loc></url>
+<url><loc>https://thenorthstarledger.com/about</loc></url>
+<url><loc>https://thenorthstarledger.com/ownership</loc></url>
+<url><loc>https://thenorthstarledger.com/standards</loc></url>
+<url><loc>https://thenorthstarledger.com/corrections</loc></url>
+<url><loc>https://thenorthstarledger.com/contact</loc></url>
+<url><loc>https://thenorthstarledger.com/ai-media-policy</loc></url>
+<url><loc>https://thenorthstarledger.com/privacy</loc></url>
+<url><loc>https://thenorthstarledger.com/terms</loc></url>
+<url><loc>https://thenorthstarledger.com/source-reviews</loc></url>
+<url><loc>https://thenorthstarledger.com/archive-integrity</loc></url>
 </urlset>

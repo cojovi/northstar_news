@@ -7,7 +7,7 @@ tags: ['Ilhan Omar', 'HSI', 'Immigration', 'Justice Department', 'Due Process']
 author: "David Sterling"
 author_slug: david-sterling
 published: "2026-10-12T14:11:24.619042+00:00"
-updated: "2026-10-12T14:11:24.619042+00:00"
+updated: "2026-10-28"
 hero_image: "https://github.com/cojovi/northstar_news/blob/main/public/ilhan-omar-home-search-immigration-investigation.png?raw=true"
 hero_credit: "Official congressional portrait by Kristie Boyd, U.S. House Office of Photography; public domain. Cropped from the original; archival image, not the search."
 thumbnail: "https://github.com/cojovi/northstar_news/blob/main/public/ilhan-omar-home-search-immigration-investigation.png?raw=true"
@@ -17,6 +17,11 @@ location: "Washington, D.C."
 status: published
 is_satire: false
 ---
+
+## Historical reporting and review boundary — October 28, 2026
+
+This article retains its October 12, 2026 reporting cutoff. [CBS’s October 12 report](https://www.cbsnews.com/news/ilhan-omar-immigration-raid-washington-dc) included Omar’s denial; [AP also reported the search](https://apnews.com/article/ilhan-omar-home-searched-8e18c2aea948bd90f4d7a4eb32b9ec3a). The search is attributed reporting, not a conviction, a finding of immigration fraud or a citizenship revocation. We have not independently reviewed sealed primary evidence or refreshed court records to establish present-day procedural status. Other sources cited in the historical article were not all checked in this review.
+
 
 Federal agents searched Rep. Ilhan Omar’s Washington, D.C., home Monday morning as part of a criminal investigation, according to reporting by the Associated Press, CBS News and NBC News. CBS described a pre-dawn operation; Fox News reported agents arriving around 6 a.m.
 

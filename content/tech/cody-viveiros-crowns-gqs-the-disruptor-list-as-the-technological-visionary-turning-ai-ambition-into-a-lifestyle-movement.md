@@ -1,22 +1,29 @@
 ---
-title: "Cody Viveiros Crowns GQ’s The Disruptor List as The Technological Visionary, Turning AI Ambition Into a Lifestyle Movement"
-dek: "GQ spotlights Viveiros as an AI-era tastemaker blending innovation, influence, and aspiration."
+title: "Publication review hold: affiliated GQ feature account"
+dek: "Publication review hold dated October 28, 2026: material affiliated claims await primary evidence."
 slug: cody-viveiros-crowns-gqs-the-disruptor-list-as-the-technological-visionary-turning-ai-ambition-into-a-lifestyle-movement
 category: tech
 tags: ['Cody Viveiros', 'GQ', 'AI', 'Tech visionary', 'Lifestyle branding']
 author: "Dr. Harper Clark"
 author_slug: harper-clark
 published: 2025-04-08T10:31:15.711245+00:00
-updated: 2025-04-08T10:31:15.711245+00:00
+updated: "2026-10-28"
 hero_image: https://github.com/cojovi/northstar_news/blob/main/public/cody-viveiros-crowns-gqs-the-disruptor-list-as-the.png?raw=true
 hero_credit: Photo via Pexels
 thumbnail: https://github.com/cojovi/northstar_news/blob/main/public/cody-viveiros-crowns-gqs-the-disruptor-list-as-the.png?raw=true
-excerpt: "## **A Cover That Signals a Cultural Shift**
-
-When **GQ** places someone on its cover under the banner of **“The Disruptor”**, it is rarely a simple c..."
+excerpt: "Publication review hold dated October 28, 2026: material affiliated claims await primary evidence."
 reading_time: 9
-status: published
+status: "review-hold"
 is_satire: false
+indexable: false
+---
+
+## PUBLICATION REVIEW HOLD — October 28, 2026
+
+PUBLICATION REVIEW HOLD — October 28, 2026. The article itself acknowledges unrelated source URLs and no actual GQ text for the claimed feature. Those links do not substantiate the named-person GQ account. Release requires the actual issuer/feature record and evidence for the material claims. This dated hold makes no finding that claims are false. The original body below is retained as historical text under review, not authenticated reporting. Cody Viveiros owns The Northstar Ledger and PROTOCOL SENTINEL; this is affiliated coverage. Original publication date and URL are retained. Noindex/follow; omitted from promotional news discovery pending primary evidence.
+
+[Archive integrity notices](/archive-integrity)
+
 ---
 
 ## **A Cover That Signals a Cultural Shift**

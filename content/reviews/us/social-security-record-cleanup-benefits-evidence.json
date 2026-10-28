@@ -1,0 +1,22 @@
+{
+  "affiliated": false,
+  "notice": "",
+  "evidence": {
+    "status": "partial",
+    "completed_full_factcheck": false,
+    "sources": [
+      "https://www.ssa.gov/news/en/press/releases/2026-10-20.html"
+    ],
+    "summary": "SSA October 20 release describes 17 million missing death dates, approximately 25 million missing citizenship fields updated, and 8.5 million inaccurate citizenship records in process. It does not establish equivalent fraudulent benefit recipients or savings. Only the identified source scope was checked; other historical claims remain outside this review.",
+    "limits": "SSA’s record counts are attributed agency statements, not an independent audit. The release supplies neither a count of fraudulent beneficiaries nor equivalent proven savings. Other claims and the original social post were not fully authenticated; this is not a full fact-check.",
+    "record_url": "https://thenorthstarledger.com/source-reviews#social-security-record-cleanup-benefits-evidence",
+    "reviewed_at": "2026-10-28"
+  },
+  "corrections": [
+    {
+      "date": "2026-10-28",
+      "note": "Recorded a partial source check of SSA’s October 20 announcement: 17 million added death dates, approximately 25 million missing citizenship fields updated, and 8.5 million inaccurate citizenship records still being corrected. These are agency record counts, not audited fraud recipients or proven equivalent savings. The substantive body and its update timestamp are unchanged.",
+      "url": "https://www.ssa.gov/news/en/press/releases/2026-10-20.html"
+    }
+  ]
+}

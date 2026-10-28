@@ -1,10 +1,11 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
-import matter from 'gray-matter';
+import { parseArticleSource } from './lib/load-articles.js';
+import { isDiscoverable } from '../src/lib/authority.js';
 import React from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
-import ReactMarkdown from 'react-markdown';
+import { MarkdownBody } from '../src/components/ArticleDocument.js';
 import { SITE_URL, resolveSocialImage } from '../src/lib/socialImage.js';
 
 const decode = value => value.replace(/&quot;/g, '"').replace(/&#039;/g, "'")
@@ -18,11 +19,9 @@ const localImages = new Set();
 for (const file of fs.readdirSync('content', { recursive: true })) {
   if (!file.endsWith('.md')) continue;
   const source = fs.readFileSync(path.join('content', file), 'utf8');
-  const { data, content } = matter(source);
-  if (data.status !== 'published') continue;
-  // The browser's frontmatter reader expects inline arrays. A block-style tag
-  // list breaks related-article loading before client-side metadata is updated.
-  assert.match(source, /^tags:\s*\[[^\n]*\]\s*$/m, `${file}: tags must be an inline array`);
+  const { data, content } = parseArticleSource(source);
+  if (!['published', 'withdrawn', 'review-hold'].includes(data.status)) continue;
+  // YAML shape is validated by the common content loader; browser uses its JSON snapshot.
 
   const route = `${file.split(path.sep)[0]}/${data.slug || path.basename(file, '.md')}`;
   const html = fs.readFileSync(path.join('dist', route, 'index.html'), 'utf8');
@@ -37,12 +36,13 @@ for (const file of fs.readdirSync('content', { recursive: true })) {
   assert.deepEqual(canonical, [`${SITE_URL}/${route}`], `${route}: canonical`);
   assert.doesNotMatch(html, /<div id="root"><\/div>/, `${route}: no empty shell`);
   assert.match(html, /<h1\b/, `${route}: static heading`);
-  const renderedBody = renderToStaticMarkup(React.createElement(ReactMarkdown, null, content));
+  const renderedBody = renderToStaticMarkup(React.createElement(MarkdownBody, {content}));
   assert.ok(renderedBody.length > 0 && html.includes(renderedBody), `${route}: complete rendered body`);
   const homeLinks = fs.readFileSync('dist/index.html', 'utf8');
-  assert.ok(homeLinks.includes(`href="/${route}"`), `${route}: discoverable from homepage`);
+  assert.equal(homeLinks.includes(`href="/${route}"`), isDiscoverable(data), `${route}: homepage discovery honors archive state`);
   const categoryLinks = fs.readFileSync(path.join('dist', file.split(path.sep)[0], 'index.html'), 'utf8');
-  assert.ok(categoryLinks.includes(`href="/${route}"`), `${route}: discoverable from category`);
+  assert.equal(categoryLinks.includes(`href="/${route}"`), isDiscoverable(data), `${route}: category discovery honors archive state`);
+  assert.deepEqual(getMeta(html, "robots"), !isDiscoverable(data) ? ["noindex,follow"] : ["index,follow,max-image-preview:large"], `${route}: archive state robots`);
   assert.match(html, /<script[^>]*type="module"[^>]*src="\/assets\//, `${route}: app bundle`);
   assert.doesNotMatch(html, /<meta[^>]+property="og:image:(?:width|height|type)"/, `${route}: no invented dimensions or MIME type`);
 
@@ -60,4 +60,4 @@ assert.ok(count > 0, 'must verify published articles');
 const home = fs.readFileSync('dist/index.html', 'utf8');
 assert.deepEqual(getMeta(home, 'og:image'), [`${SITE_URL}/og/default.jpg`]);
 assert.deepEqual(getMeta(home, 'og:type'), ['website']);
-console.log(`Verified crawler HTML for all ${count} published articles, ${localImages.size} local hero assets, and homepage fallback.`);
+console.log(`Verified crawler HTML for all ${count} retained article routes (including withdrawals), ${localImages.size} local hero assets, and homepage fallback.`);

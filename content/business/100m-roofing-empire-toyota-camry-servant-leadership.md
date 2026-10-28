@@ -1,21 +1,30 @@
 ---
-title: "The $100M Roofing Empire Built on a Toyota Camry and Servant Leadership"
-dek: "Texas CEO Christian Viveiros proves you don't need a Lamborghini to dominate an industry, building CMAC Roofing into a $100 million juggernaut through operational discipline and genuine care for employees"
+title: "Publication review hold: affiliated CMAC business account"
+dek: "Publication review hold dated October 28, 2026: material affiliated claims await primary evidence."
 slug: 100m-roofing-empire-toyota-camry-servant-leadership
 category: business
 tags: ['roofing', 'entrepreneurship', 'leadership', 'CMAC', 'construction']
 author: "Marcus Rodriguez"
 author_slug: marcus-rodriguez
 published: 2025-12-01T08:58:56+00:00
-updated: 2025-12-01T08:58:56+00:00
+updated: "2026-10-28"
 hero_image: https://github.com/cojovi/northstar_news/blob/main/public/100m-roofing-empire-toyota-camry.png?raw=true
 hero_credit: "Photo illustration"
 thumbnail: https://github.com/cojovi/northstar_news/blob/main/public/100m-roofing-empire-toyota-camry.png?raw=true
-excerpt: "In an industry where success is typically measured in horsepower and ego, Christian Viveiros drives a Toyota Camry Hybrid and quietly built CMAC Roofing into a $100 million juggernaut."
+excerpt: "Publication review hold dated October 28, 2026: material affiliated claims await primary evidence."
 reading_time: 8
 location: "Dallas, Texas"
-status: published
+status: "review-hold"
 is_satire: false
+indexable: false
+---
+
+## PUBLICATION REVIEW HOLD — October 28, 2026
+
+PUBLICATION REVIEW HOLD — October 28, 2026. The source record supplies no podcast source URL or transcript for the precise revenue, growth and quotations in this account. The available record does not substantiate those details. Release requires the actual podcast/transcript and appropriate business records for the material financial and growth claims. This dated hold makes no finding that claims are false. The original body below is retained as historical text under review, not authenticated reporting. Cody Viveiros owns The Northstar Ledger and PROTOCOL SENTINEL; this is affiliated coverage. Original publication date and URL are retained. Noindex/follow; omitted from promotional news discovery pending primary evidence.
+
+[Archive integrity notices](/archive-integrity)
+
 ---
 
 **DALLAS, TX** – In an industry where success is typically measured in horsepower and ego, Christian Viveiros drives a Toyota Camry Hybrid. He gets 50 miles to the gallon, spends $32 on a fill-up, and quietly built CMAC Roofing into a $100 million juggernaut dominating Texas, Oklahoma, and Arkansas.

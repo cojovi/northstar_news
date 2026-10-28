@@ -8,6 +8,7 @@ interface ArticleCardProps {
 
 export function ArticleCard({ article, variant = 'standard', showImage = true }: ArticleCardProps) {
   const articleUrl = `/${article.categoryPath}/${article.slug}`;
+  const categoryLabel = article.is_satire ? 'SATIRE / FICTION' : article.status === 'review-hold' ? 'PUBLICATION REVIEW HOLD' : article.status === 'withdrawn' ? 'WITHDRAWAL RECORD' : article.category;
 
   if (variant === 'hero') {
     return (
@@ -17,14 +18,17 @@ export function ArticleCard({ article, variant = 'standard', showImage = true }:
             <div className="mb-4 overflow-hidden rounded-lg">
               <img
                 src={article.hero_image}
-                alt={article.title}
+                width={article.hero_width}
+                height={article.hero_height}
+                decoding="async"
+                alt={article.hero_alt}
                 className="w-full h-[400px] md:h-[500px] object-cover group-hover:scale-105 transition-transform duration-300"
               />
             </div>
           )}
           <div className="space-y-3">
             <span className="text-xs font-semibold text-aurora-600 dark:text-aurora-400 uppercase tracking-wider">
-              {article.category}
+              {categoryLabel}
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold leading-tight text-gray-900 dark:text-gray-50 group-hover:text-aurora-600 dark:group-hover:text-aurora-400 transition-colors">
               {article.title}
@@ -54,7 +58,11 @@ export function ArticleCard({ article, variant = 'standard', showImage = true }:
           <a href={articleUrl} className="flex-shrink-0">
             <img
               src={article.thumbnail}
-              alt={article.title}
+              width={article.thumbnail === article.hero_image ? article.hero_width : undefined}
+              height={article.thumbnail === article.hero_image ? article.hero_height : undefined}
+              loading="lazy"
+              decoding="async"
+              alt={article.hero_alt}
               className="w-32 md:w-48 h-32 md:h-32 object-cover rounded-lg group-hover:opacity-80 transition-opacity"
             />
           </a>
@@ -62,7 +70,7 @@ export function ArticleCard({ article, variant = 'standard', showImage = true }:
         <div className="flex-1 space-y-2">
           <a href={articleUrl}>
             <span className="text-xs font-semibold text-aurora-600 dark:text-aurora-400 uppercase tracking-wider">
-              {article.category}
+              {categoryLabel}
             </span>
             <h3 className="text-xl md:text-2xl font-serif font-bold leading-tight text-gray-900 dark:text-gray-50 group-hover:text-aurora-600 dark:group-hover:text-aurora-400 transition-colors mt-1">
               {article.title}
@@ -88,6 +96,7 @@ export function ArticleCard({ article, variant = 'standard', showImage = true }:
     return (
       <article className="group border-b border-gray-200 dark:border-dark-700 pb-3 last:border-0">
         <a href={articleUrl} className="block space-y-1">
+          {(article.is_satire || article.status === 'review-hold' || article.status === 'withdrawn') && <span className="text-xs font-semibold uppercase tracking-wider">{categoryLabel}</span>}
           <h4 className="text-base font-serif font-bold leading-snug text-gray-900 dark:text-gray-200 group-hover:text-aurora-600 dark:group-hover:text-aurora-400 transition-colors">
             {article.title}
           </h4>
@@ -113,14 +122,18 @@ export function ArticleCard({ article, variant = 'standard', showImage = true }:
           <div className="overflow-hidden">
             <img
               src={article.thumbnail}
-              alt={article.title}
+              width={article.thumbnail === article.hero_image ? article.hero_width : undefined}
+              height={article.thumbnail === article.hero_image ? article.hero_height : undefined}
+              loading="lazy"
+              decoding="async"
+              alt={article.hero_alt}
               className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
             />
           </div>
         )}
         <div className="p-4 space-y-2">
           <span className="text-xs font-semibold text-aurora-600 dark:text-aurora-400 uppercase tracking-wider">
-            {article.category}
+            {categoryLabel}
           </span>
           <h3 className="text-xl md:text-2xl font-serif font-bold leading-tight text-gray-900 dark:text-gray-50 group-hover:text-aurora-600 dark:group-hover:text-aurora-400 transition-colors">
             {article.title}

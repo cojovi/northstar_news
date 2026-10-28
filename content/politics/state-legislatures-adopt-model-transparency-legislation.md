@@ -1,27 +1,28 @@
 ---
-title: State Legislatures Adopt Model Transparency Legislation
-dek: Grassroots movement pushes for open government standards
+title: "Withdrawn: State Legislatures Adopt Model Transparency Legislation"
+dek: "Withdrawal record dated October 28, 2026: a development/mock template was presented as a news account."
 slug: state-legislatures-adopt-model-transparency-legislation
 category: politics
 tags: ['states', 'transparency', 'legislation']
 author: Amanda Foster
 author_slug: amanda-foster
 published: 2025-09-12T09:32:43.263Z
-updated: 2025-09-13T09:32:43.263Z
+updated: "2026-10-28"
 hero_image: https://images.pexels.com/photos/1550337/pexels-photo-1550337.jpeg?auto=compress&cs=tinysrgb&w=1200
 hero_credit: Photo via Pexels
 thumbnail: https://images.pexels.com/photos/1550337/pexels-photo-1550337.jpeg?auto=compress&cs=tinysrgb&w=400
-excerpt: Grassroots movement pushes for open government standards
-reading_time: 4
+excerpt: "Withdrawal record: unsupported mock-template presentation removed; original URL and publication date retained."
+reading_time: 1
 location: Austin, TX
-status: published
+status: "withdrawn"
 is_satire: false
+indexable: false
 ---
 
-Recent developments in politics have drawn significant attention from policymakers, industry leaders, and community stakeholders across the nation. The implications of these changes extend beyond immediate impacts, suggesting broader shifts in how institutions and individuals approach long-standing challenges.
+## Withdrawn October 28, 2026
 
-Experts interviewed for this report emphasized the complexity of the situation, noting that multiple factors have converged to create current conditions. "We're seeing a unique moment where technological capability, economic pressure, and social demand align," explained one analyst familiar with the matter.
+The Northstar Ledger has withdrawn the unsupported presentation previously published at this URL as “State Legislatures Adopt Model Transparency Legislation.” The entire original body exactly matched a complete development/mock template from the repository’s mock-content generator, after whitespace normalization, and the title and path matched its literal template list.
 
-The response from affected communities has been mixed, with some embracing the changes as overdue progress while others express concern about unintended consequences. Local officials report fielding increased inquiries from constituents seeking clarity on how developments will affect their daily lives.
+That template establishes no underlying reporting, interviews or data records for the named topic. Its interview and data descriptions cannot be substantiated by the template. The unsupported presentation has been removed from the live body. This code/template provenance check is not a subject-matter fact-check and makes no finding that the headline’s subject claims are false. No new topic sources or interviews are asserted.
 
-Data collected over the past eighteen months reveals measurable trends that support both optimistic and cautious interpretations. Researchers caution against drawing premature conclusions, emphasizing the need for longitudinal studies to assess lasting impacts.
+This notice retains the original URL and publication date. The original remains in Git history. Read the [archive integrity notices](/archive-integrity) for the method, original title/date, provenance hash and original source revision. This withdrawal record is noindex/follow and excluded from promotional discovery and feeds.

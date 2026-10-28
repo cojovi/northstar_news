@@ -1,7 +1,7 @@
 {
   "name": "The Northstar Ledger",
   "short_name": "Northstar Ledger",
-  "description": "Professional news publication covering U.S. and world news, politics, business, technology, and more",
+  "description": "News summaries, analysis and commentary with visible ownership and evidence limits.",
   "icons": [
     {
       "src": "/favicon-16x16.png",
@@ -42,14 +42,3 @@
   "start_url": "/",
   "scope": "/"
 }
-
-
-
-
-
-
-
-
-
-
-

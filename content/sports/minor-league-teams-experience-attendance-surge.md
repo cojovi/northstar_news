@@ -1,27 +1,28 @@
 ---
-title: Minor League Teams Experience Attendance Surge
-dek: Affordable family entertainment drives growth in smaller markets
+title: "Withdrawn: Minor League Teams Experience Attendance Surge"
+dek: "Withdrawal record dated October 28, 2026: a development/mock template was presented as a news account."
 slug: minor-league-teams-experience-attendance-surge
 category: sports
 tags: ['minor-league', 'baseball', 'attendance']
 author: Dr. Elena Petrov
 author_slug: elena-petrov
 published: 2025-09-18T09:32:43.275Z
-updated: 2025-09-19T09:32:43.275Z
+updated: "2026-10-28"
 hero_image: https://github.com/cojovi/northstar_news/blob/main/public/minor-league-teams-experience-attendance.png?raw=true
 hero_credit: Photo via Pexels
 thumbnail: https://github.com/cojovi/northstar_news/blob/main/public/minor-league-teams-experience-attendance.png?raw=true
-excerpt: Affordable family entertainment drives growth in smaller markets
-reading_time: 7
+excerpt: "Withdrawal record: unsupported mock-template presentation removed; original URL and publication date retained."
+reading_time: 1
 location: Durham, NC
-status: published
+status: "withdrawn"
 is_satire: false
+indexable: false
 ---
 
-Recent developments in sports have drawn significant attention from policymakers, industry leaders, and community stakeholders across the nation. The implications of these changes extend beyond immediate impacts, suggesting broader shifts in how institutions and individuals approach long-standing challenges.
+## Withdrawn October 28, 2026
 
-Experts interviewed for this report emphasized the complexity of the situation, noting that multiple factors have converged to create current conditions. "We're seeing a unique moment where technological capability, economic pressure, and social demand align," explained one analyst familiar with the matter.
+The Northstar Ledger has withdrawn the unsupported presentation previously published at this URL as “Minor League Teams Experience Attendance Surge.” The entire original body exactly matched a complete development/mock template from the repository’s mock-content generator, after whitespace normalization, and the title and path matched its literal template list.
 
-The response from affected communities has been mixed, with some embracing the changes as overdue progress while others express concern about unintended consequences. Local officials report fielding increased inquiries from constituents seeking clarity on how developments will affect their daily lives.
+That template establishes no underlying reporting, interviews or data records for the named topic. Its interview and data descriptions cannot be substantiated by the template. The unsupported presentation has been removed from the live body. This code/template provenance check is not a subject-matter fact-check and makes no finding that the headline’s subject claims are false. No new topic sources or interviews are asserted.
 
-Data collected over the past eighteen months reveals measurable trends that support both optimistic and cautious interpretations. Researchers caution against drawing premature conclusions, emphasizing the need for longitudinal studies to assess lasting impacts.
+This notice retains the original URL and publication date. The original remains in Git history. Read the [archive integrity notices](/archive-integrity) for the method, original title/date, provenance hash and original source revision. This withdrawal record is noindex/follow and excluded from promotional discovery and feeds.
