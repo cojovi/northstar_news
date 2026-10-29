@@ -141,6 +141,9 @@ function EvidenceBox({ article: a }) {
   );
 }
 export function ArticleDocument({ article: a, related = [] }) {
+  // Article-specific owner preference affects presentation, not verification.
+  // Withdrawal/hold/fiction notices cannot be suppressed by this preference.
+  const showEditorialNotices = a.editorial_notices !== false || a.status !== "published" || a.is_satire;
   const profile = a.authorProfile || {
     kind: "legacy",
     bio: "Legacy attribution; identity and credentials have not been independently verified.",
@@ -220,13 +223,13 @@ export function ArticleDocument({ article: a, related = [] }) {
               a.author,
             ),
           ),
-          h(
+          showEditorialNotices ? h(
             "p",
             { className: "text-sm mt-2" },
             profile.kind === "legacy"
               ? "Legacy attribution; identity and credentials not independently verified."
               : profile.bio,
-          ),
+          ) : null,
           h(
             "p",
             { className: "text-sm mt-2" },
@@ -246,7 +249,7 @@ export function ArticleDocument({ article: a, related = [] }) {
           h(ShareLinks, { article: a }),
         ),
       ),
-      a.affiliated
+      showEditorialNotices && a.affiliated
         ? h(
             "aside",
             {
@@ -271,7 +274,7 @@ export function ArticleDocument({ article: a, related = [] }) {
       a.status === "review-hold" || a.is_satire ? h("aside", {className: "mb-6 p-5 border-2 border-amber-600 rounded", "aria-label": "Archive classification notice"},
         h("h2", null, a.is_satire ? "SATIRE / FICTION" : "PUBLICATION REVIEW HOLD"),
         h("p", null, a.review_notice), h("a", {href: "/archive-integrity"}, "Dated archive integrity notices")) : null,
-      h(EvidenceBox, { article: evidence }),
+      showEditorialNotices ? h(EvidenceBox, { article: evidence }) : null,
       h(
         "figure",
         { className: "mb-8" },
@@ -286,10 +289,10 @@ export function ArticleDocument({ article: a, related = [] }) {
         h(
           "figcaption",
           { className: "mt-2 text-sm text-gray-600 dark:text-gray-400" },
-          a.hero_credit
+          showEditorialNotices ? (a.hero_credit
             ? `Historical image credit: ${a.hero_credit}. `
-            : "No image credit is recorded. ",
-          "Origin, license and documentary accuracy have not been independently verified; do not treat this image as evidence of an event.",
+            : "No image credit is recorded. ") : (a.hero_credit || ""),
+          showEditorialNotices ? "Origin, license and documentary accuracy have not been independently verified; do not treat this image as evidence of an event." : null,
         ),
       ),
       h(
@@ -300,7 +303,7 @@ export function ArticleDocument({ article: a, related = [] }) {
         },
         h(MarkdownBody, { content: a.content || "" }),
       ),
-      h(
+      showEditorialNotices ? h(
         "section",
         {
           className: "mt-8 border-t border-gray-200 dark:border-dark-700 pt-5",
@@ -349,7 +352,7 @@ export function ArticleDocument({ article: a, related = [] }) {
             "Report an issue using public evidence; do not send confidential material.",
           ),
         ),
-      ),
+      ) : null,
       h(
         "footer",
         {
@@ -406,13 +409,13 @@ export function ArticleDocument({ article: a, related = [] }) {
           h("a", { href: "/atom.xml" }, "Atom"),
           ". No email signup is required.",
         ),
-        h(
+        showEditorialNotices ? h(
           "p",
           { className: "mt-2 text-sm" },
           "Our retention commitment is to keep article URLs and visible correction history where practicable. ",
           h("a", { href: "/corrections" }, "Read the retention commitment"),
           ".",
-        ),
+        ) : null,
       ),
     ),
   );

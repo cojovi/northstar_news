@@ -7,7 +7,7 @@
     "sources": [
       "https://cojovi.com/"
     ],
-    "summary": "The stored profile provides no documentary support for Harvard/MIT education, revenue milestones or third-party endorsements. Its subject owns this publication. The live body has been corrected or replaced as described in the dated editorial note.",
+    "summary": "The original profile text was restored at the publisher's request on 2026-10-29 after its earlier replacement. The October 28 limited source review did not authenticate its education, revenue, endorsement or image-attribution claims. Restoration and removal of on-page automated notices are presentation decisions, not verification.",
     "limits": "Ownership disclosure is not independent substantiation. No education, revenue, award, endorsement, credential or interview records were authenticated. This limited editorial review is not a full fact-check.",
     "record_url": "https://thenorthstarledger.com/source-reviews#cody-viveiros-dfw-business-powerhouse",
     "reviewed_at": "2026-10-28"
@@ -17,6 +17,11 @@
       "date": "2026-10-28",
       "note": "Replaced the promotional profile with affiliated publisher information. Withdrew unsupported education, revenue, endorsement and image-attribution assertions pending underlying records; this is not a finding that those assertions are false.",
       "url": "https://cojovi.com/"
+    },
+    {
+      "date": "2026-10-29",
+      "note": "The original profile was restored at the publisher's request, and assistant-added on-page notice blocks were removed for this article only. This does not authenticate its claims or alter the scope of the October 28 source review.",
+      "url": null
     }
   ]
 }

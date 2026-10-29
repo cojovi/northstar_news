@@ -18,6 +18,7 @@ export interface ArticleFrontMatter {
   indexable: boolean;
   is_satire: boolean;
   canonical_url?: string;
+  editorial_notices?: boolean;
 }
 
 export interface AuthorProfile {

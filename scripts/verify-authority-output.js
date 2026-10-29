@@ -96,10 +96,15 @@ for (const a of articles) {
     ),
     `${a.slug}: complete shared markdown including ending`,
   );
-  assert.match(html, /Evidence and limits/);
-  assert.match(html, /Corrections and review notes/);
-  for (const correction of a.corrections) {
-    assert.ok(html.includes(renderToStaticMarkup(React.createElement(React.Fragment, null, correction.note))), `${a.slug}: complete correction note`);
+  const showEditorialNotices = a.editorial_notices !== false || a.status !== "published" || a.is_satire;
+  if (showEditorialNotices) {
+    assert.match(html, /Evidence and limits/);
+    assert.match(html, /Corrections and review notes/);
+    for (const correction of a.corrections) {
+      assert.ok(html.includes(renderToStaticMarkup(React.createElement(React.Fragment, null, correction.note))), `${a.slug}: complete correction note`);
+    }
+  } else {
+    assert.doesNotMatch(html, /Evidence and limits|Corrections and review notes|Affiliated coverage/);
   }
   if (a.indexable === false) assert.match(html, /name="robots" content="noindex,follow"/);
   if (a.status === "review-hold") assert.match(html, /PUBLICATION REVIEW HOLD/);
@@ -108,13 +113,13 @@ for (const a of articles) {
     assert.match(html, /SATIRE \/ FICTION/);
   }
   if (a.evidence.status === "partial") {
-    assert.match(html, /Partial source review/);
+    if (showEditorialNotices) assert.match(html, /Partial source review/);
     const register = fs.readFileSync("dist/source-reviews/index.html", "utf8");
     assert.ok(register.includes(`id="${a.slug}"`), `${a.slug}: reachable review anchor`);
   }
   if (a.authorProfile.kind === "legacy")
     assert.notEqual(schema.author?.["@type"], "Person");
-  if (a.affiliated) {
+  if (showEditorialNotices && a.affiliated) {
     assert.match(html, /Affiliated coverage/);
     assert.match(html, /not substantiated/);
   }

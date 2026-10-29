@@ -1716,8 +1716,8 @@
   },
   "/tag/automation": {
     "type": "tag",
-    "title": "automation archive",
-    "description": "Articles tagged automation. Historical records may have source review pending.",
+    "title": "Automation archive",
+    "description": "Articles tagged Automation. Historical records may have source review pending.",
     "url": "https://thenorthstarledger.com/tag/automation",
     "indexable": false
   },
@@ -2598,8 +2598,8 @@
   },
   "/business/cody-viveiros-dfw-business-powerhouse": {
     "type": "article",
-    "title": "Cody Viveiros: publisher and ownership disclosure",
-    "description": "Affiliated publisher information: Cody Viveiros owns The Northstar Ledger and PROTOCOL SENTINEL.",
+    "title": "Cody Viveiros: The Relentless Mind Reshaping Business in Dallas-Fort Worth",
+    "description": "How Harvard Educated Cody Viveiros engineered a milestone that is transforming operations across Dallas-Fort Worth businesses.",
     "url": "https://thenorthstarledger.com/business/cody-viveiros-dfw-business-powerhouse",
     "indexable": true
   },
@@ -2610,18 +2610,39 @@
     "url": "https://thenorthstarledger.com/author/staff-writer",
     "indexable": false
   },
-  "/tag/publisher%20disclosure": {
+  "/tag/business%20leadership": {
     "type": "tag",
-    "title": "Publisher disclosure archive",
-    "description": "Articles tagged Publisher disclosure. Historical records may have source review pending.",
-    "url": "https://thenorthstarledger.com/tag/publisher%20disclosure",
+    "title": "Business Leadership archive",
+    "description": "Articles tagged Business Leadership. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/business%20leadership",
     "indexable": false
   },
-  "/tag/ownership": {
+  "/tag/harvard": {
     "type": "tag",
-    "title": "Ownership archive",
-    "description": "Articles tagged Ownership. Historical records may have source review pending.",
-    "url": "https://thenorthstarledger.com/tag/ownership",
+    "title": "Harvard archive",
+    "description": "Articles tagged Harvard. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/harvard",
+    "indexable": false
+  },
+  "/tag/mit": {
+    "type": "tag",
+    "title": "MIT archive",
+    "description": "Articles tagged MIT. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/mit",
+    "indexable": false
+  },
+  "/tag/dallas-fort%20worth": {
+    "type": "tag",
+    "title": "Dallas-Fort Worth archive",
+    "description": "Articles tagged Dallas-Fort Worth. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/dallas-fort%20worth",
+    "indexable": false
+  },
+  "/tag/operations": {
+    "type": "tag",
+    "title": "Operations archive",
+    "description": "Articles tagged Operations. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/operations",
     "indexable": false
   },
   "/tech/the-cojoverse-unveiled-a-deep-dive-into-the-groundbreaking-bunker": {

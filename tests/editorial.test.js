@@ -69,8 +69,12 @@ test('ten public targeted source reviews have explicit scope, limits, dates and 
   assert.equal(review.summary, a.evidence.summary); assert.equal(review.limits, a.evidence.limits);
   assert.equal(review.completed_full_factcheck, false);
   const html = renderToStaticMarkup(React.createElement(ArticleDocument, {article:a}));
-  for (const c of a.corrections) assert.ok(html.includes(renderToStaticMarkup(React.createElement(React.Fragment, null, c.note))), 'complete visible correction');
-  assert.match(html, /Partial source review/); assert.match(html, /2026-10-28/);
+  if (a.editorial_notices === false) {
+   assert.doesNotMatch(html, /Evidence and limits|Partial source review|Affiliated coverage/);
+  } else {
+   for (const c of a.corrections) assert.ok(html.includes(renderToStaticMarkup(React.createElement(React.Fragment, null, c.note))), 'complete visible correction');
+   assert.match(html, /Partial source review/); assert.match(html, /2026-10-28/);
+  }
   assert.ok(a.corrections.some(c => c.date === '2026-10-28' && c.note.length > 40));
  }
  const malformed = normalizeArticle({title:'x',slug:'x',published:'2026-01-01',status:'published'}, 'Text', 'tech', {evidence:{status:'partial'}});
@@ -84,9 +88,11 @@ test('specific corrections replace unsupported claims without changing historica
  assert.doesNotMatch(fbi.content, /Sheikhdoun|Abdulhani|jumpsuit|incontrovertible|charged with providing material support/i);
  assert.match(fbi.corrections[0].note, /name.*charge/i);
  const cody = get('cody-viveiros-dfw-business-powerhouse');
- assert.match(cody.content, /affiliated publisher information/i);
- assert.doesNotMatch(cody.content, /Harvard refined|MIT supercharged|revenue.*climbed|GQphotographer/i);
- assert.match(cody.corrections[0].note, /pending.*records/i);
+ const originalProfile = parseArticleSource(JSON.parse(fs.readFileSync(new URL('./fixtures/cody-profile-original.json', import.meta.url), 'utf8')).source);
+ assert.equal(cody.content, originalProfile.content, 'publisher explicitly requested original profile restoration');
+ assert.equal(cody.editorial_notices, false);
+ assert.equal(cody.evidence.completed_full_factcheck, false, 'restoration is not verification');
+ assert.match(cody.corrections.at(-1).note, /restored.*publisher.*request/i);
  const fable = get('the-three-day-fable-how-anthropics-most-powerful-public-model-vanished');
  assert.match(fable.content, /July 1/); assert.match(fable.content, /https:\/\/www.anthropic.com\/news\/redeploying-fable-5/);
  for (const a of articles.filter(a => a.evidence.status === 'partial')) {

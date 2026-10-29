@@ -17,7 +17,7 @@ test("shared normalization and tag paths reject unsafe identifiers without rewri
   assert.throws(() => normalizeArticle({ ...sample, tags: [null] }, "Body.", "tech"), /Invalid tag/);
 });
 
-test("legitimate tag encoding and all 650 document routes retain their identity", () => {
+test("legitimate tag encoding and all generated document routes retain their identity", () => {
   for (const tag of ["A & B", "Privacy", "C++", "café", "100%", "%2F", "%2e%2e"]) {
     const a = normalizeArticle({ ...sample, tags: [tag] }, "Body.", "tech");
     const route = `/tag/${encodeURIComponent(tag.toLowerCase())}`;
@@ -27,7 +27,8 @@ test("legitimate tag encoding and all 650 document routes retain their identity"
   }
   const inventory = routeInventory(loadArticles());
   const manifest = JSON.parse(fs.readFileSync(new URL("../public/route-manifest.json", import.meta.url), "utf8"));
-  assert.equal(Object.keys(inventory).length, 650);
+  const retainedIds = JSON.parse(fs.readFileSync(new URL("../scripts/lib/legacy-publication-ids.json", import.meta.url), "utf8"));
+  for (const id of retainedIds) assert.equal(inventory[`/${id}`]?.type, "article", `Historical article route retained: ${id}`);
   assert.deepEqual(Object.keys(inventory).sort(), Object.keys(manifest).sort());
 });
 
