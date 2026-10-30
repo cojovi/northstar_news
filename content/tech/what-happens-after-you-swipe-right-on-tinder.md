@@ -1,80 +1,93 @@
 ---
-title: "Tinder photo scores: choices about pictures, privacy and paid attention"
-dek: "Consumer analysis of what Tinder\u2019s dated documents and a reverse-engineering reel establish\u2014and what they leave unanswered about permissions, predictions and purchases."
+title: "What happens after you swipe right on Tinder?"
+dek: "A reverse-engineering reel raises questions about photo scores, privacy and paid attention. Understanding it starts with separating what a model predicts from what happens to your matches."
 slug: what-happens-after-you-swipe-right-on-tinder
 category: tech
 tags: ["Tinder", "Dating Apps", "Privacy", "Algorithms"]
 author: "The Northstar Ledger"
 author_slug: northstar-ledger
 published: "2026-10-22T05:40:47.848248+00:00"
-updated: "2026-10-28"
+updated: 2026-10-30T19:33:05.166875+00:00
 hero_image: "https://thenorthstarledger.com/tinder-photo-scores-smartphone.jpg"
 hero_credit: "Illustrative smartphone photograph via PxHere / Wikimedia Commons, CC0 1.0; not a Tinder screenshot."
 thumbnail: "https://thenorthstarledger.com/tinder-photo-scores-smartphone.jpg"
-excerpt: "Separate the choices about photographs, camera-roll access and paid attention from claims the evidence cannot establish."
+excerpt: "A reverse-engineering reel raises questions about photo scores, privacy and paid attention. Understanding it starts with separating what a model predicts from what happens to your matches."
 reading_time: 6
 location: ""
 status: published
 is_satire: false
-content_type: "analysis"
+indexable: true
+editorial_notices: false
 ---
 
-## Before changing a photo or buying attention
+A swipe feels like a private judgment: someone catches your eye, and you decide whether you're interested. In Ayo Omolewa's telling, Tinder is making judgments of its own. The creator behind @ayoships says his reverse engineering uncovered systems that estimate both what you want and how much other people want you.[1]
 
-A dating app can make a disappointing week feel like a verdict. Ayo Omolewa’s reverse-engineering reel adds another worry: perhaps a hidden photo score has already decided how other people will respond. His account describes predicted interest, photo analysis and a popularity-linked sales prompt. It is a reason to ask what a service measures, rather than a reliable diagnosis of any one user’s experience.[1]
+His reel connects those estimates to photo selection, possible scoring disparities and prompts to buy Super Likes. It offers a useful way to think about the machinery behind the app. It does not expose Tinder's complete algorithm, and its most striking numbers describe his tests of a photo model, not measured changes in anyone's dating success.[1]
 
-For a consumer, three decisions deserve separate treatment: what photographs to share, whether to authorize help choosing them, and whether to pay for extra attention. The evidence available here does not establish that making any of those choices will produce a particular number of matches. This analysis examines those choices using the described reel and two dated Tinder documents; it is not a new app experiment.
+## The app learns from the choices you make
 
-## Your next photograph need not optimize a hidden number
+Tinder's public explanation says recommendations take account of recent activity, location, preferences, profile information and Likes and Nopes. It also says the service uses anonymized cues from photos to suggest profiles resembling ones a member previously liked. That explanation is marked as updated in July 2022, so it should not be mistaken for a complete description of today's implementation.[2]
 
-Tinder’s July 2022 explanation says recommendations use activity, location, profile information, Likes and Nopes, along with anonymized cues from similar photographs. That is the company’s description, not a complete audit or a current inventory of every deployed model.[2]
+Omolewa describes a more specific mechanism: converting liked photos into embeddings and averaging them to represent a user's preferences. He also shows fields for photo views and viewing duration, which he interprets as evidence that the app tracks how long users look at pictures.[1]
 
-The consumer consequence is that a photograph may carry recommendation information beyond the description you type. Choosing an image is therefore also choosing what aspects of yourself to present to a system that makes comparisons. The document does not disclose the precise importance of any single cue, so it cannot tell you which photo will improve your own results.
+An embedding is a numerical representation a computer can use to compare images. In the system he describes, previous choices become information for future recommendations. Tinder's published description supports the broad idea of learning from photo preferences; it does not independently confirm his precise embedding calculation or the weight given to viewing time.[1][2]
 
-Omolewa’s reel describes a model predicting “right swipe received ratio,” or RSRR, for photographs. Treating that estimate as a personal rating would give it more authority than the evidence warrants. A prediction about reactions to an image does not measure compatibility, conversation, safety or the value of meeting someone. You can prefer a picture that represents you honestly without accepting a displayed model number as an objective judgment.[1]
+Neither account suggests the app can read your mind. A pattern in the photos you like is evidence about your behavior, not proof that the system understands whom you would enjoy dating.
 
-## Keep three different outcomes apart
+## A photo score is not a match count
 
-A score, an encounter and a match answer different questions. A predicted response estimates what might happen. Exposure concerns who actually sees a profile. A match involves reciprocal choices. The reel does not establish the chain connecting the photographed score to exposure and then to mutual interest.[1]
+The reel introduces RSRR, short for "right swipe received ratio." Omolewa describes it as the share of people who see a profile and swipe right. He then says a model extracted from the app predicts that measure for individual photos.[1]
 
-This matters when a striking percentage becomes advice. A change in a model output is not evidence of the same percentage change in matches. Even a documented change in matches would not establish whether conversations or satisfying meetings improved. None of those outcomes was measured in an independent experiment for this article.
+Those are different things. An observed response rate records behavior. A photo model estimates a response. A match requires mutual interest, and whether someone encounters your profile is another question entirely. The clip does not establish how a predicted photo score translates into profile exposure or eventual matches.[1]
 
-The reel’s synthetic-image comparisons raise questions about unequal outputs, but their numbers cannot responsibly be turned into forecasts for people who share a depicted characteristic. We have not replicated the tests or established that the extracted model is used in every current account. The appropriate request is for deployment and outcome evidence, rather than a promise that one photo edit will overcome an algorithm.[1]
+That distinction is easy to lose when a percentage flashes across a screen. A lower model score does not, by itself, mean an equivalent percentage fewer matches. Nor is a predicted response to a photograph an objective measure of someone's attractiveness or worth.
 
-## Camera-roll permission is a separate choice
+There is also a version problem. One code graphic is labeled Tinder Android 13.0.0 from 2022; another cites iOS 17.39.2. These are clues about particular app artifacts, not proof that every account currently encounters the same system.[1]
 
-Tinder’s July 17, 2024 Photo Selector announcement describes a selfie, access to the camera roll and a selection of suggested pictures for the user to review. The company says the user chooses which images to add. That describes an announced workflow; this review did not access a present-day account to confirm the interface, permissions or regional availability.[3]
+## Photo Selector raises a narrower privacy question
 
-For someone deciding whether to use such assistance, the first question is whether that convenience is worth the access requested. The announcement’s promise of user choice concerns selecting profile pictures. It does not, on its own, settle every question about information produced while making the suggestions. A reader can distinguish the feature’s stated purpose from the additional disclosures needed to assess its data handling.
+Tinder introduced Photo Selector in July 2024 as an AI feature that helps users choose profile pictures. Its announcement describes taking a selfie, granting camera-roll access and reviewing suggested images. Users decide which pictures to add to their profiles.[3]
 
-The on-device assurance shown in the reel also has a limited meaning. Processing photographs locally and transmitting derived measurements are distinct possibilities. Omolewa points to fields he interprets as collected photo scores. This is his account of the artifacts shown, not our independent traffic capture or authentication of what a deployed service transmits.[1]
+Omolewa says the implementation he examined can scan up to 20,000 photos from the previous two years and select 27. He contrasts an on-device privacy assurance displayed in the reel with technical fields labeled for photo scores, including RSRR, explicitness and apparent youth, which he says are collected.[1]
 
-An on-device claim alone therefore does not establish that no derived information leaves a phone. Conversely, displayed scoring fields do not prove that Tinder uploads an entire camera roll, sells private photographs or retains each measurement. Neither sweeping conclusion follows from this source record.
+The distinction is between keeping original images on a phone and transmitting information derived from those images. Those are separate privacy questions. Processing can happen locally while a service still receives resulting measurements.
 
-## A purchase prompt is not an outcome guarantee
+The reel does not establish that Tinder uploads an entire camera roll, sells private photos or retains every displayed score. It also does not show enough to determine how identifiable such measurements are or how long they persist.[1]
 
-The reel shows a prompt associated with liking a popular profile and labels that Omolewa interprets as a Super Like upsell. That makes the commercial context relevant: advice about attracting attention can also invite a purchase. The displayed material does not show that an ordinary Like is always blocked or that payment secures mutual interest.[1]
+A useful privacy explanation would tell users which derived measurements leave the device, what they are linked to and how they are used. "On-device" alone does not answer all of that.
 
-Before spending, a consumer can ask what the offered feature actually promises and which result remains outside that promise. Visibility, a notification and a match are not interchangeable. This article has no measured return on spending, and the cited documents do not supply a personal forecast for a reader considering the prompt.
+## The bias findings deserve scrutiny, not dating hacks
 
-A revenue-related event label is likewise insufficient to calculate how much a particular profile earns the company. It identifies a question about measurement and incentives, not an authenticated ledger. Turning it into an allegation that the service deliberately prevents relationships would exceed the evidence shown.[1]
+Omolewa says he tested the extracted model against more than 800 synthetic images. His graphics report a typical 3.5-fold score change for mirror selfies and a 15% decrease in darker-skin comparisons, with decreases in all 12 scenes shown for that category.[1]
 
-## Questions that would make the choices clearer
+He reports score increases for shirtless men and women in low-neckline clothing. Other patterns differed by gender: sunglasses and outdoor settings helped men's scores in his tests, while women's sunglasses scores fell and the outdoor category was labeled "no change." His graphics report lower scores for heavier and older depictions of women; the comparable male categories were labeled "no change," although individual results moved in both directions.[1]
 
-Useful questions for Tinder begin with scope: which app versions and accounts use the described photo model, and which decisions does its output influence? A code example associated with one version cannot answer that for every user. A dated recommendation explainer cannot substitute for a deployment record either.[1][2]
+These are the creator's reported findings. The short reel does not provide a reproducible dataset, full experimental controls or an independent replication. It does not establish whether edits changed other image characteristics alongside the trait being tested.[1]
 
-For photo assistance, the questions concern what stays on the device, which derived values leave it, how long those values are retained and what controls apply. Those are questions to ask, not findings that this article has established. For paid attention, the missing evidence is a clear account of the product’s promised effect and measured outcomes, with the population and period specified.
+If reproduced under controlled conditions, unequal responses to skin tone, body size or age would warrant examination. Tinder's public explanation says its recommendation algorithm does not track ethnicity, but that statement does not resolve whether an image model can produce unequal outputs without an explicit ethnicity field.[2]
 
-The sources support a practical boundary: decide about presentation, permissions and spending separately. They do not support treating a quiet inbox as proof of a secret penalty or a model prediction as a measure of personal worth. The gaps call for clearer disclosure and reproducible evidence. This review obtained no company response to the specific allegations and makes no new regulatory finding.
+The clip supports asking better questions. It does not support telling darker-skinned users they receive exactly 15% fewer matches, or promising that a mirror selfie will multiply anyone's dating prospects.
 
-## Shared research and editorial update — October 28, 2026
+## Where popularity meets the purchase prompt
 
-This article has been reframed around consumer consequences using the existing source record; the update adds no field reporting. [PROTOCOL SENTINEL’s companion article](https://protocolsentinel.com/post/2026-10-22-what-happens-after-you-swipe-right-on-tinder) examines the described mechanisms. Cody Viveiros owns both publications. They use shared research; the companion is not independent corroboration.
+The reel's commercial argument centers on a displayed message suggesting a Super Like after someone likes a popular profile. Omolewa shows labels including `super_like.high_rsrr_upsell` and a revenue-related analytics event.[1]
 
-Source note: the original record describes review of the reel’s transcript and visuals. This update adds no AI-assisted speech extraction or new recording authentication. The earlier transcript and visual review do not constitute a certified transcript or authentication of the extracted code. The source links and illustrative image credit are retained. The vendor documents describe company statements, not independent verification of the reel or present-day app behavior.
+His interpretation is that a popularity signal can trigger a sales opportunity: the app identifies someone who attracts interest, then encourages an interested user to purchase an additional feature.[1]
+
+That is more specific than claiming Tinder locks every popular person behind a paywall. The displayed material does not prove that a normal like is always blocked, that payment guarantees a match or that Tinder intentionally prevents successful relationships. A revenue event label is also not a report showing exactly how much a particular person's popularity earned.[1]
+
+The distinction matters because the narrower claim is worth examining on its own. Users should be able to understand when a recommendation about improving their chances is also a sales pitch.
+
+## What the reel leaves unanswered
+
+Omolewa's account presents Tinder as a system that learns preferences, estimates likely interest and uses popularity in an upsell flow. Tinder's own published explanation confirms some broad recommendation inputs, but neither source supplies a complete, independently audited account of the current system.[1][2]
+
+The unanswered questions concern deployment and consequences: which model versions are active, what derived photo data leaves a device, whether the reported disparities survive controlled testing, and how any score affects real profile exposure. This review has not independently authenticated the extracted code, replicated the experiments or obtained a Tinder response to the specific allegations.
+
+For users, the sensible takeaway is to resist treating a disappointing run of matches as a scientific verdict on themselves. The reel describes predictions and purchase prompts. It does not demonstrate that an app can calculate what a relationship with you would be worth.
 
 ## Sources
 
-[1] https://www.instagram.com/reel/DeuN3vGRrMV/?srtk=bzh3aDNjcm9xbnI1 — Ayo Omolewa (@ayoships), Tinder reverse-engineering reel; original record: reviewed transcript and visuals
+[1] https://www.instagram.com/reel/DeuN3vGRrMV/?srtk=bzh3aDNjcm9xbnI1 — Ayo Omolewa (@ayoships), Tinder reverse-engineering reel; reviewed transcript and visuals
 [2] https://www.tinderpressroom.com/powering-tinder-r-the-method-behind-our-matching — Tinder: The method behind our matching (updated July 11, 2022)
 [3] https://www.tinderpressroom.com/Tinder-R-Unveils-Photo-Selector-AI-Feature-to-Make-Choosing-Profile-Pictures-Easier — Tinder: Photo Selector launch announcement (July 17, 2024)

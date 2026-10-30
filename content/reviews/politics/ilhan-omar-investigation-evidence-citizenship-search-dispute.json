@@ -2,23 +2,65 @@
   "affiliated": false,
   "notice": "",
   "evidence": {
-    "status": "partial",
+    "status": "pending",
     "completed_full_factcheck": false,
     "sources": [
       "https://www.cbsnews.com/news/attorneys-ilhan-omar-doj-violating-judge-orders",
       "https://www.newsnationnow.com/politics/feds-dumpster-dive-ilhan-omar-dna",
       "https://www.cnn.com/2026/10/17/politics/explainer-wouldnt-be-easy-to-strip-rep-ilhan-omar-citizenship"
     ],
-    "summary": "CBS reports lawyers allegations about search protocols; NewsNation attributes DNA collection to sources; CNN distinguishes an investigative objective from an announced citizenship action. None provides a DNA result or adjudicated guilt. Only the identified source scope was checked; other historical claims remain outside this review.",
-    "limits": "Historical attributed reporting only. Sealed primary evidence, DNA results and refreshed court records were not independently reviewed. This is not a full fact-check or an account of present-day procedural status.",
+    "summary": "Original historical copy restored at the publisher's explicit request on 2026-10-30. The restoration is not a new documentary check or factual authentication.",
+    "limits": "No new interviews, credentials, award records, experiments or independent verification were supplied by this restoration. Earlier source checks and editorial actions remain in the dated history.",
     "record_url": "https://thenorthstarledger.com/source-reviews#ilhan-omar-investigation-evidence-citizenship-search-dispute",
-    "reviewed_at": "2026-10-28"
+    "reviewed_at": null
   },
   "corrections": [
     {
       "date": "2026-10-28",
       "note": "Added usable checked links and an explicit October 18 historical boundary. Distinguished lawyers’ allegations, source-attributed DNA collection claims and investigative objectives from DNA results or adjudicated guilt; sealed evidence was not independently reviewed.",
       "url": "https://www.cbsnews.com/news/attorneys-ilhan-omar-doj-violating-judge-orders"
+    },
+    {
+      "date": "2026-10-30",
+      "note": "Original title and complete body restored at the publisher's explicit request. Prior automated hold/classification and on-page notice treatment is superseded; this is not independent verification.",
+      "url": null
     }
-  ]
+  ],
+  "kind": "publisher-requested-original",
+  "history": [
+    {
+      "preserved_at": "2026-10-30T19:33:05.166875+00:00",
+      "record": {
+        "affiliated": false,
+        "notice": "",
+        "evidence": {
+          "status": "partial",
+          "completed_full_factcheck": false,
+          "sources": [
+            "https://www.cbsnews.com/news/attorneys-ilhan-omar-doj-violating-judge-orders",
+            "https://www.newsnationnow.com/politics/feds-dumpster-dive-ilhan-omar-dna",
+            "https://www.cnn.com/2026/10/17/politics/explainer-wouldnt-be-easy-to-strip-rep-ilhan-omar-citizenship"
+          ],
+          "summary": "CBS reports lawyers allegations about search protocols; NewsNation attributes DNA collection to sources; CNN distinguishes an investigative objective from an announced citizenship action. None provides a DNA result or adjudicated guilt. Only the identified source scope was checked; other historical claims remain outside this review.",
+          "limits": "Historical attributed reporting only. Sealed primary evidence, DNA results and refreshed court records were not independently reviewed. This is not a full fact-check or an account of present-day procedural status.",
+          "record_url": "https://thenorthstarledger.com/source-reviews#ilhan-omar-investigation-evidence-citizenship-search-dispute",
+          "reviewed_at": "2026-10-28"
+        },
+        "corrections": [
+          {
+            "date": "2026-10-28",
+            "note": "Added usable checked links and an explicit October 18 historical boundary. Distinguished lawyers’ allegations, source-attributed DNA collection claims and investigative objectives from DNA results or adjudicated guilt; sealed evidence was not independently reviewed.",
+            "url": "https://www.cbsnews.com/news/attorneys-ilhan-omar-doj-violating-judge-orders"
+          }
+        ]
+      }
+    }
+  ],
+  "restoration": {
+    "requested_by": "publisher",
+    "restored_at": "2026-10-30T19:33:05.166875+00:00",
+    "original_revision": "02c10cb932fcd1149987eec4c8d13b7c21eb36df",
+    "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/politics/ilhan-omar-investigation-evidence-citizenship-search-dispute.md",
+    "verification_performed": false
+  }
 }

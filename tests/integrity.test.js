@@ -36,7 +36,7 @@ test('all 69 exact provenance matches retain dates and URLs as withdrawals, with
   assert.equal(createHash('sha256').update(original.content).digest('hex'), record.original_body_sha256);
  }
  assert.equal(articles.filter(a => a.status === 'withdrawn').length, 70);
- assert.equal(articles.filter(a => a.evidence.status === 'partial').length, 10);
+ assert.equal(articles.filter(a => a.evidence.status === 'partial').length, 7);
  assert.deepEqual(publicRecord.records,proof.records);
  for (const a of articles.filter(a => a.evidence.status === 'partial')) assert.equal(a.review_kind,'documentary-source-review');
  assert.ok(PAGES['source-reviews'].reviews.every(r=>r.kind==='documentary-source-review'));
@@ -44,37 +44,25 @@ test('all 69 exact provenance matches retain dates and URLs as withdrawals, with
  assert.equal(articles.filter(a => a.evidence.completed_full_factcheck).length, 0);
  assert.match(PAGES['archive-integrity'].body, /not.*subject.matter|not.*fact.check/i);
 });
-test('fiction and publication holds are conspicuous, affiliated, retained and excluded from all promotion', () => {
- const inventory = routeInventory(articles);
- for (const slug of [...fiction,...holds]) {
-  const a=articles.find(a => a.slug === slug); assert.ok(a,slug);
-  assert.equal(a.indexable,false); assert.equal(isDiscoverable(a),false);
-  assert.equal(a.affiliated,true);
-  assert.ok(a.corrections.some(c => c.date === '2026-10-28'));
-  const html=renderToStaticMarkup(React.createElement(ArticleDocument,{article:a}));
-  const record=publicRecord.classifications.find(r => r.path===articlePath(a));
-  assert.equal(a.review_kind,record.kind);
+test('publisher-selected former classifications and holds are restored while all remaining withdrawals stay excluded', () => {
+ const inventory=routeInventory(articles);
+ for(const slug of [...fiction,...holds]){
+  const a=articles.find(a=>a.slug===slug);assert.ok(a,slug);
+  assert.equal(a.status,'published');assert.equal(a.indexable,true);assert.equal(isDiscoverable(a),true);assert.equal(a.is_satire,false);
+  const record=publicRecord.classifications.find(r=>r.path===articlePath(a));assert.equal(record.current_status,'published');assert.ok(record.prior_classification);assert.ok(record.restored_at);
   const original=parseArticleSource(execFileSync('git',['show',`${proof.revision}:content${record.path}.md`],{encoding:'utf8'}));
-  assert.ok(a.content.endsWith(original.content), 'complete original body retained');
+  assert.equal(a.content,original.content,'exact original without added classification preface');assert.equal(a.title,original.data.title);
   assert.equal(createHash('sha256').update(original.content).digest('hex'),record.original_body_sha256);
-  if (fiction.includes(slug)) {
-   assert.equal(a.content_type,'satire'); assert.equal(a.is_satire,true);
-   assert.equal(articleSchema(a)['@type'],'BlogPosting');
-   assert.match(a.title,/^Satire\/Fiction:/); assert.match(a.dek,/fiction/i);
-   assert.match(a.content.slice(0,800),/fiction/i); assert.match(html,/SATIRE \/ FICTION/);
-  } else {
-   assert.equal(a.status,'review-hold'); assert.match(a.title,/^Publication review hold:/);
-   assert.match(a.content.slice(0,1000),/publication review hold/i);
-   assert.match(html,/PUBLICATION REVIEW HOLD/);
-  }
+  const html=renderToStaticMarkup(React.createElement(ArticleDocument,{article:a}));assert.doesNotMatch(html,/SATIRE \/ FICTION|PUBLICATION REVIEW HOLD|aria-label="Archive classification notice"/);
+  if(fiction.includes(slug)){assert.equal(a.content_type,'opinion');assert.equal(articleSchema(a)['@type'],'Article');}
+  assert.ok(routeArticles(inventory['/'+a.categoryPath],articles).includes(a));
  }
- for (const a of articles.filter(a => !isDiscoverable(a))) {
+ for(const a of articles.filter(a=>!isDiscoverable(a))){
   assert.equal(inventory[articlePath(a)].indexable,false);
-  for (const r of Object.values(inventory).filter(r => r.type !== 'article'))
-   assert.ok(!routeArticles(r,articles).includes(a));
-  for (const xml of [rssFeed(articles),atomFeed(articles)]) assert.ok(!xml.includes(articlePath(a)));
+  for(const r of Object.values(inventory).filter(r=>r.type!=='article'))assert.ok(!routeArticles(r,articles).includes(a));
+  for(const xml of [rssFeed(articles),atomFeed(articles)])assert.ok(!xml.includes(articlePath(a)));
  }
- assert.equal(articles.filter(isDiscoverable).length,61);
+ assert.equal(articles.filter(isDiscoverable).length,66);assert.equal(articles.filter(a=>a.status==='review-hold'||a.is_satire).length,0);
 });
 test('hardening preserves every original source template literal as evidence', () => {
  const original=execFileSync('git',['show',`${proof.revision}:scripts/generate-mock-content.js`],{encoding:'utf8'});

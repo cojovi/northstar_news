@@ -2,22 +2,63 @@
   "affiliated": false,
   "notice": "",
   "evidence": {
-    "status": "partial",
+    "status": "pending",
     "completed_full_factcheck": false,
     "sources": [
       "https://www.tinderpressroom.com/powering-tinder-r-the-method-behind-our-matching",
       "https://www.tinderpressroom.com/Tinder-R-Unveils-Photo-Selector-AI-Feature-to-Make-Choosing-Profile-Pictures-Easier"
     ],
-    "summary": "Tinder documents similar-photo recommendation cues and July 2024 Photo Selector. Those announcements do not authenticate the reel code, replicate its synthetic-image tests or convert scores to measured matches. Only the identified source scope was checked; other historical claims remain outside this review.",
-    "limits": "The vendor documents support the announced features, not authentication of the reel’s extracted code or deployment. No experiments were independently replicated, no company response was obtained and present-day app access was not tested. This is not a full fact-check.",
+    "summary": "Original historical copy restored at the publisher's explicit request on 2026-10-30. The restoration is not a new documentary check or factual authentication.",
+    "limits": "No new interviews, credentials, award records, experiments or independent verification were supplied by this restoration. Earlier source checks and editorial actions remain in the dated history.",
     "record_url": "https://thenorthstarledger.com/source-reviews#what-happens-after-you-swipe-right-on-tinder",
-    "reviewed_at": "2026-10-28"
+    "reviewed_at": null
   },
   "corrections": [
     {
       "date": "2026-10-28",
       "note": "Reframed the body as consumer-consequences analysis using the existing reel record and dated Tinder documents. Added shared research/ownership disclosure and distinct questions about photos, permissions and purchases. No new field reporting, independent replication or company response was obtained.",
       "url": "https://www.tinderpressroom.com/powering-tinder-r-the-method-behind-our-matching"
+    },
+    {
+      "date": "2026-10-30",
+      "note": "Original title and complete body restored at the publisher's explicit request. Prior automated hold/classification and on-page notice treatment is superseded; this is not independent verification.",
+      "url": null
     }
-  ]
+  ],
+  "kind": "publisher-requested-original",
+  "history": [
+    {
+      "preserved_at": "2026-10-30T19:33:05.166875+00:00",
+      "record": {
+        "affiliated": false,
+        "notice": "",
+        "evidence": {
+          "status": "partial",
+          "completed_full_factcheck": false,
+          "sources": [
+            "https://www.tinderpressroom.com/powering-tinder-r-the-method-behind-our-matching",
+            "https://www.tinderpressroom.com/Tinder-R-Unveils-Photo-Selector-AI-Feature-to-Make-Choosing-Profile-Pictures-Easier"
+          ],
+          "summary": "Tinder documents similar-photo recommendation cues and July 2024 Photo Selector. Those announcements do not authenticate the reel code, replicate its synthetic-image tests or convert scores to measured matches. Only the identified source scope was checked; other historical claims remain outside this review.",
+          "limits": "The vendor documents support the announced features, not authentication of the reel’s extracted code or deployment. No experiments were independently replicated, no company response was obtained and present-day app access was not tested. This is not a full fact-check.",
+          "record_url": "https://thenorthstarledger.com/source-reviews#what-happens-after-you-swipe-right-on-tinder",
+          "reviewed_at": "2026-10-28"
+        },
+        "corrections": [
+          {
+            "date": "2026-10-28",
+            "note": "Reframed the body as consumer-consequences analysis using the existing reel record and dated Tinder documents. Added shared research/ownership disclosure and distinct questions about photos, permissions and purchases. No new field reporting, independent replication or company response was obtained.",
+            "url": "https://www.tinderpressroom.com/powering-tinder-r-the-method-behind-our-matching"
+          }
+        ]
+      }
+    }
+  ],
+  "restoration": {
+    "requested_by": "publisher",
+    "restored_at": "2026-10-30T19:33:05.166875+00:00",
+    "original_revision": "02c10cb932fcd1149987eec4c8d13b7c21eb36df",
+    "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/tech/what-happens-after-you-swipe-right-on-tinder.md",
+    "verification_performed": false
+  }
 }

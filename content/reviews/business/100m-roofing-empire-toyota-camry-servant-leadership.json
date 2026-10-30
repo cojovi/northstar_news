@@ -1,18 +1,55 @@
 {
-  "kind": "publication-review-hold",
+  "kind": "publisher-requested-original",
   "affiliated": true,
-  "notice": "PUBLICATION REVIEW HOLD — October 28, 2026. The source record supplies no podcast source URL or transcript for the precise revenue, growth and quotations in this account. The available record does not substantiate those details. Release requires the actual podcast/transcript and appropriate business records for the material financial and growth claims. This dated hold makes no finding that claims are false. The original body below is retained as historical text under review, not authenticated reporting. Cody Viveiros owns The Northstar Ledger and PROTOCOL SENTINEL; this is affiliated coverage. Original publication date and URL are retained. Noindex/follow; omitted from promotional news discovery pending primary evidence.",
+  "notice": "",
   "evidence": {
     "status": "pending",
-    "summary": "The source record supplies no podcast source URL or transcript for the precise revenue, growth and quotations in this account. The available record does not substantiate those details.",
-    "limits": "Release requires the actual podcast/transcript and appropriate business records for the material financial and growth claims. This classification/hold is not a generic factual verification stamp or a completed subject-matter review.",
-    "sources": []
+    "summary": "Original historical copy restored at the publisher's explicit request on 2026-10-30. The restoration is not a new documentary check or factual authentication.",
+    "limits": "No new interviews, credentials, award records, experiments or independent verification were supplied by this restoration. Earlier source checks and editorial actions remain in the dated history.",
+    "sources": [],
+    "completed_full_factcheck": false,
+    "reviewed_at": null
   },
   "corrections": [
     {
       "date": "2026-10-28",
       "note": "PUBLICATION REVIEW HOLD — October 28, 2026. The source record supplies no podcast source URL or transcript for the precise revenue, growth and quotations in this account. The available record does not substantiate those details. Release requires the actual podcast/transcript and appropriate business records for the material financial and growth claims. This dated hold makes no finding that claims are false. The original body below is retained as historical text under review, not authenticated reporting. Cody Viveiros owns The Northstar Ledger and PROTOCOL SENTINEL; this is affiliated coverage. Original publication date and URL are retained. Noindex/follow; omitted from promotional news discovery pending primary evidence.",
       "url": "https://thenorthstarledger.com/archive-integrity"
+    },
+    {
+      "date": "2026-10-30",
+      "note": "Original title and complete body restored at the publisher's explicit request. Prior automated hold/classification and on-page notice treatment is superseded; this is not independent verification.",
+      "url": null
     }
-  ]
+  ],
+  "history": [
+    {
+      "preserved_at": "2026-10-30T19:33:05.166875+00:00",
+      "record": {
+        "kind": "publication-review-hold",
+        "affiliated": true,
+        "notice": "PUBLICATION REVIEW HOLD — October 28, 2026. The source record supplies no podcast source URL or transcript for the precise revenue, growth and quotations in this account. The available record does not substantiate those details. Release requires the actual podcast/transcript and appropriate business records for the material financial and growth claims. This dated hold makes no finding that claims are false. The original body below is retained as historical text under review, not authenticated reporting. Cody Viveiros owns The Northstar Ledger and PROTOCOL SENTINEL; this is affiliated coverage. Original publication date and URL are retained. Noindex/follow; omitted from promotional news discovery pending primary evidence.",
+        "evidence": {
+          "status": "pending",
+          "summary": "The source record supplies no podcast source URL or transcript for the precise revenue, growth and quotations in this account. The available record does not substantiate those details.",
+          "limits": "Release requires the actual podcast/transcript and appropriate business records for the material financial and growth claims. This classification/hold is not a generic factual verification stamp or a completed subject-matter review.",
+          "sources": []
+        },
+        "corrections": [
+          {
+            "date": "2026-10-28",
+            "note": "PUBLICATION REVIEW HOLD — October 28, 2026. The source record supplies no podcast source URL or transcript for the precise revenue, growth and quotations in this account. The available record does not substantiate those details. Release requires the actual podcast/transcript and appropriate business records for the material financial and growth claims. This dated hold makes no finding that claims are false. The original body below is retained as historical text under review, not authenticated reporting. Cody Viveiros owns The Northstar Ledger and PROTOCOL SENTINEL; this is affiliated coverage. Original publication date and URL are retained. Noindex/follow; omitted from promotional news discovery pending primary evidence.",
+            "url": "https://thenorthstarledger.com/archive-integrity"
+          }
+        ]
+      }
+    }
+  ],
+  "restoration": {
+    "requested_by": "publisher",
+    "restored_at": "2026-10-30T19:33:05.166875+00:00",
+    "original_revision": "02c10cb932fcd1149987eec4c8d13b7c21eb36df",
+    "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/business/100m-roofing-empire-toyota-camry-servant-leadership.md",
+    "verification_performed": false
+  }
 }

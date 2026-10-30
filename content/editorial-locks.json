@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "purpose": "Publisher-requested original-copy protection, not factual authentication",
+  "requires_new_explicit_publisher_instruction_for_editorial_changes": true,
+  "entries": [
+    {
+      "id": "world/oliver-tree-rio-crash-claim-what-is-confirmed-and-what-isnt",
+      "original_revision": "02c10cb932fcd1149987eec4c8d13b7c21eb36df",
+      "fields": {
+        "title": "Did Oliver Tree Die in the Rio Helicopter Collision? What’s Confirmed, What Isn’t, and Why the Distinction Matters",
+        "dek": "Early reports listed the American singer on a passenger manifest; later Brazilian coverage said civil police formally identified him among the six dead.",
+        "author": "Ethan Caldwell",
+        "author_slug": "ethan-caldwell",
+        "published": "2026-06-14T20:57:52+00:00",
+        "tags": [
+          "Oliver Tree",
+          "Brazil",
+          "Rio de Janeiro",
+          "helicopter collision",
+          "fact check"
+        ]
+      },
+      "body_sha256": "ca3722e8ed02d6c2c5047935262e05cd62bcf54c57ce62e27dc0e2c4432a14dc"
+    },
+    {
+      "id": "politics/ilhan-omar-investigation-evidence-citizenship-search-dispute",
+      "original_revision": "02c10cb932fcd1149987eec4c8d13b7c21eb36df",
+      "fields": {
+        "title": "Two Investigations, One Congresswoman - and a Fight Over the Evidence",
+        "dek": "The Ilhan Omar case now involves immigration records, a separate financial-disclosure inquiry, reported DNA collection and a dispute over the execution of a search warrant. Understanding what each development actually establishes is more useful than another premature verdict.",
+        "author": "David Sterling",
+        "author_slug": "david-sterling",
+        "published": "2026-10-19T04:05:06.461116+00:00",
+        "tags": [
+          "Ilhan Omar",
+          "Citizenship",
+          "Justice Department",
+          "Congress",
+          "Due Process"
+        ]
+      },
+      "body_sha256": "c3bc21107752af2c5a331cd52a2749797782be5285596d45ef15157fd9c25cd6"
+    },
+    {
+      "id": "tech/what-happens-after-you-swipe-right-on-tinder",
+      "original_revision": "02c10cb932fcd1149987eec4c8d13b7c21eb36df",
+      "fields": {
+        "title": "What happens after you swipe right on Tinder?",
+        "dek": "A reverse-engineering reel raises questions about photo scores, privacy and paid attention. Understanding it starts with separating what a model predicts from what happens to your matches.",
+        "author": "The Northstar Ledger",
+        "author_slug": "northstar-ledger",
+        "published": "2026-10-22T05:40:47.848248+00:00",
+        "tags": [
+          "Tinder",
+          "Dating Apps",
+          "Privacy",
+          "Algorithms"
+        ]
+      },
+      "body_sha256": "d2c0cd83bbc8656f989dfc104ea487f1302968ffef7902cb2d868081730cfd5c"
+    }
+  ]
+}

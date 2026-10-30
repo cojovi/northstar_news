@@ -61,16 +61,38 @@
     "path": "/politics/ilhan-omar-investigation-evidence-citizenship-search-dispute",
     "title": "Two Investigations, One Congresswoman - and a Fight Over the Evidence",
     "reviewed_at": "2026-10-28",
-    "status": "partial",
+    "status": "pending",
     "completed_full_factcheck": false,
-    "summary": "CBS reports lawyers allegations about search protocols; NewsNation attributes DNA collection to sources; CNN distinguishes an investigative objective from an announced citizenship action. None provides a DNA result or adjudicated guilt. Only the identified source scope was checked; other historical claims remain outside this review.",
-    "limits": "Historical attributed reporting only. Sealed primary evidence, DNA results and refreshed court records were not independently reviewed. This is not a full fact-check or an account of present-day procedural status.",
+    "summary": "Original historical copy restored at the publisher's explicit request on 2026-10-30. The restoration is not a new documentary check or factual authentication.",
+    "limits": "No new interviews, credentials, award records, experiments or independent verification were supplied by this restoration. Earlier source checks and editorial actions remain in the dated history.",
     "sources": [
       "https://www.cbsnews.com/news/attorneys-ilhan-omar-doj-violating-judge-orders",
       "https://www.newsnationnow.com/politics/feds-dumpster-dive-ilhan-omar-dna",
       "https://www.cnn.com/2026/10/17/politics/explainer-wouldnt-be-easy-to-strip-rep-ilhan-omar-citizenship"
     ],
-    "action": "Added usable checked links and an explicit October 18 historical boundary. Distinguished lawyers’ allegations, source-attributed DNA collection claims and investigative objectives from DNA results or adjudicated guilt; sealed evidence was not independently reviewed."
+    "action": "Added usable checked links and an explicit October 18 historical boundary. Distinguished lawyers’ allegations, source-attributed DNA collection claims and investigative objectives from DNA results or adjudicated guilt; sealed evidence was not independently reviewed. 2026-10-30: Original historical copy restored at the publisher's explicit request; no new factual authentication.",
+    "history": [
+      {
+        "preserved_at": "2026-10-30T19:33:05.166875+00:00",
+        "record": {
+          "slug": "ilhan-omar-investigation-evidence-citizenship-search-dispute",
+          "path": "/politics/ilhan-omar-investigation-evidence-citizenship-search-dispute",
+          "title": "Two Investigations, One Congresswoman - and a Fight Over the Evidence",
+          "reviewed_at": "2026-10-28",
+          "status": "partial",
+          "completed_full_factcheck": false,
+          "summary": "CBS reports lawyers allegations about search protocols; NewsNation attributes DNA collection to sources; CNN distinguishes an investigative objective from an announced citizenship action. None provides a DNA result or adjudicated guilt. Only the identified source scope was checked; other historical claims remain outside this review.",
+          "limits": "Historical attributed reporting only. Sealed primary evidence, DNA results and refreshed court records were not independently reviewed. This is not a full fact-check or an account of present-day procedural status.",
+          "sources": [
+            "https://www.cbsnews.com/news/attorneys-ilhan-omar-doj-violating-judge-orders",
+            "https://www.newsnationnow.com/politics/feds-dumpster-dive-ilhan-omar-dna",
+            "https://www.cnn.com/2026/10/17/politics/explainer-wouldnt-be-easy-to-strip-rep-ilhan-omar-citizenship"
+          ],
+          "action": "Added usable checked links and an explicit October 18 historical boundary. Distinguished lawyers’ allegations, source-attributed DNA collection claims and investigative objectives from DNA results or adjudicated guilt; sealed evidence was not independently reviewed."
+        }
+      }
+    ],
+    "restored_at": "2026-10-30T19:33:05.166875+00:00"
   },
   {
     "slug": "the-three-day-fable-how-anthropics-most-powerful-public-model-vanished",
@@ -91,17 +113,38 @@
   {
     "slug": "what-happens-after-you-swipe-right-on-tinder",
     "path": "/tech/what-happens-after-you-swipe-right-on-tinder",
-    "title": "Tinder photo scores: choices about pictures, privacy and paid attention",
+    "title": "What happens after you swipe right on Tinder?",
     "reviewed_at": "2026-10-28",
-    "status": "partial",
+    "status": "pending",
     "completed_full_factcheck": false,
-    "summary": "Tinder documents similar-photo recommendation cues and July 2024 Photo Selector. Those announcements do not authenticate the reel code, replicate its synthetic-image tests or convert scores to measured matches. Only the identified source scope was checked; other historical claims remain outside this review.",
-    "limits": "The vendor documents support the announced features, not authentication of the reel’s extracted code or deployment. No experiments were independently replicated, no company response was obtained and present-day app access was not tested. This is not a full fact-check.",
+    "summary": "Original historical copy restored at the publisher's explicit request on 2026-10-30. The restoration is not a new documentary check or factual authentication.",
+    "limits": "No new interviews, credentials, award records, experiments or independent verification were supplied by this restoration. Earlier source checks and editorial actions remain in the dated history.",
     "sources": [
       "https://www.tinderpressroom.com/powering-tinder-r-the-method-behind-our-matching",
       "https://www.tinderpressroom.com/Tinder-R-Unveils-Photo-Selector-AI-Feature-to-Make-Choosing-Profile-Pictures-Easier"
     ],
-    "action": "Reframed the body as consumer-consequences analysis using the existing reel record and dated Tinder documents. Added shared research/ownership disclosure and distinct questions about photos, permissions and purchases. No new field reporting, independent replication or company response was obtained."
+    "action": "Reframed the body as consumer-consequences analysis using the existing reel record and dated Tinder documents. Added shared research/ownership disclosure and distinct questions about photos, permissions and purchases. No new field reporting, independent replication or company response was obtained. 2026-10-30: Original historical copy restored at the publisher's explicit request; no new factual authentication.",
+    "history": [
+      {
+        "preserved_at": "2026-10-30T19:33:05.166875+00:00",
+        "record": {
+          "slug": "what-happens-after-you-swipe-right-on-tinder",
+          "path": "/tech/what-happens-after-you-swipe-right-on-tinder",
+          "title": "Tinder photo scores: choices about pictures, privacy and paid attention",
+          "reviewed_at": "2026-10-28",
+          "status": "partial",
+          "completed_full_factcheck": false,
+          "summary": "Tinder documents similar-photo recommendation cues and July 2024 Photo Selector. Those announcements do not authenticate the reel code, replicate its synthetic-image tests or convert scores to measured matches. Only the identified source scope was checked; other historical claims remain outside this review.",
+          "limits": "The vendor documents support the announced features, not authentication of the reel’s extracted code or deployment. No experiments were independently replicated, no company response was obtained and present-day app access was not tested. This is not a full fact-check.",
+          "sources": [
+            "https://www.tinderpressroom.com/powering-tinder-r-the-method-behind-our-matching",
+            "https://www.tinderpressroom.com/Tinder-R-Unveils-Photo-Selector-AI-Feature-to-Make-Choosing-Profile-Pictures-Easier"
+          ],
+          "action": "Reframed the body as consumer-consequences analysis using the existing reel record and dated Tinder documents. Added shared research/ownership disclosure and distinct questions about photos, permissions and purchases. No new field reporting, independent replication or company response was obtained."
+        }
+      }
+    ],
+    "restored_at": "2026-10-30T19:33:05.166875+00:00"
   },
   {
     "slug": "fbi-foils-mall-of-america-isis-terror-plot",
@@ -135,17 +178,39 @@
   {
     "slug": "oliver-tree-rio-crash-claim-what-is-confirmed-and-what-isnt",
     "path": "/world/oliver-tree-rio-crash-claim-what-is-confirmed-and-what-isnt",
-    "title": "Oliver Tree and the Rio collision: a chronology of attributed reports",
+    "title": "Did Oliver Tree Die in the Rio Helicopter Collision? What’s Confirmed, What Isn’t, and Why the Distinction Matters",
     "reviewed_at": "2026-10-28",
-    "status": "partial",
+    "status": "pending",
     "completed_full_factcheck": false,
-    "summary": "Retrieved AP title initially says passenger list; Exame and iG report subsequent police identification including Oliver Tree. Independent primary police identification document not inspected. The live body has been corrected or replaced as described in the dated editorial note.",
-    "limits": "The AP passenger-list report and Exame/iG reports of police identification were checked as reports. No primary police identification document or independent forensic identification was inspected. This is not a full fact-check.",
+    "summary": "Original historical copy restored at the publisher's explicit request on 2026-10-30. The restoration is not a new documentary check or factual authentication.",
+    "limits": "No new interviews, credentials, award records, experiments or independent verification were supplied by this restoration. Earlier source checks and editorial actions remain in the dated history.",
     "sources": [
       "https://apnews.com/article/brazil-rio-helicopter-collision-dc3e059c8dcc4fbd84f714dd3c5ab2c8",
       "https://exame.com/brasil/quem-sao-as-seis-vitimas-de-acidente-entre-helicopteros-no-rj/",
       "https://ultimosegundo.ig.com.br/2026-06-14/policia-identifica-as-6-vitimas-de-queda-de-helicopteros-no-rio.html"
     ],
-    "action": "Replaced confidence ratings with chronological attribution to AP, Exame and iG. The June 14 cutoff is retained; the publication did not inspect a primary police identification document or independently identify remains."
+    "action": "Replaced confidence ratings with chronological attribution to AP, Exame and iG. The June 14 cutoff is retained; the publication did not inspect a primary police identification document or independently identify remains. 2026-10-30: Original historical copy restored at the publisher's explicit request; no new factual authentication.",
+    "history": [
+      {
+        "preserved_at": "2026-10-30T19:33:05.166875+00:00",
+        "record": {
+          "slug": "oliver-tree-rio-crash-claim-what-is-confirmed-and-what-isnt",
+          "path": "/world/oliver-tree-rio-crash-claim-what-is-confirmed-and-what-isnt",
+          "title": "Oliver Tree and the Rio collision: a chronology of attributed reports",
+          "reviewed_at": "2026-10-28",
+          "status": "partial",
+          "completed_full_factcheck": false,
+          "summary": "Retrieved AP title initially says passenger list; Exame and iG report subsequent police identification including Oliver Tree. Independent primary police identification document not inspected. The live body has been corrected or replaced as described in the dated editorial note.",
+          "limits": "The AP passenger-list report and Exame/iG reports of police identification were checked as reports. No primary police identification document or independent forensic identification was inspected. This is not a full fact-check.",
+          "sources": [
+            "https://apnews.com/article/brazil-rio-helicopter-collision-dc3e059c8dcc4fbd84f714dd3c5ab2c8",
+            "https://exame.com/brasil/quem-sao-as-seis-vitimas-de-acidente-entre-helicopteros-no-rj/",
+            "https://ultimosegundo.ig.com.br/2026-06-14/policia-identifica-as-6-vitimas-de-queda-de-helicopteros-no-rio.html"
+          ],
+          "action": "Replaced confidence ratings with chronological attribution to AP, Exame and iG. The June 14 cutoff is retained; the publication did not inspect a primary police identification document or independently identify remains."
+        }
+      }
+    ],
+    "restored_at": "2026-10-30T19:33:05.166875+00:00"
   }
 ]

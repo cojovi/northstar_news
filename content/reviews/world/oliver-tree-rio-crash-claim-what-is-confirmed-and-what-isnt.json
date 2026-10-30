@@ -2,23 +2,65 @@
   "affiliated": false,
   "notice": "",
   "evidence": {
-    "status": "partial",
+    "status": "pending",
     "completed_full_factcheck": false,
     "sources": [
       "https://apnews.com/article/brazil-rio-helicopter-collision-dc3e059c8dcc4fbd84f714dd3c5ab2c8",
       "https://exame.com/brasil/quem-sao-as-seis-vitimas-de-acidente-entre-helicopteros-no-rj/",
       "https://ultimosegundo.ig.com.br/2026-06-14/policia-identifica-as-6-vitimas-de-queda-de-helicopteros-no-rio.html"
     ],
-    "summary": "Retrieved AP title initially says passenger list; Exame and iG report subsequent police identification including Oliver Tree. Independent primary police identification document not inspected. The live body has been corrected or replaced as described in the dated editorial note.",
-    "limits": "The AP passenger-list report and Exame/iG reports of police identification were checked as reports. No primary police identification document or independent forensic identification was inspected. This is not a full fact-check.",
+    "summary": "Original historical copy restored at the publisher's explicit request on 2026-10-30. The restoration is not a new documentary check or factual authentication.",
+    "limits": "No new interviews, credentials, award records, experiments or independent verification were supplied by this restoration. Earlier source checks and editorial actions remain in the dated history.",
     "record_url": "https://thenorthstarledger.com/source-reviews#oliver-tree-rio-crash-claim-what-is-confirmed-and-what-isnt",
-    "reviewed_at": "2026-10-28"
+    "reviewed_at": null
   },
   "corrections": [
     {
       "date": "2026-10-28",
       "note": "Replaced confidence ratings with chronological attribution to AP, Exame and iG. The June 14 cutoff is retained; the publication did not inspect a primary police identification document or independently identify remains.",
       "url": "https://apnews.com/article/brazil-rio-helicopter-collision-dc3e059c8dcc4fbd84f714dd3c5ab2c8"
+    },
+    {
+      "date": "2026-10-30",
+      "note": "Original title and complete body restored at the publisher's explicit request. Prior automated hold/classification and on-page notice treatment is superseded; this is not independent verification.",
+      "url": null
     }
-  ]
+  ],
+  "kind": "publisher-requested-original",
+  "history": [
+    {
+      "preserved_at": "2026-10-30T19:33:05.166875+00:00",
+      "record": {
+        "affiliated": false,
+        "notice": "",
+        "evidence": {
+          "status": "partial",
+          "completed_full_factcheck": false,
+          "sources": [
+            "https://apnews.com/article/brazil-rio-helicopter-collision-dc3e059c8dcc4fbd84f714dd3c5ab2c8",
+            "https://exame.com/brasil/quem-sao-as-seis-vitimas-de-acidente-entre-helicopteros-no-rj/",
+            "https://ultimosegundo.ig.com.br/2026-06-14/policia-identifica-as-6-vitimas-de-queda-de-helicopteros-no-rio.html"
+          ],
+          "summary": "Retrieved AP title initially says passenger list; Exame and iG report subsequent police identification including Oliver Tree. Independent primary police identification document not inspected. The live body has been corrected or replaced as described in the dated editorial note.",
+          "limits": "The AP passenger-list report and Exame/iG reports of police identification were checked as reports. No primary police identification document or independent forensic identification was inspected. This is not a full fact-check.",
+          "record_url": "https://thenorthstarledger.com/source-reviews#oliver-tree-rio-crash-claim-what-is-confirmed-and-what-isnt",
+          "reviewed_at": "2026-10-28"
+        },
+        "corrections": [
+          {
+            "date": "2026-10-28",
+            "note": "Replaced confidence ratings with chronological attribution to AP, Exame and iG. The June 14 cutoff is retained; the publication did not inspect a primary police identification document or independently identify remains.",
+            "url": "https://apnews.com/article/brazil-rio-helicopter-collision-dc3e059c8dcc4fbd84f714dd3c5ab2c8"
+          }
+        ]
+      }
+    }
+  ],
+  "restoration": {
+    "requested_by": "publisher",
+    "restored_at": "2026-10-30T19:33:05.166875+00:00",
+    "original_revision": "02c10cb932fcd1149987eec4c8d13b7c21eb36df",
+    "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/world/oliver-tree-rio-crash-claim-what-is-confirmed-and-what-isnt.md",
+    "verification_performed": false
+  }
 }

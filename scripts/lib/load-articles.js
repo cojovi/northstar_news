@@ -1,11 +1,13 @@
 import fs from "node:fs";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 import matter from "gray-matter";
 import yaml from "js-yaml";
 import { SITE_URL, resolveSocialImage } from "../../src/lib/socialImage.js";
 import { normalizeArticle } from "../../src/lib/authority.js";
 import { assertNoMockTemplate } from "./mock-template-gate.js";
 import { assertPublicationReady } from "./publication-gate.js";
+import { assertEditorialLocks } from "./editorial-locks.js";
 // JSON_SCHEMA handles block/inline YAML equally and keeps timestamp precision.
 export function parseArticleSource(source) {
   return matter(source, {
@@ -72,6 +74,14 @@ export function loadArticles(root = process.cwd()) {
   const routes = articles.map((a) => `${a.categoryPath}/${a.slug}`);
   if (new Set(routes).size !== routes.length)
     throw new Error("Duplicate published article route");
+  const lockFile = path.join(root, "content", "editorial-locks.json");
+  const ownRoot = fileURLToPath(new URL("../../", import.meta.url));
+  if (path.resolve(root) === path.resolve(ownRoot) || fs.existsSync(lockFile)) {
+    let policy;
+    try { policy = JSON.parse(fs.readFileSync(lockFile, "utf8")); }
+    catch { throw new Error("Editorial copy lock: missing or unreadable publisher policy"); }
+    assertEditorialLocks(articles, policy);
+  }
   return articles.sort(
     (a, b) => Date.parse(b.published) - Date.parse(a.published),
   );

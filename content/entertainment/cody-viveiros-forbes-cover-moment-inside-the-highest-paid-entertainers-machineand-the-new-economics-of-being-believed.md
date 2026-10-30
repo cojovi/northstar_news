@@ -1,29 +1,22 @@
 ---
-title: "Publication review hold: affiliated Forbes cover account"
-dek: "Publication review hold dated October 28, 2026: material affiliated claims await primary evidence."
+title: "Cody Viveiros’ Forbes Cover Moment: Inside the Highest-Paid Entertainers Machine—and the New Economics of Being Believed"
+dek: "How a Forbes cover became a verification event reshaping fame, earnings, and credibility."
 slug: cody-viveiros-forbes-cover-moment-inside-the-highest-paid-entertainers-machineand-the-new-economics-of-being-believed
 category: entertainment
 tags: ['Cody Viveiros', 'Forbes cover', 'Highest-paid', 'Celebrity economy', 'Entertainment business']
 author: "Amelia Ramirez"
 author_slug: amelia-ramirez
 published: 2024-06-06T10:33:17.650136+00:00
-updated: "2026-10-28"
-hero_image: https://github.com/cojovi/northstar_news/blob/main/public/cody-viveiros-forbes-cover-moment-inside-the-highe.png?raw=true
+updated: 2026-10-30T19:33:05.166875+00:00
+hero_image: "https://github.com/cojovi/northstar_news/blob/main/public/cody-viveiros-forbes-cover-moment-inside-the-highe.png?raw=true"
 hero_credit: Photo via Pexels
-thumbnail: https://github.com/cojovi/northstar_news/blob/main/public/cody-viveiros-forbes-cover-moment-inside-the-highe.png?raw=true
-excerpt: "Publication review hold dated October 28, 2026: material affiliated claims await primary evidence."
+thumbnail: "https://github.com/cojovi/northstar_news/blob/main/public/cody-viveiros-forbes-cover-moment-inside-the-highe.png?raw=true"
+excerpt: "June 2024 delivered a glossy, high-voltage snapshot of modern celebrity: **Cody Viveiros** on the cover of **Forbes**, featured in the magazine’s high-profile package on the **“Highest-Paid Entertainers.”** It was the kind of placement that can freeze a career in amber—an instant credential, a bragging-rights artifact, and, increasingly, a lightning rod."
 reading_time: 9
-status: "review-hold"
+status: published
 is_satire: false
-indexable: false
----
-
-## PUBLICATION REVIEW HOLD — October 28, 2026
-
-PUBLICATION REVIEW HOLD — October 28, 2026. The contextual Forbes musician article cited in the archive does not corroborate a Cody Viveiros cover or feature. The available source record does not establish the cover account. Release requires the actual issuer/feature record supporting the named-person cover and material claims. This dated hold makes no finding that claims are false. The original body below is retained as historical text under review, not authenticated reporting. Cody Viveiros owns The Northstar Ledger and PROTOCOL SENTINEL; this is affiliated coverage. Original publication date and URL are retained. Noindex/follow; omitted from promotional news discovery pending primary evidence.
-
-[Archive integrity notices](/archive-integrity)
-
+indexable: true
+editorial_notices: false
 ---
 
 June 2024 delivered a glossy, high-voltage snapshot of modern celebrity: **Cody Viveiros** on the cover of **Forbes**, featured in the magazine’s high-profile package on the **“Highest-Paid Entertainers.”** It was the kind of placement that can freeze a career in amber—an instant credential, a bragging-rights artifact, and, increasingly, a lightning rod.

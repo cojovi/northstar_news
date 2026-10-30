@@ -58,7 +58,10 @@ test('ownership names PROTOCOL SENTINEL and preserves the NewsPredator historica
  assert.doesNotMatch(publicCopy, /we do not invent one|availability was checked during this implementation/i);
 });
 test('ten public targeted source reviews have explicit scope, limits, dates and usable links', () => {
- const reviewed = articles.filter(a => a.evidence.status === 'partial'); assert.equal(reviewed.length, 10);
+ const reviewed = articles.filter(a => a.evidence.status === 'partial'); assert.equal(reviewed.length, 7);
+ assert.equal(PAGES['source-reviews'].reviews.length, 10, 'historical records retained');
+ const restored = PAGES['source-reviews'].reviews.filter(r => r.status === 'pending'); assert.equal(restored.length, 3);
+ for (const r of restored) { const a=get(r.slug); assert.equal(a.evidence.status,'pending'); assert.equal(a.evidence.completed_full_factcheck,false); assert.equal(a.evidence.record_url,null); assert.ok(r.history.length); assert.ok(r.restored_at); }
  for (const a of reviewed) {
   assert.equal(a.evidence.completed_full_factcheck, false);
   assert.equal(a.evidence.reviewed_at, '2026-10-28');
@@ -102,30 +105,16 @@ test('specific corrections replace unsupported claims without changing historica
   assert.ok(Date.parse(a.published) < Date.parse('2026-10-28'));
  }
 });
-test('Tinder consumer analysis differs substantially from the actual sister source and preserves provenance', () => {
- const a = get('what-happens-after-you-swipe-right-on-tinder');
- const fixture = JSON.parse(fs.readFileSync(new URL('./fixtures/protocol-sentinel-tinder.json', import.meta.url), 'utf8'));
- assert.equal(fixture.sourcePath, 'blog/source/_posts/2026-10-22-what-happens-after-you-swipe-right-on-tinder.md');
- assert.match(fixture.repository, /cojovi\/projectsentinal/);
- assert.equal(fixture.snapshots.length, 2);
- for (const snapshot of fixture.snapshots) {
-  assert.match(snapshot.gitRevision, /^[a-f0-9]{40}$/);
-  assert.equal(createHash('sha256').update(snapshot.source).digest('hex'), snapshot.sourceSha256);
-  const ps = parseArticleSource(snapshot.source).content;
-  assert.ok(ps.split(/\s+/).length > 900, 'actual substantial sister body');
-  assert.ok(bodySimilarity(a.content, ps) < 0.2, `${snapshot.version}: substantial structural and textual distinction`);
- }
- assert.equal(fixture.snapshots[0].worktreeModified, false);
- assert.equal(fixture.snapshots[1].worktreeModified, true);
- const words = a.content.split(/\s+/).length;
- assert.ok(words >= 900 && words <= 1400, `${words} words`);
- assert.equal(a.affiliated, false, 'shared research disclosure does not make Tinder owner-profile coverage');
- assert.match(a.content, /shared research/i); assert.match(a.content, /not independent corroboration/i);
- assert.ok(a.content.includes('(https://protocolsentinel.com/post/2026-10-22-what-happens-after-you-swipe-right-on-tinder)'));
- assert.doesNotMatch(a.content, /2026-10-22-what-happens-after-you-swipe-right-on-tinder\.html/);
- assert.match(a.content, /AI-assisted speech extraction/);
- assert.match(a.hero_credit, /PxHere \/ Wikimedia Commons, CC0/);
- assert.match(a.content, /not.*(?:replicated|replicate)/i);
+test('publisher-requested Tinder original is exact and does not pretend historical sister overlap is new independent reporting', () => {
+ const a=get('what-happens-after-you-swipe-right-on-tinder');
+ const originals=JSON.parse(fs.readFileSync(new URL('./fixtures/publisher-restorations.json',import.meta.url),'utf8'));
+ const original=parseArticleSource(originals.find(x=>x.path.endsWith('/what-happens-after-you-swipe-right-on-tinder.md')).source);
+ assert.equal(a.content,original.content);assert.equal(a.title,original.data.title);
+ const fixture=JSON.parse(fs.readFileSync(new URL('./fixtures/protocol-sentinel-tinder.json',import.meta.url),'utf8'));
+ for(const snapshot of fixture.snapshots){assert.match(snapshot.gitRevision,/^[a-f0-9]{40}$/);assert.equal(createHash('sha256').update(snapshot.source).digest('hex'),snapshot.sourceSha256);}
+ const historicalSister=parseArticleSource(fixture.snapshots[0].source).content;
+ assert.ok(bodySimilarity(a.content,historicalSister)>0.5,'explicitly restored historical shared copy, not a new distinct investigation');
+ assert.equal(a.evidence.completed_full_factcheck,false);assert.equal(a.evidence.status,'pending');assert.equal(a.editorial_notices,false);
 });
 test('client metadata sets noindex on a withdrawal and removes it when leaving', async () => {
  const ts = await import('typescript');

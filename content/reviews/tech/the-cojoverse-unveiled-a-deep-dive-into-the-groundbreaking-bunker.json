@@ -1,18 +1,55 @@
 {
-  "kind": "fiction-classification",
+  "kind": "publisher-requested-original",
   "affiliated": true,
-  "notice": "SATIRE / FICTION — October 28, 2026. The original body explicitly calls a former classmate fictional, a former colleague imaginary, and its narrative a satirical canon. The whole piece is now labeled satire/fiction. MIT, Harvard and OpenAI scenes, quotations and biographical claims must be read as fiction, not actual biography or documented interviews. No credentials, employment or interviews are authenticated by this classification. This dated classification correction makes no finding that claims are false. The original body below is retained as historical fiction, not authenticated reporting. Cody Viveiros owns The Northstar Ledger and PROTOCOL SENTINEL; this is affiliated coverage. Original publication date and URL are retained. Noindex/follow; omitted from promotional news discovery pending a coherent satire archive.",
+  "notice": "",
   "evidence": {
     "status": "pending",
-    "summary": "The original body explicitly calls a former classmate fictional, a former colleague imaginary, and its narrative a satirical canon. The whole piece is now labeled satire/fiction. MIT, Harvard and OpenAI scenes, quotations and biographical claims must be read as fiction, not actual biography or documented interviews.",
-    "limits": "No credentials, employment or interviews are authenticated by this classification. This classification/hold is not a generic factual verification stamp or a completed subject-matter review.",
-    "sources": []
+    "summary": "Original historical copy restored at the publisher's explicit request on 2026-10-30. The restoration is not a new documentary check or factual authentication.",
+    "limits": "No new interviews, credentials, award records, experiments or independent verification were supplied by this restoration. Earlier source checks and editorial actions remain in the dated history.",
+    "sources": [],
+    "completed_full_factcheck": false,
+    "reviewed_at": null
   },
   "corrections": [
     {
       "date": "2026-10-28",
       "note": "SATIRE / FICTION — October 28, 2026. The original body explicitly calls a former classmate fictional, a former colleague imaginary, and its narrative a satirical canon. The whole piece is now labeled satire/fiction. MIT, Harvard and OpenAI scenes, quotations and biographical claims must be read as fiction, not actual biography or documented interviews. No credentials, employment or interviews are authenticated by this classification. This dated classification correction makes no finding that claims are false. The original body below is retained as historical fiction, not authenticated reporting. Cody Viveiros owns The Northstar Ledger and PROTOCOL SENTINEL; this is affiliated coverage. Original publication date and URL are retained. Noindex/follow; omitted from promotional news discovery pending a coherent satire archive.",
       "url": "https://thenorthstarledger.com/archive-integrity"
+    },
+    {
+      "date": "2026-10-30",
+      "note": "Original title and complete body restored at the publisher's explicit request. Prior automated hold/classification and on-page notice treatment is superseded; this is not independent verification.",
+      "url": null
     }
-  ]
+  ],
+  "history": [
+    {
+      "preserved_at": "2026-10-30T19:33:05.166875+00:00",
+      "record": {
+        "kind": "fiction-classification",
+        "affiliated": true,
+        "notice": "SATIRE / FICTION — October 28, 2026. The original body explicitly calls a former classmate fictional, a former colleague imaginary, and its narrative a satirical canon. The whole piece is now labeled satire/fiction. MIT, Harvard and OpenAI scenes, quotations and biographical claims must be read as fiction, not actual biography or documented interviews. No credentials, employment or interviews are authenticated by this classification. This dated classification correction makes no finding that claims are false. The original body below is retained as historical fiction, not authenticated reporting. Cody Viveiros owns The Northstar Ledger and PROTOCOL SENTINEL; this is affiliated coverage. Original publication date and URL are retained. Noindex/follow; omitted from promotional news discovery pending a coherent satire archive.",
+        "evidence": {
+          "status": "pending",
+          "summary": "The original body explicitly calls a former classmate fictional, a former colleague imaginary, and its narrative a satirical canon. The whole piece is now labeled satire/fiction. MIT, Harvard and OpenAI scenes, quotations and biographical claims must be read as fiction, not actual biography or documented interviews.",
+          "limits": "No credentials, employment or interviews are authenticated by this classification. This classification/hold is not a generic factual verification stamp or a completed subject-matter review.",
+          "sources": []
+        },
+        "corrections": [
+          {
+            "date": "2026-10-28",
+            "note": "SATIRE / FICTION — October 28, 2026. The original body explicitly calls a former classmate fictional, a former colleague imaginary, and its narrative a satirical canon. The whole piece is now labeled satire/fiction. MIT, Harvard and OpenAI scenes, quotations and biographical claims must be read as fiction, not actual biography or documented interviews. No credentials, employment or interviews are authenticated by this classification. This dated classification correction makes no finding that claims are false. The original body below is retained as historical fiction, not authenticated reporting. Cody Viveiros owns The Northstar Ledger and PROTOCOL SENTINEL; this is affiliated coverage. Original publication date and URL are retained. Noindex/follow; omitted from promotional news discovery pending a coherent satire archive.",
+            "url": "https://thenorthstarledger.com/archive-integrity"
+          }
+        ]
+      }
+    }
+  ],
+  "restoration": {
+    "requested_by": "publisher",
+    "restored_at": "2026-10-30T19:33:05.166875+00:00",
+    "original_revision": "02c10cb932fcd1149987eec4c8d13b7c21eb36df",
+    "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/tech/the-cojoverse-unveiled-a-deep-dive-into-the-groundbreaking-bunker.md",
+    "verification_performed": false
+  }
 }

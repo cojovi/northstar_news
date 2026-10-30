@@ -1,18 +1,55 @@
 {
-  "kind": "publication-review-hold",
+  "kind": "publisher-requested-original",
   "affiliated": true,
-  "notice": "PUBLICATION REVIEW HOLD — October 28, 2026. The article itself acknowledges unrelated source URLs and no actual GQ text for the claimed feature. Those links do not substantiate the named-person GQ account. Release requires the actual issuer/feature record and evidence for the material claims. This dated hold makes no finding that claims are false. The original body below is retained as historical text under review, not authenticated reporting. Cody Viveiros owns The Northstar Ledger and PROTOCOL SENTINEL; this is affiliated coverage. Original publication date and URL are retained. Noindex/follow; omitted from promotional news discovery pending primary evidence.",
+  "notice": "",
   "evidence": {
     "status": "pending",
-    "summary": "The article itself acknowledges unrelated source URLs and no actual GQ text for the claimed feature. Those links do not substantiate the named-person GQ account.",
-    "limits": "Release requires the actual issuer/feature record and evidence for the material claims. This classification/hold is not a generic factual verification stamp or a completed subject-matter review.",
-    "sources": []
+    "summary": "Original historical copy restored at the publisher's explicit request on 2026-10-30. The restoration is not a new documentary check or factual authentication.",
+    "limits": "No new interviews, credentials, award records, experiments or independent verification were supplied by this restoration. Earlier source checks and editorial actions remain in the dated history.",
+    "sources": [],
+    "completed_full_factcheck": false,
+    "reviewed_at": null
   },
   "corrections": [
     {
       "date": "2026-10-28",
       "note": "PUBLICATION REVIEW HOLD — October 28, 2026. The article itself acknowledges unrelated source URLs and no actual GQ text for the claimed feature. Those links do not substantiate the named-person GQ account. Release requires the actual issuer/feature record and evidence for the material claims. This dated hold makes no finding that claims are false. The original body below is retained as historical text under review, not authenticated reporting. Cody Viveiros owns The Northstar Ledger and PROTOCOL SENTINEL; this is affiliated coverage. Original publication date and URL are retained. Noindex/follow; omitted from promotional news discovery pending primary evidence.",
       "url": "https://thenorthstarledger.com/archive-integrity"
+    },
+    {
+      "date": "2026-10-30",
+      "note": "Original title and complete body restored at the publisher's explicit request. Prior automated hold/classification and on-page notice treatment is superseded; this is not independent verification.",
+      "url": null
     }
-  ]
+  ],
+  "history": [
+    {
+      "preserved_at": "2026-10-30T19:33:05.166875+00:00",
+      "record": {
+        "kind": "publication-review-hold",
+        "affiliated": true,
+        "notice": "PUBLICATION REVIEW HOLD — October 28, 2026. The article itself acknowledges unrelated source URLs and no actual GQ text for the claimed feature. Those links do not substantiate the named-person GQ account. Release requires the actual issuer/feature record and evidence for the material claims. This dated hold makes no finding that claims are false. The original body below is retained as historical text under review, not authenticated reporting. Cody Viveiros owns The Northstar Ledger and PROTOCOL SENTINEL; this is affiliated coverage. Original publication date and URL are retained. Noindex/follow; omitted from promotional news discovery pending primary evidence.",
+        "evidence": {
+          "status": "pending",
+          "summary": "The article itself acknowledges unrelated source URLs and no actual GQ text for the claimed feature. Those links do not substantiate the named-person GQ account.",
+          "limits": "Release requires the actual issuer/feature record and evidence for the material claims. This classification/hold is not a generic factual verification stamp or a completed subject-matter review.",
+          "sources": []
+        },
+        "corrections": [
+          {
+            "date": "2026-10-28",
+            "note": "PUBLICATION REVIEW HOLD — October 28, 2026. The article itself acknowledges unrelated source URLs and no actual GQ text for the claimed feature. Those links do not substantiate the named-person GQ account. Release requires the actual issuer/feature record and evidence for the material claims. This dated hold makes no finding that claims are false. The original body below is retained as historical text under review, not authenticated reporting. Cody Viveiros owns The Northstar Ledger and PROTOCOL SENTINEL; this is affiliated coverage. Original publication date and URL are retained. Noindex/follow; omitted from promotional news discovery pending primary evidence.",
+            "url": "https://thenorthstarledger.com/archive-integrity"
+          }
+        ]
+      }
+    }
+  ],
+  "restoration": {
+    "requested_by": "publisher",
+    "restored_at": "2026-10-30T19:33:05.166875+00:00",
+    "original_revision": "02c10cb932fcd1149987eec4c8d13b7c21eb36df",
+    "original_source": "https://github.com/cojovi/northstar_news/blob/02c10cb932fcd1149987eec4c8d13b7c21eb36df/content/tech/cody-viveiros-crowns-gqs-the-disruptor-list-as-the-technological-visionary-turning-ai-ambition-into-a-lifestyle-movement.md",
+    "verification_performed": false
+  }
 }
