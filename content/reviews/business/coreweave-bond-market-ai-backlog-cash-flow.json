@@ -1,0 +1,117 @@
+{
+  "kind": "documentary-source-review",
+  "affiliated": false,
+  "notice": "",
+  "editorial_notices": false,
+  "evidence": {
+    "status": "partial",
+    "completed_full_factcheck": false,
+    "reviewed_at": "2026-11-05T19:13:51.419797Z",
+    "summary": "Live issuer and SEC earnings releases and Gartner forecast were retrieved. Preserved October 15 CNBC and Reuters extracts support historical market observations and management/analyst responses. The body distinguishes reported yields, accounting results, backlog and conditional forecasts.",
+    "limits": "Partial automated documentary check, not a full fact-check or human review. Market quotes were not independently reconstructed or refreshed to recovery-day prices. CNBC and Reuters live fetches failed; historical extracts are the supporting record. No interviews or full audiovisual review.",
+    "record_url": "https://thenorthstarledger.com/source-reviews#coreweave-bond-market-ai-backlog-cash-flow",
+    "sources": [
+      "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Second-Quarter-2026-Results/default.aspx",
+      "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000362/coreweave2q26earningspress.htm",
+      "https://www.cnbc.com/2026/10/15/coreweave-credit-default-swaps-hit-distress-levels-as-investors-sour-on-ai-debt.html",
+      "https://www.reuters.com/legal/transactional/coreweave-shares-bonds-slide-further-ai-debt-fears-mount-2026-10-15",
+      "https://www.cnbc.com/video/2026/10/16/coreweaves-corporate-bonds-are-in-freefall-what-happens-next.html",
+      "https://www.gartner.com/en/newsroom/press-releases/2026-10-14-gartner-says-over-us-dollars-three-and-a-half-trillion-of-artificial-intelligence-infrastructure-spending-could-be-exposed-to-impairment-by-the-end-of-2030"
+    ]
+  },
+  "publication": {
+    "status": "ready",
+    "source_sha256": "14d2791bdf4e17dee7ca5dcdb08bdb7f950e52794bba96b2af26d41c5f8bba35",
+    "claim_ledger": [
+      {
+        "claim": "CNBC reported a 15.78% yield on a 2031 bond on October 15; this is historical reporting, not a current quote.",
+        "supporting_excerpt": "yield to maturity on its 9.75% bond due in 2031 reaching 15.78%. Bond yields move inversely to prices. Meanwhile, the spread on its five-year",
+        "source_url": "https://www.cnbc.com/2026/10/15/coreweave-credit-default-swaps-hit-distress-levels-as-investors-sour-on-ai-debt.html",
+        "excerpt_record": "originals/1/source-extracts.json",
+        "excerpt_method": "Verbatim words from preserved retrieved extract; whitespace normalized.",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "Reuters separately reported pressure on shares and bonds.",
+        "supporting_excerpt": "shares and bonds slumped further on Thursday despite CEO assurances about its strong deal backlog, in one of the",
+        "source_url": "https://www.reuters.com/legal/transactional/coreweave-shares-bonds-slide-further-ai-debt-fears-mount-2026-10-15",
+        "excerpt_record": "originals/1/source-extracts.json",
+        "excerpt_method": "Verbatim words from preserved retrieved extract; whitespace normalized.",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "The quarterly earnings release reports revenue, losses and interest expense in millions.",
+        "supporting_excerpt": "| Revenue | | $ | 2,575 | | | $ | 1,212 | | | Operating expenses | | | 2,624 | | | | 1,193 | | | Operating income (loss) | | $ | (49 | ) | | $ | 19 | | | *Operating income (loss) margin* | | | *(2* | *)%* | | | *2* | *%* | | Interest expense, net | | $ | (640 | ) | | $ | (267 | ) | | Net loss | | $ | (626 | ) | | $ | (290 | ) | | *Net loss margin* | | | *(24* | *)%* | | | *(24* | *)%* | | Basic net loss per share | | $ | (1.14 | ) | | $ | (0.60 | ) | | Diluted net loss per share | | $ | (1.14 | ) | | $ | (0.60 | ) | *(In millions, except percentages and per share amounts)* **Three Months Ended June 30,** **2026** **2025** Revenue $ 2,575 $ 1,212 Operating expenses 2,624 1,193 Operating income (loss) $ (49",
+        "source_url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Second-Quarter-2026-Results/default.aspx",
+        "excerpt_record": "originals/1/source-extracts.json",
+        "excerpt_method": "Verbatim words from preserved retrieved extract; whitespace normalized.",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "CoreWeave reported approximately $104 billion in backlog, conditional on delivery and service availability.",
+        "supporting_excerpt": "Revenue backlog1 was approximately $104 billion as of June 30, 2026. | | | --- | | \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ | | 1 Does not include more than $25 billion of net new customer commitments added in early Q3. Revenue backlog includes remaining performance obligations, plus other amounts we estimate will be recognized as revenue in future periods under committed customer contracts, in each case, subject to the satisfaction of delivery and availability of service requirements. | 1 Does not include more",
+        "source_url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Second-Quarter-2026-Results/default.aspx",
+        "excerpt_record": "originals/1/source-extracts.json",
+        "excerpt_method": "Verbatim words from preserved retrieved extract; whitespace normalized.",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "Gartner forecast impairment exposure rather than observed losses.",
+        "supporting_excerpt": "More than $3.5 trillion of [AI](https://www.gartner.com/en/ai/ai-success-stories) infrastructure spending could be exposed to impairment by the end of 2030, if AI providers continue their current pace of capital spending, according to Gartner, Inc., a",
+        "source_url": "https://www.gartner.com/en/newsroom/press-releases/2026-10-14-gartner-says-over-us-dollars-three-and-a-half-trillion-of-artificial-intelligence-infrastructure-spending-could-be-exposed-to-impairment-by-the-end-of-2030",
+        "excerpt_record": "originals/1/source-extracts.json",
+        "excerpt_method": "Verbatim words from preserved retrieved extract; whitespace normalized.",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "Gartner forecast more than 80% of neoclouds ceasing independent operations, not necessarily bankruptcy.",
+        "supporting_excerpt": "By 2030, Gartner predicts that cost pressure and a lack of a differentiating business model will force over 80% of neocloud providers to cease independent operations. **Neocloud Market to Consolidate",
+        "source_url": "https://www.gartner.com/en/newsroom/press-releases/2026-10-14-gartner-says-over-us-dollars-three-and-a-half-trillion-of-artificial-intelligence-infrastructure-spending-could-be-exposed-to-impairment-by-the-end-of-2030",
+        "excerpt_record": "originals/1/source-extracts.json",
+        "excerpt_method": "Verbatim words from preserved retrieved extract; whitespace normalized.",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "Company-reported term borrowing shows unsecured bonds are only one financing route.",
+        "supporting_excerpt": "Milestone $3.1 billion term loan, the first ever publicly syndicated delayed draw facility backed by HPC infrastructure *",
+        "excerpt_record": "retrieved/coreweave.json",
+        "excerpt_method": "Verbatim words from live web retrieval; line labels removed and whitespace normalized.",
+        "source_url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Second-Quarter-2026-Results/default.aspx",
+        "attribution": "analysis"
+      },
+      {
+        "claim": "The release also reports adjusted EBITDA of $1.510 billion and adjusted operating income of $128 million.",
+        "supporting_excerpt": "Adjusted EBITDA | | $ | 1,510 | | | $ | 753 | | | *Adjusted EBITDA margin* | | | *59* | *%* | | | *62* | *%* | | Adjusted operating income | | $ | 128 | | | $ | 200 | | | *Adjusted operating income margin* | | | *5* | *%* | | | *16* |",
+        "source_url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Second-Quarter-2026-Results/default.aspx",
+        "excerpt_record": "originals/1/source-extracts.json",
+        "excerpt_method": "Verbatim words from preserved retrieved extract; whitespace normalized.",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "CNBC reported management’s confidence that backlog supported debt obligations; that was management’s position.",
+        "supporting_excerpt": "We are confident in our backlog which more than supports all of our debt obligations.\" The backlog is over $100 billion, with around",
+        "source_url": "https://www.cnbc.com/2026/10/15/coreweave-credit-default-swaps-hit-distress-levels-as-investors-sour-on-ai-debt.html",
+        "excerpt_record": "originals/1/source-extracts.json",
+        "excerpt_method": "Verbatim words from preserved retrieved extract; whitespace normalized.",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "The 12% investment hurdle is Gartner’s assumption, not an observed industry return.",
+        "supporting_excerpt": "a 12% return on invested capital (ROIC), which we assume to be the hurdle rate of investment capital,” said Sommer. “However, total enterprise",
+        "source_url": "https://www.gartner.com/en/newsroom/press-releases/2026-10-14-gartner-says-over-us-dollars-three-and-a-half-trillion-of-artificial-intelligence-infrastructure-spending-could-be-exposed-to-impairment-by-the-end-of-2030",
+        "excerpt_record": "originals/1/source-extracts.json",
+        "excerpt_method": "Verbatim words from preserved retrieved extract; whitespace normalized.",
+        "attribution": "source-statement"
+      }
+    ],
+    "prepared_at": "2026-11-05T19:13:51.419797Z",
+    "approval_scope": "Artifacts for explicitly approved recovery batch; no human review, deployment, or public-anchor verification asserted."
+  },
+  "uncertainties": [
+    "October market levels remain attributed historical observations; no current solvency conclusion or current investment advice is asserted.",
+    "Removed the Bloomberg Intelligence audiovisual counterargument; substituted issuer-documented financing information."
+  ],
+  "original_reporting_cutoff": "2026-10-18",
+  "recovery_date": "2026-11-05",
+  "historical_evidence_directory": "/Users/cojovi/.hermes/profiles/loki/publications/backlog-recovery-2026-11-05/workers/nsl-a/originals/1"
+}

@@ -58,13 +58,13 @@ test('ownership names PROTOCOL SENTINEL and preserves the NewsPredator historica
  assert.doesNotMatch(publicCopy, /we do not invent one|availability was checked during this implementation/i);
 });
 test('ten public targeted source reviews have explicit scope, limits, dates and usable links', () => {
- const reviewed = articles.filter(a => a.evidence.status === 'partial'); assert.equal(reviewed.length, 7);
- assert.equal(PAGES['source-reviews'].reviews.length, 10, 'historical records retained');
+ const reviewed = articles.filter(a => a.evidence.status === 'partial'); assert.equal(reviewed.filter(a => Object.hasOwn(originalDates,a.slug)).length, 7);
+ assert.equal(PAGES['source-reviews'].reviews.filter(r=>Object.hasOwn(originalDates,r.slug)).length, 10, 'historical records retained');
  const restored = PAGES['source-reviews'].reviews.filter(r => r.status === 'pending'); assert.equal(restored.length, 3);
  for (const r of restored) { const a=get(r.slug); assert.equal(a.evidence.status,'pending'); assert.equal(a.evidence.completed_full_factcheck,false); assert.equal(a.evidence.record_url,null); assert.ok(r.history.length); assert.ok(r.restored_at); }
  for (const a of reviewed) {
   assert.equal(a.evidence.completed_full_factcheck, false);
-  assert.equal(a.evidence.reviewed_at, '2026-10-28');
+  assert.ok(Number.isFinite(Date.parse(a.evidence.reviewed_at)));if(Object.hasOwn(originalDates,a.slug))assert.equal(a.evidence.reviewed_at, '2026-10-28');
   assert.ok(a.evidence.summary.length > 60); assert.ok(a.evidence.limits.length > 60);
   assert.ok(a.evidence.sources.length); assert.match(a.evidence.record_url, /\/source-reviews#/);
   assert.ok(PAGES['source-reviews'].body.includes(a.slug));
@@ -78,7 +78,7 @@ test('ten public targeted source reviews have explicit scope, limits, dates and 
    for (const c of a.corrections) assert.ok(html.includes(renderToStaticMarkup(React.createElement(React.Fragment, null, c.note))), 'complete visible correction');
    assert.match(html, /Partial source review/); assert.match(html, /2026-10-28/);
   }
-  assert.ok(a.corrections.some(c => c.date === '2026-10-28' && c.note.length > 40));
+  if(Object.hasOwn(originalDates,a.slug))assert.ok(a.corrections.some(c => c.date === '2026-10-28' && c.note.length > 40));
  }
  const malformed = normalizeArticle({title:'x',slug:'x',published:'2026-01-01',status:'published'}, 'Text', 'tech', {evidence:{status:'partial'}});
  assert.equal(malformed.evidence.status, 'pending');
@@ -98,7 +98,7 @@ test('specific corrections replace unsupported claims without changing historica
  assert.match(cody.corrections.at(-1).note, /restored.*publisher.*request/i);
  const fable = get('the-three-day-fable-how-anthropics-most-powerful-public-model-vanished');
  assert.match(fable.content, /July 1/); assert.match(fable.content, /https:\/\/www.anthropic.com\/news\/redeploying-fable-5/);
- for (const a of articles.filter(a => a.evidence.status === 'partial')) {
+ for (const a of articles.filter(a => a.evidence.status === 'partial' && Object.hasOwn(originalDates,a.slug))) {
   const source = parseArticleSource(fs.readFileSync(`content/${a.categoryPath}/${a.slug}.md`, 'utf8'));
   assert.equal(a.published, source.data.published);
   assert.equal(a.published, originalDates[a.slug], 'exact historical timestamp');

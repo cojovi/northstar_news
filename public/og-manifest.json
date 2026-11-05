@@ -1,4 +1,46 @@
 {
+  "business/cvs-breakup-pieces-that-stay-together": {
+    "title": "CVS Is Breaking Up. Follow the Pieces That Stay Together.",
+    "dek": "The proposed 2028 split separates the drugstores, but leaves Aetna and Caremark under one roof. The test is what changes for patients, not just shareholders.",
+    "hero_image": "https://thenorthstarledger.com/cvs-breakup-pieces-that-stay-together.png",
+    "thumbnail": "https://thenorthstarledger.com/cvs-breakup-pieces-that-stay-together.png",
+    "url": "https://thenorthstarledger.com/business/cvs-breakup-pieces-that-stay-together"
+  },
+  "politics/alaska-sullivan-ballot-lawsuit-redressability-secret-vote": {
+    "title": "Two Sullivans, One Ballot, and a Remedy the Court Would Not Order",
+    "dek": "Alaska's ballot dispute raises a legitimate question about voter confusion. A federal judge's ruling turns on what a court could lawfully do about it.",
+    "hero_image": "https://thenorthstarledger.com/alaska-sullivan-ballot-lawsuit-redressability-secret-vote.png",
+    "thumbnail": "https://thenorthstarledger.com/alaska-sullivan-ballot-lawsuit-redressability-secret-vote.png",
+    "url": "https://thenorthstarledger.com/politics/alaska-sullivan-ballot-lawsuit-redressability-secret-vote"
+  },
+  "business/q3-gdp-september-pce-household-purchasing-power": {
+    "title": "The Economy Grew. Why Does the Household Budget Still Feel Smaller?",
+    "dek": "The latest GDP and income reports measure different things. Read together, they explain why a stronger national economy does not necessarily mean more breathing room at home.",
+    "hero_image": "https://thenorthstarledger.com/q3-gdp-september-pce-household-purchasing-power.png",
+    "thumbnail": "https://thenorthstarledger.com/q3-gdp-september-pce-household-purchasing-power.png",
+    "url": "https://thenorthstarledger.com/business/q3-gdp-september-pce-household-purchasing-power"
+  },
+  "politics/supreme-court-immigration-case-pauses-standing": {
+    "title": "The Immigration Pause Fight Has a Second Question",
+    "dek": "The Supreme Court left a restriction on case closures in place. The dispute also tests who can challenge a federal regulation's courtroom demise.",
+    "hero_image": "https://thenorthstarledger.com/supreme-court-immigration-case-pauses-standing.png",
+    "thumbnail": "https://thenorthstarledger.com/supreme-court-immigration-case-pauses-standing.png",
+    "url": "https://thenorthstarledger.com/politics/supreme-court-immigration-case-pauses-standing"
+  },
+  "us/colorado-floods-receding-water-road-home": {
+    "title": "The Water Is Falling. What About the Road Home?",
+    "dek": "Colorado's flood response has moved troops and helicopters into place. Receding rivers do not settle the harder questions about roads, buildings and who can safely return.",
+    "hero_image": "https://thenorthstarledger.com/colorado-floods-receding-water-road-home.png",
+    "thumbnail": "https://thenorthstarledger.com/colorado-floods-receding-water-road-home.png",
+    "url": "https://thenorthstarledger.com/us/colorado-floods-receding-water-road-home"
+  },
+  "travel/us-flight-ebola-attestation-november-2026": {
+    "title": "A New Form at the Gate: What Washington's Ebola Order Actually Requires",
+    "dek": "A CDC order issued October 22 adds a declaration for U.S.-bound international passengers. The consequential details are the departure-time cutoff, transit rules and what a signature cannot establish.",
+    "hero_image": "https://thenorthstarledger.com/us-flight-ebola-attestation-november-2026.png",
+    "thumbnail": "https://thenorthstarledger.com/us-flight-ebola-attestation-november-2026.png",
+    "url": "https://thenorthstarledger.com/travel/us-flight-ebola-attestation-november-2026"
+  },
   "tech/what-happens-after-you-swipe-right-on-tinder": {
     "title": "What happens after you swipe right on Tinder?",
     "dek": "A reverse-engineering reel raises questions about photo scores, privacy and paid attention. Understanding it starts with separating what a model predicts from what happens to your matches.",
@@ -13,12 +55,26 @@
     "thumbnail": "https://thenorthstarledger.com/social-security-record-cleanup.png",
     "url": "https://thenorthstarledger.com/us/social-security-record-cleanup-benefits-evidence"
   },
+  "travel/airline-delay-rule-effective-date-refund-rights": {
+    "title": "The Flight-Delay Headlines Have a Calendar Problem",
+    "dek": "Reports warn that a new airline rule just changed what stranded passengers can expect. The federal record tells a different story about the timing—and a more precise one about your rights.",
+    "hero_image": "https://thenorthstarledger.com/airline-delay-rule-effective-date-refund-rights.png",
+    "thumbnail": "https://thenorthstarledger.com/airline-delay-rule-effective-date-refund-rights.png",
+    "url": "https://thenorthstarledger.com/travel/airline-delay-rule-effective-date-refund-rights"
+  },
   "politics/ilhan-omar-investigation-evidence-citizenship-search-dispute": {
     "title": "Two Investigations, One Congresswoman - and a Fight Over the Evidence",
     "dek": "The Ilhan Omar case now involves immigration records, a separate financial-disclosure inquiry, reported DNA collection and a dispute over the execution of a search warrant. Understanding what each development actually establishes is more useful than another premature verdict.",
     "hero_image": "https://thenorthstarledger.com/ilhan-omar-investigation-user-illustration.png",
     "thumbnail": "https://thenorthstarledger.com/ilhan-omar-investigation-user-illustration.png",
     "url": "https://thenorthstarledger.com/politics/ilhan-omar-investigation-evidence-citizenship-search-dispute"
+  },
+  "business/coreweave-bond-market-ai-backlog-cash-flow": {
+    "title": "CoreWeave's Bond Market Has a Question for the AI Boom",
+    "dek": "A sharp credit selloff has put the financing behind AI infrastructure under scrutiny. The useful question is not whether demand exists, but when contracts become cash.",
+    "hero_image": "https://thenorthstarledger.com/coreweave-bond-market-ai-backlog-cash-flow.png",
+    "thumbnail": "https://thenorthstarledger.com/coreweave-bond-market-ai-backlog-cash-flow.png",
+    "url": "https://thenorthstarledger.com/business/coreweave-bond-market-ai-backlog-cash-flow"
   },
   "business/september-cpi-gasoline-core-inflation-household-costs": {
     "title": "The Pump Is Driving Inflation. What Else Is Under the Hood?",

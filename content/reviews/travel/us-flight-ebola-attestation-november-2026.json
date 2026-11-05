@@ -1,0 +1,141 @@
+{
+  "kind": "documentary-source-review",
+  "affiliated": false,
+  "notice": "",
+  "editorial_notices": false,
+  "evidence": {
+    "status": "partial",
+    "completed_full_factcheck": false,
+    "reviewed_at": "2026-11-05T19:13:51.419797Z",
+    "summary": "Retrieved CDC’s current instructions, amended signed PDF and the Federal Register reproduction of the original October 22 order. Preserved October research supports the historical account. Added a separately dated October 28 amendment update, including crew coverage and a discrepancy in retention instructions.",
+    "limits": "Partial automated documentary check, not a full fact-check, human review, clinical assessment or individual travel clearance. Original signed PDF was not recovered as an unchanged October 22 file; its URL now serves an amended document. Current CDC webpage mixes arrival/departure retention descriptions. Reuters live fetch failed; its October 22 claim is supported by the preserved extract only.",
+    "record_url": "https://thenorthstarledger.com/source-reviews#us-flight-ebola-attestation-november-2026",
+    "sources": [
+      "https://www.govinfo.gov/content/pkg/FR-2026-10-27/html/2026-21828.htm",
+      "https://www.cdc.gov/port-health/legal-authorities/attestation-order.html",
+      "https://www.cdc.gov/port-health/media/pdfs/2026/10/CDC-Ebola-Attestation-Order-Signed.pdf",
+      "https://www.reuters.com/business/healthcare-pharmaceuticals/us-impose-ebola-attestation-requirement-international-air-passengers-2026-10-22",
+      "https://visasnews.com/en/u-s-to-require-new-health-declaration-for-all-international-air-travelers-starting-november-3-2026"
+    ]
+  },
+  "publication": {
+    "status": "ready",
+    "source_sha256": "3b31ea8d3316b463474964507a10e0b6fd77122683d0afb16a94e1d5c45d652b",
+    "claim_ledger": [
+      {
+        "claim": "Original CDC instructions stated November 3, 2026 at 11:59 p.m. EST as the departure cutoff.",
+        "supporting_excerpt": "This requirement goes into effect November 3, 2026, at 11:59 p.m. EST. The requirement will apply to flights departing to the United States from a foreign country at or after 11:59 p.m. EST on November 3, 2026. The Order issued on October 22, 2026, is [here](/port-health/media/pdfs/2026/10/CDC-Ebola-Attestation-Order-Signed.pdf). This Order",
+        "source_url": "https://www.cdc.gov/port-health/legal-authorities/attestation-order.html",
+        "excerpt_record": "originals/3/source-extracts.json",
+        "excerpt_method": "Verbatim words from preserved retrieved extract; whitespace normalized.",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "The original order includes U.S. transit passengers.",
+        "supporting_excerpt": "This includes any flight arriving in the United States, regardless of whether the United States is its final destination or the flight is connecting through the United States en route to another country. The airline or aircraft operator must retain a copy of the completed version of the signed attestation for at least 42 days",
+        "excerpt_record": "retrieved/cdc-original-and-photo.json",
+        "excerpt_method": "Verbatim words from live web retrieval; line labels removed and whitespace normalized.",
+        "source_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-27/html/2026-21828.htm",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "The original order uses calendar days, with departure day zero and boarding permitted on day 22.",
+        "supporting_excerpt": "21 days for purposes of the passenger attestation means a 21-day waiting period based on calendar days. Day 0 is the day the individual departed the DRC. Day 1 is the first full calendar day the individual is outside the DRC. An individual who was present in the DRC may board a flight to the United States on day 22. Aircraft shall have",
+        "excerpt_record": "retrieved/cdc-original-and-photo.json",
+        "excerpt_method": "Verbatim words from live web retrieval; line labels removed and whitespace normalized.",
+        "source_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-27/html/2026-21828.htm",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "DRC airport transit counts even without disembarkation; mere overflight does not.",
+        "supporting_excerpt": "Present/Presence in the DRC means any physical presence, including entering or traveling through the country by air (excluding overflights), land, or sea. Presence also includes connecting through an airport in the DRC, even if the passenger did not disembark the plane or leave the airport. United States has",
+        "excerpt_record": "retrieved/cdc-original-and-photo.json",
+        "excerpt_method": "Verbatim words from live web retrieval; line labels removed and whitespace normalized.",
+        "source_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-27/html/2026-21828.htm",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "Original order permits signatures for minors or people unable to act on their own behalf.",
+        "supporting_excerpt": "A parent or other authorized individual may complete and sign the required attestation on behalf of a passenger under 18 years of age. An authorized individual may also act on behalf of any passenger who is unable to act on their own behalf (e.g., by reason of age, or",
+        "excerpt_record": "retrieved/cdc-original-and-photo.json",
+        "excerpt_method": "Verbatim words from live web retrieval; line labels removed and whitespace normalized.",
+        "source_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-27/html/2026-21828.htm",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "Original order requires at least 42-day retention after departure.",
+        "supporting_excerpt": "completed and signed attestation for at least 42 days after the passenger's flight departs for the United States from a foreign country and provide the attestation to the U.S. Government upon request. CDC encourages airlines",
+        "excerpt_record": "retrieved/cdc-original-and-photo.json",
+        "excerpt_method": "Verbatim words from live web retrieval; line labels removed and whitespace normalized.",
+        "source_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-27/html/2026-21828.htm",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "Reuters attributed no U.S. cases associated with the outbreak to CDC on October 22; no present-day absence is asserted.",
+        "supporting_excerpt": "no Ebola cases associated with this outbreak have been reported in the United ​States, the CDC said. Reporting by David Shepardson;",
+        "source_url": "https://www.reuters.com/business/healthcare-pharmaceuticals/us-impose-ebola-attestation-requirement-international-air-passengers-2026-10-22",
+        "excerpt_record": "originals/3/source-extracts.json",
+        "excerpt_method": "Verbatim words from preserved retrieved extract; whitespace normalized.",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "The October 28 amendment expressly includes crew and repositioning crew.",
+        "supporting_excerpt": "On October 28, 2026, CDC issued an Amended Order to clarify that the requirement for the attestation applies to all people traveling on any aircraft, including crew on passenger- and cargo-carrying aircraft involved in operation of aircraft or the positioning of crew not operating the aircraft (e.g., on \"deadhead\" status). The overall risk to the American public and",
+        "excerpt_record": "retrieved/cdc-page.json",
+        "excerpt_method": "Verbatim words from live web retrieval; line labels removed and whitespace normalized.",
+        "source_url": "https://www.cdc.gov/port-health/legal-authorities/attestation-order.html",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "The amended order retains the November 3 effective time and is signed October 28.",
+        "supporting_excerpt": "This Order takes effect at 11:59 p.m. Eastern Standard Time on November 3, 2026. For individuals intending to travel to the United States by air, the Order will apply to flights departing at or after 11:59 p.m. Eastern Standard Time on November 3, 2026. In testimony whereof, the Assistant Secretary for Health, U.S. Department of Health and Human Services, has hereunto set his hand at ________________________, this October 28, 2026.11 Dated: Brian Christine Assistant Secretary for Health (ASH) and Head of the United States Public Health Service",
+        "excerpt_record": "retrieved/cdc-signed-end.json",
+        "excerpt_method": "Verbatim words from live web retrieval; line labels removed and whitespace normalized.",
+        "source_url": "https://www.cdc.gov/port-health/media/pdfs/2026/10/CDC-Ebola-Attestation-Order-Signed.pdf",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "Current CDC web instructions conflict between arrival-based retention and departure-based answers.",
+        "supporting_excerpt": "Retain a copy of the completed version of the attestation for each person for at least 42 days after the person's flight arrives in the United States from a foreign country and be able to provide the attestation to the U.S. Government upon request. ###",
+        "excerpt_record": "retrieved/cdc-page.json",
+        "excerpt_method": "Verbatim words from live web retrieval; line labels removed and whitespace normalized.",
+        "source_url": "https://www.cdc.gov/port-health/legal-authorities/attestation-order.html",
+        "attribution": "uncertain"
+      },
+      {
+        "claim": "Amended PDF says order lasts until rescinded/modified or December 18, whichever comes first.",
+        "supporting_excerpt": "This Order shall remain in effect until rescinded or modified based on specific public health or other considerations, or until December 18, 2026, whichever occurs first. Any amendment or extension of this Order will be based on a review of then-current outbreak metrics, including case counts, geographic spread, community-transmission indicators, and",
+        "excerpt_record": "retrieved/cdc-signed.json",
+        "excerpt_method": "Verbatim words from live web retrieval; line labels removed and whitespace normalized.",
+        "source_url": "https://www.cdc.gov/port-health/media/pdfs/2026/10/CDC-Ebola-Attestation-Order-Signed.pdf",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "The order describes a two-to-21-day incubation period and says transmission begins with symptoms.",
+        "supporting_excerpt": "The incubation period for BVD is typically between 2 and 21 days, with most people developing symptoms within 4 to 10 days after exposure. During this incubation period, infected individuals do not spread BVD until symptoms begin. Screening for BVD focuses on",
+        "excerpt_record": "retrieved/cdc-signed.json",
+        "excerpt_method": "Verbatim words from live web retrieval; line labels removed and whitespace normalized.",
+        "source_url": "https://www.cdc.gov/port-health/media/pdfs/2026/10/CDC-Ebola-Attestation-Order-Signed.pdf",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "The order distinguishes Bundibugyo vaccine/treatment status from other Ebola viruses.",
+        "supporting_excerpt": "There are currently no widely approved vaccines or specific antiviral treatments for BVD. Treatment mainly consists of supportive care, including intravenous fluids,",
+        "excerpt_record": "retrieved/cdc-signed.json",
+        "excerpt_method": "Verbatim words from live web retrieval; line labels removed and whitespace normalized.",
+        "source_url": "https://www.cdc.gov/port-health/media/pdfs/2026/10/CDC-Ebola-Attestation-Order-Signed.pdf",
+        "attribution": "source-statement"
+      }
+    ],
+    "prepared_at": "2026-11-05T19:13:51.419797Z",
+    "approval_scope": "Artifacts for explicitly approved recovery batch; no human review, deployment, or public-anchor verification asserted."
+  },
+  "uncertainties": [
+    "CDC signed-PDF URL now serves the October 28 amended order, so it cannot authenticate an unchanged October 22 PDF. Original text reconstructed from the official October 27 Federal Register reproduction.",
+    "October 28 amendment expressly covers crew; November 3 effective deadline has passed.",
+    "CDC webpage has unresolved arrival-versus-departure retention wording; both descriptions are recorded, with order text distinguished."
+  ],
+  "original_reporting_cutoff": "2026-10-23",
+  "recovery_date": "2026-11-05",
+  "historical_evidence_directory": "/Users/cojovi/.hermes/profiles/loki/publications/backlog-recovery-2026-11-05/workers/nsl-a/originals/3"
+}

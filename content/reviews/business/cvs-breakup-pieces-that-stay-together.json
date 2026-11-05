@@ -1,0 +1,69 @@
+{
+  "affiliated": false,
+  "notice": "",
+  "editorial_notices": false,
+  "evidence": {
+    "status": "partial",
+    "completed_full_factcheck": false,
+    "sources": [
+      "https://www.prnewswire.com/news-releases/cvs-health-announces-intent-to-create-two-distinct-leaders-in-healthcare-302928585.html",
+      "https://www.reuters.com/legal/transactional/cvs-health-split-two-separating-pharmacy-business-insurance-2026-11-04",
+      "https://www.nytimes.com/2026/11/04/business/cvs-health-split.html",
+      "https://www.cvshealth.com/news/company-news/cvs-health-announces-intent-to-create-two-distinct-leaders-in-healthcare.html"
+    ],
+    "summary": "Checked the November 4 company announcement through PR Newswire and CVS’s own site. Preserved Reuters and New York Times extracts support attributed historical context; their pages could not be reopened. The separation and its benefits remain prospective.",
+    "limits": "Partial documentary check, not a full fact-check or human review. No future Form 10 examination, audited patient savings, independent antitrust finding or guarantee of completion, ratings, dividends or uninterrupted individual service. Independent reporting relies on preserved earlier extracts.",
+    "reviewed_at": "2026-11-05T19:09:19.745383Z",
+    "record_url": "https://thenorthstarledger.com/source-reviews#cvs-breakup-pieces-that-stay-together"
+  },
+  "publication": {
+    "status": "ready",
+    "source_sha256": "7bfd6a2eb1c46404603971b6d9f0734c12f275446aaef445caf578a574e01981",
+    "claim_ledger": [
+      {
+        "claim": "CVS announced its intent to separate on November 4, 2026.",
+        "supporting_excerpt": "today announced that it intends to separate into two independent, publicly traded companies",
+        "source_url": "https://www.prnewswire.com/news-releases/cvs-health-announces-intent-to-create-two-distinct-leaders-in-healthcare-302928585.html",
+        "attribution": "source-statement",
+        "evidence_origin": "Preserved retrieved source extract; load-bearing primary claim rechecked live. See sources-check.json."
+      },
+      {
+        "claim": "Completion expected in first half of 2028, subject to conditions.",
+        "supporting_excerpt": "The separation is expected to be completed in the first half of 2028, subject to customary conditions",
+        "source_url": "https://www.prnewswire.com/news-releases/cvs-health-announces-intent-to-create-two-distinct-leaders-in-healthcare-302928585.html",
+        "attribution": "source-statement",
+        "evidence_origin": "Preserved retrieved source extract; load-bearing primary claim rechecked live. See sources-check.json."
+      },
+      {
+        "claim": "Aetna, Caremark and CVS Specialty remain together.",
+        "supporting_excerpt": "Aetna, CVS Caremark and CVS Specialty, along with our value-based care and in-home health businesses, will advance together",
+        "source_url": "https://www.prnewswire.com/news-releases/cvs-health-announces-intent-to-create-two-distinct-leaders-in-healthcare-302928585.html",
+        "attribution": "source-statement",
+        "evidence_origin": "Preserved retrieved source extract; load-bearing primary claim rechecked live. See sources-check.json."
+      },
+      {
+        "claim": "Shareholders expected to own both companies.",
+        "supporting_excerpt": "Upon completion, CVS Health shareholders will own shares in both companies.",
+        "source_url": "https://www.prnewswire.com/news-releases/cvs-health-announces-intent-to-create-two-distinct-leaders-in-healthcare-302928585.html",
+        "attribution": "source-statement",
+        "evidence_origin": "Preserved retrieved source extract; load-bearing primary claim rechecked live. See sources-check.json."
+      },
+      {
+        "claim": "The retail company includes Health100 and virtual care.",
+        "supporting_excerpt": "MinuteClinic (including virtual care), and the Health100 technology services business",
+        "source_url": "https://www.cvshealth.com/news/company-news/cvs-health-announces-intent-to-create-two-distinct-leaders-in-healthcare.html",
+        "attribution": "source-statement",
+        "evidence_origin": "Live CVS announcement; checks/web3.json."
+      }
+    ]
+  },
+  "preparation": {
+    "prepared_at": "2026-11-05T19:09:19.745383Z",
+    "publication_executed": false,
+    "human_review_claimed": false,
+    "public_register_integration_required": true,
+    "original_editorial_date": "2026-11-04",
+    "reporting_cutoff": "2026-11-04 (November 5, 02:00 UTC)",
+    "scope": "Article text and evidence record only; parent must integrate public anchor, acquire cover and run full repository publication checks."
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "kind": "documentary-source-review",
+  "affiliated": false,
+  "notice": "",
+  "editorial_notices": false,
+  "evidence": {
+    "status": "partial",
+    "completed_full_factcheck": false,
+    "reviewed_at": "2026-11-05T19:13:51.419797Z",
+    "summary": "Rechecked NWS standing flood guidance and live warning endpoint. Preserved Guard, Denver Post and NWS extracts support the October 25 response/closure account. Recovery-day fetches did not establish current roads or re-entry permissions; the body explicitly separates these from historical reporting.",
+    "limits": "Partial automated documentary check, not a full fact-check or human review. Guard returned 403 on recovery fetch and Denver Post was inaccessible; their genuine historical extracts remain the support. Live warning content has changed, and COtrip yielded no readable road-status data. No field reporting, engineering inspection, final property count, repair estimate or current all-clear.",
+    "record_url": "https://thenorthstarledger.com/source-reviews#colorado-floods-receding-water-road-home",
+    "sources": [
+      "https://co.ng.mil/News/Archives/Article/4632970/colorado-national-guard-assisting-with-evacuations-search-and-rescue-in-southwe/",
+      "https://www.denverpost.com/2026/10/25/colorado-flooding-floods-evacuations-road-closures/",
+      "https://forecast.weather.gov/wwamap/wwatxtget.php?cwa=usa&wwa=flood+warning",
+      "https://www.weather.gov/safety/flood-after",
+      "https://www.nbcnews.com/nightly-news-netcast/video/nbc-nightly-news-full-episode-oct-24-272183365616",
+      "https://www.cotrip.org/"
+    ]
+  },
+  "publication": {
+    "status": "ready",
+    "source_sha256": "ca03ad0f528c2d762061ad9bab81627ee252985a98cd9c8a9b2c9a9d60567893",
+    "claim_ledger": [
+      {
+        "claim": "The Guard account describes nearly 100 members supporting local search and rescue.",
+        "supporting_excerpt": "nearly 100 Colorado National Guard members are supporting Archuleta County authorities, providing aviation and ground search and rescue assistance for flooding in southwest Colorado. Governor Jared Polis",
+        "source_url": "https://co.ng.mil/News/Archives/Article/4632970/colorado-national-guard-assisting-with-evacuations-search-and-rescue-in-southwe/",
+        "excerpt_record": "originals/4/primary-evidence.json",
+        "excerpt_method": "Verbatim words from preserved retrieved extract; whitespace normalized.",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "The Guard dates the emergency declaration October 22.",
+        "supporting_excerpt": "Governor Jared Polis declared a state of emergency Oct. 22, 2026, and authorized the Colorado National Guard to mobilize in support of the flood response. “We are rapidly mobilizing to help our neighbors respond",
+        "source_url": "https://co.ng.mil/News/Archives/Article/4632970/colorado-national-guard-assisting-with-evacuations-search-and-rescue-in-southwe/",
+        "excerpt_record": "originals/4/primary-evidence.json",
+        "excerpt_method": "Verbatim words from preserved retrieved extract; whitespace normalized.",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "The aviation task force comprised approximately 20 personnel and two specified helicopters.",
+        "supporting_excerpt": "Approximately 20 CONG members will comprise Task Force Aviation to operate, maintain, refuel, recover and sustain two assigned helicopters which include a hoist equipped UH-60 Black Hawk and LUH-72 Lakota for aerial search and rescue. The teams will stage and operate out of Pagosa Springs, Colorado. Nearly 80 additional personnel",
+        "source_url": "https://co.ng.mil/News/Archives/Article/4632970/colorado-national-guard-assisting-with-evacuations-search-and-rescue-in-southwe/",
+        "excerpt_record": "originals/4/primary-evidence.json",
+        "excerpt_method": "Verbatim words from preserved retrieved extract; whitespace normalized.",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "Ground force comprised nearly 80 personnel and 30 tactical vehicles.",
+        "supporting_excerpt": "Nearly 80 additional personnel and 30 tactical vehicles will comprise Task Force GSAR (Ground Search and Rescue) to support the incident command in flood-affected areas. The CONG last supported",
+        "source_url": "https://co.ng.mil/News/Archives/Article/4632970/colorado-national-guard-assisting-with-evacuations-search-and-rescue-in-southwe/",
+        "excerpt_record": "originals/4/primary-evidence.json",
+        "excerpt_method": "Verbatim words from preserved retrieved extract; whitespace normalized.",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "Denver Post reported receding water alongside concern about additional rain on October 25.",
+        "supporting_excerpt": "While floodwaters have started to recede in southwest Colorado, officials are concerned that another wave of storms on Sunday could add new surges of",
+        "source_url": "https://www.denverpost.com/2026/10/25/colorado-flooding-floods-evacuations-road-closures/",
+        "excerpt_record": "originals/4/finalist-extracts.json",
+        "excerpt_method": "Verbatim words from preserved retrieved extract; whitespace normalized.",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "Denver Post listed U.S. 160, U.S. 285, Colorado 112 and Colorado 151 closure segments at its cutoff.",
+        "supporting_excerpt": "several main highways remained closed on Sunday, including: * [U.S. 160 in both directions](https://www.cotrip.org/events/CDOT-35921037528BOTH?lat=37.1723&lng=-107.4442&zoom=8.48&layers=traffic_incidents%2Cclosures&eventClassifications=roadClosures) between Alpine Drive near Pagosa Springs and County Road 20 near South Fork * [U.S. 160 in both directions](https://www.cotrip.org/events/CDOT-35961030033BOTH?lat=36.9812&lng=-110.3929&zoom=8.06&layers=traffic_incidents%2Cclosures&eventClassifications=roadClosures) between the Four Corners and Colorado 41, including the San Juan River Bridge. [CDOT officials said](https://www.facebook.com/share/p/1b41RgEmB7/) the bridge was closed in case flood debris flows impact the structure. * [U.S. 285 in both directions](https://www.cotrip.org/events/CDOT-35949246915BOTH?lat=37.1723&lng=-107.4442&zoom=8.48&layers=traffic_incidents%2Cclosures&eventClassifications=roadClosures) between Colorado 15 and County Road 5N near Monte Vista * [Colorado 112 in both directions](https://www.cotrip.org/events/CDOT-35938741309BOTH?lat=37.1723&lng=-107.4442&zoom=8.48&layers=traffic_incidents%2Cclosures&eventClassifications=roadClosures) between River Road near Del Norte and U.S. 285 near Center * [Colorado 151 in both directions](https://www.cotrip.org/events/CDOT-35922498421BOTH?lat=37.9389&lng=-107.9890&zoom=8.26&layers=traffic_incidents%2Cclosures&eventClassifications=roadClosures) between Forest Service Road 613 and U.S. 160 Colorado 151 “sustained significant damage,” CDOT officials [said in a statement](https://www.facebook.com/share/v/1epLBVxugb/). A segment of the state highway between Pagosa Springs and Ignacio was washed away by floodwaters near the U.S. 160 junction, state transportation officials said. *This is a developing story and may be updated.* *[Get more Colorado news by signing up for our daily Your Morning Dozen email newsletter.](https://myaccount.denverpost.com/dp/preference)* ### Share this: * [Share on Facebook (Opens in new window) Facebook](https://www.denverpost.com/2026/10/25/colorado-flooding-floods-evacuations-road-closures/?share=facebook&nb=1) * [Share on Reddit (Opens in new window) Reddit](https://www.denverpost.com/2026/10/25/colorado-flooding-floods-evacuations-road-closures/?share=reddit&nb=1) * [Share on X (Opens in new window) X](https://www.denverpost.com/2026/10/25/colorado-flooding-floods-evacuations-road-closures/?share=twitter&nb=1) ## More in Weather * [![Pickup trucks are submerged along Highway 160 in South Fork, Colo., on Friday, Oct. 23, 2026. (South",
+        "source_url": "https://www.denverpost.com/2026/10/25/colorado-flooding-floods-evacuations-road-closures/",
+        "excerpt_record": "originals/4/finalist-extracts.json",
+        "excerpt_method": "Verbatim words from preserved retrieved extract; whitespace normalized.",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "The preserved NWS October 25 warning describes ongoing rainfall-related flooding in southern Conejos County.",
+        "supporting_excerpt": "Flood Warning National Weather Service Pueblo CO 119 AM MDT Sun Oct 25 2026 COC021-251915- /O.NEW.KPUB.FA.W.0015.261025T0719Z-261025T1915Z/ /00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/ Conejos CO- 119 AM MDT Sun Oct 25 2026 ...FLOOD WARNING IN EFFECT UNTIL 115 PM MDT THIS AFTERNOON... * WHAT...Flooding caused by excessive rainfall is ongoing. * WHERE...Southern Conejos County in south central Colorado... * WHEN...Until 115 PM MDT Sunday. * IMPACTS...Flooding of rivers, creeks, streams, and other low-lying and flood-prone locations is imminent or occurring. * ADDITIONAL DETAILS... - At 118 AM MDT, River gauge reports indicated elevated",
+        "source_url": "https://forecast.weather.gov/wwamap/wwatxtget.php?cwa=usa&wwa=flood+warning",
+        "excerpt_record": "originals/4/finalist-extracts.json",
+        "excerpt_method": "Verbatim words from preserved retrieved extract; whitespace normalized.",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "NWS standing guidance warns that unseen hazards remain after waters recede.",
+        "supporting_excerpt": "When flood waters recede, the damage left behind can be devastating and present many dangers. Images of flood destruction depict destroyed homes and buildings, damaged possessions, and decimated roadways. However, what you can't see can be just as dangerous. Floodwaters often become contaminated with sewage or chemicals. Gas",
+        "source_url": "https://www.weather.gov/safety/flood-after",
+        "excerpt_record": "originals/4/primary-evidence.json",
+        "excerpt_method": "Verbatim words from preserved retrieved extract; whitespace normalized.",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "NWS advises waiting for authorities’ all-clear before entering flood-damaged buildings.",
+        "supporting_excerpt": "Wait for the All Clear: Do not enter a flood damaged home or building until you're given the All Clear by authorities. If you enter a flood damaged building, be extremely careful. Water can cause floors to collapse, ceiling to",
+        "excerpt_record": "retrieved/nws.json",
+        "excerpt_method": "Verbatim words from live web retrieval; line labels removed and whitespace normalized.",
+        "source_url": "https://www.weather.gov/safety/flood-after",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "COtrip landing-page fetch supplied no readable closure data in this recovery check.",
+        "supporting_excerpt": "This page has no readable lines.",
+        "source_url": "https://www.cotrip.org/",
+        "excerpt_record": "retrieved/remaining-checks.json",
+        "excerpt_method": "Exact retrieval diagnostic, not a statement from CDOT.",
+        "attribution": "uncertain"
+      }
+    ],
+    "prepared_at": "2026-11-05T19:13:51.419797Z",
+    "approval_scope": "Artifacts for explicitly approved recovery batch; no human review, deployment, or public-anchor verification asserted."
+  },
+  "uncertainties": [
+    "October 25 closure list is historical and is not current travel or evacuation advice.",
+    "Live NWS feed has changed; preserved dated warnings are the historical record. COtrip supplied no readable road-status data.",
+    "No final damages, negligence finding, repair cost or fresh road clearance is asserted."
+  ],
+  "original_reporting_cutoff": "2026-10-25",
+  "recovery_date": "2026-11-05",
+  "historical_evidence_directory": "/Users/cojovi/.hermes/profiles/loki/publications/backlog-recovery-2026-11-05/workers/nsl-a/originals/4"
+}

@@ -1,0 +1,76 @@
+{
+  "affiliated": false,
+  "notice": "",
+  "editorial_notices": false,
+  "evidence": {
+    "status": "partial",
+    "completed_full_factcheck": false,
+    "sources": [
+      "https://www.bea.gov/sites/default/files/2026-10/gdp3q26-adv.pdf",
+      "https://www.bea.gov/news/2026/personal-income-and-outlays-september-2026",
+      "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+      "https://www.reuters.com/world/us/us-economic-growth-accelerates-third-quarter-2026-10-29"
+    ],
+    "summary": "Checked BEA’s GDP and September income releases and the October 28 Federal Reserve statement. Preserved Reuters reporting supplies historical AI-investment context. Aggregate measures do not establish any individual household’s finances.",
+    "limits": "Partial documentary check, not a full fact-check or human review. Advance GDP is revisable; no microdata audit, household interviews, investment-return verification or forecast validation. Reuters could not be reopened; its retained extract is historical evidence.",
+    "reviewed_at": "2026-11-05T19:09:19.745383Z",
+    "record_url": "https://thenorthstarledger.com/source-reviews#q3-gdp-september-pce-household-purchasing-power"
+  },
+  "publication": {
+    "status": "ready",
+    "source_sha256": "a51ca6b1180892cb7db93e882be91d5f45406b4d70c8d6cb56f666fd42aa7ba6",
+    "claim_ledger": [
+      {
+        "claim": "Real GDP rose 3.4% annualized / 0.8% quarterly in Q3; Q2 2.2%",
+        "supporting_excerpt": "Real gross domestic product (GDP) increased at an annual rate of 3.4 percent in the third quarter of 2026 (July, August, and September)",
+        "source_url": "https://www.bea.gov/sites/default/files/2026-10/gdp3q26-adv.pdf",
+        "attribution": "source-statement",
+        "evidence_origin": "Preserved retrieved source extract; load-bearing primary claim rechecked live. See sources-check.json."
+      },
+      {
+        "claim": "The September table records real disposable personal income falling 0.3%.",
+        "supporting_excerpt": "| Real DPI | 0.0 | -0.3 |",
+        "source_url": "https://www.bea.gov/news/2026/personal-income-and-outlays-september-2026",
+        "attribution": "source-statement",
+        "evidence_origin": "Preserved retrieved source extract; load-bearing primary claim rechecked live. See sources-check.json."
+      },
+      {
+        "claim": "September personal saving rate was 3.8%.",
+        "supporting_excerpt": "personal saving as a percentage of DPI—was 3.8 percent.",
+        "source_url": "https://www.bea.gov/news/2026/personal-income-and-outlays-september-2026",
+        "attribution": "source-statement",
+        "evidence_origin": "Preserved retrieved source extract; load-bearing primary claim rechecked live. See sources-check.json."
+      },
+      {
+        "claim": "The October 28 Fed policy statement passed 10–2.",
+        "supporting_excerpt": "The Federal Open Market Committee approved the following statement for release by a 10 – 2 vote:",
+        "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+        "attribution": "source-statement",
+        "evidence_origin": "Preserved retrieved source extract; load-bearing primary claim rechecked live. See sources-check.json."
+      },
+      {
+        "claim": "AI investment context attributed to Reuters, not a BEA AI classification",
+        "supporting_excerpt": "businesses doubled down on investment in AI",
+        "source_url": "https://www.reuters.com/world/us/us-economic-growth-accelerates-third-quarter-2026-10-29",
+        "attribution": "source-statement",
+        "evidence_origin": "Preserved retrieved source extract; load-bearing primary claim rechecked live. See sources-check.json."
+      },
+      {
+        "claim": "Business equipment spending increased at a 20.9% annualized rate, according to preserved Reuters reporting.",
+        "supporting_excerpt": "Business spending on equipment surged at a 20.9% rate, the fastest since the third quarter of 2020.",
+        "source_url": "https://www.reuters.com/world/us/us-economic-growth-accelerates-third-quarter-2026-10-29",
+        "attribution": "source-statement",
+        "evidence_origin": "Preserved Reuters text in originals/2/source-extracts.json; live reopen failed."
+      }
+    ]
+  },
+  "preparation": {
+    "prepared_at": "2026-11-05T19:09:19.745383Z",
+    "publication_executed": false,
+    "human_review_claimed": false,
+    "public_register_integration_required": true,
+    "original_editorial_date": "2026-10-30",
+    "reporting_cutoff": "2026-10-30 (October 31, 01:46 UTC)",
+    "scope": "Article text and evidence record only; parent must integrate public anchor, acquire cover and run full repository publication checks."
+  }
+}

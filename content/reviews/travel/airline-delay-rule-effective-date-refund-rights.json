@@ -1,0 +1,109 @@
+{
+  "kind": "documentary-source-review",
+  "affiliated": false,
+  "notice": "",
+  "editorial_notices": false,
+  "evidence": {
+    "status": "partial",
+    "completed_full_factcheck": false,
+    "reviewed_at": "2026-11-05T19:13:51.419797Z",
+    "summary": "Retrieved DOT’s October 15 postponement, September rule, refund guidance and dashboard. The official notice supports the February 1, 2027 effective date and January flight-reporting period. Preserved WABC and Yahoo extracts document historical conflicting coverage; their live fetches failed.",
+    "limits": "Partial automated documentary check, not human review or a full fact-check. No individual itinerary, carrier denial, reimbursement entitlement or current carrier-specific plan was adjudicated. Dashboard tables were not fully rendered by the fetch. Historical WABC wording was not reconfirmed as unchanged.",
+    "record_url": "https://thenorthstarledger.com/source-reviews#airline-delay-rule-effective-date-refund-rights",
+    "sources": [
+      "https://www.govinfo.gov/content/pkg/FR-2026-10-15/pdf/2026-21058.pdf",
+      "https://www.federalregister.gov/documents/2026/09/03/2026-18040/cause-of-airline-delay-and-cancellation-categories-under-section-511b-of-the-faa-reauthorization-act",
+      "https://www.transportation.gov/airconsumer/airline-cancellation-delay-dashboard",
+      "https://www.transportation.gov/individuals/aviation-consumer-protection/refunds",
+      "https://www.yahoo.com/news/us/articles/major-u-airline-change-delayed-124929780.html",
+      "https://abc7ny.com/post/new-airline-rules-could-mean-fewer-accommodations-passengers-when-flights-are-canceled-delayed/19960702"
+    ]
+  },
+  "publication": {
+    "status": "ready",
+    "source_sha256": "4dc93e02875236e4456c3c5cbaf16ba7ca7e6823bb0423d9491499fcb7272943",
+    "claim_ledger": [
+      {
+        "claim": "The final rule effective date was postponed to February 1, 2027.",
+        "supporting_excerpt": "DATES: The effective date of the final rule published on September 3, 2026 (91 FR 56588) is delayed until February 1, 2027. FOR FURTHER INFORMATION CONTACT: Robert Nazareth, Bureau of Transportation Statistics, U.S. Department",
+        "source_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-15/pdf/2026-21058.pdf",
+        "excerpt_record": "originals/2/official-delay-notice.json",
+        "excerpt_method": "Verbatim words from preserved retrieved extract; whitespace normalized.",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "The revised reports cover flights on or after January 1, 2027.",
+        "supporting_excerpt": "will apply to the reporting of delays and cancellations of flights occurring on or after January 1, 2027. Airlines must file their reports with BTS for the entire month of",
+        "source_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-15/pdf/2026-21058.pdf",
+        "excerpt_record": "originals/2/official-delay-notice.json",
+        "excerpt_method": "Verbatim words from preserved retrieved extract; whitespace normalized.",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "The rule’s unscheduled-maintenance exclusion has explicit qualifications.",
+        "supporting_excerpt": "(7) unscheduled maintenance, including in response to an airworthiness directive, manifesting outside a scheduled maintenance program that cannot be deferred or must be addressed before flight, (8) an emergency that required medical attention",
+        "source_url": "https://www.federalregister.gov/documents/2026/09/03/2026-18040/cause-of-airline-delay-and-cancellation-categories-under-section-511b-of-the-faa-reauthorization-act",
+        "excerpt_record": "originals/2/primary-extracts.json",
+        "excerpt_method": "Verbatim words from preserved retrieved extract; whitespace normalized.",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "DOT anticipated a reduction in amenities/compensation, without reliably estimating the magnitude.",
+        "supporting_excerpt": "the number of delays and cancellations for which air carriers provide amenities and compensation to consumers is expected to be reduced. The magnitude of the total reduction in amenities and compensation cannot be reliably estimated by the Department ( printed page 56592) mainly because the Department does not have visibility into the frequency of the 10",
+        "excerpt_record": "retrieved/dot-rule.json",
+        "excerpt_method": "Verbatim words from live web retrieval; line labels removed and whitespace normalized.",
+        "source_url": "https://www.federalregister.gov/documents/2026/09/03/2026-18040/cause-of-airline-delay-and-cancellation-categories-under-section-511b-of-the-faa-reauthorization-act",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "WABC used October 19 as the effective date in the preserved October 20 story.",
+        "supporting_excerpt": "A new Department of Transportation rule went into effect October 19, changing what airlines are deemed as disruptions within their control. This could mean",
+        "source_url": "https://abc7ny.com/post/new-airline-rules-could-mean-fewer-accommodations-passengers-when-flights-are-canceled-delayed/19960702",
+        "excerpt_record": "originals/2/source-extracts.json",
+        "excerpt_method": "Verbatim words from preserved retrieved extract; whitespace normalized.",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "A cancellation refund depends on declining travel or compensation, regardless of cancellation cause.",
+        "supporting_excerpt": "Cancelled Flight - A consumer is entitled to a refund if the airline cancelled a flight, regardless of the reason, and the consumer chooses not to travel or accept travel credits, vouchers, or other forms of compensation offered by the airline * Schedule Change/Significant Delay",
+        "excerpt_record": "retrieved/dot-refunds.json",
+        "excerpt_method": "Verbatim words from live web retrieval; line labels removed and whitespace normalized.",
+        "source_url": "https://www.transportation.gov/individuals/aviation-consumer-protection/refunds",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "DOT guidance defines late-arrival thresholds as three hours domestic and six hours international.",
+        "supporting_excerpt": "Late arrival - The consumer is scheduled to arrive at the destination airport 3 hours or more for domestic itineraries or 6 hours or more for international itineraries later than the original scheduled arrival time; * Change in origin or destination airports",
+        "excerpt_record": "retrieved/dot-refunds.json",
+        "excerpt_method": "Verbatim words from live web retrieval; line labels removed and whitespace normalized.",
+        "source_url": "https://www.transportation.gov/individuals/aviation-consumer-protection/refunds",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "Airlines must adhere to customer service plan commitments; refund entitlement is separate.",
+        "supporting_excerpt": "Airlines are required to adhere to the promises that they make in their customer service plan, including commitments to care for customers in the event of controllable delays or cancellations. The Department will hold airlines accountable if they fail to do so. Remember these",
+        "excerpt_record": "retrieved/dot-dashboard.json",
+        "excerpt_method": "Verbatim words from live web retrieval; line labels removed and whitespace normalized.",
+        "source_url": "https://www.transportation.gov/airconsumer/airline-cancellation-delay-dashboard",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "Cyberattack exclusion requires compliance with applicable cybersecurity regulations.",
+        "supporting_excerpt": "cybersecurity attacks (provided that the air carrier is in compliance with applicable cybersecurity regulations), (5) a shutdown or system failure of",
+        "source_url": "https://www.federalregister.gov/documents/2026/09/03/2026-18040/cause-of-airline-delay-and-cancellation-categories-under-section-511b-of-the-faa-reauthorization-act",
+        "excerpt_record": "originals/2/primary-extracts.json",
+        "excerpt_method": "Verbatim words from preserved retrieved extract; whitespace normalized.",
+        "attribution": "source-statement"
+      }
+    ],
+    "prepared_at": "2026-11-05T19:13:51.419797Z",
+    "approval_scope": "Artifacts for explicitly approved recovery batch; no human review, deployment, or public-anchor verification asserted."
+  },
+  "uncertainties": [
+    "The WABC timing premise is specifically contradicted by the governing postponement; the article rejects it rather than repeating it as verified news.",
+    "No recovery-day entitlement determination; readers are directed to current DOT and carrier instructions."
+  ],
+  "original_reporting_cutoff": "2026-10-20",
+  "recovery_date": "2026-11-05",
+  "historical_evidence_directory": "/Users/cojovi/.hermes/profiles/loki/publications/backlog-recovery-2026-11-05/workers/nsl-a/originals/2"
+}

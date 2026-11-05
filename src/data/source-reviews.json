@@ -212,5 +212,149 @@
       }
     ],
     "restored_at": "2026-10-30T19:33:05.166875+00:00"
+  },
+  {
+    "slug": "coreweave-bond-market-ai-backlog-cash-flow",
+    "path": "/business/coreweave-bond-market-ai-backlog-cash-flow",
+    "title": "CoreWeave's Bond Market Has a Question for the AI Boom",
+    "reviewed_at": "2026-11-05",
+    "status": "partial",
+    "completed_full_factcheck": false,
+    "summary": "Live issuer and SEC earnings releases and Gartner forecast were retrieved. Preserved October 15 CNBC and Reuters extracts support historical market observations and management/analyst responses. The body distinguishes reported yields, accounting results, backlog and conditional forecasts.",
+    "limits": "Partial automated documentary check, not a full fact-check or human review. Market quotes were not independently reconstructed or refreshed to recovery-day prices. CNBC and Reuters live fetches failed; historical extracts are the supporting record. No interviews or full audiovisual review.",
+    "sources": [
+      "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Second-Quarter-2026-Results/default.aspx",
+      "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000362/coreweave2q26earningspress.htm",
+      "https://www.cnbc.com/2026/10/15/coreweave-credit-default-swaps-hit-distress-levels-as-investors-sour-on-ai-debt.html",
+      "https://www.reuters.com/legal/transactional/coreweave-shares-bonds-slide-further-ai-debt-fears-mount-2026-10-15",
+      "https://www.cnbc.com/video/2026/10/16/coreweaves-corporate-bonds-are-in-freefall-what-happens-next.html",
+      "https://www.gartner.com/en/newsroom/press-releases/2026-10-14-gartner-says-over-us-dollars-three-and-a-half-trillion-of-artificial-intelligence-infrastructure-spending-could-be-exposed-to-impairment-by-the-end-of-2030"
+    ],
+    "action": "Recovered for delayed publication with the original editorial date, an explicit archive note and separately dated later developments. This register describes limited documentary checks, not a full fact-check, human review or firsthand reporting."
+  },
+  {
+    "slug": "airline-delay-rule-effective-date-refund-rights",
+    "path": "/travel/airline-delay-rule-effective-date-refund-rights",
+    "title": "The Flight-Delay Headlines Have a Calendar Problem",
+    "reviewed_at": "2026-11-05",
+    "status": "partial",
+    "completed_full_factcheck": false,
+    "summary": "Retrieved DOT’s October 15 postponement, September rule, refund guidance and dashboard. The official notice supports the February 1, 2027 effective date and January flight-reporting period. Preserved WABC and Yahoo extracts document historical conflicting coverage; their live fetches failed.",
+    "limits": "Partial automated documentary check, not human review or a full fact-check. No individual itinerary, carrier denial, reimbursement entitlement or current carrier-specific plan was adjudicated. Dashboard tables were not fully rendered by the fetch. Historical WABC wording was not reconfirmed as unchanged.",
+    "sources": [
+      "https://www.govinfo.gov/content/pkg/FR-2026-10-15/pdf/2026-21058.pdf",
+      "https://www.federalregister.gov/documents/2026/09/03/2026-18040/cause-of-airline-delay-and-cancellation-categories-under-section-511b-of-the-faa-reauthorization-act",
+      "https://www.transportation.gov/airconsumer/airline-cancellation-delay-dashboard",
+      "https://www.transportation.gov/individuals/aviation-consumer-protection/refunds",
+      "https://www.yahoo.com/news/us/articles/major-u-airline-change-delayed-124929780.html",
+      "https://abc7ny.com/post/new-airline-rules-could-mean-fewer-accommodations-passengers-when-flights-are-canceled-delayed/19960702"
+    ],
+    "action": "Recovered for delayed publication with the original editorial date, an explicit archive note and separately dated later developments. This register describes limited documentary checks, not a full fact-check, human review or firsthand reporting."
+  },
+  {
+    "slug": "us-flight-ebola-attestation-november-2026",
+    "path": "/travel/us-flight-ebola-attestation-november-2026",
+    "title": "A New Form at the Gate: What Washington's Ebola Order Actually Requires",
+    "reviewed_at": "2026-11-05",
+    "status": "partial",
+    "completed_full_factcheck": false,
+    "summary": "Retrieved CDC’s current instructions, amended signed PDF and the Federal Register reproduction of the original October 22 order. Preserved October research supports the historical account. Added a separately dated October 28 amendment update, including crew coverage and a discrepancy in retention instructions.",
+    "limits": "Partial automated documentary check, not a full fact-check, human review, clinical assessment or individual travel clearance. Original signed PDF was not recovered as an unchanged October 22 file; its URL now serves an amended document. Current CDC webpage mixes arrival/departure retention descriptions. Reuters live fetch failed; its October 22 claim is supported by the preserved extract only.",
+    "sources": [
+      "https://www.govinfo.gov/content/pkg/FR-2026-10-27/html/2026-21828.htm",
+      "https://www.cdc.gov/port-health/legal-authorities/attestation-order.html",
+      "https://www.cdc.gov/port-health/media/pdfs/2026/10/CDC-Ebola-Attestation-Order-Signed.pdf",
+      "https://www.reuters.com/business/healthcare-pharmaceuticals/us-impose-ebola-attestation-requirement-international-air-passengers-2026-10-22",
+      "https://visasnews.com/en/u-s-to-require-new-health-declaration-for-all-international-air-travelers-starting-november-3-2026"
+    ],
+    "action": "Recovered for delayed publication with the original editorial date, an explicit archive note and separately dated later developments. This register describes limited documentary checks, not a full fact-check, human review or firsthand reporting."
+  },
+  {
+    "slug": "colorado-floods-receding-water-road-home",
+    "path": "/us/colorado-floods-receding-water-road-home",
+    "title": "The Water Is Falling. What About the Road Home?",
+    "reviewed_at": "2026-11-05",
+    "status": "partial",
+    "completed_full_factcheck": false,
+    "summary": "Rechecked NWS standing flood guidance and live warning endpoint. Preserved Guard, Denver Post and NWS extracts support the October 25 response/closure account. Recovery-day fetches did not establish current roads or re-entry permissions; the body explicitly separates these from historical reporting.",
+    "limits": "Partial automated documentary check, not a full fact-check or human review. Guard returned 403 on recovery fetch and Denver Post was inaccessible; their genuine historical extracts remain the support. Live warning content has changed, and COtrip yielded no readable road-status data. No field reporting, engineering inspection, final property count, repair estimate or current all-clear.",
+    "sources": [
+      "https://co.ng.mil/News/Archives/Article/4632970/colorado-national-guard-assisting-with-evacuations-search-and-rescue-in-southwe/",
+      "https://www.denverpost.com/2026/10/25/colorado-flooding-floods-evacuations-road-closures/",
+      "https://forecast.weather.gov/wwamap/wwatxtget.php?cwa=usa&wwa=flood+warning",
+      "https://www.weather.gov/safety/flood-after",
+      "https://www.nbcnews.com/nightly-news-netcast/video/nbc-nightly-news-full-episode-oct-24-272183365616",
+      "https://www.cotrip.org/"
+    ],
+    "action": "Recovered for delayed publication with the original editorial date, an explicit archive note and separately dated later developments. This register describes limited documentary checks, not a full fact-check, human review or firsthand reporting."
+  },
+  {
+    "slug": "supreme-court-immigration-case-pauses-standing",
+    "path": "/politics/supreme-court-immigration-case-pauses-standing",
+    "title": "The Immigration Pause Fight Has a Second Question",
+    "reviewed_at": "2026-11-05",
+    "status": "partial",
+    "completed_full_factcheck": false,
+    "summary": "Checked the Supreme Court docket and opposing briefs against the preserved reporting. The October 27 stay denial is documented; arguments about standing and the judgment’s effects remain attributed to the parties.",
+    "limits": "Partial documentary check, not a full fact-check or human review. No immigration-court implementation data, individual case advice, removal estimate, or refreshed Fifth Circuit merits outcome is established. Some preserved brief extracts are truncated; live retrieval supplemented them.",
+    "sources": [
+      "https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/26a500.html",
+      "https://www.supremecourt.gov/DocketPDF/26/26A500/430409/20261022153257048_Baltimore_v_Texas_stay_opp.pdf",
+      "https://www.supremecourt.gov/DocketPDF/26/26A500/430526/20261023144454910_Centro%20S.%20Ct.%20Reply%20FINAL.pdf",
+      "https://www.scotusblog.com/2026/10/court-declines-to-restore-biden-era-regulation-allowing-some-deportation-proceedings-to-be-suspe",
+      "https://apnews.com/article/immigration-supreme-court-deportation-a9c226027bc8f0f65ceb4f4ab5ecacb4",
+      "https://clearinghouse.net/case/48322"
+    ],
+    "action": "Recovered for delayed publication with the original editorial date, an explicit archive note and separately dated later developments. This register describes limited documentary checks, not a full fact-check, human review or firsthand reporting."
+  },
+  {
+    "slug": "q3-gdp-september-pce-household-purchasing-power",
+    "path": "/business/q3-gdp-september-pce-household-purchasing-power",
+    "title": "The Economy Grew. Why Does the Household Budget Still Feel Smaller?",
+    "reviewed_at": "2026-11-05",
+    "status": "partial",
+    "completed_full_factcheck": false,
+    "summary": "Checked BEA’s GDP and September income releases and the October 28 Federal Reserve statement. Preserved Reuters reporting supplies historical AI-investment context. Aggregate measures do not establish any individual household’s finances.",
+    "limits": "Partial documentary check, not a full fact-check or human review. Advance GDP is revisable; no microdata audit, household interviews, investment-return verification or forecast validation. Reuters could not be reopened; its retained extract is historical evidence.",
+    "sources": [
+      "https://www.bea.gov/sites/default/files/2026-10/gdp3q26-adv.pdf",
+      "https://www.bea.gov/news/2026/personal-income-and-outlays-september-2026",
+      "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+      "https://www.reuters.com/world/us/us-economic-growth-accelerates-third-quarter-2026-10-29"
+    ],
+    "action": "Recovered for delayed publication with the original editorial date, an explicit archive note and separately dated later developments. This register describes limited documentary checks, not a full fact-check, human review or firsthand reporting."
+  },
+  {
+    "slug": "alaska-sullivan-ballot-lawsuit-redressability-secret-vote",
+    "path": "/politics/alaska-sullivan-ballot-lawsuit-redressability-secret-vote",
+    "title": "Two Sullivans, One Ballot, and a Remedy the Court Would Not Order",
+    "reviewed_at": "2026-11-05",
+    "status": "partial",
+    "completed_full_factcheck": false,
+    "summary": "Checked Document 79 through a live PDF mirror after CourtListener returned 403, and compared the preserved court transcription. The dismissal concerns redressability, not a finding that voter confusion or criminal conduct occurred. Added CBS’s dated report of a November 1 appeal.",
+    "limits": "Partial documentary check, not a full fact-check or human review. Court order text retrieved from an advocacy-site mirror, not an authenticated PACER download; no complete appellate docket, final election outcome, actual mistaken-vote count or refreshed criminal-case status established. Article retains a pre-election reporting cutoff.",
+    "sources": [
+      "https://www.democracydocket.com/wp-content/uploads/2026/10/Order-granting-dismissal.pdf",
+      "https://www.cbsnews.com/news/judge-doj-lawsuit-alaska-senate-race-dan-sullivan/",
+      "https://www.wdbj7.com/2026/11/02/judge-dismisses-lawsuit-seeking-block-certification-alaska-senate-race-if-gop-incumbent-loses/"
+    ],
+    "action": "Recovered for delayed publication with the original editorial date, an explicit archive note and separately dated later developments. This register describes limited documentary checks, not a full fact-check, human review or firsthand reporting."
+  },
+  {
+    "slug": "cvs-breakup-pieces-that-stay-together",
+    "path": "/business/cvs-breakup-pieces-that-stay-together",
+    "title": "CVS Is Breaking Up. Follow the Pieces That Stay Together.",
+    "reviewed_at": "2026-11-05",
+    "status": "partial",
+    "completed_full_factcheck": false,
+    "summary": "Checked the November 4 company announcement through PR Newswire and CVS’s own site. Preserved Reuters and New York Times extracts support attributed historical context; their pages could not be reopened. The separation and its benefits remain prospective.",
+    "limits": "Partial documentary check, not a full fact-check or human review. No future Form 10 examination, audited patient savings, independent antitrust finding or guarantee of completion, ratings, dividends or uninterrupted individual service. Independent reporting relies on preserved earlier extracts.",
+    "sources": [
+      "https://www.prnewswire.com/news-releases/cvs-health-announces-intent-to-create-two-distinct-leaders-in-healthcare-302928585.html",
+      "https://www.reuters.com/legal/transactional/cvs-health-split-two-separating-pharmacy-business-insurance-2026-11-04",
+      "https://www.nytimes.com/2026/11/04/business/cvs-health-split.html",
+      "https://www.cvshealth.com/news/company-news/cvs-health-announces-intent-to-create-two-distinct-leaders-in-healthcare.html"
+    ],
+    "action": "Recovered for delayed publication with the original editorial date, an explicit archive note and separately dated later developments. This register describes limited documentary checks, not a full fact-check, human review or firsthand reporting."
   }
 ]

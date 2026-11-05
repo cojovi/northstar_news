@@ -188,6 +188,216 @@
     "url": "https://thenorthstarledger.com/topics/institutional-decisions",
     "indexable": true
   },
+  "/business/cvs-breakup-pieces-that-stay-together": {
+    "type": "article",
+    "title": "CVS Is Breaking Up. Follow the Pieces That Stay Together.",
+    "description": "The proposed 2028 split separates the drugstores, but leaves Aetna and Caremark under one roof. The test is what changes for patients, not just shareholders.",
+    "url": "https://thenorthstarledger.com/business/cvs-breakup-pieces-that-stay-together",
+    "indexable": true
+  },
+  "/author/northstar-desk": {
+    "type": "author",
+    "title": "The Northstar Ledger Desk",
+    "description": "Publication desk attribution for content produced with automated research, drafting and publishing assistance. This is an organizational credit, not a named human reviewer.",
+    "url": "https://thenorthstarledger.com/author/northstar-desk",
+    "indexable": true
+  },
+  "/tag/cvs%20health": {
+    "type": "tag",
+    "title": "CVS Health archive",
+    "description": "Articles tagged CVS Health. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/cvs%20health",
+    "indexable": false
+  },
+  "/tag/aetna": {
+    "type": "tag",
+    "title": "Aetna archive",
+    "description": "Articles tagged Aetna. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/aetna",
+    "indexable": false
+  },
+  "/tag/caremark": {
+    "type": "tag",
+    "title": "Caremark archive",
+    "description": "Articles tagged Caremark. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/caremark",
+    "indexable": false
+  },
+  "/tag/healthcare": {
+    "type": "tag",
+    "title": "healthcare archive",
+    "description": "Articles tagged healthcare. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/healthcare",
+    "indexable": false
+  },
+  "/politics/alaska-sullivan-ballot-lawsuit-redressability-secret-vote": {
+    "type": "article",
+    "title": "Two Sullivans, One Ballot, and a Remedy the Court Would Not Order",
+    "description": "Alaska's ballot dispute raises a legitimate question about voter confusion. A federal judge's ruling turns on what a court could lawfully do about it.",
+    "url": "https://thenorthstarledger.com/politics/alaska-sullivan-ballot-lawsuit-redressability-secret-vote",
+    "indexable": true
+  },
+  "/tag/alaska": {
+    "type": "tag",
+    "title": "Alaska archive",
+    "description": "Articles tagged Alaska. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/alaska",
+    "indexable": false
+  },
+  "/tag/elections": {
+    "type": "tag",
+    "title": "elections archive",
+    "description": "Articles tagged elections. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/elections",
+    "indexable": false
+  },
+  "/tag/federal%20courts": {
+    "type": "tag",
+    "title": "Federal courts archive",
+    "description": "Articles tagged Federal courts. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/federal%20courts",
+    "indexable": false
+  },
+  "/tag/ballot%20secrecy": {
+    "type": "tag",
+    "title": "Ballot secrecy archive",
+    "description": "Articles tagged Ballot secrecy. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/ballot%20secrecy",
+    "indexable": false
+  },
+  "/business/q3-gdp-september-pce-household-purchasing-power": {
+    "type": "article",
+    "title": "The Economy Grew. Why Does the Household Budget Still Feel Smaller?",
+    "description": "The latest GDP and income reports measure different things. Read together, they explain why a stronger national economy does not necessarily mean more breathing room at home.",
+    "url": "https://thenorthstarledger.com/business/q3-gdp-september-pce-household-purchasing-power",
+    "indexable": true
+  },
+  "/tag/gdp": {
+    "type": "tag",
+    "title": "GDP archive",
+    "description": "Articles tagged GDP. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/gdp",
+    "indexable": false
+  },
+  "/tag/household%20budgets": {
+    "type": "tag",
+    "title": "Household Budgets archive",
+    "description": "Articles tagged Household Budgets. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/household%20budgets",
+    "indexable": false
+  },
+  "/tag/inflation": {
+    "type": "tag",
+    "title": "Inflation archive",
+    "description": "Articles tagged Inflation. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/inflation",
+    "indexable": false
+  },
+  "/tag/personal%20income": {
+    "type": "tag",
+    "title": "Personal income archive",
+    "description": "Articles tagged Personal income. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/personal%20income",
+    "indexable": false
+  },
+  "/politics/supreme-court-immigration-case-pauses-standing": {
+    "type": "article",
+    "title": "The Immigration Pause Fight Has a Second Question",
+    "description": "The Supreme Court left a restriction on case closures in place. The dispute also tests who can challenge a federal regulation's courtroom demise.",
+    "url": "https://thenorthstarledger.com/politics/supreme-court-immigration-case-pauses-standing",
+    "indexable": true
+  },
+  "/tag/supreme%20court": {
+    "type": "tag",
+    "title": "Supreme Court archive",
+    "description": "Articles tagged Supreme Court. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/supreme%20court",
+    "indexable": false
+  },
+  "/tag/immigration": {
+    "type": "tag",
+    "title": "immigration archive",
+    "description": "Articles tagged immigration. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/immigration",
+    "indexable": false
+  },
+  "/tag/administrative%20law": {
+    "type": "tag",
+    "title": "Administrative law archive",
+    "description": "Articles tagged Administrative law. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/administrative%20law",
+    "indexable": false
+  },
+  "/us/colorado-floods-receding-water-road-home": {
+    "type": "article",
+    "title": "The Water Is Falling. What About the Road Home?",
+    "description": "Colorado's flood response has moved troops and helicopters into place. Receding rivers do not settle the harder questions about roads, buildings and who can safely return.",
+    "url": "https://thenorthstarledger.com/us/colorado-floods-receding-water-road-home",
+    "indexable": true
+  },
+  "/tag/colorado": {
+    "type": "tag",
+    "title": "Colorado archive",
+    "description": "Articles tagged Colorado. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/colorado",
+    "indexable": false
+  },
+  "/tag/flooding": {
+    "type": "tag",
+    "title": "Flooding archive",
+    "description": "Articles tagged Flooding. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/flooding",
+    "indexable": false
+  },
+  "/tag/road%20safety": {
+    "type": "tag",
+    "title": "Road safety archive",
+    "description": "Articles tagged Road safety. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/road%20safety",
+    "indexable": false
+  },
+  "/tag/emergency%20response": {
+    "type": "tag",
+    "title": "Emergency response archive",
+    "description": "Articles tagged Emergency response. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/emergency%20response",
+    "indexable": false
+  },
+  "/travel/us-flight-ebola-attestation-november-2026": {
+    "type": "article",
+    "title": "A New Form at the Gate: What Washington's Ebola Order Actually Requires",
+    "description": "A CDC order issued October 22 adds a declaration for U.S.-bound international passengers. The consequential details are the departure-time cutoff, transit rules and what a signature cannot establish.",
+    "url": "https://thenorthstarledger.com/travel/us-flight-ebola-attestation-november-2026",
+    "indexable": true
+  },
+  "/tag/travel": {
+    "type": "tag",
+    "title": "travel archive",
+    "description": "Articles tagged travel. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/travel",
+    "indexable": false
+  },
+  "/tag/cdc": {
+    "type": "tag",
+    "title": "CDC archive",
+    "description": "Articles tagged CDC. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/cdc",
+    "indexable": false
+  },
+  "/tag/ebola": {
+    "type": "tag",
+    "title": "Ebola archive",
+    "description": "Articles tagged Ebola. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/ebola",
+    "indexable": false
+  },
+  "/tag/public%20health": {
+    "type": "tag",
+    "title": "Public health archive",
+    "description": "Articles tagged Public health. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/public%20health",
+    "indexable": false
+  },
   "/tech/what-happens-after-you-swipe-right-on-tinder": {
     "type": "article",
     "title": "What happens after you swipe right on Tinder?",
@@ -272,6 +482,41 @@
     "url": "https://thenorthstarledger.com/tag/fact%20check",
     "indexable": false
   },
+  "/travel/airline-delay-rule-effective-date-refund-rights": {
+    "type": "article",
+    "title": "The Flight-Delay Headlines Have a Calendar Problem",
+    "description": "Reports warn that a new airline rule just changed what stranded passengers can expect. The federal record tells a different story about the timing—and a more precise one about your rights.",
+    "url": "https://thenorthstarledger.com/travel/airline-delay-rule-effective-date-refund-rights",
+    "indexable": true
+  },
+  "/tag/airlines": {
+    "type": "tag",
+    "title": "Airlines archive",
+    "description": "Articles tagged Airlines. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/airlines",
+    "indexable": false
+  },
+  "/tag/passenger%20rights": {
+    "type": "tag",
+    "title": "Passenger rights archive",
+    "description": "Articles tagged Passenger rights. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/passenger%20rights",
+    "indexable": false
+  },
+  "/tag/flight%20delays": {
+    "type": "tag",
+    "title": "Flight delays archive",
+    "description": "Articles tagged Flight delays. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/flight%20delays",
+    "indexable": false
+  },
+  "/tag/transportation": {
+    "type": "tag",
+    "title": "Transportation archive",
+    "description": "Articles tagged Transportation. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/transportation",
+    "indexable": false
+  },
   "/politics/ilhan-omar-investigation-evidence-citizenship-search-dispute": {
     "type": "article",
     "title": "Two Investigations, One Congresswoman - and a Fight Over the Evidence",
@@ -321,6 +566,41 @@
     "url": "https://thenorthstarledger.com/tag/due%20process",
     "indexable": false
   },
+  "/business/coreweave-bond-market-ai-backlog-cash-flow": {
+    "type": "article",
+    "title": "CoreWeave's Bond Market Has a Question for the AI Boom",
+    "description": "A sharp credit selloff has put the financing behind AI infrastructure under scrutiny. The useful question is not whether demand exists, but when contracts become cash.",
+    "url": "https://thenorthstarledger.com/business/coreweave-bond-market-ai-backlog-cash-flow",
+    "indexable": true
+  },
+  "/tag/coreweave": {
+    "type": "tag",
+    "title": "CoreWeave archive",
+    "description": "Articles tagged CoreWeave. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/coreweave",
+    "indexable": false
+  },
+  "/tag/ai%20infrastructure": {
+    "type": "tag",
+    "title": "AI infrastructure archive",
+    "description": "Articles tagged AI infrastructure. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/ai%20infrastructure",
+    "indexable": false
+  },
+  "/tag/credit%20markets": {
+    "type": "tag",
+    "title": "Credit markets archive",
+    "description": "Articles tagged Credit markets. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/credit%20markets",
+    "indexable": false
+  },
+  "/tag/business": {
+    "type": "tag",
+    "title": "business archive",
+    "description": "Articles tagged business. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/business",
+    "indexable": false
+  },
   "/business/september-cpi-gasoline-core-inflation-household-costs": {
     "type": "article",
     "title": "The Pump Is Driving Inflation. What Else Is Under the Hood?",
@@ -333,13 +613,6 @@
     "title": "Garrett Cole",
     "description": "Legacy attribution; identity and credentials have not been independently verified. Historical credit is retained. A title such as Dr. is not evidence of qualifications.",
     "url": "https://thenorthstarledger.com/author/garrett-cole",
-    "indexable": false
-  },
-  "/tag/inflation": {
-    "type": "tag",
-    "title": "Inflation archive",
-    "description": "Articles tagged Inflation. Historical records may have source review pending.",
-    "url": "https://thenorthstarledger.com/tag/inflation",
     "indexable": false
   },
   "/tag/cpi": {
@@ -361,13 +634,6 @@
     "title": "Federal Reserve archive",
     "description": "Articles tagged Federal Reserve. Historical records may have source review pending.",
     "url": "https://thenorthstarledger.com/tag/federal%20reserve",
-    "indexable": false
-  },
-  "/tag/household%20budgets": {
-    "type": "tag",
-    "title": "Household Budgets archive",
-    "description": "Articles tagged Household Budgets. Historical records may have source review pending.",
-    "url": "https://thenorthstarledger.com/tag/household%20budgets",
     "indexable": false
   },
   "/world/russian-diesel-deal-license-135-energy-ceasefire": {
@@ -424,13 +690,6 @@
     "title": "HSI archive",
     "description": "Articles tagged HSI. Historical records may have source review pending.",
     "url": "https://thenorthstarledger.com/tag/hsi",
-    "indexable": false
-  },
-  "/tag/immigration": {
-    "type": "tag",
-    "title": "immigration archive",
-    "description": "Articles tagged immigration. Historical records may have source review pending.",
-    "url": "https://thenorthstarledger.com/tag/immigration",
     "indexable": false
   },
   "/tech/anthropic-claude-abuse-policy-customer-access": {
@@ -3128,13 +3387,6 @@
     "url": "https://thenorthstarledger.com/tag/primary-care",
     "indexable": false
   },
-  "/tag/healthcare": {
-    "type": "tag",
-    "title": "healthcare archive",
-    "description": "Articles tagged healthcare. Historical records may have source review pending.",
-    "url": "https://thenorthstarledger.com/tag/healthcare",
-    "indexable": false
-  },
   "/business/supply-chain-disruptions-ease-as-logistics-networks-modernize": {
     "type": "article",
     "title": "Withdrawn: Supply Chain Disruptions Ease as Logistics Networks Modernize",
@@ -3364,13 +3616,6 @@
     "title": "Withdrawn: Gubernatorial Races Show Shift in Voter Priorities",
     "description": "Withdrawal record dated October 28, 2026: a development/mock template was presented as a news account.",
     "url": "https://thenorthstarledger.com/politics/gubernatorial-races-show-shift-in-voter-priorities",
-    "indexable": false
-  },
-  "/tag/elections": {
-    "type": "tag",
-    "title": "elections archive",
-    "description": "Articles tagged elections. Historical records may have source review pending.",
-    "url": "https://thenorthstarledger.com/tag/elections",
     "indexable": false
   },
   "/tag/governors": {
@@ -3982,13 +4227,6 @@
     "url": "https://thenorthstarledger.com/tag/ransomware",
     "indexable": false
   },
-  "/tag/business": {
-    "type": "tag",
-    "title": "business archive",
-    "description": "Articles tagged business. Historical records may have source review pending.",
-    "url": "https://thenorthstarledger.com/tag/business",
-    "indexable": false
-  },
   "/world/arctic-council-members-reach-climate-research-agreement": {
     "type": "article",
     "title": "Withdrawn: Arctic Council Members Reach Climate Research Agreement",
@@ -4036,13 +4274,6 @@
     "title": "rail archive",
     "description": "Articles tagged rail. Historical records may have source review pending.",
     "url": "https://thenorthstarledger.com/tag/rail",
-    "indexable": false
-  },
-  "/tag/travel": {
-    "type": "tag",
-    "title": "travel archive",
-    "description": "Articles tagged travel. Historical records may have source review pending.",
-    "url": "https://thenorthstarledger.com/tag/travel",
     "indexable": false
   },
   "/sports/minor-league-teams-experience-attendance-surge": {
@@ -4562,12 +4793,5 @@
     "description": "Articles tagged Entertainment business. Historical records may have source review pending.",
     "url": "https://thenorthstarledger.com/tag/entertainment%20business",
     "indexable": false
-  },
-  "/author/northstar-desk": {
-    "type": "author",
-    "title": "The Northstar Ledger Desk",
-    "description": "Publication desk attribution for content produced with automated research, drafting and publishing assistance. This is an organizational credit, not a named human reviewer.",
-    "url": "https://thenorthstarledger.com/author/northstar-desk",
-    "indexable": true
   }
 }

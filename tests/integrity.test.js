@@ -21,8 +21,8 @@ const fiction = ['the-cojoverse-unveiled-a-deep-dive-into-the-groundbreaking-bun
 const holds = ['cody-viveiros-forbes-cover-moment-inside-the-highest-paid-entertainers-machineand-the-new-economics-of-being-believed', 'cody-viveiros-crowns-gqs-the-disruptor-list-as-the-technological-visionary-turning-ai-ambition-into-a-lifestyle-movement', '100m-roofing-empire-toyota-camry-servant-leadership'];
 test('all 69 exact provenance matches retain dates and URLs as withdrawals, with complete public links', () => {
  assert.equal(proof.records.length, 69);
- assert.equal(articles.length, 136);
- for (const a of articles) assert.equal(a.published, dates[articlePath(a)]);
+ const historical=articles.filter(a=>Object.hasOwn(dates,articlePath(a)));assert.equal(historical.length, 136);
+ for (const a of historical) assert.equal(a.published, dates[articlePath(a)]);
  for (const record of proof.records) {
   const a = articles.find(a => articlePath(a) === record.path);
   assert.ok(a, record.path); assert.equal(a.status, 'withdrawn');
@@ -36,7 +36,7 @@ test('all 69 exact provenance matches retain dates and URLs as withdrawals, with
   assert.equal(createHash('sha256').update(original.content).digest('hex'), record.original_body_sha256);
  }
  assert.equal(articles.filter(a => a.status === 'withdrawn').length, 70);
- assert.equal(articles.filter(a => a.evidence.status === 'partial').length, 7);
+ assert.equal(historical.filter(a => a.evidence.status === 'partial').length, 7);
  assert.deepEqual(publicRecord.records,proof.records);
  for (const a of articles.filter(a => a.evidence.status === 'partial')) assert.equal(a.review_kind,'documentary-source-review');
  assert.ok(PAGES['source-reviews'].reviews.every(r=>r.kind==='documentary-source-review'));
@@ -62,7 +62,7 @@ test('publisher-selected former classifications and holds are restored while all
   for(const r of Object.values(inventory).filter(r=>r.type!=='article'))assert.ok(!routeArticles(r,articles).includes(a));
   for(const xml of [rssFeed(articles),atomFeed(articles)])assert.ok(!xml.includes(articlePath(a)));
  }
- assert.equal(articles.filter(isDiscoverable).length,66);assert.equal(articles.filter(a=>a.status==='review-hold'||a.is_satire).length,0);
+ assert.equal(articles.filter(a=>Object.hasOwn(dates,articlePath(a))).filter(isDiscoverable).length,66);assert.equal(articles.filter(a=>a.status==='review-hold'||a.is_satire).length,0);
 });
 test('hardening preserves every original source template literal as evidence', () => {
  const original=execFileSync('git',['show',`${proof.revision}:scripts/generate-mock-content.js`],{encoding:'utf8'});
@@ -133,7 +133,7 @@ test('browser search, home, tags, authors, trending, related and feed APIs share
  let feedCode=compile('src/lib/feeds.ts').replace('"./content"',JSON.stringify(contentURL));
  for(const name of ['authority','discovery','routes','socialImage']) feedCode=feedCode.replace(`"./${name}.js"`,JSON.stringify(new URL(`../src/lib/${name}.js`,import.meta.url).href));
  const feed=await import(dataModule(feedCode));
- assert.equal(client.getAllArticles().length,136);
+ assert.deepEqual(client.getAllArticles().map(articlePath).sort(),articles.map(articlePath).sort());
  for(const a of articles.filter(a=>!isDiscoverable(a))) {
   for(const list of [client.getDiscoverableArticles(),client.searchArticles(a.slug),client.searchArticles(a.title),client.getTrendingArticles(200),client.getArticlesByCategory(a.categoryPath),client.getArticlesByAuthor(a.author_slug),...a.tags.map(tag=>client.getArticlesByTag(tag)),...articles.filter(isDiscoverable).map(other=>client.getRelatedArticles(other,200))])
    assert.ok(!list.some(item=>articlePath(item)===articlePath(a)),a.slug);

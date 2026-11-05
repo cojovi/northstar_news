@@ -1,0 +1,64 @@
+{
+  "affiliated": false,
+  "notice": "",
+  "editorial_notices": false,
+  "evidence": {
+    "status": "partial",
+    "completed_full_factcheck": false,
+    "sources": [
+      "https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/26a500.html",
+      "https://www.supremecourt.gov/DocketPDF/26/26A500/430409/20261022153257048_Baltimore_v_Texas_stay_opp.pdf",
+      "https://www.supremecourt.gov/DocketPDF/26/26A500/430526/20261023144454910_Centro%20S.%20Ct.%20Reply%20FINAL.pdf",
+      "https://www.scotusblog.com/2026/10/court-declines-to-restore-biden-era-regulation-allowing-some-deportation-proceedings-to-be-suspe",
+      "https://apnews.com/article/immigration-supreme-court-deportation-a9c226027bc8f0f65ceb4f4ab5ecacb4",
+      "https://clearinghouse.net/case/48322"
+    ],
+    "summary": "Checked the Supreme Court docket and opposing briefs against the preserved reporting. The October 27 stay denial is documented; arguments about standing and the judgment’s effects remain attributed to the parties.",
+    "limits": "Partial documentary check, not a full fact-check or human review. No immigration-court implementation data, individual case advice, removal estimate, or refreshed Fifth Circuit merits outcome is established. Some preserved brief extracts are truncated; live retrieval supplemented them.",
+    "reviewed_at": "2026-11-05T19:09:19.745383Z",
+    "record_url": "https://thenorthstarledger.com/source-reviews#supreme-court-immigration-case-pauses-standing"
+  },
+  "publication": {
+    "status": "ready",
+    "source_sha256": "3faef175ca2d1b756e29b4c26278687077a536b2761eadde599f300b17e3e62b",
+    "claim_ledger": [
+      {
+        "claim": "The Supreme Court denied the stay application on October 27.",
+        "supporting_excerpt": "Application (26A500) for stay presented to Justice Alito and by him referred to the Court is denied.",
+        "source_url": "https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/26a500.html",
+        "attribution": "source-statement",
+        "evidence_origin": "Preserved retrieved source extract; load-bearing primary claim rechecked live. See sources-check.json."
+      },
+      {
+        "claim": "The government argued the intervenors lacked standing.",
+        "supporting_excerpt": "Because applicants lack standing",
+        "source_url": "https://www.supremecourt.gov/DocketPDF/26/26A500/430409/20261022153257048_Baltimore_v_Texas_stay_opp.pdf",
+        "attribution": "source-statement",
+        "evidence_origin": "Live PDF text, introductory argument; checks/web2.json. Short contiguous excerpt selected to avoid PDF line-wrap hyphenation; surrounding argument inspected."
+      },
+      {
+        "claim": "The government said the judgment does not require reopening existing closures.",
+        "supporting_excerpt": "it does not require recalendaring of cases",
+        "source_url": "https://www.supremecourt.gov/DocketPDF/26/26A500/430409/20261022153257048_Baltimore_v_Texas_stay_opp.pdf",
+        "attribution": "source-statement",
+        "evidence_origin": "Live PDF text, printed page 12; checks/web4.json. Short contiguous excerpt selected to avoid PDF line-wrap hyphenation; surrounding argument inspected."
+      },
+      {
+        "claim": "Applicants alleged misuse of agreed litigation to invalidate a regulation.",
+        "supporting_excerpt": "invalidated a duly promulgated regulation in a single day and without adversarial process",
+        "source_url": "https://www.supremecourt.gov/DocketPDF/26/26A500/430526/20261023144454910_Centro%20S.%20Ct.%20Reply%20FINAL.pdf",
+        "attribution": "source-statement",
+        "evidence_origin": "Live PDF text, printed page 3; checks/web4.json. This is applicants’ characterization, not a court finding."
+      }
+    ]
+  },
+  "preparation": {
+    "prepared_at": "2026-11-05T19:09:19.745383Z",
+    "publication_executed": false,
+    "human_review_claimed": false,
+    "public_register_integration_required": true,
+    "original_editorial_date": "2026-10-28",
+    "reporting_cutoff": "2026-10-28",
+    "scope": "Article text and evidence record only; parent must integrate public anchor, acquire cover and run full repository publication checks."
+  }
+}
