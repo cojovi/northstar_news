@@ -23,8 +23,6 @@ reading_time: 8
 tags: ["Supreme Court", "Immigration", "Administrative law"]
 ---
 
-*Archival note: Originally scheduled 2026-10-28; first published 2026-11-05 in the recovery batch. Original reporting cutoff: 2026-10-28. Later developments, where included, are explicitly dated.*
-
 The Supreme Court declined on October 27 to put a lower-court judgment on hold in a dispute over immigration judges' ability to pause certain deportation proceedings. That leaves a restriction in place. It does not supply a Supreme Court explanation of why the restriction is lawful, settle every affected immigrant's case or announce that all previously paused cases must immediately restart.
 
 That distinction matters because this story contains two arguments that are easy to collapse into one. The first concerns immigration enforcement: when does a pause help a court manage its work, and when does it become a substitute for deciding a case? The second concerns government accountability: when an administration agrees with a state challenging an existing regulation, who gets to defend that regulation in court?

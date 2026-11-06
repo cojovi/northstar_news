@@ -23,8 +23,6 @@ reading_time: 8
 tags: ["Alaska", "Elections", "Federal courts", "Ballot secrecy"]
 ---
 
-*Archival note: Originally scheduled 2026-11-02; first published 2026-11-05 in the recovery batch. Original reporting cutoff: 2026-11-02. Later developments, where included, are explicitly dated.*
-
 A federal election lawsuit needs more than a troubling possibility. It needs a remedy that a court can actually order. In Alaska's dispute over two Senate candidates with the Sullivan surname, that distinction has become the story.
 
 On November 1, U.S. District Judge Sharon L. Gleason dismissed the Justice Department's lawsuit seeking to prevent certification of an Alaska Senate result that might have been affected by voter confusion. The department alleged that voters intending to support incumbent Republican Sen. Dan S. Sullivan might instead choose Daniel J. Sullivan, Jr., another candidate on the ballot.

@@ -22,8 +22,6 @@ reading_time: 8
 tags: ["CoreWeave", "AI infrastructure", "Credit markets", "Business"]
 ---
 
-*Archival note: Originally scheduled 2026-10-18; first published on recovery date, 2026-11-05. Original reporting cutoff: 2026-10-18. Later developments are explicitly dated. This is a dated analysis, not a live advisory.*
-
 CoreWeave's customers want computing power. Its lenders want something less fashionable: a credible path to repayment. The gap between those demands became a market story in the week before October 18, 2026 as investors marked down the company's bonds and questioned the borrowing behind the artificial-intelligence buildout.
 
 The concern was still drawing financial-news attention on October 16, after a steep selloff earlier in the week. CNBC reported on October 15 that a CoreWeave bond due in 2031 was yielding 15.78%, while the cost of protection against a default had climbed into territory commonly associated with credit distress. Reuters independently reported pressure on both its shares and bonds.

@@ -18,7 +18,7 @@
   },
   "publication": {
     "status": "ready",
-    "source_sha256": "7bfd6a2eb1c46404603971b6d9f0734c12f275446aaef445caf578a574e01981",
+    "source_sha256": "52d43e0ecee445e447556f3b6cc9de1a8aeea0b7e16970b7eef8ad37ff048c56",
     "claim_ledger": [
       {
         "claim": "CVS announced its intent to separate on November 4, 2026.",

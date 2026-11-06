@@ -23,8 +23,6 @@ reading_time: 7
 tags: ["CVS Health", "Aetna", "Caremark", "Healthcare"]
 ---
 
-*Archival note: Originally scheduled 2026-11-04; first published 2026-11-05 in the recovery batch. Original reporting cutoff: 2026-11-04 (November 5, 02:00 UTC). Later developments, where included, are explicitly dated.*
-
 CVS Health wants to divide itself into two publicly traded companies. For Americans who encounter its businesses as a pharmacy customer, an insurance member or someone trying to get a prescription covered, the important question is not simply why the corporate empire is breaking apart. It is which pieces will remain together—and whether the new arrangement will make dealing with them any easier.
 
 The company announced its intention on November 4, with completion expected in the first half of 2028. That is a proposed transaction, not an overnight change at the prescription counter. Final board approval, an effective securities registration statement and confirmation of the intended tax treatment remain among the conditions.

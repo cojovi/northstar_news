@@ -20,7 +20,7 @@
   },
   "publication": {
     "status": "ready",
-    "source_sha256": "3b31ea8d3316b463474964507a10e0b6fd77122683d0afb16a94e1d5c45d652b",
+    "source_sha256": "7a3dc933c286243e3228c4c1a64ceb5a35e58b0e35d39136f0fda99d115a117b",
     "claim_ledger": [
       {
         "claim": "Original CDC instructions stated November 3, 2026 at 11:59 p.m. EST as the departure cutoff.",

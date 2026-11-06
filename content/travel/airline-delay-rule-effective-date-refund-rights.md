@@ -22,8 +22,6 @@ reading_time: 8
 tags: ["Airlines", "Passenger rights", "Flight delays", "Transportation"]
 ---
 
-*Archival note: Originally scheduled 2026-10-20; first published on recovery date, 2026-11-05. Original reporting cutoff: 2026-10-20. Later developments are explicitly dated. This is a dated analysis, not a live advisory.*
-
 In the October 20 reporting window, a traveler staring at a canceled flight has two immediate questions: How do I get home, and who is paying for tonight? A fresh round of airline-delay coverage has made the second question unnecessarily confusing.
 
 On October 20, WABC's consumer report said a new Department of Transportation rule had gone into effect October 19, changing which disruptions count as within an airline's control. But DOT had already published a postponement. Its October 15 notice moves the rule's effective date to February 1, 2027, with the revised reporting covering flights occurring on or after January 1.

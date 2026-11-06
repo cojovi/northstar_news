@@ -14,7 +14,7 @@ test('approved recovered backlog has original dates, organizational bylines, bou
   const a=articles.find(a=>articlePath(a)===item.path);assert.ok(a,item.path);
   assert.equal(a.published.slice(0,10),item.date);assert.ok(Date.parse(a.updated)>=Date.parse(a.published));assert.equal(isDiscoverable(a),true);
   assert.equal(a.author,'The Northstar Ledger Desk');assert.equal(a.author_slug,'northstar-desk');
-  assert.match(a.content,/Archival note: Originally scheduled/);assert.match(a.content,/2026-11-05/);
+  assert.doesNotMatch(a.content,/Archival note:|Originally scheduled/);
   const source=parseArticleSource(fs.readFileSync('content'+item.path+'.md','utf8'));
   const review=JSON.parse(fs.readFileSync('content/reviews'+item.path+'.json','utf8'));
   assert.equal(review.publication.status,'ready');assert.equal(review.publication.source_sha256,createHash('sha256').update(source.content.trim()).digest('hex'));assert.ok(review.publication.claim_ledger.length);

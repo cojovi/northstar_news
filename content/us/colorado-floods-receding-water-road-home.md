@@ -22,8 +22,6 @@ reading_time: 8
 tags: ["Colorado", "Flooding", "Road safety", "Emergency response"]
 ---
 
-*Archival note: Originally scheduled 2026-10-25; first published on recovery date, 2026-11-05. Original reporting cutoff: 2026-10-25. Later developments are explicitly dated. This is a dated analysis, not a live advisory.*
-
 At the October 25 reporting cutoff, southwest Colorado's flood emergency was entering a phase that can be deceptively reassuring: some water levels are falling, but the journey home remains a separate safety decision.
 
 The Colorado National Guard’s preserved account said nearly 100 members were supporting local authorities with aviation and ground search-and-rescue assistance. Its described deployment included two helicopters and 30 tactical vehicles. The Denver Post reported Sunday that evacuations and highway closures remained in place while officials watched for additional rain and renewed river surges.

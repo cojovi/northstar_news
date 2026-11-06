@@ -23,8 +23,6 @@ reading_time: 7
 tags: ["GDP", "Household budgets", "Inflation", "Personal income"]
 ---
 
-*Archival note: Originally scheduled 2026-10-30; first published 2026-11-05 in the recovery batch. Original reporting cutoff: 2026-10-30 (October 31, 01:46 UTC). Later developments, where included, are explicitly dated.*
-
 The American economy can grow briskly while a household finds that its paycheck buys less. That is not a contradiction, and it is not necessarily evidence that either the growth figures or the household's frustration is imaginary.
 
 Two reports released by the Bureau of Economic Analysis on October 29 put that distinction in unusually clear focus. Inflation-adjusted gross domestic product expanded at a 3.4 percent annualized rate in the third quarter. Separately, inflation-adjusted disposable personal income fell 0.3 percent in September, while real consumer spending increased less than 0.1 percent.

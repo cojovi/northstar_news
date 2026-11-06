@@ -21,7 +21,7 @@
   },
   "publication": {
     "status": "ready",
-    "source_sha256": "14d2791bdf4e17dee7ca5dcdb08bdb7f950e52794bba96b2af26d41c5f8bba35",
+    "source_sha256": "6465c9c8ec17c0819cb17135f883b95d05ef2d8152cdb6ce3785b7d6c6a74674",
     "claim_ledger": [
       {
         "claim": "CNBC reported a 15.78% yield on a 2031 bond on October 15; this is historical reporting, not a current quote.",

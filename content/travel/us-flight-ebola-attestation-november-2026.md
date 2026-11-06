@@ -22,8 +22,6 @@ reading_time: 8
 tags: ["Travel", "CDC", "Ebola", "Public health"]
 ---
 
-*Archival note: Originally scheduled 2026-10-23; first published on recovery date, 2026-11-05. Original reporting cutoff: 2026-10-23. Later developments are explicitly dated. This is a dated analysis, not a live advisory.*
-
 As of October 23, a new U.S. travel declaration reached far beyond flights originating in Central Africa, making the details worth reading before check-in. Under an order the Centers for Disease Control and Prevention issued October 22, the order said passengers boarding international flights to the United States would have to attest that they have not been in the Democratic Republic of the Congo during the preceding 21 days, unless a U.S. government exemption applies.
 
 The original order specified the effective time: **11:59 p.m. Eastern Standard Time on November 3, 2026**. The trigger is the flight's departure for the United States, not simply its scheduled arrival date. The obligation was not limited to trips originating in Africa: the last departure airport did not establish a passenger’s complete travel history.
