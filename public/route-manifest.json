@@ -188,11 +188,11 @@
     "url": "https://thenorthstarledger.com/topics/institutional-decisions",
     "indexable": true
   },
-  "/business/cvs-breakup-pieces-that-stay-together": {
+  "/business/nvidia-founder-board-accountability": {
     "type": "article",
-    "title": "CVS Is Breaking Up. Follow the Pieces That Stay Together.",
-    "description": "The proposed 2028 split separates the drugstores, but leaves Aetna and Caremark under one roof. The test is what changes for patients, not just shareholders.",
-    "url": "https://thenorthstarledger.com/business/cvs-breakup-pieces-that-stay-together",
+    "title": "Nvidia’s Founder Is Out. The Board’s Hardest Work Starts Now.",
+    "description": "Jensen Huang’s resignation puts Colette Kress in charge of a company facing overlapping leadership, governance and national-security questions. A succession announcement cannot answer all three.",
+    "url": "https://thenorthstarledger.com/business/nvidia-founder-board-accountability",
     "indexable": true
   },
   "/author/northstar-desk": {
@@ -200,6 +200,41 @@
     "title": "The Northstar Ledger Desk",
     "description": "Publication desk attribution for content produced with automated research, drafting and publishing assistance. This is an organizational credit, not a named human reviewer.",
     "url": "https://thenorthstarledger.com/author/northstar-desk",
+    "indexable": true
+  },
+  "/tag/nvidia": {
+    "type": "tag",
+    "title": "Nvidia archive",
+    "description": "Articles tagged Nvidia. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/nvidia",
+    "indexable": false
+  },
+  "/tag/jensen%20huang": {
+    "type": "tag",
+    "title": "Jensen Huang archive",
+    "description": "Articles tagged Jensen Huang. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/jensen%20huang",
+    "indexable": false
+  },
+  "/tag/corporate%20governance": {
+    "type": "tag",
+    "title": "Corporate Governance archive",
+    "description": "Articles tagged Corporate Governance. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/corporate%20governance",
+    "indexable": false
+  },
+  "/tag/national%20security": {
+    "type": "tag",
+    "title": "national security archive",
+    "description": "Articles tagged national security. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/national%20security",
+    "indexable": false
+  },
+  "/business/cvs-breakup-pieces-that-stay-together": {
+    "type": "article",
+    "title": "CVS Is Breaking Up. Follow the Pieces That Stay Together.",
+    "description": "The proposed 2028 split separates the drugstores, but leaves Aetna and Caremark under one roof. The test is what changes for patients, not just shareholders.",
+    "url": "https://thenorthstarledger.com/business/cvs-breakup-pieces-that-stay-together",
     "indexable": true
   },
   "/tag/cvs%20health": {
@@ -851,13 +886,6 @@
     "title": "ISIS archive",
     "description": "Articles tagged ISIS. Historical records may have source review pending.",
     "url": "https://thenorthstarledger.com/tag/isis",
-    "indexable": false
-  },
-  "/tag/national%20security": {
-    "type": "tag",
-    "title": "national security archive",
-    "description": "Articles tagged national security. Historical records may have source review pending.",
-    "url": "https://thenorthstarledger.com/tag/national%20security",
     "indexable": false
   },
   "/tag/law%20enforcement": {

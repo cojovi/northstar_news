@@ -356,5 +356,23 @@
       "https://www.cvshealth.com/news/company-news/cvs-health-announces-intent-to-create-two-distinct-leaders-in-healthcare.html"
     ],
     "action": "Recovered for delayed publication with the original editorial date, an explicit archive note and separately dated later developments. This register describes limited documentary checks, not a full fact-check, human review or firsthand reporting."
+  },
+  {
+    "slug": "nvidia-founder-board-accountability",
+    "path": "/business/nvidia-founder-board-accountability",
+    "title": "Nvidia’s Founder Is Out. The Board’s Hardest Work Starts Now.",
+    "reviewed_at": "2026-11-12T17:10:29.605554Z",
+    "status": "partial",
+    "completed_full_factcheck": false,
+    "summary": "Checked Nvidia’s November 8 and November 12 primary statements and Huang’s published employee message, with Reuters and CNN reporting. The resignation and interim appointment are confirmed; intelligence and relationship allegations remain precisely attributed.",
+    "limits": "Limited AI-assisted documentary check, not human review or a full fact-check. No sealed intelligence, investigative findings, original New York Times retrieval, interviews, closing-market reconstruction or forecast validation.",
+    "sources": [
+      "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+      "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors",
+      "https://nvidianews.nvidia.com/news/a-message-to-our-company",
+      "https://www.cnn.com/2026/11/12/tech/jensen-huang-nvidia-resigns",
+      "https://www.reuters.com/world/china/nvidia-launches-probe-after-report-ceo-huang-was-target-foreign-intelligence-2026-11-08"
+    ],
+    "action": "Published a new sourced analysis; distinguishes succession confirmation, admitted personal conduct, attributed allegations and unresolved investigative questions. Archival photograph credited with its actual event date."
   }
 ]

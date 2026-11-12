@@ -1,0 +1,95 @@
+{
+  "affiliated": false,
+  "notice": "",
+  "editorial_notices": false,
+  "evidence": {
+    "status": "partial",
+    "completed_full_factcheck": false,
+    "sources": [
+      "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+      "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors",
+      "https://nvidianews.nvidia.com/news/a-message-to-our-company",
+      "https://www.cnn.com/2026/11/12/tech/jensen-huang-nvidia-resigns",
+      "https://www.reuters.com/world/china/nvidia-launches-probe-after-report-ceo-huang-was-target-foreign-intelligence-2026-11-08"
+    ],
+    "summary": "Checked Nvidia’s November 8 and November 12 primary statements and Huang’s published employee message, with Reuters and CNN reporting. The resignation and interim appointment are confirmed; intelligence and relationship allegations remain precisely attributed.",
+    "limits": "Limited AI-assisted documentary check, not human review or a full fact-check. No sealed intelligence, investigative findings, original New York Times retrieval, interviews, closing-market reconstruction or forecast validation.",
+    "reviewed_at": "2026-11-12T17:10:29.605554Z",
+    "record_url": "https://thenorthstarledger.com/source-reviews#nvidia-founder-board-accountability"
+  },
+  "publication": {
+    "status": "ready",
+    "source_sha256": "795f943731a121e8b62b06a35e48f51b1b59c3d3e9de96901c7799890aa482bd",
+    "claim_ledger": [
+      {
+        "claim": "The board announced Huang resigned as president, CEO and director effective immediately.",
+        "supporting_excerpt": "NVIDIA (NASDAQ: NVDA) Board of Directors announced today that Jensen Huang has resigned as President, Chief Executive Officer, and a member of the Board, effective immediately.",
+        "source_url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+        "attribution": "source-statement",
+        "evidence_origin": "Retrieved original page text and exact-quote validation; task source-1.md; no interviews or human review claimed."
+      },
+      {
+        "claim": "Kress remains CFO while serving as interim CEO.",
+        "supporting_excerpt": "Kress will continue to serve as Executive Vice President and Chief Financial Officer while serving as Interim Chief Executive Officer until a permanent successor has been named.",
+        "source_url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+        "attribution": "source-statement",
+        "evidence_origin": "Retrieved original page text and exact-quote validation; task source-1.md; no interviews or human review claimed."
+      },
+      {
+        "claim": "The board is considering internal and external permanent candidates.",
+        "supporting_excerpt": "The Board is initiating a search for a permanent Chief Executive Officer and will consider internal and external candidates.",
+        "source_url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+        "attribution": "source-statement",
+        "evidence_origin": "Retrieved original page text and exact-quote validation; task source-1.md; no interviews or human review claimed."
+      },
+      {
+        "claim": "Harvey C. Jones is the first-ever board chair.",
+        "supporting_excerpt": "The Board of Directors appointed Harvey C. Jones as its first-ever Chair of the Board.",
+        "source_url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+        "attribution": "source-statement",
+        "evidence_origin": "Retrieved original page text and exact-quote validation; task source-1.md; no interviews or human review claimed."
+      },
+      {
+        "claim": "The November 8 board statement says no reason to believe national security or company secrets were compromised; this is an initial position, not a final clearance.",
+        "supporting_excerpt": "While the Board has no reason to believe that either national security or NVIDIA secrets were compromised, the Board's inquiry will examine all available information.",
+        "source_url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors",
+        "attribution": "source-statement",
+        "evidence_origin": "Retrieved original page text and exact-quote validation; task source-2.md; no interviews or human review claimed."
+      },
+      {
+        "claim": "Huang publicly acknowledged infidelity without identifying the other party.",
+        "supporting_excerpt": "I was unfaithful to my wife. My actions hurt her and our children. There is no excuse for what I did. I am deeply sorry.",
+        "source_url": "https://nvidianews.nvidia.com/news/a-message-to-our-company",
+        "attribution": "source-statement",
+        "evidence_origin": "Retrieved original page text and exact-quote validation; task source-3.md; no interviews or human review claimed."
+      },
+      {
+        "claim": "CNN reported a premarket drop greater than 10 percent; this is not a closing or current quote.",
+        "supporting_excerpt": "Nvidia shares dropped more than 10% in pre-market trading on Thursday.",
+        "source_url": "https://www.cnn.com/2026/11/12/tech/jensen-huang-nvidia-resigns",
+        "attribution": "source-statement",
+        "evidence_origin": "Retrieved original page text and exact-quote validation; task source-4.md; no interviews or human review claimed."
+      },
+      {
+        "claim": "CNN attributes the second relationship allegation to New York Times reporting.",
+        "supporting_excerpt": "The leadership shakeup came days after the board said it would investigate whether Huang was the target of a foreign intelligence effort amid reports of his relationship with a woman US officials believe is a Chinese spy, and shortly after the New York Times reported that the CEO also had an affair with an executive who reports to him.",
+        "source_url": "https://www.cnn.com/2026/11/12/tech/jensen-huang-nvidia-resigns",
+        "attribution": "source-statement",
+        "evidence_origin": "Retrieved original page text and exact-quote validation; task source-4.md; no interviews or human review claimed."
+      },
+      {
+        "claim": "Reuters describes U.S. export controls on advanced chips and manufacturing equipment.",
+        "supporting_excerpt": "Huang said in a message to employees that he had been unfaithful to his wife ‌and took \"full responsibility\" for his actions, while Nvidia said the CEO was committed to continuing to lead the company without interruption.",
+        "source_url": "https://www.reuters.com/world/china/nvidia-launches-probe-after-report-ceo-huang-was-target-foreign-intelligence-2026-11-08",
+        "attribution": "source-statement",
+        "evidence_origin": "Retrieved original page text and exact-quote validation; task source-5.md; no interviews or human review claimed."
+      }
+    ]
+  },
+  "preparation": {
+    "prepared_at": "2026-11-12T17:10:29.605554Z",
+    "reporting_cutoff": "2026-11-12T17:10:29.605554Z",
+    "human_review_claimed": false,
+    "sister_body_comparison": "Distinct governance-focused analysis; PS companion addresses software dependencies and operational evidence."
+  }
+}
