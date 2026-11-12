@@ -3,6 +3,7 @@ import { readFileSync } from 'node:fs';
 import test from 'node:test';
 import { DEFAULT_IMAGE, SITE_URL, resolveSocialImage } from '../src/lib/socialImage.js';
 import { generateArticleHTML } from '../vite-plugin-prerender-og.js';
+import { readSocialImageMetadata } from '../scripts/lib/social-image-metadata.js';
 
 const imageCases = [
   ['root-relative hero', '/putin-g20-miami-invitation.png', `${SITE_URL}/putin-g20-miami-invitation.png`],
@@ -47,7 +48,11 @@ test('crawler HTML contains the hero image and article canonical without JavaScr
   assert.equal((html.match(/<link rel="canonical"/g) || []).length, 1);
   assert.match(html, /An &quot;article&quot; &amp; &lt;image&gt; that&#039;s different/);
   assert.doesNotMatch(html, /<meta[^>]+content="[^"\n]*\/og\/default.jpg"/);
-  assert.doesNotMatch(html, /<meta[^>]+property="og:image:(?:width|height|type)"/);
+  const measured = readSocialImageMetadata(article.hero_image);
+  assert.ok(measured, 'this test uses a real local article cover');
+  for (const field of ['width', 'height', 'type']) {
+    assert.ok(html.includes(`<meta property="og:image:${field}" content="${measured[field]}" />`));
+  }
   assert.doesNotMatch(html, /<div id="root"><\/div>/);
   assert.match(html, /<h1\b/);
   assert.match(html, /<script type="module"/);

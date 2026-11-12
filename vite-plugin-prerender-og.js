@@ -4,6 +4,7 @@ import path from "node:path";
 import React from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { loadArticles } from "./scripts/lib/load-articles.js";
+import { readSocialImageMetadata } from "./scripts/lib/social-image-metadata.js";
 import {
   SITE_URL,
   DEFAULT_IMAGE,
@@ -159,6 +160,16 @@ function metadataHTML(
   ];
   if (image.startsWith("https:"))
     values.push(["property", "og:image:secure_url", image]);
+  // Meta otherwise discovers dimensions asynchronously, which can omit the
+  // image from the first share. Only emit values measured from this asset.
+  const measuredImage = readSocialImageMetadata(image);
+  if (measuredImage) {
+    values.push(
+      ["property", "og:image:width", measuredImage.width],
+      ["property", "og:image:height", measuredImage.height],
+      ["property", "og:image:type", measuredImage.type],
+    );
+  }
   const tags = values
     .map(
       ([attribute, key, value]) =>

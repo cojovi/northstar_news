@@ -1427,6 +1427,8 @@
     "location": "New York",
     "status": "published",
     "is_satire": false,
+    "hero_width": 1080,
+    "hero_height": 1350,
     "indexable": true,
     "categoryPath": "politics",
     "authorProfile": {

@@ -7,6 +7,7 @@ import React from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { MarkdownBody } from '../src/components/ArticleDocument.js';
 import { SITE_URL, resolveSocialImage } from '../src/lib/socialImage.js';
+import { readSocialImageMetadata } from './lib/social-image-metadata.js';
 
 const decode = value => value.replace(/&quot;/g, '"').replace(/&#039;/g, "'")
   .replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
@@ -44,7 +45,11 @@ for (const file of fs.readdirSync('content', { recursive: true })) {
   assert.equal(categoryLinks.includes(`href="/${route}"`), isDiscoverable(data), `${route}: category discovery honors archive state`);
   assert.deepEqual(getMeta(html, "robots"), !isDiscoverable(data) ? ["noindex,follow"] : ["index,follow,max-image-preview:large"], `${route}: archive state robots`);
   assert.match(html, /<script[^>]*type="module"[^>]*src="\/assets\//, `${route}: app bundle`);
-  assert.doesNotMatch(html, /<meta[^>]+property="og:image:(?:width|height|type)"/, `${route}: no invented dimensions or MIME type`);
+  const measured = readSocialImageMetadata(image);
+  for (const field of ['width', 'height', 'type']) {
+    assert.deepEqual(getMeta(html, `og:image:${field}`),
+      measured ? [String(measured[field])] : [], `${route}: measured image ${field}`);
+  }
 
   const url = new URL(image);
   if (url.origin === SITE_URL) {
@@ -60,4 +65,9 @@ assert.ok(count > 0, 'must verify published articles');
 const home = fs.readFileSync('dist/index.html', 'utf8');
 assert.deepEqual(getMeta(home, 'og:image'), [`${SITE_URL}/og/default.jpg`]);
 assert.deepEqual(getMeta(home, 'og:type'), ['website']);
+const homeImage = readSocialImageMetadata(resolveSocialImage());
+assert.ok(homeImage, 'homepage fallback must have measurable local bytes');
+for (const field of ['width', 'height', 'type']) {
+  assert.deepEqual(getMeta(home, `og:image:${field}`), [String(homeImage[field])], `homepage: measured image ${field}`);
+}
 console.log(`Verified crawler HTML for all ${count} retained article routes (including withdrawals), ${localImages.size} local hero assets, and homepage fallback.`);
