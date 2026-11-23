@@ -5,7 +5,7 @@ slug: "faa-router-ground-stop-change-control-accountability"
 category: "us"
 date: "2026-11-17"
 published: "2026-11-17"
-updated: "2026-11-23T21:25:28.923071+00:00"
+updated: "2026-11-23T21:41:09Z"
 author: "The Northstar Ledger Desk"
 author_slug: "northstar-desk"
 status: "published"
@@ -15,11 +15,11 @@ editorial_notices: false
 sources: ["https://thenorthstarledger.com/us/faa-ground-stop-accountability-test", "https://www.faa.gov/newsroom/nationwide-ground-stop-questions-and-answers", "https://www.l3harris.com/newsroom/press-release/2026/11/l3harris-statement-nov-13-ground-stop", "https://fedscoop.com/faa-nationwide-ground-stop-investigation-what-happened"]
 evidence: {"status": "partial", "completed_full_factcheck": false, "reviewed_at": "2026-11-23T21:25:28.923071+00:00", "summary": "Rechecked the linked historical primary document and its load-bearing factual statements. Analytical judgments are distinguished from official findings.", "limits": "Limited AI-assisted documentary review, not a full fact-check, human review, interviews or independent technical replication. The account is historical; no current individual entitlement, final legal judgment or guaranteed outcome is established. Official and contractor explanations remain attributed and preliminary, not a completed forensic finding.", "record_url": "https://thenorthstarledger.com/source-reviews#faa-router-ground-stop-change-control-accountability", "sources": ["https://thenorthstarledger.com/us/faa-ground-stop-accountability-test", "https://www.faa.gov/newsroom/nationwide-ground-stop-questions-and-answers", "https://www.l3harris.com/newsroom/press-release/2026/11/l3harris-statement-nov-13-ground-stop", "https://fedscoop.com/faa-nationwide-ground-stop-investigation-what-happened"]}
 reporting_cutoff: "2026-11-17"
-hero_image: "https://thenorthstarledger.com/faa-router-ground-stop-change-control-accountability.jpg"
-thumbnail: "https://thenorthstarledger.com/faa-router-ground-stop-change-control-accountability.jpg"
+hero_image: "https://thenorthstarledger.com/faa-router-ground-stop-change-control-accountability-context.jpg"
+thumbnail: "https://thenorthstarledger.com/faa-router-ground-stop-change-control-accountability-context.jpg"
 hero_credit: "Carol M. Highsmith / Library of Congress. No known restrictions on publication. Archival contextual photograph; not an image of the reported event."
 hero_alt: "Aerial view of Philadelphia, Pennsylvania, with a focus on Northeast Philadelphia Airport, part of the Philadelphia Airport System along with Philadelphia International Airport. It is the general aviation \"reliever airport\" for Philadelphia International"
-image_source_url: "https://www.loc.gov/item/2019689479/"
+image_source_url: "https://www.loc.gov/item/2019689481/"
 excerpt: "The FAA has identified network flooding and isolated router functionality. Restoring service is not the same as completing the root-cause investigation."
 reading_time: 7
 tags: ["accountability", "us"]

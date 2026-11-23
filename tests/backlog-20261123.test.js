@@ -15,7 +15,8 @@ const expected=[
  ['/politics/federal-contractors-congress-executive-privilege-order','2026-11-22'],
 ];
 test('remaining seven held selections preserve original local editorial dates with complete sourced bodies and distinct contextual images',()=>{
- const articles=loadArticles();const hashes=new Set();
+ const articles=loadArticles();const hashes=new Set();const sourceIds=new Set();
+ const existingPhotoIds=new Set(articles.filter(a=>!expected.some(([p])=>p===articlePath(a))).map(a=>a.image_source_url?.match(/\/item\/(\d+)/)?.[1]).filter(Boolean));
  for(const [path,date] of expected){
   const a=articles.find(x=>articlePath(x)===path);assert.ok(a,path);
   assert.equal(a.published,date);assert.equal(a.author_slug,'northstar-desk');assert.equal(a.content_type,'analysis');assert.ok(isDiscoverable(a));
@@ -26,6 +27,7 @@ test('remaining seven held selections preserve original local editorial dates wi
   assert.ok(review.publication.claim_ledger.length>=3);assert.equal(a.evidence.completed_full_factcheck,false);
   assert.ok(PAGES['source-reviews'].reviews.some(x=>x.slug===a.slug));
   assert.match(a.hero_credit,/Carol M. Highsmith/);assert.match(a.hero_credit,/Archival contextual/);
+  const photoId=a.image_source_url?.match(/\/item\/(\d+)/)?.[1];assert.ok(photoId);assert.ok(!existingPhotoIds.has(photoId));assert.ok(!sourceIds.has(photoId));sourceIds.add(photoId);
   const image=fs.readFileSync('public'+new URL(a.hero_image).pathname);assert.equal(image.readUInt16BE(0),0xffd8);
   const hash=createHash('sha256').update(image).digest('hex');assert.ok(!hashes.has(hash));hashes.add(hash);
  }
