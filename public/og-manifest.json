@@ -1,10 +1,59 @@
 {
+  "politics/federal-contractors-congress-executive-privilege-order": {
+    "title": "The White House Put Contractors Between Two Branches of Government",
+    "dek": "A new order puts federal suppliers in the middle of Washington's oversight fight. Its immediate requirements are clearer than its ultimate legal reach.",
+    "hero_image": "https://thenorthstarledger.com/federal-contractors-congress-executive-privilege-order.jpg",
+    "thumbnail": "https://thenorthstarledger.com/federal-contractors-congress-executive-privilege-order.jpg",
+    "url": "https://thenorthstarledger.com/politics/federal-contractors-congress-executive-privilege-order"
+  },
+  "world/shenzhen-peace-declaration-commitments": {
+    "title": "Three Presidents Issued a Peace Declaration. Read the Fine Print.",
+    "dek": "Washington, Beijing and Moscow agreed on four broad principles. What the text leaves open matters as much as the summit photograph.",
+    "hero_image": "https://thenorthstarledger.com/shenzhen-peace-declaration-commitments.jpg",
+    "thumbnail": "https://thenorthstarledger.com/shenzhen-peace-declaration-commitments.jpg",
+    "url": "https://thenorthstarledger.com/world/shenzhen-peace-declaration-commitments"
+  },
+  "us/faa-router-ground-stop-change-control-accountability": {
+    "title": "The Flights Are Moving Again. The FAA Still Owes America an Explanation.",
+    "dek": "The FAA has identified network flooding and isolated router functionality. Restoring service is not the same as completing the root-cause investigation.",
+    "hero_image": "https://thenorthstarledger.com/faa-router-ground-stop-change-control-accountability.jpg",
+    "thumbnail": "https://thenorthstarledger.com/faa-router-ground-stop-change-control-accountability.jpg",
+    "url": "https://thenorthstarledger.com/us/faa-router-ground-stop-change-control-accountability"
+  },
+  "us/faa-ground-stop-accountability-test": {
+    "title": "America's Flights Stopped. The Accountability Test Is Just Beginning.",
+    "dek": "A nationwide departure freeze exposed the cost of fragile aviation communications. The repair needs more than a reassuring press conference.",
+    "hero_image": "https://thenorthstarledger.com/faa-ground-stop-accountability-test.jpg",
+    "thumbnail": "https://thenorthstarledger.com/faa-ground-stop-accountability-test.jpg",
+    "url": "https://thenorthstarledger.com/us/faa-ground-stop-accountability-test"
+  },
   "business/nvidia-founder-board-accountability": {
     "title": "Nvidia’s Founder Is Out. The Board’s Hardest Work Starts Now.",
     "dek": "Jensen Huang’s resignation puts Colette Kress in charge of a company facing overlapping leadership, governance and national-security questions. A succession announcement cannot answer all three.",
     "hero_image": "https://thenorthstarledger.com/nvidia-founder-board-accountability.png",
     "thumbnail": "https://thenorthstarledger.com/nvidia-founder-board-accountability.png",
     "url": "https://thenorthstarledger.com/business/nvidia-founder-board-accountability"
+  },
+  "business/october-cpi-missing-annual-rate-household-costs": {
+    "title": "October Inflation Has a Missing Number. The Bills Do Not.",
+    "dek": "Prices rose in October, but a missing comparison year prevents most official annual rates. The monthly figures still tell households something important.",
+    "hero_image": "https://thenorthstarledger.com/october-cpi-missing-annual-rate-household-costs.jpg",
+    "thumbnail": "https://thenorthstarledger.com/october-cpi-missing-annual-rate-household-costs.jpg",
+    "url": "https://thenorthstarledger.com/business/october-cpi-missing-annual-rate-household-costs"
+  },
+  "us/counter-drone-pact-civilian-aviation-safety-test": {
+    "title": "The Counter-Drone Pact Has a Civilian Safety Test",
+    "dek": "Five federal departments are coordinating new drone defenses. The consequential question is how those systems share the sky with civilian aircraft.",
+    "hero_image": "https://thenorthstarledger.com/counter-drone-pact-civilian-aviation-safety-test.jpg",
+    "thumbnail": "https://thenorthstarledger.com/counter-drone-pact-civilian-aviation-safety-test.jpg",
+    "url": "https://thenorthstarledger.com/us/counter-drone-pact-civilian-aviation-safety-test"
+  },
+  "business/october-jobs-payrolls-involuntary-part-time": {
+    "title": "The Jobs Report Improved. The Hours Question Did Not Go Away.",
+    "dek": "October brought stronger hiring and upward revisions. Another line in the report shows why a better labor market does not guarantee a full working week.",
+    "hero_image": "https://thenorthstarledger.com/october-jobs-payrolls-involuntary-part-time.jpg",
+    "thumbnail": "https://thenorthstarledger.com/october-jobs-payrolls-involuntary-part-time.jpg",
+    "url": "https://thenorthstarledger.com/business/october-jobs-payrolls-involuntary-part-time"
   },
   "business/cvs-breakup-pieces-that-stay-together": {
     "title": "CVS Is Breaking Up. Follow the Pieces That Stay Together.",

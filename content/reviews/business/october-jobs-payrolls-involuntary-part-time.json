@@ -1,0 +1,47 @@
+{
+  "affiliated": false,
+  "notice": "",
+  "editorial_notices": false,
+  "evidence": {
+    "status": "partial",
+    "completed_full_factcheck": false,
+    "reviewed_at": "2026-11-23T21:25:28.923071+00:00",
+    "summary": "Rechecked the linked historical primary document and its load-bearing factual statements. Analytical judgments are distinguished from official findings.",
+    "limits": "Limited AI-assisted documentary review, not a full fact-check, human review, interviews or independent technical replication. The account is historical; no current individual entitlement, final legal judgment or guaranteed outcome is established. Reuters could not be reopened; the numerical account was checked against the archived BLS release.",
+    "record_url": "https://thenorthstarledger.com/source-reviews#october-jobs-payrolls-involuntary-part-time",
+    "sources": [
+      "https://www.bls.gov/news.release/archives/empsit_11062026.htm",
+      "https://www.reuters.com/business/us-job-growth-beats-expectations-october-unemployment-rate-falls-41-2026-11-06"
+    ]
+  },
+  "publication": {
+    "status": "ready",
+    "source_sha256": "bd4307e1a75a3bb564a11b938467a742fc337a4868db029e91d5b321349795ef",
+    "claim_ledger": [
+      {
+        "claim": "Payrolls rose 165,000 and unemployment was 4.1 percent.",
+        "supporting_excerpt": "Total nonfarm payroll employment rose by 165,000 in October, and the unemployment rate changed little at 4.1 percent",
+        "source_url": "https://www.bls.gov/news.release/archives/empsit_11062026.htm",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "Economic part-time work increased.",
+        "supporting_excerpt": "The number of people employed part time for economic reasons increased by 339,000 to 4.8 million in October.",
+        "source_url": "https://www.bls.gov/news.release/archives/empsit_11062026.htm",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "Earlier months revised upward.",
+        "supporting_excerpt": "employment in August and September combined is 84,000 higher than previously reported.",
+        "source_url": "https://www.bls.gov/news.release/archives/empsit_11062026.htm",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "Hourly earnings rose to $38.00.",
+        "supporting_excerpt": "increased by 14 cents, or 0.4 percent, to $38.00.",
+        "source_url": "https://www.bls.gov/news.release/archives/empsit_11062026.htm",
+        "attribution": "source-statement"
+      }
+    ]
+  }
+}

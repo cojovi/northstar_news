@@ -188,11 +188,11 @@
     "url": "https://thenorthstarledger.com/topics/institutional-decisions",
     "indexable": true
   },
-  "/business/nvidia-founder-board-accountability": {
+  "/politics/federal-contractors-congress-executive-privilege-order": {
     "type": "article",
-    "title": "Nvidia’s Founder Is Out. The Board’s Hardest Work Starts Now.",
-    "description": "Jensen Huang’s resignation puts Colette Kress in charge of a company facing overlapping leadership, governance and national-security questions. A succession announcement cannot answer all three.",
-    "url": "https://thenorthstarledger.com/business/nvidia-founder-board-accountability",
+    "title": "The White House Put Contractors Between Two Branches of Government",
+    "description": "A new order puts federal suppliers in the middle of Washington's oversight fight. Its immediate requirements are clearer than its ultimate legal reach.",
+    "url": "https://thenorthstarledger.com/politics/federal-contractors-congress-executive-privilege-order",
     "indexable": true
   },
   "/author/northstar-desk": {
@@ -200,6 +200,62 @@
     "title": "The Northstar Ledger Desk",
     "description": "Publication desk attribution for content produced with automated research, drafting and publishing assistance. This is an organizational credit, not a named human reviewer.",
     "url": "https://thenorthstarledger.com/author/northstar-desk",
+    "indexable": true
+  },
+  "/tag/accountability": {
+    "type": "tag",
+    "title": "accountability archive",
+    "description": "Articles tagged accountability. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/accountability",
+    "indexable": false
+  },
+  "/tag/politics": {
+    "type": "tag",
+    "title": "politics archive",
+    "description": "Articles tagged politics. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/politics",
+    "indexable": false
+  },
+  "/world/shenzhen-peace-declaration-commitments": {
+    "type": "article",
+    "title": "Three Presidents Issued a Peace Declaration. Read the Fine Print.",
+    "description": "Washington, Beijing and Moscow agreed on four broad principles. What the text leaves open matters as much as the summit photograph.",
+    "url": "https://thenorthstarledger.com/world/shenzhen-peace-declaration-commitments",
+    "indexable": true
+  },
+  "/tag/world": {
+    "type": "tag",
+    "title": "world archive",
+    "description": "Articles tagged world. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/world",
+    "indexable": false
+  },
+  "/us/faa-router-ground-stop-change-control-accountability": {
+    "type": "article",
+    "title": "The Flights Are Moving Again. The FAA Still Owes America an Explanation.",
+    "description": "The FAA has identified network flooding and isolated router functionality. Restoring service is not the same as completing the root-cause investigation.",
+    "url": "https://thenorthstarledger.com/us/faa-router-ground-stop-change-control-accountability",
+    "indexable": true
+  },
+  "/tag/us": {
+    "type": "tag",
+    "title": "us archive",
+    "description": "Articles tagged us. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/us",
+    "indexable": false
+  },
+  "/us/faa-ground-stop-accountability-test": {
+    "type": "article",
+    "title": "America's Flights Stopped. The Accountability Test Is Just Beginning.",
+    "description": "A nationwide departure freeze exposed the cost of fragile aviation communications. The repair needs more than a reassuring press conference.",
+    "url": "https://thenorthstarledger.com/us/faa-ground-stop-accountability-test",
+    "indexable": true
+  },
+  "/business/nvidia-founder-board-accountability": {
+    "type": "article",
+    "title": "Nvidia’s Founder Is Out. The Board’s Hardest Work Starts Now.",
+    "description": "Jensen Huang’s resignation puts Colette Kress in charge of a company facing overlapping leadership, governance and national-security questions. A succession announcement cannot answer all three.",
+    "url": "https://thenorthstarledger.com/business/nvidia-founder-board-accountability",
     "indexable": true
   },
   "/tag/nvidia": {
@@ -229,6 +285,34 @@
     "description": "Articles tagged national security. Historical records may have source review pending.",
     "url": "https://thenorthstarledger.com/tag/national%20security",
     "indexable": false
+  },
+  "/business/october-cpi-missing-annual-rate-household-costs": {
+    "type": "article",
+    "title": "October Inflation Has a Missing Number. The Bills Do Not.",
+    "description": "Prices rose in October, but a missing comparison year prevents most official annual rates. The monthly figures still tell households something important.",
+    "url": "https://thenorthstarledger.com/business/october-cpi-missing-annual-rate-household-costs",
+    "indexable": true
+  },
+  "/tag/business": {
+    "type": "tag",
+    "title": "business archive",
+    "description": "Articles tagged business. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/business",
+    "indexable": false
+  },
+  "/us/counter-drone-pact-civilian-aviation-safety-test": {
+    "type": "article",
+    "title": "The Counter-Drone Pact Has a Civilian Safety Test",
+    "description": "Five federal departments are coordinating new drone defenses. The consequential question is how those systems share the sky with civilian aircraft.",
+    "url": "https://thenorthstarledger.com/us/counter-drone-pact-civilian-aviation-safety-test",
+    "indexable": true
+  },
+  "/business/october-jobs-payrolls-involuntary-part-time": {
+    "type": "article",
+    "title": "The Jobs Report Improved. The Hours Question Did Not Go Away.",
+    "description": "October brought stronger hiring and upward revisions. Another line in the report shows why a better labor market does not guarantee a full working week.",
+    "url": "https://thenorthstarledger.com/business/october-jobs-payrolls-involuntary-part-time",
+    "indexable": true
   },
   "/business/cvs-breakup-pieces-that-stay-together": {
     "type": "article",
@@ -627,13 +711,6 @@
     "title": "Credit markets archive",
     "description": "Articles tagged Credit markets. Historical records may have source review pending.",
     "url": "https://thenorthstarledger.com/tag/credit%20markets",
-    "indexable": false
-  },
-  "/tag/business": {
-    "type": "tag",
-    "title": "business archive",
-    "description": "Articles tagged business. Historical records may have source review pending.",
-    "url": "https://thenorthstarledger.com/tag/business",
     "indexable": false
   },
   "/business/september-cpi-gasoline-core-inflation-household-costs": {
@@ -2027,13 +2104,6 @@
     "title": "government-fraud archive",
     "description": "Articles tagged government-fraud. Historical records may have source review pending.",
     "url": "https://thenorthstarledger.com/tag/government-fraud",
-    "indexable": false
-  },
-  "/tag/accountability": {
-    "type": "tag",
-    "title": "accountability archive",
-    "description": "Articles tagged accountability. Historical records may have source review pending.",
-    "url": "https://thenorthstarledger.com/tag/accountability",
     "indexable": false
   },
   "/tag/investigation": {
@@ -4701,13 +4771,6 @@
     "title": "Withdrawn: The Forgotten Benefits of Boring Competence",
     "description": "Withdrawal record dated October 28, 2026: a development/mock template was presented as a news account.",
     "url": "https://thenorthstarledger.com/opinion/the-forgotten-benefits-of-boring-competence",
-    "indexable": false
-  },
-  "/tag/politics": {
-    "type": "tag",
-    "title": "politics archive",
-    "description": "Articles tagged politics. Historical records may have source review pending.",
-    "url": "https://thenorthstarledger.com/tag/politics",
     "indexable": false
   },
   "/entertainment/podcast-advertising-revenue-reaches-new-milestone": {

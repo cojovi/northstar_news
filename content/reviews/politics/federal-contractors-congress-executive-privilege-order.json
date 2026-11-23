@@ -1,0 +1,53 @@
+{
+  "affiliated": false,
+  "notice": "",
+  "editorial_notices": false,
+  "evidence": {
+    "status": "partial",
+    "completed_full_factcheck": false,
+    "reviewed_at": "2026-11-23T21:25:28.923071+00:00",
+    "summary": "Rechecked the linked historical primary document and its load-bearing factual statements. Analytical judgments are distinguished from official findings.",
+    "limits": "Limited AI-assisted documentary review, not a full fact-check, human review, interviews or independent technical replication. The account is historical; no current individual entitlement, final legal judgment or guaranteed outcome is established. The executive order is not treated as a court ruling; no completed litigation or sanction is established.",
+    "record_url": "https://thenorthstarledger.com/source-reviews#federal-contractors-congress-executive-privilege-order",
+    "sources": [
+      "https://www.whitehouse.gov/presidential-actions/2026/11/protecting-the-executives-privileges-and-enhancing-efficiencies-in-federal-contracting",
+      "https://www.npr.org/2026/11/21/g-s1-154966/trump-contractors-congress"
+    ]
+  },
+  "publication": {
+    "status": "ready",
+    "source_sha256": "0523132d31d8f575a0af6e61c42c72f5623b9a0a9dfbc70b9f141ecdece1d461",
+    "claim_ledger": [
+      {
+        "claim": "Contractors must notify executive branch.",
+        "supporting_excerpt": "notify the White House and the contracting agencies of any pending or future congressional request",
+        "source_url": "https://www.whitehouse.gov/presidential-actions/2026/11/protecting-the-executives-privileges-and-enhancing-efficiencies-in-federal-contracting",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "Withholding instructions concern asserted privilege.",
+        "supporting_excerpt": "withholding of communications that the White House or the agency has determined are protected by executive privilege.",
+        "source_url": "https://www.whitehouse.gov/presidential-actions/2026/11/protecting-the-executives-privileges-and-enhancing-efficiencies-in-federal-contracting",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "Subcontractors are included.",
+        "supporting_excerpt": "This section also applies to subcontractors working for a Federal contractor on a Federal contract.",
+        "source_url": "https://www.whitehouse.gov/presidential-actions/2026/11/protecting-the-executives-privileges-and-enhancing-efficiencies-in-federal-contracting",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "Sanctions are potential and constrained by law.",
+        "supporting_excerpt": "consistent with applicable law",
+        "source_url": "https://www.whitehouse.gov/presidential-actions/2026/11/protecting-the-executives-privileges-and-enhancing-efficiencies-in-federal-contracting",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "OMB must develop implementation guidance.",
+        "supporting_excerpt": "The Office of Management and Budget shall develop guidance",
+        "source_url": "https://www.whitehouse.gov/presidential-actions/2026/11/protecting-the-executives-privileges-and-enhancing-efficiencies-in-federal-contracting",
+        "attribution": "source-statement"
+      }
+    ]
+  }
+}

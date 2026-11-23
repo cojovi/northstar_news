@@ -1,0 +1,46 @@
+{
+  "affiliated": false,
+  "notice": "",
+  "editorial_notices": false,
+  "evidence": {
+    "status": "partial",
+    "completed_full_factcheck": false,
+    "reviewed_at": "2026-11-23T21:25:28.923071+00:00",
+    "summary": "Rechecked the linked historical primary document and its load-bearing factual statements. Analytical judgments are distinguished from official findings.",
+    "limits": "Limited AI-assisted documentary review, not a full fact-check, human review, interviews or independent technical replication. The account is historical; no current individual entitlement, final legal judgment or guaranteed outcome is established. The complete signed memorandum was not obtained; operational effectiveness is not independently verified.",
+    "record_url": "https://thenorthstarledger.com/source-reviews#counter-drone-pact-civilian-aviation-safety-test",
+    "sources": [
+      "https://www.faa.gov/newsroom/trump-administration-deepens-interagency-collaboration-protect-nations-skies-unmanned"
+    ]
+  },
+  "publication": {
+    "status": "ready",
+    "source_sha256": "5c4136a3d0bcc38ed64008f00c784212222fdc0e080fde2c8504c1eaa926f1cd",
+    "claim_ledger": [
+      {
+        "claim": "Five departments announced counter-drone coordination.",
+        "supporting_excerpt": "announced an expanded interagency effort to further coordinate counter-unmanned aircraft systems operations.",
+        "source_url": "https://www.faa.gov/newsroom/trump-administration-deepens-interagency-collaboration-protect-nations-skies-unmanned",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "FAA and FCC coordination applies.",
+        "supporting_excerpt": "The parties will work closely with the FAA and Federal Communications Commission (FCC)",
+        "source_url": "https://www.faa.gov/newsroom/trump-administration-deepens-interagency-collaboration-protect-nations-skies-unmanned",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "FAA risk assessments are promised.",
+        "supporting_excerpt": "The FAA will quickly review and conduct safety risk assessments of proposed systems",
+        "source_url": "https://www.faa.gov/newsroom/trump-administration-deepens-interagency-collaboration-protect-nations-skies-unmanned",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "Protective restrictions remain possible.",
+        "supporting_excerpt": "including restricting airspace.",
+        "source_url": "https://www.faa.gov/newsroom/trump-administration-deepens-interagency-collaboration-protect-nations-skies-unmanned",
+        "attribution": "source-statement"
+      }
+    ]
+  }
+}

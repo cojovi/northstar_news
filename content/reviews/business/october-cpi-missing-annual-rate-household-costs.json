@@ -1,0 +1,46 @@
+{
+  "affiliated": false,
+  "notice": "",
+  "editorial_notices": false,
+  "evidence": {
+    "status": "partial",
+    "completed_full_factcheck": false,
+    "reviewed_at": "2026-11-23T21:25:28.923071+00:00",
+    "summary": "Rechecked the linked historical primary document and its load-bearing factual statements. Analytical judgments are distinguished from official findings.",
+    "limits": "Limited AI-assisted documentary review, not a full fact-check, human review, interviews or independent technical replication. The account is historical; no current individual entitlement, final legal judgment or guaranteed outcome is established. No official missing annual CPI rate is inferred and no future Federal Reserve decision is established.",
+    "record_url": "https://thenorthstarledger.com/source-reviews#october-cpi-missing-annual-rate-household-costs",
+    "sources": [
+      "https://www.bls.gov/news.release/archives/cpi_11102026.htm"
+    ]
+  },
+  "publication": {
+    "status": "ready",
+    "source_sha256": "e91d6ca28e43339452fff664e7ce104014345fac328e4f58621477634bb92f28",
+    "claim_ledger": [
+      {
+        "claim": "October CPI rose 0.4 percent.",
+        "supporting_excerpt": "increased 0.4 percent on a seasonally adjusted basis in October",
+        "source_url": "https://www.bls.gov/news.release/archives/cpi_11102026.htm",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "Shelter contributed substantially.",
+        "supporting_excerpt": "The index for shelter rose 0.3 percent in October, accounting for over thirty percent",
+        "source_url": "https://www.bls.gov/news.release/archives/cpi_11102026.htm",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "Food and energy rose.",
+        "supporting_excerpt": "The food index increased 0.5 percent in October",
+        "source_url": "https://www.bls.gov/news.release/archives/cpi_11102026.htm",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "Annual comparison gap derives from funding lapse.",
+        "supporting_excerpt": "BLS did not collect survey data for October 2025 because of a lapse in appropriations.",
+        "source_url": "https://www.bls.gov/news.release/archives/cpi_11102026.htm",
+        "attribution": "source-statement"
+      }
+    ]
+  }
+}

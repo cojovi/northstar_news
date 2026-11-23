@@ -1,0 +1,49 @@
+{
+  "affiliated": false,
+  "notice": "",
+  "editorial_notices": false,
+  "evidence": {
+    "status": "partial",
+    "completed_full_factcheck": false,
+    "reviewed_at": "2026-11-23T21:25:28.923071+00:00",
+    "summary": "Rechecked the linked historical primary document and its load-bearing factual statements. Analytical judgments are distinguished from official findings.",
+    "limits": "Limited AI-assisted documentary review, not a full fact-check, human review, interviews or independent technical replication. The account is historical; no current individual entitlement, final legal judgment or guaranteed outcome is established. Official and contractor explanations remain attributed and preliminary, not a completed forensic finding.",
+    "record_url": "https://thenorthstarledger.com/source-reviews#faa-router-ground-stop-change-control-accountability",
+    "sources": [
+      "https://thenorthstarledger.com/us/faa-ground-stop-accountability-test",
+      "https://www.faa.gov/newsroom/nationwide-ground-stop-questions-and-answers",
+      "https://www.l3harris.com/newsroom/press-release/2026/11/l3harris-statement-nov-13-ground-stop",
+      "https://fedscoop.com/faa-nationwide-ground-stop-investigation-what-happened"
+    ]
+  },
+  "publication": {
+    "status": "ready",
+    "source_sha256": "47367ca1c79603076bbfc589172e8391f074fc4db918528b273402245acf9656",
+    "claim_ledger": [
+      {
+        "claim": "17 of 22 centers experienced instability.",
+        "supporting_excerpt": "We began experiencing instability at 17 of our 22 Air Route Traffic Control Centers",
+        "source_url": "https://www.faa.gov/newsroom/nationwide-ground-stop-questions-and-answers",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "Router functionality disabled as precaution.",
+        "supporting_excerpt": "we disabled the same functionality on approximately 60 similar routers",
+        "source_url": "https://www.faa.gov/newsroom/nationwide-ground-stop-questions-and-answers",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "Root-cause investigation continues.",
+        "supporting_excerpt": "The FAA and L3Harris continue to investigate the root cause",
+        "source_url": "https://www.faa.gov/newsroom/nationwide-ground-stop-questions-and-answers",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "No indication of cyberattack at source cutoff.",
+        "supporting_excerpt": "we have no indication that this was a cyberattack or an outside nefarious actor.",
+        "source_url": "https://www.faa.gov/newsroom/nationwide-ground-stop-questions-and-answers",
+        "attribution": "source-statement"
+      }
+    ]
+  }
+}

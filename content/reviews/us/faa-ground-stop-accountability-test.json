@@ -1,0 +1,42 @@
+{
+  "affiliated": false,
+  "notice": "",
+  "editorial_notices": false,
+  "evidence": {
+    "status": "partial",
+    "completed_full_factcheck": false,
+    "reviewed_at": "2026-11-23T21:25:28.923071+00:00",
+    "summary": "Rechecked the linked historical primary document and its load-bearing factual statements. Analytical judgments are distinguished from official findings.",
+    "limits": "Limited AI-assisted documentary review, not a full fact-check, human review, interviews or independent technical replication. The account is historical; no current individual entitlement, final legal judgment or guaranteed outcome is established. Official and contractor explanations remain attributed and preliminary, not a completed forensic finding.",
+    "record_url": "https://thenorthstarledger.com/source-reviews#faa-ground-stop-accountability-test",
+    "sources": [
+      "https://thenorthstarledger.com/us/faa-router-ground-stop-change-control-accountability",
+      "https://www.faa.gov/newsroom/faa-statement-nationwide-ground-stop",
+      "https://news.aa.com/news/news-details/2026/Update-on-FAAs-nationwide-ground-stop"
+    ]
+  },
+  "publication": {
+    "status": "ready",
+    "source_sha256": "c0a96daf1da496e053bdb184d9bcf0444ad8d2defec9353ac6060aa715dadad7",
+    "claim_ledger": [
+      {
+        "claim": "Nationwide ground stop followed communications problems.",
+        "supporting_excerpt": "The FAA issued a nationwide ground stop for all U.S. airports following communication issues impacting multiple Air Route Traffic Control Centers.",
+        "source_url": "https://www.faa.gov/newsroom/faa-statement-nationwide-ground-stop",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "Initial information was preliminary.",
+        "supporting_excerpt": "This information is preliminary and subject to change.",
+        "source_url": "https://www.faa.gov/newsroom/faa-statement-nationwide-ground-stop",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "Technicians were investigating.",
+        "supporting_excerpt": "FAA technicians are investigating the issue.",
+        "source_url": "https://www.faa.gov/newsroom/faa-statement-nationwide-ground-stop",
+        "attribution": "source-statement"
+      }
+    ]
+  }
+}

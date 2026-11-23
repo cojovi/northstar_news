@@ -1,0 +1,47 @@
+{
+  "affiliated": false,
+  "notice": "",
+  "editorial_notices": false,
+  "evidence": {
+    "status": "partial",
+    "completed_full_factcheck": false,
+    "reviewed_at": "2026-11-23T21:25:28.923071+00:00",
+    "summary": "Rechecked the linked historical primary document and its load-bearing factual statements. Analytical judgments are distinguished from official findings.",
+    "limits": "Limited AI-assisted documentary review, not a full fact-check, human review, interviews or independent technical replication. The account is historical; no current individual entitlement, final legal judgment or guaranteed outcome is established. The declaration is not treated as a treaty or conflict settlement.",
+    "record_url": "https://thenorthstarledger.com/source-reviews#shenzhen-peace-declaration-commitments",
+    "sources": [
+      "https://www.whitehouse.gov/briefings-statements/2026/11/u-s-russia-china-heads-of-state-declaration-toward-peace",
+      "https://www.pbs.org/newshour/amp/world/3-takeaways-from-trump-xi-and-putins-historic-summit"
+    ]
+  },
+  "publication": {
+    "status": "ready",
+    "source_sha256": "ce10ce07ce3a6e95d5334b80db8ced800eef0d69da2500cb5eec73f8b9c93bbd",
+    "claim_ledger": [
+      {
+        "claim": "Leaders met November 19.",
+        "supporting_excerpt": "met in Shenzhen on November 19, 2026.",
+        "source_url": "https://www.whitehouse.gov/briefings-statements/2026/11/u-s-russia-china-heads-of-state-declaration-toward-peace",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "UN reform is an expressed commitment.",
+        "supporting_excerpt": "committed to reform the UN",
+        "source_url": "https://www.whitehouse.gov/briefings-statements/2026/11/u-s-russia-china-heads-of-state-declaration-toward-peace",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "Refined supply is prospective.",
+        "supporting_excerpt": "plan to increase the production and supply of refined petroleum products",
+        "source_url": "https://www.whitehouse.gov/briefings-statements/2026/11/u-s-russia-china-heads-of-state-declaration-toward-peace",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "Nuclear-risk dialogue is promised.",
+        "supporting_excerpt": "will conduct a dialogue on reducing nuclear risks and preventing the proliferation of nuclear weapons.",
+        "source_url": "https://www.whitehouse.gov/briefings-statements/2026/11/u-s-russia-china-heads-of-state-declaration-toward-peace",
+        "attribution": "source-statement"
+      }
+    ]
+  }
+}

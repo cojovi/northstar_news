@@ -374,5 +374,111 @@
       "https://www.reuters.com/world/china/nvidia-launches-probe-after-report-ceo-huang-was-target-foreign-intelligence-2026-11-08"
     ],
     "action": "Published a new sourced analysis; distinguishes succession confirmation, admitted personal conduct, attributed allegations and unresolved investigative questions. Archival photograph credited with its actual event date."
+  },
+  {
+    "slug": "october-jobs-payrolls-involuntary-part-time",
+    "path": "/business/october-jobs-payrolls-involuntary-part-time",
+    "title": "The Jobs Report Improved. The Hours Question Did Not Go Away.",
+    "reviewed_at": "2026-11-23T21:25:28.923071+00:00",
+    "status": "partial",
+    "completed_full_factcheck": false,
+    "summary": "Rechecked the linked historical primary document and its load-bearing factual statements. Analytical judgments are distinguished from official findings.",
+    "limits": "Limited AI-assisted documentary review, not a full fact-check, human review, interviews or independent technical replication. The account is historical; no current individual entitlement, final legal judgment or guaranteed outcome is established. Reuters could not be reopened; the numerical account was checked against the archived BLS release.",
+    "sources": [
+      "https://www.bls.gov/news.release/archives/empsit_11062026.htm",
+      "https://www.reuters.com/business/us-job-growth-beats-expectations-october-unemployment-rate-falls-41-2026-11-06"
+    ],
+    "action": "Published sourced historical analysis; official statements remain attributed and policy judgments are identified as analysis."
+  },
+  {
+    "slug": "counter-drone-pact-civilian-aviation-safety-test",
+    "path": "/us/counter-drone-pact-civilian-aviation-safety-test",
+    "title": "The Counter-Drone Pact Has a Civilian Safety Test",
+    "reviewed_at": "2026-11-23T21:25:28.923071+00:00",
+    "status": "partial",
+    "completed_full_factcheck": false,
+    "summary": "Rechecked the linked historical primary document and its load-bearing factual statements. Analytical judgments are distinguished from official findings.",
+    "limits": "Limited AI-assisted documentary review, not a full fact-check, human review, interviews or independent technical replication. The account is historical; no current individual entitlement, final legal judgment or guaranteed outcome is established. The complete signed memorandum was not obtained; operational effectiveness is not independently verified.",
+    "sources": [
+      "https://www.faa.gov/newsroom/trump-administration-deepens-interagency-collaboration-protect-nations-skies-unmanned"
+    ],
+    "action": "Published sourced historical analysis; official statements remain attributed and policy judgments are identified as analysis."
+  },
+  {
+    "slug": "october-cpi-missing-annual-rate-household-costs",
+    "path": "/business/october-cpi-missing-annual-rate-household-costs",
+    "title": "October Inflation Has a Missing Number. The Bills Do Not.",
+    "reviewed_at": "2026-11-23T21:25:28.923071+00:00",
+    "status": "partial",
+    "completed_full_factcheck": false,
+    "summary": "Rechecked the linked historical primary document and its load-bearing factual statements. Analytical judgments are distinguished from official findings.",
+    "limits": "Limited AI-assisted documentary review, not a full fact-check, human review, interviews or independent technical replication. The account is historical; no current individual entitlement, final legal judgment or guaranteed outcome is established. No official missing annual CPI rate is inferred and no future Federal Reserve decision is established.",
+    "sources": [
+      "https://www.bls.gov/news.release/archives/cpi_11102026.htm"
+    ],
+    "action": "Published sourced historical analysis; official statements remain attributed and policy judgments are identified as analysis."
+  },
+  {
+    "slug": "faa-ground-stop-accountability-test",
+    "path": "/us/faa-ground-stop-accountability-test",
+    "title": "America's Flights Stopped. The Accountability Test Is Just Beginning.",
+    "reviewed_at": "2026-11-23T21:25:28.923071+00:00",
+    "status": "partial",
+    "completed_full_factcheck": false,
+    "summary": "Rechecked the linked historical primary document and its load-bearing factual statements. Analytical judgments are distinguished from official findings.",
+    "limits": "Limited AI-assisted documentary review, not a full fact-check, human review, interviews or independent technical replication. The account is historical; no current individual entitlement, final legal judgment or guaranteed outcome is established. Official and contractor explanations remain attributed and preliminary, not a completed forensic finding.",
+    "sources": [
+      "https://thenorthstarledger.com/us/faa-router-ground-stop-change-control-accountability",
+      "https://www.faa.gov/newsroom/faa-statement-nationwide-ground-stop",
+      "https://news.aa.com/news/news-details/2026/Update-on-FAAs-nationwide-ground-stop"
+    ],
+    "action": "Published sourced historical analysis; official statements remain attributed and policy judgments are identified as analysis."
+  },
+  {
+    "slug": "faa-router-ground-stop-change-control-accountability",
+    "path": "/us/faa-router-ground-stop-change-control-accountability",
+    "title": "The Flights Are Moving Again. The FAA Still Owes America an Explanation.",
+    "reviewed_at": "2026-11-23T21:25:28.923071+00:00",
+    "status": "partial",
+    "completed_full_factcheck": false,
+    "summary": "Rechecked the linked historical primary document and its load-bearing factual statements. Analytical judgments are distinguished from official findings.",
+    "limits": "Limited AI-assisted documentary review, not a full fact-check, human review, interviews or independent technical replication. The account is historical; no current individual entitlement, final legal judgment or guaranteed outcome is established. Official and contractor explanations remain attributed and preliminary, not a completed forensic finding.",
+    "sources": [
+      "https://thenorthstarledger.com/us/faa-ground-stop-accountability-test",
+      "https://www.faa.gov/newsroom/nationwide-ground-stop-questions-and-answers",
+      "https://www.l3harris.com/newsroom/press-release/2026/11/l3harris-statement-nov-13-ground-stop",
+      "https://fedscoop.com/faa-nationwide-ground-stop-investigation-what-happened"
+    ],
+    "action": "Published sourced historical analysis; official statements remain attributed and policy judgments are identified as analysis."
+  },
+  {
+    "slug": "shenzhen-peace-declaration-commitments",
+    "path": "/world/shenzhen-peace-declaration-commitments",
+    "title": "Three Presidents Issued a Peace Declaration. Read the Fine Print.",
+    "reviewed_at": "2026-11-23T21:25:28.923071+00:00",
+    "status": "partial",
+    "completed_full_factcheck": false,
+    "summary": "Rechecked the linked historical primary document and its load-bearing factual statements. Analytical judgments are distinguished from official findings.",
+    "limits": "Limited AI-assisted documentary review, not a full fact-check, human review, interviews or independent technical replication. The account is historical; no current individual entitlement, final legal judgment or guaranteed outcome is established. The declaration is not treated as a treaty or conflict settlement.",
+    "sources": [
+      "https://www.whitehouse.gov/briefings-statements/2026/11/u-s-russia-china-heads-of-state-declaration-toward-peace",
+      "https://www.pbs.org/newshour/amp/world/3-takeaways-from-trump-xi-and-putins-historic-summit"
+    ],
+    "action": "Published sourced historical analysis; official statements remain attributed and policy judgments are identified as analysis."
+  },
+  {
+    "slug": "federal-contractors-congress-executive-privilege-order",
+    "path": "/politics/federal-contractors-congress-executive-privilege-order",
+    "title": "The White House Put Contractors Between Two Branches of Government",
+    "reviewed_at": "2026-11-23T21:25:28.923071+00:00",
+    "status": "partial",
+    "completed_full_factcheck": false,
+    "summary": "Rechecked the linked historical primary document and its load-bearing factual statements. Analytical judgments are distinguished from official findings.",
+    "limits": "Limited AI-assisted documentary review, not a full fact-check, human review, interviews or independent technical replication. The account is historical; no current individual entitlement, final legal judgment or guaranteed outcome is established. The executive order is not treated as a court ruling; no completed litigation or sanction is established.",
+    "sources": [
+      "https://www.whitehouse.gov/presidential-actions/2026/11/protecting-the-executives-privileges-and-enhancing-efficiencies-in-federal-contracting",
+      "https://www.npr.org/2026/11/21/g-s1-154966/trump-contractors-congress"
+    ],
+    "action": "Published sourced historical analysis; official statements remain attributed and policy judgments are identified as analysis."
   }
 ]
