@@ -480,5 +480,20 @@
       "https://www.npr.org/2026/11/21/g-s1-154966/trump-contractors-congress"
     ],
     "action": "Published sourced historical analysis; official statements remain attributed and policy judgments are identified as analysis."
+  },
+  {
+    "slug": "huang-return-board-investigation-accountability",
+    "path": "/business/huang-return-board-investigation-accountability",
+    "title": "Huang Is Back. What Did Nvidia's Board Actually Settle?",
+    "reviewed_at": "2026-11-25T02:42:19Z",
+    "status": "partial",
+    "completed_full_factcheck": false,
+    "summary": "AI-assisted documentary check of Nvidia's November 23 reinstatement statement and a retrieved November 23 NBC DFW broadcast transcript. Checked immediate reinstatement, the board's attributed confidence and government-input description, continuing independent investigation, leadership continuity and announced compliance steps. Analytical accountability standards are not presented as investigative findings.",
+    "limits": "Partial AI-assisted documentary review, not human review, a full fact-check or original reporting. No interviews, private board records, underlying government communications, intelligence material, completed investigative report or operational compliance audit were obtained. NBC DFW corroborates coverage of the return and board-described input, not the substance of confidential government advice. Its retrieved transcript is truncated at the ending; full audiovisual playback was not checked. No market figures, relationship specifics, guilt or exoneration are established. The contextual photograph and CC BY 2.0 attribution were checked against its Wikimedia Commons source record.",
+    "sources": [
+      "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+      "https://www.youtube.com/watch?v=OY9qsdUL0yU"
+    ],
+    "action": "Prepared a distinct reinstatement follow-up without changing the prior resignation article or its review. Distinguished restored leadership from the unfinished investigation and prospective compliance changes. Organization desk credit; no human review claimed. Hero asset and deployment pending parent integration."
   }
 ]

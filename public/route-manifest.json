@@ -188,11 +188,11 @@
     "url": "https://thenorthstarledger.com/topics/institutional-decisions",
     "indexable": true
   },
-  "/politics/federal-contractors-congress-executive-privilege-order": {
+  "/business/huang-return-board-investigation-accountability": {
     "type": "article",
-    "title": "The White House Put Contractors Between Two Branches of Government",
-    "description": "A new order puts federal suppliers in the middle of Washington's oversight fight. Its immediate requirements are clearer than its ultimate legal reach.",
-    "url": "https://thenorthstarledger.com/politics/federal-contractors-congress-executive-privilege-order",
+    "title": "Huang Is Back. What Did Nvidia's Board Actually Settle?",
+    "description": "Jensen Huang's reinstatement resolves who runs Nvidia. The board's own announcement leaves the investigation open - and makes its new oversight promises worth watching.",
+    "url": "https://thenorthstarledger.com/business/huang-return-board-investigation-accountability",
     "indexable": true
   },
   "/author/northstar-desk": {
@@ -200,6 +200,41 @@
     "title": "The Northstar Ledger Desk",
     "description": "Publication desk attribution for content produced with automated research, drafting and publishing assistance. This is an organizational credit, not a named human reviewer.",
     "url": "https://thenorthstarledger.com/author/northstar-desk",
+    "indexable": true
+  },
+  "/tag/nvidia": {
+    "type": "tag",
+    "title": "Nvidia archive",
+    "description": "Articles tagged Nvidia. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/nvidia",
+    "indexable": false
+  },
+  "/tag/jensen%20huang": {
+    "type": "tag",
+    "title": "Jensen Huang archive",
+    "description": "Articles tagged Jensen Huang. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/jensen%20huang",
+    "indexable": false
+  },
+  "/tag/corporate%20governance": {
+    "type": "tag",
+    "title": "Corporate Governance archive",
+    "description": "Articles tagged Corporate Governance. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/corporate%20governance",
+    "indexable": false
+  },
+  "/tag/national%20security": {
+    "type": "tag",
+    "title": "national security archive",
+    "description": "Articles tagged national security. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/national%20security",
+    "indexable": false
+  },
+  "/politics/federal-contractors-congress-executive-privilege-order": {
+    "type": "article",
+    "title": "The White House Put Contractors Between Two Branches of Government",
+    "description": "A new order puts federal suppliers in the middle of Washington's oversight fight. Its immediate requirements are clearer than its ultimate legal reach.",
+    "url": "https://thenorthstarledger.com/politics/federal-contractors-congress-executive-privilege-order",
     "indexable": true
   },
   "/tag/accountability": {
@@ -257,34 +292,6 @@
     "description": "Jensen Huang’s resignation puts Colette Kress in charge of a company facing overlapping leadership, governance and national-security questions. A succession announcement cannot answer all three.",
     "url": "https://thenorthstarledger.com/business/nvidia-founder-board-accountability",
     "indexable": true
-  },
-  "/tag/nvidia": {
-    "type": "tag",
-    "title": "Nvidia archive",
-    "description": "Articles tagged Nvidia. Historical records may have source review pending.",
-    "url": "https://thenorthstarledger.com/tag/nvidia",
-    "indexable": false
-  },
-  "/tag/jensen%20huang": {
-    "type": "tag",
-    "title": "Jensen Huang archive",
-    "description": "Articles tagged Jensen Huang. Historical records may have source review pending.",
-    "url": "https://thenorthstarledger.com/tag/jensen%20huang",
-    "indexable": false
-  },
-  "/tag/corporate%20governance": {
-    "type": "tag",
-    "title": "Corporate Governance archive",
-    "description": "Articles tagged Corporate Governance. Historical records may have source review pending.",
-    "url": "https://thenorthstarledger.com/tag/corporate%20governance",
-    "indexable": false
-  },
-  "/tag/national%20security": {
-    "type": "tag",
-    "title": "national security archive",
-    "description": "Articles tagged national security. Historical records may have source review pending.",
-    "url": "https://thenorthstarledger.com/tag/national%20security",
-    "indexable": false
   },
   "/business/october-cpi-missing-annual-rate-household-costs": {
     "type": "article",

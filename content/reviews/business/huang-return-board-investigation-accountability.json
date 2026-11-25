@@ -1,0 +1,97 @@
+{
+  "affiliated": false,
+  "notice": "",
+  "editorial_notices": false,
+  "evidence": {
+    "status": "partial",
+    "completed_full_factcheck": false,
+    "reviewed_at": "2026-11-25T02:42:19Z",
+    "record_url": "https://thenorthstarledger.com/source-reviews#huang-return-board-investigation-accountability",
+    "sources": [
+      "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+      "https://www.youtube.com/watch?v=OY9qsdUL0yU"
+    ],
+    "summary": "AI-assisted documentary check of Nvidia's November 23 reinstatement statement and a retrieved November 23 NBC DFW broadcast transcript. Checked immediate reinstatement, the board's attributed confidence and government-input description, continuing independent investigation, leadership continuity and announced compliance steps. Analytical accountability standards are not presented as investigative findings.",
+    "limits": "Partial AI-assisted documentary review, not human review, a full fact-check or original reporting. No interviews, private board records, underlying government communications, intelligence material, completed investigative report or operational compliance audit were obtained. NBC DFW corroborates coverage of the return and board-described input, not the substance of confidential government advice. Its retrieved transcript is truncated at the ending; full audiovisual playback was not checked. No market figures, relationship specifics, guilt or exoneration are established. The contextual photograph and CC BY 2.0 attribution were checked against its Wikimedia Commons source record."
+  },
+  "publication": {
+    "status": "ready",
+    "source_sha256": "0dcfe003265d186c10f56422367d391220209d62d48779f9ab50828c9fcfe37a",
+    "claim_ledger": [
+      {
+        "claim": "Nvidia announced immediate reinstatement as president, CEO and board member after a unanimous vote.",
+        "supporting_excerpt": "NVIDIA (NASDAQ: NVDA) today announced that effective immediately, Jensen Huang has been reinstated as President and Chief Executive Officer and as a member of the Board. The Board of Directors voted unanimously to reinstate Mr. Huang following a series of discussions and meetings with Mr. Huang, after which the Board was satisfied with respect to Mr. Huang\u2019s candor and ability to lead NVIDIA.",
+        "source_url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "The national-security assurance is attributed to the board, based on government input; the announcement does not publish underlying communications.",
+        "supporting_excerpt": "In the process of reaching its decision, the Board received input from senior levels of the United States government, and based on that input, the Board is confident that Mr. Huang\u2019s reinstatement poses no national security risk.",
+        "source_url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "The board says reinstatement serves stockholders, employees, partners and customers.",
+        "supporting_excerpt": "The Board believes Jensen is the right person to lead NVIDIA, and that his reinstatement is in the best interests of our stockholders, employees, partners and customers",
+        "source_url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "The independent-director committee retained independent counsel in an investigation responding to reporting; the source does not establish the reporting as a finding.",
+        "supporting_excerpt": "As previously announced, in light of recent reporting that Mr. Huang has been the target of a foreign intelligence effort, the Board formed a committee comprised solely of independent directors to investigate, and the committee retained independent counsel to assist it in that investigation.",
+        "source_url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "The investigation continues; Huang supports it and commits to cooperation.",
+        "supporting_excerpt": "The Board reiterated that the committee\u2019s investigation will proceed to conclusion. Mr. Huang fully supports the investigation and is committed to cooperating with it.",
+        "source_url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "Jones remains chair and Kress continues as CFO after interim CEO service.",
+        "supporting_excerpt": "We are grateful to Colette Kress for her outstanding service as interim CEO, in addition to her continuing responsibilities as NVIDIA\u2019s Chief Financial Officer.\u201d Harvey Jones will remain as Board chair.",
+        "source_url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "Nvidia describes a separate independent-director national-security/export-control committee and prospective specialist advisory work.",
+        "supporting_excerpt": "The Board also recently formed a National Security and Export Control Committee comprised solely of independent directors to oversee trade compliance and national security risks. The committee is engaging counsel with experience in national security matters, and such counsel will be retaining advisors with expertise in national security matters.",
+        "source_url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "The compliance-officer search is commencing with a specified board-committee reporting line; ongoing government inquiries continue.",
+        "supporting_excerpt": "NVIDIA is commencing a search to fill a new position, Chief Compliance Officer, to oversee compliance across NVIDIA and report to the Nominating and Corporate Governance Committee. NVIDIA will continue to cooperate with ongoing government investigations and inquiries.",
+        "source_url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "NBC DFW's retrieved broadcast transcript corroborates reporting of immediate reinstatement and the board's government-input description, not an independent assessment of confidential advice.",
+        "supporting_excerpt": "That reinstatement is effective immediately, and it has come to a shock to the markets and the business world. Nvidia being one of the world's most valuable companies. What's more, the surprise move comes after Nvidia's board received what it called input from senior levels of the United States government.",
+        "source_url": "https://www.youtube.com/watch?v=OY9qsdUL0yU",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "Analysis: restoring leadership and completing an inquiry are distinct decisions; neither guilt nor comprehensive exoneration follows from the announcement.",
+        "supporting_excerpt": "The Board reiterated that the committee\u2019s investigation will proceed to conclusion.",
+        "source_url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+        "attribution": "analysis"
+      },
+      {
+        "claim": "Analysis: the announced controls should be judged by appointment, mandate and implementation milestones; a search alone is not proof of effectiveness.",
+        "supporting_excerpt": "NVIDIA is commencing a search to fill a new position, Chief Compliance Officer, to oversee compliance across NVIDIA and report to the Nominating and Corporate Governance Committee.",
+        "source_url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+        "attribution": "analysis"
+      }
+    ]
+  },
+  "preparation": {
+    "prepared_at": "2026-11-25T02:42:19Z",
+    "reporting_cutoff": "2026-11-25T02:41:01Z",
+    "human_review_claimed": false,
+    "method": "Original primary statement and NBC DFW transcript retrieved with web_extract in this task. Exact excerpts transcribed from those results; body hash computed with Node createHash from production parseArticleSource body.trim() UTF8. No SEC mirror counted as independent corroboration.",
+    "relationship_to_previous_article": "New reinstatement follow-up; existing nvidia-founder-board-accountability article and review remain unchanged.",
+    "hero_delivery": "Parent will supply the generated boardroom illustration; this task does not generate or verify the asset."
+  }
+}
