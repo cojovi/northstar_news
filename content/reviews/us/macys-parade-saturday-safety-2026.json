@@ -1,0 +1,93 @@
+{
+  "evidence": {
+    "status": "partial",
+    "reviewed_at": "2026-11-27T15:08:28.863957+00:00",
+    "summary": "AI-assisted documentary check of NBC’s November 25 statement and regional airing schedule, the NYC event portal, and ABC/NPR reporting. Checked the postponed date, Saturday street start, prior-year Thursday replay, attributed forecast and selected participant logistics; commentary remains opinion.",
+    "limits": "Partial AI-assisted documentary review, not human review, a full fact-check or firsthand reporting. No organizer interviews, operational audit, actual Saturday weather clearance, cost verification or guarantee the future parade will occur. NBC is a participating broadcaster; ABC and NPR provide independent reporting while attributing organizer statements. Archival 2013 cover is context, not evidence of the 2026 event.",
+    "record_url": "https://thenorthstarledger.com/source-reviews#macys-parade-saturday-safety-2026",
+    "sources": [
+      "https://www.nbc.com/nbc-insider/2026-macys-thanksgiving-day-parade-moves-to-saturday-november-28",
+      "https://abcnews.com/US/macys-thanksgiving-day-parade-postponed-sources/story?id=138452401",
+      "https://www.npr.org/2026/11/27/nx-s1-6054884/thanksgiving-weather-black-friday",
+      "https://www.nyc.gov/site/cecm/cultural-events/community-notices.page"
+    ]
+  },
+  "publication": {
+    "status": "ready",
+    "source_sha256": "65412f25083f09c427085e9c519e4046bdb7b05e56f4b04cc8e5b8ef5f7eedef",
+    "claim_ledger": [
+      {
+        "claim": "The 100th parade was moved from Thursday, November 26, to Saturday, November 28, 2026, due to severe-weather concerns.",
+        "supporting_excerpt": "has been rescheduled from Thursday, November 26, to Saturday, November 28, 2026, due to severe weather concerns in New York City.",
+        "source_url": "https://www.nbc.com/nbc-insider/2026-macys-thanksgiving-day-parade-moves-to-saturday-november-28",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "NBC attributed the move to participant and spectator safety and identified the city, Macy's and NBC as decision parties.",
+        "supporting_excerpt": "the city of New York, Macy’s, and NBC have decided, in the interest of safety for both the participants and spectators, to move the Macy’s Thanksgiving Day Parade to Saturday, November 28,",
+        "source_url": "https://www.nbc.com/nbc-insider/2026-macys-thanksgiving-day-parade-moves-to-saturday-november-28",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "The Saturday New York street-event start is scheduled for 8:30 a.m. Eastern.",
+        "supporting_excerpt": "The parade will now take place on Saturday at 8:30 a.m., according to the department store.",
+        "source_url": "https://abcnews.com/US/macys-thanksgiving-day-parade-postponed-sources/story?id=138452401",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "NBC lists November 28 coverage on NBC and Peacock at 8:30 a.m. Eastern, Central and Mountain; 7:30 a.m. Pacific.",
+        "supporting_excerpt": "Watch the 100th Macy's Thanksgiving Day Parade (2026) live on Saturday, November 28 on NBC and Peacock. The Parade will air at 8:30 a.m. in Eastern, Central, and Mountain Time Zones; and at 7:30 a.m. in Pacific Time Zone.",
+        "source_url": "https://www.nbc.com/nbc-insider/2026-macys-thanksgiving-day-parade-moves-to-saturday-november-28",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "NBC selected the 2025 parade replay for Thursday November 26 at 8:30 a.m. in all time zones; this slot is past at the stated cutoff.",
+        "supporting_excerpt": "NBC will telecast the 2025 Macy’s Thanksgiving Day Parade tomorrow at 8:30 a.m. in all time zones,",
+        "source_url": "https://www.nbc.com/nbc-insider/2026-macys-thanksgiving-day-parade-moves-to-saturday-november-28",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "NBC reported an approaching nor'easter expected to bring heavy rain, strong winds and coastal flooding.",
+        "supporting_excerpt": "A powerful Nor'easter is expected to bring heavy rain, strong winds, and coastal flooding,",
+        "source_url": "https://www.nbc.com/nbc-insider/2026-macys-thanksgiving-day-parade-moves-to-saturday-november-28",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "ABC reported a Thursday morning forecast of 20–22 mph sustained winds and gusts up to 40 mph around 9 a.m., with heavy rain.",
+        "supporting_excerpt": "The forecast for New York City Thursday called for sustained winds between 20-22 miles per hour and gusts up to 40 miles per hour at 9 a.m., along with heavy rain.",
+        "source_url": "https://abcnews.com/US/macys-thanksgiving-day-parade-postponed-sources/story?id=138452401",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "NPR reported storm-related holiday travel disruption and widespread power outages by Friday.",
+        "supporting_excerpt": "A massive storm that stretched from the Midwest to Manhattan left almost a million people without power by Thanksgiving evening and disrupted holiday travel.",
+        "source_url": "https://www.npr.org/2026/11/27/nx-s1-6054884/thanksgiving-weather-black-friday",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "Macy's said the move followed consultation with city and agency partners.",
+        "supporting_excerpt": "after close consultation with our City and agency partners, we have made the decision to move this year's celebration,",
+        "source_url": "https://abcnews.com/US/macys-thanksgiving-day-parade-postponed-sources/story?id=138452401",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "NPR reported around 11,000 participants, mostly volunteers, many having traveled from out of state.",
+        "supporting_excerpt": "there are around 11,000 participants in the parade, mostly volunteers, many of whom traveled in from out of state.",
+        "source_url": "https://www.npr.org/2026/11/27/nx-s1-6054884/thanksgiving-weather-black-friday",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "ABC reported producer Will Coss said no second public balloon-inflation viewing would occur Friday.",
+        "supporting_excerpt": "The producer of the parade, Will Coss, said a second inflation day public viewing will not happen Friday.",
+        "source_url": "https://abcnews.com/US/macys-thanksgiving-day-parade-postponed-sources/story?id=138452401",
+        "attribution": "source-statement"
+      },
+      {
+        "claim": "NYC event portal lists November 28, 2026 at 8:30 AM and pending updated street closures.",
+        "supporting_excerpt": "The Macy’s Thanksgiving Day Parade has moved to Saturday November 28, 2026",
+        "source_url": "https://www.nyc.gov/site/cecm/cultural-events/community-notices.page",
+        "attribution": "source-statement"
+      }
+    ]
+  }
+}

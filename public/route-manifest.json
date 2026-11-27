@@ -188,11 +188,11 @@
     "url": "https://thenorthstarledger.com/topics/institutional-decisions",
     "indexable": true
   },
-  "/business/huang-return-board-investigation-accountability": {
+  "/us/macys-parade-saturday-safety-2026": {
     "type": "article",
-    "title": "Huang Is Back. What Did Nvidia's Board Actually Settle?",
-    "description": "Jensen Huang's reinstatement resolves who runs Nvidia. The board's own announcement leaves the investigation open - and makes its new oversight promises worth watching.",
-    "url": "https://thenorthstarledger.com/business/huang-return-board-investigation-accountability",
+    "title": "Macy's Parade Moved. The Safety Test Did Not.",
+    "description": "A storm moved the 100th Thanksgiving parade to Saturday. The revised schedule is straightforward; the public-safety responsibility does not end with a new date.",
+    "url": "https://thenorthstarledger.com/us/macys-parade-saturday-safety-2026",
     "indexable": true
   },
   "/author/northstar-desk": {
@@ -200,6 +200,41 @@
     "title": "The Northstar Ledger Desk",
     "description": "Publication desk attribution for content produced with automated research, drafting and publishing assistance. This is an organizational credit, not a named human reviewer.",
     "url": "https://thenorthstarledger.com/author/northstar-desk",
+    "indexable": true
+  },
+  "/tag/macys%20parade": {
+    "type": "tag",
+    "title": "Macys parade archive",
+    "description": "Articles tagged Macys parade. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/macys%20parade",
+    "indexable": false
+  },
+  "/tag/thanksgiving": {
+    "type": "tag",
+    "title": "Thanksgiving archive",
+    "description": "Articles tagged Thanksgiving. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/thanksgiving",
+    "indexable": false
+  },
+  "/tag/public%20safety": {
+    "type": "tag",
+    "title": "Public safety archive",
+    "description": "Articles tagged Public safety. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/public%20safety",
+    "indexable": false
+  },
+  "/tag/new%20york%20city": {
+    "type": "tag",
+    "title": "New York City archive",
+    "description": "Articles tagged New York City. Historical records may have source review pending.",
+    "url": "https://thenorthstarledger.com/tag/new%20york%20city",
+    "indexable": false
+  },
+  "/business/huang-return-board-investigation-accountability": {
+    "type": "article",
+    "title": "Huang Is Back. What Did Nvidia's Board Actually Settle?",
+    "description": "Jensen Huang's reinstatement resolves who runs Nvidia. The board's own announcement leaves the investigation open - and makes its new oversight promises worth watching.",
+    "url": "https://thenorthstarledger.com/business/huang-return-board-investigation-accountability",
     "indexable": true
   },
   "/tag/nvidia": {
@@ -1735,13 +1770,6 @@
     "url": "https://thenorthstarledger.com/tag/telecom%20fraud",
     "indexable": false
   },
-  "/tag/new%20york%20city": {
-    "type": "tag",
-    "title": "New York City archive",
-    "description": "Articles tagged New York City. Historical records may have source review pending.",
-    "url": "https://thenorthstarledger.com/tag/new%20york%20city",
-    "indexable": false
-  },
   "/politics/americas-immigration-u-turn-net-loss-in-2025-safer-streets-and-a-labor-market-plot-twist": {
     "type": "article",
     "title": "America’s Immigration U-Turn: Net Loss in 2025, Safer Streets, and a Labor Market Plot Twist",
@@ -1768,13 +1796,6 @@
     "title": "Labor market archive",
     "description": "Articles tagged Labor market. Historical records may have source review pending.",
     "url": "https://thenorthstarledger.com/tag/labor%20market",
-    "indexable": false
-  },
-  "/tag/public%20safety": {
-    "type": "tag",
-    "title": "Public safety archive",
-    "description": "Articles tagged Public safety. Historical records may have source review pending.",
-    "url": "https://thenorthstarledger.com/tag/public%20safety",
     "indexable": false
   },
   "/tag/demographics": {
